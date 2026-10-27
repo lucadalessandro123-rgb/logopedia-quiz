@@ -1,5 +1,452 @@
 {
-  "materia": "biochimica",
-  "nome": "Biochimica",
-  "lezioni": []
+ "materia": "biochimica",
+ "nome": "Biochimica",
+ "lezioni": [
+  {
+   "n": 1,
+   "titolo": "Introduzione alla biochimica e richiami di chimica generale",
+   "domande": [
+    {
+     "d": "Come va classificata la cellula dal punto di vista termodinamico?",
+     "o": [
+      "Sistema aperto, che scambia con l'ambiente sia energia sia materia",
+      "Sistema chiuso, che scambia con l'ambiente energia ma non materia",
+      "Sistema isolato, che non scambia con l'ambiente né energia né materia",
+      "Sistema semi-aperto, che scambia con l'ambiente soltanto energia"
+     ],
+     "c": 0,
+     "s": "In termodinamica la cellula è un sistema aperto: scambia con l'ambiente sia energia sia materia."
+    },
+    {
+     "d": "In che modo il glucosio attraversa la membrana cellulare?",
+     "o": [
+      "Per diffusione semplice attraverso il doppio strato lipidico",
+      "Per diffusione facilitata tramite i trasportatori GLUT",
+      "Per osmosi, in larga parte attraverso le acquaporine",
+      "Per trasporto attivo tramite le pompe di membrana"
+     ],
+     "c": 1,
+     "s": "Il glucosio non entra per diffusione semplice, ma per diffusione facilitata tramite i trasportatori GLUT."
+    },
+    {
+     "d": "Chi dimostrò che un estratto di lievito privo di cellule è in grado di fermentare lo zucchero?",
+     "o": [
+      "Pasteur",
+      "Lavoisier",
+      "Buchner",
+      "Pauling"
+     ],
+     "c": 2,
+     "s": "Eduard Buchner (1897) dimostrò che i responsabili della fermentazione sono enzimi (la zimasi); per questo ricevette il Nobel nel 1907."
+    },
+    {
+     "d": "In quale passaggio della fermentazione alcolica viene liberata la CO₂?",
+     "o": [
+      "Nella riduzione dell'acetaldeide a etanolo",
+      "Nella degradazione del glucosio durante la glicolisi",
+      "Nell'ossidazione dell'etanolo ad acetaldeide",
+      "Nella decarbossilazione del piruvato ad acetaldeide"
+     ],
+     "c": 3,
+     "s": "La CO₂ si libera nella decarbossilazione del piruvato ad acetaldeide; la glicolisi da sola non produce CO₂."
+    },
+    {
+     "d": "Quale definizione di metabolismo è corretta?",
+     "o": [
+      "L'insieme di catabolismo e anabolismo, cioè di degradazione e di sintesi",
+      "L'insieme delle trasformazioni chimiche finalizzate a produrre energia",
+      "L'insieme delle reazioni di sintesi di molecole complesse che consumano ATP",
+      "L'insieme delle reazioni di ossidazione dei nutrienti che liberano CO₂"
+     ],
+     "c": 0,
+     "s": "Il metabolismo non comprende solo le trasformazioni che producono energia: è l'insieme di catabolismo e anabolismo."
+    },
+    {
+     "d": "Che cos'è l'ATP dal punto di vista chimico?",
+     "o": [
+      "Un amminoacido fosforilato",
+      "Un nucleotide trifosfato",
+      "Un coenzima di origine vitaminica",
+      "Un acido grasso fosforilato"
+     ],
+     "c": 1,
+     "s": "L'ATP (adenosina trifosfato), moneta energetica dell'organismo, è un nucleotide trifosfato."
+    },
+    {
+     "d": "Qual è il primo deposito degli zuccheri assunti in eccesso?",
+     "o": [
+      "I trigliceridi, nel tessuto adiposo",
+      "I trigliceridi, nel fegato e nel tessuto adiposo",
+      "Il glicogeno, nel fegato e nel muscolo",
+      "L'amido, nel fegato e nel muscolo"
+     ],
+     "c": 2,
+     "s": "Il primo deposito è il glicogeno; solo a riserve sature il glucosio viene convertito in acidi grassi e trigliceridi."
+    },
+    {
+     "d": "Che cosa afferma la legge di Lavoisier applicata alle reazioni chimiche?",
+     "o": [
+      "Il numero di molecole dei reagenti è uguale a quello dei prodotti",
+      "La massa dei prodotti è minore di quella dei reagenti, per perdita di energia",
+      "L'energia dei legami rotti è uguale a quella dei legami formati",
+      "La massa totale dei reagenti è uguale alla massa totale dei prodotti"
+     ],
+     "c": 3,
+     "s": "Secondo Lavoisier la materia non si crea e non si distrugge: la massa dei reagenti è uguale a quella dei prodotti."
+    },
+    {
+     "d": "Secondo il principio fondamentale della biologia, in quale direzione procede il flusso dell'informazione genetica?",
+     "o": [
+      "Dal DNA all'RNA e quindi alle proteine",
+      "Dalle proteine all'RNA e quindi al DNA",
+      "Dall'RNA al DNA e quindi alle proteine",
+      "Dal DNA alle proteine e quindi all'RNA"
+     ],
+     "c": 0,
+     "s": "Il flusso dell'informazione procede dal DNA all'RNA, fino alla sintesi delle proteine."
+    },
+    {
+     "d": "Quale sostituzione amminoacidica è alla base dell'anemia falciforme?",
+     "o": [
+      "Valina sostituita da acido glutammico nella catena β",
+      "Acido glutammico sostituito da valina nella catena β",
+      "Fenilalanina sostituita da tirosina nella catena β",
+      "Cisteina sostituita da metionina nella catena β"
+     ],
+     "c": 1,
+     "s": "Nell'anemia falciforme l'acido glutammico è sostituito dalla valina in posizione 6 della catena β dell'emoglobina."
+    },
+    {
+     "d": "Per quale motivo anche i tumori presentano un fondamento genetico?",
+     "o": [
+      "Le mutazioni del DNA bloccano il ciclo di Krebs nelle cellule colpite",
+      "Le mutazioni del DNA alterano il metabolismo del colesterolo e dei lipidi plasmatici",
+      "Le mutazioni del DNA deregolano proliferazione e morte cellulare programmata",
+      "Le mutazioni del DNA inducono autoanticorpi contro le proprie cellule"
+     ],
+     "c": 2,
+     "s": "Le mutazioni del DNA portano alla deregolazione dei meccanismi che controllano proliferazione e morte cellulare programmata."
+    },
+    {
+     "d": "Quale è di norma l'evento iniziale nel diabete di tipo 2?",
+     "o": [
+      "L'esaurimento delle cellule β",
+      "La produzione di autoanticorpi",
+      "La distruzione da linfociti T",
+      "L'insulino-resistenza"
+     ],
+     "c": 3,
+     "s": "Nel diabete di tipo 2 l'evento iniziale è di norma l'insulino-resistenza; le cellule β vanno incontro a disfunzione solo col tempo."
+    },
+    {
+     "d": "Da che cosa è mediata soprattutto la distruzione delle cellule β nel diabete di tipo 1?",
+     "o": [
+      "Dai linfociti T",
+      "Dagli autoanticorpi",
+      "Dagli oligodendrociti",
+      "Dall'eccesso di insulina"
+     ],
+     "c": 0,
+     "s": "La distruzione delle cellule β è mediata soprattutto dai linfociti T; gli autoanticorpi sono principalmente marcatori del processo."
+    },
+    {
+     "d": "Quale affermazione sulla sclerosi multipla è corretta?",
+     "o": [
+      "È una malattia genetica ereditaria dovuta alla mutazione di un unico gene",
+      "È multifattoriale e danneggia la mielina prodotta dagli oligodendrociti",
+      "È causata da autoanticorpi contro le proteine delle cellule β",
+      "È causata dall'accumulo di fenilalanina nel sistema nervoso"
+     ],
+     "c": 1,
+     "s": "La sclerosi multipla è multifattoriale e colpisce la mielina del sistema nervoso centrale, prodotta dagli oligodendrociti."
+    },
+    {
+     "d": "In che modo agisce la vitamina D?",
+     "o": [
+      "Come cofattore della γ-glutamil carbossilasi della coagulazione",
+      "Come cofattore della prolil- e lisil-idrossilasi del collagene",
+      "Come un ormone: il calcitriolo si lega a un recettore nucleare (VDR)",
+      "Come precursore di coenzimi quali TPP, FAD e NAD⁺"
+     ],
+     "c": 2,
+     "s": "La vitamina D agisce come un ormone: il calcitriolo si lega al recettore nucleare VDR e regola la trascrizione genica."
+    },
+    {
+     "d": "Quale patologia causa la carenza di vitamina D nei bambini?",
+     "o": [
+      "Lo scorbuto",
+      "Il Kwashiorkor",
+      "L'anemia falciforme",
+      "Il rachitismo"
+     ],
+     "c": 3,
+     "s": "La carenza di vitamina D, che stimola l'assorbimento di calcio e fosfato, causa nei bambini il rachitismo."
+    },
+    {
+     "d": "Quale enzima ha come cofattore la vitamina C nella sintesi del collagene?",
+     "o": [
+      "La prolil- e lisil-idrossilasi",
+      "La γ-glutamil carbossilasi",
+      "La fenilalanina idrossilasi",
+      "La zimasi del lievito"
+     ],
+     "c": 0,
+     "s": "La vitamina C è il cofattore della prolil- e lisil-idrossilasi, che idrossilano prolina e lisina del collagene."
+    },
+    {
+     "d": "Qual è il ruolo della vitamina K nella coagulazione?",
+     "o": [
+      "Cofattore dell'idrossilazione di prolina e lisina dei fattori della coagulazione",
+      "Cofattore della carbossilazione del glutammato dei fattori della coagulazione",
+      "Ormone che si lega a un recettore nucleare dei fattori della coagulazione",
+      "Antiossidante che protegge dallo stress ossidativo i fattori della coagulazione"
+     ],
+     "c": 1,
+     "s": "La vitamina K è cofattore della γ-glutamil carbossilasi, che carbossila i residui di glutammato dei fattori della coagulazione."
+    },
+    {
+     "d": "Perché nel Kwashiorkor si riduce la pressione oncotica?",
+     "o": [
+      "La rottura dei vasi fa fuoriuscire i liquidi negli interstizi",
+      "L'accumulo di fenilalanina blocca la sintesi dell'albumina",
+      "Il fegato non sintetizza a sufficienza le proteine plasmatiche",
+      "Il difetto del CFTR altera l'equilibrio idrico e salino"
+     ],
+     "c": 2,
+     "s": "Con il grave deficit proteico il fegato non sintetizza le proteine plasmatiche, che determinano la pressione oncotica."
+    },
+    {
+     "d": "A che cosa è dovuto soprattutto il «pancino gonfio» dei bambini con Kwashiorkor?",
+     "o": [
+      "A un edema declive e bilaterale localizzato alla parete addominale",
+      "All'infiammazione con aumento della permeabilità capillare",
+      "A un ematoma dovuto alla rottura dei vasi addominali",
+      "Ad ascite, epatomegalia con fegato grasso e debolezza addominale"
+     ],
+     "c": 3,
+     "s": "Il pancino gonfio è dovuto soprattutto ad ascite, epatomegalia con fegato grasso e debolezza della muscolatura addominale."
+    },
+    {
+     "d": "In che cosa l'aterosclerosi si distingue dall'arteriosclerosi?",
+     "o": [
+      "Per la formazione di placche ateromatose nella tonaca intima",
+      "Per l'indurimento e la perdita di elasticità delle arterie",
+      "Per la mutazione del recettore delle LDL come causa principale",
+      "Per l'interessamento delle arterie di piccolo calibro"
+     ],
+     "c": 0,
+     "s": "L'aterosclerosi è una forma specifica di arteriosclerosi, caratterizzata da placche ateromatose nella tonaca intima."
+    },
+    {
+     "d": "Quale reazione è compromessa nella fenilchetonuria?",
+     "o": [
+      "La conversione della tirosina in fenilalanina",
+      "La conversione della fenilalanina in tirosina",
+      "La conversione del piruvato in acetaldeide",
+      "La conversione della tirosina in dopamina"
+     ],
+     "c": 1,
+     "s": "Nella PKU l'attività della fenilalanina idrossilasi è ridotta o nulla e la fenilalanina non può diventare tirosina."
+    },
+    {
+     "d": "A che cosa è attribuito principalmente il danno neurologico nella fenilchetonuria?",
+     "o": [
+      "Al blocco generalizzato della glicolisi e del ciclo di Krebs nel cervello",
+      "Alla distruzione autoimmune della mielina del sistema nervoso centrale",
+      "All'eccesso di fenilalanina e al deficit cerebrale di amminoacidi neutri",
+      "Alla carenza di tirosina dovuta a una dieta povera di proteine animali"
+     ],
+     "c": 2,
+     "s": "Il danno è attribuito soprattutto all'eccesso di fenilalanina e al deficit cerebrale degli altri amminoacidi neutri; il blocco del ciclo di Krebs è un'ipotesi secondaria."
+    },
+    {
+     "d": "Per la produzione di quali molecole è fondamentale la tirosina?",
+     "o": [
+      "Collagene e fattori della coagulazione",
+      "Insulina e proteine plasmatiche",
+      "Acidi grassi e trigliceridi",
+      "Catecolamine e ormoni tiroidei"
+     ],
+     "c": 3,
+     "s": "La tirosina è fondamentale per la produzione delle catecolamine (dopamina, adrenalina, noradrenalina) e degli ormoni tiroidei."
+    },
+    {
+     "d": "Come funziona il CFTR, alterato nella fibrosi cistica?",
+     "o": [
+      "Come canale per il cloruro, la cui apertura è regolata dall'ATP",
+      "Come enzima che aggiunge un gruppo ossidrile alla fenilalanina",
+      "Come recettore che cattura le lipoproteine del colesterolo",
+      "Come trasportatore del glucosio per diffusione facilitata"
+     ],
+     "c": 0,
+     "s": "Il CFTR funziona come canale ionico per il cloruro (e il bicarbonato), la cui apertura è regolata dall'ATP."
+    },
+    {
+     "d": "Quale distretto è colpito dalla tossina colerica?",
+     "o": [
+      "I polmoni, con alterazione respiratoria",
+      "L'intestino, con grave disidratazione",
+      "Il pancreas, con perdita degli enzimi",
+      "Il fegato, con riduzione dell'albumina"
+     ],
+     "c": 1,
+     "s": "La tossina colerica altera i processi biochimici dell'intestino, causando grave disidratazione."
+    },
+    {
+     "d": "Secondo il modello quantomeccanico, dove si trovano gli elettroni?",
+     "o": [
+      "In orbite definite attorno al nucleo, come nel modello di Bohr",
+      "Nel nucleo, insieme ai protoni e ai neutroni",
+      "In orbitali, regioni di massima probabilità di trovarli",
+      "In gusci rigidi posti a distanza fissa dal nucleo"
+     ],
+     "c": 2,
+     "s": "Gli elettroni occupano orbitali, cioè regioni di spazio in cui è massima la probabilità di trovarli."
+    },
+    {
+     "d": "Che cosa rappresenta il numero di massa (A)?",
+     "o": [
+      "Il numero di protoni nel nucleo",
+      "La somma di protoni ed elettroni",
+      "Il numero di elettroni di valenza",
+      "La somma di protoni e neutroni"
+     ],
+     "c": 3,
+     "s": "Il numero di massa A è la somma di protoni e neutroni; il numero atomico Z indica i protoni."
+    },
+    {
+     "d": "In che cosa differiscono gli isotopi di uno stesso elemento?",
+     "o": [
+      "Nel numero di neutroni e quindi nel numero di massa",
+      "Nel numero di protoni e quindi nel numero atomico",
+      "Nel numero di elettroni e quindi nella carica",
+      "Negli elettroni di valenza e quindi nel gruppo"
+     ],
+     "c": 0,
+     "s": "Gli isotopi hanno lo stesso numero atomico Z ma un diverso numero di neutroni, quindi un diverso numero di massa A."
+    },
+    {
+     "d": "Quali sono gli elementi principali che costituiscono le biomolecole?",
+     "o": [
+      "C, H, O, N, K, S",
+      "C, H, O, N, P, S",
+      "C, H, O, N, Na, Cl",
+      "C, H, O, N, Ca, P"
+     ],
+     "c": 1,
+     "s": "Le biomolecole sono costituite principalmente da C, H, O, N, P, S (CHONPS); il potassio è importante come ione K⁺."
+    },
+    {
+     "d": "Che cos'è l'elettronegatività?",
+     "o": [
+      "La capacità di un atomo di cedere elettroni diventando catione",
+      "La carica parziale negativa che si forma su un atomo legato",
+      "La capacità di un atomo di attrarre a sé gli elettroni di legame",
+      "Il numero di elettroni presenti nel livello più esterno"
+     ],
+     "c": 2,
+     "s": "L'elettronegatività è la capacità di un atomo di attrarre a sé gli elettroni di legame."
+    },
+    {
+     "d": "Perché l'acqua è una molecola polare?",
+     "o": [
+      "L'idrogeno, più elettronegativo, attira gli elettroni condivisi con l'ossigeno",
+      "L'ossigeno cede due elettroni agli idrogeni formando legami ionici",
+      "Ossigeno e idrogeno hanno elettronegatività simile e condividono equamente gli elettroni",
+      "L'ossigeno, più elettronegativo, attira gli elettroni condivisi con gli idrogeni"
+     ],
+     "c": 3,
+     "s": "L'ossigeno, molto più elettronegativo, attira gli elettroni: si concentra una carica parziale δ− sull'ossigeno e δ+ sugli idrogeni."
+    },
+    {
+     "d": "Tra quali atomi si forma tipicamente un legame ionico?",
+     "o": [
+      "Tra un metallo e un non metallo",
+      "Tra due atomi di non metallo",
+      "Tra carbonio e idrogeno",
+      "Tra ossigeno e idrogeno"
+     ],
+     "c": 0,
+     "s": "Il legame ionico si forma tipicamente tra un metallo, che cede l'elettrone, e un non metallo, che lo acquista."
+    },
+    {
+     "d": "Quando si forma un legame a idrogeno?",
+     "o": [
+      "Quando un H legato a C interagisce con un altro atomo di carbonio",
+      "Quando un H legato a O o N interagisce con un altro atomo elettronegativo",
+      "Quando un atomo strappa l'elettrone all'idrogeno formando uno ione",
+      "Quando fluttuazioni elettroniche creano dipoli indotti tra atomi vicini"
+     ],
+     "c": 1,
+     "s": "Il legame a idrogeno si forma quando un H legato covalentemente a un atomo fortemente elettronegativo interagisce con un altro atomo elettronegativo."
+    },
+    {
+     "d": "Che cosa genera le forze di Van der Waals?",
+     "o": [
+      "Il trasferimento netto di elettroni tra due atomi",
+      "L'interazione tra gruppi con cariche opposte permanenti",
+      "Fluttuazioni temporanee della distribuzione elettronica",
+      "La condivisione equa degli elettroni tra carbonio e idrogeno"
+     ],
+     "c": 2,
+     "s": "Le forze di Van der Waals nascono da fluttuazioni temporanee della distribuzione elettronica, che generano dipoli indotti."
+    },
+    {
+     "d": "Quanta energia richiede, indicativamente, la rottura di un legame secondario?",
+     "o": [
+      "Da circa 350 a 400 kJ/mol",
+      "Da circa 100 a 200 kJ/mol",
+      "Da circa 500 a 600 kJ/mol",
+      "Da pochi a circa 20 kJ/mol"
+     ],
+     "c": 3,
+     "s": "I legami secondari richiedono da pochi a circa 20 kJ/mol, contro i 350–400 kJ/mol di un legame covalente C–C o C–H."
+    },
+    {
+     "d": "Da che cosa sono guidate principalmente le interazioni idrofobiche?",
+     "o": [
+      "Dall'aumento dell'entropia dell'acqua",
+      "Dall'attrazione tra cariche opposte",
+      "Dalla formazione di legami covalenti",
+      "Dalla formazione di legami a idrogeno"
+     ],
+     "c": 0,
+     "s": "Le interazioni idrofobiche sono un effetto guidato principalmente dall'aumento di entropia dell'acqua liberata dalla «gabbia»."
+    },
+    {
+     "d": "Perché l'olio, ricco di acidi grassi insaturi, è liquido a temperatura ambiente?",
+     "o": [
+      "I doppi legami trans piegano le catene e ne impediscono l'impacchettamento",
+      "I doppi legami cis piegano le catene e ne impediscono l'impacchettamento",
+      "I legami semplici rendono le catene lineari e ne favoriscono l'impacchettamento",
+      "I gruppi carbossilici polari legano l'acqua e tengono separate le catene"
+     ],
+     "c": 1,
+     "s": "I doppi legami cis ripiegano la catena e impediscono l'impacchettamento; i trans non piegano la catena."
+    },
+    {
+     "d": "Che cosa caratterizza il gruppo aldeidico rispetto al gruppo chetonico?",
+     "o": [
+      "Il carbonio carbonilico è legato ad altri due atomi di carbonio",
+      "Il carbonio è legato con un doppio legame a un atomo di azoto",
+      "Il carbonio carbonilico è legato ad almeno un idrogeno",
+      "Il carbonio è legato a un gruppo ossidrile e a un ossigeno"
+     ],
+     "c": 2,
+     "s": "Nel gruppo aldeidico (–CHO) il carbonio carbonilico è legato ad almeno un idrogeno; nel chetonico ad altri due carboni."
+    },
+    {
+     "d": "Che cosa accade al gruppo carbossilico (–COOH) in ambiente acquoso?",
+     "o": [
+      "Accetta un protone e assume una carica positiva",
+      "Forma un ponte disolfuro con un altro gruppo",
+      "Resta indissociato e privo di carica netta",
+      "Libera un protone e assume una carica negativa"
+     ],
+     "c": 3,
+     "s": "In ambiente acquoso il gruppo carbossilico si dissocia, liberando un protone e assumendo una carica negativa."
+    }
+   ]
+  }
+ ]
 }
