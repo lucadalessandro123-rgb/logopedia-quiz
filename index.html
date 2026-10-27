@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La Logopedia di Luca</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap">
+<style>
+/* Layout: ambulatorio pastello, una colonna di 720px su verde menta, schede bianche arrotondate con ombra piena in basso; un solo tema chiaro per scelta */
+:root {
+  --bg: #eef8f5;
+  --surface: #ffffff;
+  --soft: #f5fbf9;
+  --ink: #1e3a44;
+  --muted: #557079;
+  --line: #dcebe6;
+  --line-strong: #c3d8d1;
+  --shadow: #d3e6e0;
+  --accent: #187a64;
+  --accent-dark: #0f5a49;
+  --accent-soft: #ddf5ec;
+  --on-accent: #ffffff;
+  --peach: #ffe3d6;
+  --peach-ink: #8a4b33;
+  --done: #2e9e6a;
+  --done-soft: #e3f6ec;
+  --err: #e5484d;
+  --err-soft: #fdecec;
+  --todo: #e4ecee;
+  --f-display: "Fredoka", "Nunito", "Segoe UI", sans-serif;
+  --f-sans: "Nunito", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--f-sans); font-size: 16px; line-height: 1.55; font-weight: 500;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); }
+.wrap { max-width: 720px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 14px 8px; }
+.brand { display: flex; align-items: center; gap: 10px; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; min-width: 0; }
+.brand-mark { width: 38px; height: 38px; border-radius: 13px; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; font-family: var(--f-display); font-weight: 700; font-size: 1.05rem; box-shadow: 0 3px 0 var(--accent-dark); flex: none; }
+.brand-name { font-family: var(--f-display); font-weight: 600; font-size: 1.07rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sync { display: inline-flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 999px; background: var(--surface); font-size: 0.75rem; font-weight: 700; color: #3d6470; white-space: nowrap; }
+.sync i { width: 8px; height: 8px; border-radius: 50%; background: var(--line-strong); display: inline-block; }
+.sync[data-s="cloud"] i { background: var(--done); }
+.sync[data-s="local"] i { background: #d08a12; }
+
+#app { padding-block: 14px 120px; display: flex; flex-direction: column; gap: 22px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; line-height: 1.2; font-family: var(--f-display); font-weight: 600; }
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.2rem; }
+h3 { font-size: 1.05rem; }
+p { margin: 0; }
+button { font: inherit; color: inherit; }
+button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.eyebrow { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.small { font-size: 0.875rem; }
+.num { font-family: var(--f-display); font-variant-numeric: tabular-nums; }
+.head { display: flex; flex-direction: column; gap: 4px; }
+section { display: flex; flex-direction: column; gap: 12px; }
+.sec-title { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+
+/* mascotte e saluto */
+.hero { display: flex; align-items: center; gap: 14px; padding: 16px 18px 16px 12px; border-radius: 26px; background: var(--peach); }
+.hero svg { flex: none; }
+.hero > div { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.hero .eyebrow { color: var(--peach-ink); }
+.hero .ht { font-family: var(--f-display); font-weight: 600; font-size: 1.3rem; line-height: 1.2; }
+.hero p { font-size: 0.875rem; line-height: 1.4; color: #6b4a3e; }
+
+/* icone materie */
+.ico { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; flex: none; }
+.ico.lg { width: 58px; height: 58px; border-radius: 18px; }
+.ico svg { width: 34px; height: 34px; }
+.ico.lg svg { width: 42px; height: 42px; }
+.subj-head { display: flex; align-items: center; gap: 14px; }
+
+/* barra unica: verde fatto, rosso errori, grigio da fare */
+.sbar { display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: var(--todo); }
+.sbar.lg { height: 14px; }
+.sbar .g { background: var(--done); }
+.sbar .r { background: var(--err); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.78rem; font-weight: 700; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.legend i { width: 9px; height: 9px; border-radius: 3px; display: inline-block; }
+.legend .g { background: var(--done); }
+.legend .r { background: var(--err); }
+.legend .n { background: var(--todo); box-shadow: inset 0 0 0 1px var(--line-strong); }
+.legend b { font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* elenco materie e capitoli */
+.list { display: flex; flex-direction: column; gap: 10px; }
+.item { display: flex; flex-direction: column; gap: 10px; width: 100%; padding: 13px 15px; background: var(--surface); border: 0; border-radius: 20px; box-shadow: 0 3px 0 var(--shadow); text-align: left; cursor: pointer; transition: transform .12s ease, box-shadow .12s ease; }
+button.item:hover { background: var(--soft); }
+button.item:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--shadow); }
+.item-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.item-top > div { min-width: 0; display: flex; flex-direction: column; gap: 1px; flex: 1; }
+.item-name { font-family: var(--f-display); font-weight: 600; font-size: 1.07rem; line-height: 1.25; }
+.pct { font-family: var(--f-display); font-weight: 600; font-size: 1.1rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pct small { font-family: var(--f-sans); font-weight: 700; font-size: 0.72rem; color: var(--muted); margin-left: 4px; }
+
+/* riepilogo materia */
+.summary { background: var(--surface); border-radius: 24px; box-shadow: 0 3px 0 var(--shadow); padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+.summary-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.big { font-family: var(--f-display); font-size: 2.5rem; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; color: var(--accent); }
+.kpis { display: flex; gap: 20px; flex-wrap: wrap; }
+.kpi { display: flex; flex-direction: column; }
+.kpi b { font-family: var(--f-display); font-weight: 600; font-size: 1.2rem; font-variant-numeric: tabular-nums; }
+.kpi span { font-size: 0.76rem; font-weight: 700; color: var(--muted); }
+
+/* modalità */
+.modes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.modes.three { grid-template-columns: repeat(3, 1fr); }
+.mode { display: flex; flex-direction: column; gap: 4px; padding: 16px; border: 0; border-radius: 20px; background: var(--surface); box-shadow: 0 3px 0 var(--shadow); text-align: left; cursor: pointer; min-width: 0; transition: transform .12s ease, box-shadow .12s ease; }
+.mode:hover:not(:disabled) { background: var(--accent-soft); box-shadow: 0 3px 0 #b5dccd; }
+.mode:active:not(:disabled) { transform: translateY(2px); box-shadow: 0 1px 0 var(--shadow); }
+.mode:disabled { cursor: default; color: var(--muted); background: var(--soft); box-shadow: inset 0 0 0 2px var(--line); }
+.mode .mt { font-family: var(--f-display); font-weight: 600; font-size: 1.05rem; }
+.mode .md { font-size: 0.85rem; color: var(--muted); }
+.mode .mc { margin-top: 6px; align-self: flex-start; padding: 3px 10px; border-radius: 999px; background: var(--accent-soft); font-size: 0.78rem; font-weight: 800; color: var(--accent); }
+.mode:disabled .mc { background: var(--todo); color: var(--muted); }
+
+.empty { border: 2px dashed var(--line-strong); border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 6px; background: var(--soft); }
+.chnav { display: flex; justify-content: space-between; gap: 12px; }
+.chnav .secondary { font-size: 0.95rem; padding: 10px 16px; }
+
+.back { align-self: flex-start; background: none; border: 0; padding: 4px 0; color: var(--accent); cursor: pointer; font-size: 0.95rem; font-weight: 800; }
+.back:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* scelta numero domande */
+.seg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 5px; border-radius: 16px; background: var(--soft); box-shadow: inset 0 0 0 2px var(--line); width: 100%; max-width: 360px; }
+.seg button { padding: 10px 0; background: transparent; border: 0; border-radius: 12px; cursor: pointer; font-family: var(--f-display); font-weight: 600; font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); box-shadow: 0 3px 0 var(--accent-dark); }
+.card { background: var(--surface); border-radius: 22px; box-shadow: 0 3px 0 var(--shadow); padding: 18px; display: flex; flex-direction: column; gap: 12px; }
+
+.primary { font-family: var(--f-display); font-weight: 600; font-size: 1.07rem; min-height: 50px; padding: 12px 22px; border-radius: 18px; border: 0; background: var(--accent); color: var(--on-accent); box-shadow: 0 4px 0 var(--accent-dark); cursor: pointer; transition: transform .1s ease, box-shadow .1s ease; }
+.primary:hover:not(:disabled) { filter: brightness(1.07); }
+.primary:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 var(--accent-dark); }
+.primary:disabled { opacity: 0.45; cursor: default; }
+.secondary { font-family: var(--f-display); font-weight: 600; font-size: 1.07rem; min-height: 50px; padding: 12px 22px; border-radius: 18px; border: 0; background: var(--surface); box-shadow: 0 3px 0 var(--shadow); cursor: pointer; }
+.secondary:hover { background: var(--soft); }
+.secondary:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--shadow); }
+.link { background: none; border: 0; padding: 0; color: var(--muted); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 0.875rem; align-self: flex-start; }
+.link:hover { color: var(--ink); }
+.danger { color: var(--err); box-shadow: 0 3px 0 #f3c6c8; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+.row > * { flex: 1 1 180px; }
+.confirm { display: flex; flex-direction: column; gap: 10px; padding: 16px; border-radius: 20px; background: var(--err-soft); }
+
+/* quiz */
+.qhead { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.qprog { height: 10px; background: var(--todo); border-radius: 999px; overflow: hidden; }
+.qprog span { display: block; height: 100%; background: var(--accent); border-radius: 999px; transition: width .25s ease; }
+.qmeta { display: flex; justify-content: space-between; gap: 12px; font-size: 0.85rem; font-weight: 700; color: var(--muted); }
+.qmeta span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.qtext { font-family: var(--f-display); font-size: 1.3rem; line-height: 1.4; font-weight: 500; }
+.opts { display: flex; flex-direction: column; gap: 10px; }
+.opt { display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start; width: 100%; text-align: left; padding: 12px 14px; border: 0; border-radius: 18px; background: var(--surface); box-shadow: 0 3px 0 var(--shadow); cursor: pointer; transition: transform .1s ease, box-shadow .1s ease; }
+.opt:hover:not(:disabled) { background: var(--accent-soft); }
+.opt:active:not(:disabled) { transform: translateY(2px); box-shadow: 0 1px 0 var(--shadow); }
+.opt:disabled { cursor: default; }
+.opt > span:last-child { min-width: 0; padding-top: 4px; }
+.key { width: 34px; height: 34px; border-radius: 11px; background: var(--soft); box-shadow: inset 0 0 0 2px var(--line); display: grid; place-items: center; font-family: var(--f-display); font-weight: 600; font-size: 1rem; color: var(--muted); }
+.opt.right { background: var(--done-soft); box-shadow: 0 3px 0 #b4dfc6; }
+.opt.right .key { background: var(--done); box-shadow: none; color: var(--on-accent); }
+.opt.wrong { background: var(--err-soft); box-shadow: 0 3px 0 #f3c6c8; }
+.opt.wrong .key { background: var(--err); box-shadow: none; color: var(--on-accent); }
+.opt.dim { color: var(--muted); }
+.feedback { padding: 14px 16px; border-radius: 18px; display: flex; flex-direction: column; gap: 4px; }
+.feedback.ok { background: var(--done-soft); }
+.feedback.ko { background: var(--err-soft); }
+.feedback strong { font-family: var(--f-display); font-weight: 600; font-size: 1.05rem; }
+.feedback.ok strong { color: #1d7a4f; }
+.feedback.ko strong { color: #c2343a; }
+.dock { position: fixed; left: 0; right: 0; bottom: 0; background: var(--bg); padding-top: 12px; padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px)); box-shadow: 0 -1px 0 var(--line); }
+.dock .wrap { display: flex; justify-content: flex-end; }
+.dock .primary { width: 100%; max-width: 320px; }
+
+/* risultati */
+.result { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.result-hero { display: flex; align-items: center; gap: 14px; }
+.result-hero svg { flex: none; }
+.review { display: flex; flex-direction: column; gap: 10px; }
+.ritem { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 18px; background: var(--surface); box-shadow: 0 3px 0 var(--shadow); }
+.ritem .yours { color: #c2343a; text-decoration: line-through; }
+.ritem .good { color: #1d7a4f; font-weight: 700; }
+.note { font-size: 0.875rem; padding: 12px 14px; border-radius: 16px; background: var(--surface); color: var(--muted); box-shadow: 0 3px 0 var(--shadow); }
+
+@media (max-width: 520px) {
+  .modes, .modes.three { grid-template-columns: 1fr; }
+  h1 { font-size: 1.6rem; }
+  .sync span { display: none; }
+  .sync { padding: 8px; }
+  .hero svg { width: 86px; height: 80px; }
+}
+@media (prefers-reduced-motion: reduce) { .qprog span, .item, .mode, .primary, .opt { transition: none; } }
+
+body { margin: 0; }
+/* account e login */
+.acct { display: flex; align-items: center; gap: 8px; }
+.out { background: var(--surface); border: 0; border-radius: 999px; padding: 6px 12px; font-size: 0.8rem; font-weight: 800; color: var(--accent); cursor: pointer; box-shadow: 0 2px 0 var(--shadow); white-space: nowrap; }
+.out:hover { background: var(--soft); }
+.auth { gap: 14px; }
+.wide { width: 100%; }
+.or { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; }
+.or::before, .or::after { content: ""; flex: 1; height: 2px; background: var(--line); }
+.eform { display: flex; flex-direction: column; gap: 10px; }
+.eform label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; font-weight: 800; color: var(--muted); }
+.eform input { font: inherit; font-size: 16px; color: var(--ink); padding: 12px 14px; min-height: 48px; border-radius: 14px; border: 0; background: var(--soft); box-shadow: inset 0 0 0 2px var(--line-strong); }
+.eform input:focus { outline: 3px solid var(--accent); outline-offset: 1px; }
+.aerr, .amsg { font-size: 0.9rem; font-weight: 700; padding: 10px 12px; border-radius: 12px; }
+.aerr { color: #c2343a; background: var(--err-soft); }
+.amsg { color: #1d7a4f; background: var(--done-soft); }
+.alinks { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <button class="brand" id="brand" type="button"><span class="brand-mark">LL</span><span class="brand-name">La Logopedia di Luca</span></button>
+    <div class="acct" id="acct"></div>
+  </div>
+</header>
+<main id="app" class="wrap" aria-live="polite"></main>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+import { FIREBASE_CONFIG } from "./config.js";
+
+const CONFIG_OK = !!(FIREBASE_CONFIG && FIREBASE_CONFIG.apiKey && FIREBASE_CONFIG.projectId);
+let auth = null, fdb = null;
+if (CONFIG_OK) { const fapp = initializeApp(FIREBASE_CONFIG); auth = getAuth(fapp); auth.languageCode = "it"; fdb = getFirestore(fapp); }
+const gProvider = new GoogleAuthProvider();
+gProvider.setCustomParameters({ prompt: "select_account" });
+
+(function () {
+  const SUBJECTS = [
+    { id: "anatomia", nome: "Anatomia" },
+    { id: "biologia", nome: "Biologia" },
+    { id: "biochimica", nome: "Biochimica" },
+    { id: "fisica", nome: "Fisica" },
+    { id: "statistica", nome: "Statistica" }
+  ];
+  const INK = "#1E3A44";
+  const ICONS = {
+    anatomia: { bg: "#FFE3DF", svg: `<path d="M16 9 v-5 M24 9 v-5" stroke="${INK}" stroke-width="2.5" stroke-linecap="round"/><path d="M20 35 C8 27 4 20 4 15 a8 8 0 0 1 16 -3 a8 8 0 0 1 16 3 c0 5 -4 12 -16 20z" fill="#F07A7A" stroke="${INK}" stroke-width="2.5" stroke-linejoin="round"/>` },
+    biologia: { bg: "#DDF5EC", svg: `<ellipse cx="20" cy="20" rx="16" ry="13" fill="#9FE0C9" stroke="${INK}" stroke-width="2.5"/><circle cx="22" cy="19" r="5.5" fill="#8C84E6" stroke="${INK}" stroke-width="2"/><circle cx="11" cy="23" r="2" fill="${INK}"/><circle cx="29" cy="27" r="1.6" fill="${INK}"/>` },
+    biochimica: { bg: "#FFF3CC", svg: `<path d="M20 7 l11 6 v13 l-11 6 l-11 -6 v-13z" fill="#FFE08A" stroke="${INK}" stroke-width="2.5" stroke-linejoin="round"/><circle cx="20" cy="7" r="3.6" fill="#F07A7A" stroke="${INK}" stroke-width="2"/><circle cx="31" cy="26" r="3.6" fill="#8C84E6" stroke="${INK}" stroke-width="2"/><circle cx="9" cy="26" r="3.6" fill="#9FE0C9" stroke="${INK}" stroke-width="2"/>` },
+    fisica: { bg: "#ECEAFD", svg: `<ellipse cx="20" cy="20" rx="16" ry="6.5" fill="none" stroke="${INK}" stroke-width="2.5"/><ellipse cx="20" cy="20" rx="16" ry="6.5" fill="none" stroke="#6C63D9" stroke-width="2.5" transform="rotate(60 20 20)"/><ellipse cx="20" cy="20" rx="16" ry="6.5" fill="none" stroke="#2E9E6A" stroke-width="2.5" transform="rotate(-60 20 20)"/><circle cx="20" cy="20" r="4.5" fill="#F07A7A" stroke="${INK}" stroke-width="2"/>` },
+    statistica: { bg: "#E1F0F6", svg: `<path d="M4 35 h32" stroke="${INK}" stroke-width="2.5" stroke-linecap="round"/><rect x="7" y="22" width="7" height="13" rx="2" fill="#9FE0C9" stroke="${INK}" stroke-width="2"/><rect x="17" y="9" width="7" height="26" rx="2" fill="#C9C3F5" stroke="${INK}" stroke-width="2"/><rect x="27" y="16" width="7" height="19" rx="2" fill="#FFE08A" stroke="${INK}" stroke-width="2"/>` }
+  };
+  const icon = (id, lg) => ICONS[id] ? `<span class="ico${lg ? " lg" : ""}" style="background:${ICONS[id].bg}"><svg viewBox="0 0 40 40" aria-hidden="true">${ICONS[id].svg}</svg></span>` : "";
+  // mascotte: fumetto sorridente con lo specchietto frontale; mood "ok" | "ko" cambia la bocca
+  function mascot(w, mood) {
+    const mouth = mood === "ko"
+      ? `<path d="M51 70 q9 -8 18 0" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round"/>`
+      : `<path d="M50 65 q10 11 20 0" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round"/>`;
+    return `<svg width="${w}" height="${Math.round(w * 110 / 120)}" viewBox="0 0 120 110" role="img" aria-label="Mascotte del sito: un fumetto sorridente con lo specchietto frontale da medico">
+      <path d="M20 22 h80 a16 16 0 0 1 16 16 v36 a16 16 0 0 1 -16 16 h-46 l-18 16 v-16 h-16 a16 16 0 0 1 -16 -16 v-36 a16 16 0 0 1 16 -16z" fill="#FFFFFF" stroke="${INK}" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M22 30 q38 -16 76 0" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="60" cy="17" r="12" fill="#C9C3F5" stroke="${INK}" stroke-width="4"/><circle cx="60" cy="17" r="4" fill="#FFFFFF"/>
+      <circle cx="46" cy="52" r="5" fill="${INK}"/><circle cx="74" cy="52" r="5" fill="${INK}"/>
+      <circle cx="35" cy="64" r="6" fill="#FFB59A"/><circle cx="85" cy="64" r="6" fill="#FFB59A"/>${mouth}</svg>`;
+  }
+  const DEMO = { materia: "demo", nome: "Quiz di esempio", lezioni: [{ n: 0, titolo: "Domande di esempio", domande: [
+    { d: "Quale organulo cellulare è la sede principale della produzione di ATP?", o: ["Mitocondrio", "Apparato di Golgi", "Lisosoma", "Reticolo endoplasmatico liscio"], c: 0, s: "Domanda di esempio: le domande vere arriveranno dalle tue sbobine." },
+    { d: "Nel Sistema Internazionale, qual è l'unità di misura della forza?", o: ["Joule", "Newton", "Pascal", "Watt"], c: 1 },
+    { d: "Quale osso forma la parte superiore del braccio?", o: ["Radio", "Ulna", "Omero", "Clavicola"], c: 2 },
+    { d: "In una distribuzione normale, circa quale percentuale dei valori cade entro una deviazione standard dalla media?", o: ["50%", "68%", "95%", "99,7%"], c: 1 },
+    { d: "Quale legame unisce gli amminoacidi in una proteina?", o: ["Legame glicosidico", "Legame fosfodiesterico", "Legame peptidico", "Legame idrogeno"], c: 2 }
+  ] }] };
+  const MODES = {
+    lezione: "Quiz del capitolo",
+    "lez-nuove": "Capitolo · solo domande nuove",
+    "lez-errori": "Capitolo · ripasso errori",
+    generale: "Quiz generale",
+    nuove: "Quiz generale · solo domande nuove",
+    errori: "Ripasso errori",
+    rifai: "Ripeti gli errori del quiz",
+    demo: "Quiz di esempio"
+  };
+  const COUNTS = [10, 25, 50];
+  const LS_KEY = "bancaquiz.progressi.v1";
+  const LETTERS = ["A", "B", "C", "D", "E", "F"];
+
+  const S = { auth: "loading", authMode: "login", authErr: "", authMsg: "", authEmail: "", data: {}, prog: {}, store: "cloud", view: { name: "home" }, quiz: null, count: 25, confirmReset: false };
+  SUBJECTS.forEach(s => { S.data[s.id] = { materia: s.id, nome: s.nome, lezioni: [] }; S.prog[s.id] = {}; });
+
+  const app = document.getElementById("app");
+  const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+  const pad = n => String(n).padStart(2, "0");
+  const subj = id => id === "demo" ? { id: "demo", nome: "Quiz di esempio" } : SUBJECTS.find(s => s.id === id);
+  const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const plural = (n, a, b) => n + " " + (n === 1 ? a : b);
+
+  // ---------- domande ----------
+  function allQuestions(m) {
+    const file = m === "demo" ? DEMO : S.data[m];
+    const out = [];
+    (file.lezioni || []).forEach(l => (l.domande || []).forEach((q, i) => {
+      out.push({ key: q.id || ("L" + pad(l.n) + "-" + pad(i + 1)), n: l.n, titolo: l.titolo, q });
+    }));
+    return out;
+  }
+  function stats(m, lessonN) {
+    let list = allQuestions(m);
+    if (lessonN != null) list = list.filter(x => x.n === lessonN);
+    const p = S.prog[m] || {};
+    let fatte = 0, errori = 0;
+    list.forEach(x => { const e = p[x.key]; if (e && e.s > 0) fatte++; if (e && e.w) errori++; });
+    return { tot: list.length, fatte, nuove: list.length - fatte, errori, corrette: fatte - errori };
+  }
+  const isChapterMode = mode => mode === "lezione" || mode === "lez-nuove" || mode === "lez-errori";
+  function pool(v) {
+    const p = S.prog[v.materia] || {};
+    let list = allQuestions(v.materia);
+    if (isChapterMode(v.mode)) list = list.filter(x => x.n === v.lesson);
+    if (v.mode === "nuove" || v.mode === "lez-nuove") list = list.filter(x => !(p[x.key] && p[x.key].s > 0));
+    if (v.mode === "errori" || v.mode === "lez-errori") list = list.filter(x => p[x.key] && p[x.key].w);
+    return list;
+  }
+  async function loadQuestions() {
+    await Promise.all(SUBJECTS.map(async s => {
+      try {
+        const r = await fetch("domande/" + s.id + ".json", { cache: "no-store" });
+        if (r.ok) { const j = await r.json(); if (j && Array.isArray(j.lezioni)) { j.lezioni.sort((a, b) => a.n - b.n); S.data[s.id] = j; } }
+      } catch (e) {}
+    }));
+  }
+
+  // ---------- progressi ----------
+  // progressi locali separati per persona: con accesso la chiave include l'id di chi guarda
+  const lsKey = () => uid ? LS_KEY + "." + uid : LS_KEY;
+  function readLocal() {
+    try { const raw = localStorage.getItem(lsKey()); if (raw) { const j = JSON.parse(raw); SUBJECTS.forEach(s => { if (j[s.id]) S.prog[s.id] = j[s.id]; }); } } catch (e) {}
+  }
+  function writeLocal() { try { localStorage.setItem(lsKey(), JSON.stringify(S.prog)); } catch (e) {} }
+  let uid = null, user = null, saveTimer = null;
+  const pending = new Set(), writing = new Set();
+  const progDoc = m => doc(fdb, "utenti", uid, "progressi", m);
+  function scheduleSave(m) {
+    writeLocal();
+    if (!uid || S.auth !== "in" || m === "demo") return;
+    pending.add(m);
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(flush, 1500);
+  }
+  async function flush() {
+    if (!uid || S.auth !== "in") return;
+    const who = uid;
+    for (const m of Array.from(pending)) {
+      if (writing.has(m)) continue;
+      pending.delete(m); writing.add(m);
+      try { await setDoc(progDoc(m), { q: S.prog[m], agg: Date.now() }); if (who === uid) S.store = "cloud"; }
+      catch (e) { if (!(e && e.code === "permission-denied")) pending.add(m); S.store = "retry"; }
+      finally { writing.delete(m); }
+    }
+    paintAcct();
+    if (pending.size) { clearTimeout(saveTimer); saveTimer = setTimeout(flush, 5000); }
+  }
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") flush(); });
+
+  // ---------- accesso ----------
+  async function handleUser(u) {
+    user = u; pending.clear(); clearTimeout(saveTimer);
+    SUBJECTS.forEach(s => { S.prog[s.id] = {}; });
+    S.authErr = ""; S.authMsg = "";
+    if (!u) { uid = null; S.auth = "out"; paintAcct(); render(); return; }
+    const isPassword = u.providerData.some(p => p.providerId === "password");
+    if (isPassword && !u.emailVerified) { uid = null; S.auth = "verify"; paintAcct(); render(); return; }
+    uid = u.uid; S.auth = "loading"; paintAcct(); render();
+    readLocal();
+    try {
+      await Promise.all(SUBJECTS.map(async s => {
+        const snap = await getDoc(progDoc(s.id));
+        if (snap.exists()) S.prog[s.id] = (snap.data() || {}).q || {};
+        else if (Object.keys(S.prog[s.id]).length) pending.add(s.id);
+      }));
+      S.auth = "in"; S.store = "cloud"; writeLocal();
+      if (pending.size) flush();
+    } catch (e) {
+      if (e && e.code === "permission-denied") { S.auth = "denied"; SUBJECTS.forEach(s => { S.prog[s.id] = {}; }); }
+      else { S.auth = "in"; S.store = "retry"; }
+    }
+    if (u !== user) return;
+    paintAcct(); render();
+  }
+  const AUTH_ERR = {
+    "auth/invalid-email": "L'indirizzo email non è valido.",
+    "auth/invalid-credential": "Email o password non corretti.",
+    "auth/wrong-password": "Email o password non corretti.",
+    "auth/user-not-found": "Email o password non corretti.",
+    "auth/missing-password": "Inserisci la password.",
+    "auth/email-already-in-use": "Esiste già un account con questa email: usa «Accedi», oppure «Continua con Google» se lo hai creato così.",
+    "auth/weak-password": "La password deve avere almeno 6 caratteri.",
+    "auth/too-many-requests": "Troppi tentativi: riprova tra qualche minuto.",
+    "auth/network-request-failed": "Connessione assente: controlla la rete e riprova.",
+    "auth/unauthorized-domain": "Questo indirizzo del sito non è ancora tra i domini autorizzati di Firebase.",
+    "auth/operation-not-allowed": "Questo metodo di accesso non è attivo nel progetto Firebase.",
+    "auth/account-exists-with-different-credential": "Esiste già un account con questa email creato con un altro metodo di accesso."
+  };
+  const authMsg = e => AUTH_ERR[e && e.code] || "Accesso non riuscito. Riprova." + (e && e.code ? " (" + e.code + ")" : "");
+  async function gLogin() {
+    S.authErr = ""; S.authMsg = "";
+    try { await signInWithPopup(auth, gProvider); }
+    catch (e) {
+      const c = e && e.code;
+      if (c === "auth/popup-blocked" || c === "auth/operation-not-supported-in-this-environment") { try { await signInWithRedirect(auth, gProvider); } catch (e2) { S.authErr = authMsg(e2); render(); } }
+      else if (c !== "auth/popup-closed-by-user" && c !== "auth/cancelled-popup-request") { S.authErr = authMsg(e); render(); }
+    }
+  }
+  async function emailSubmit(form) {
+    const f = new FormData(form);
+    const email = String(f.get("email") || "").trim(), pw = String(f.get("pw") || "");
+    S.authEmail = email; S.authErr = ""; S.authMsg = "";
+    if (!email || !pw) { S.authErr = "Inserisci email e password."; render(); return; }
+    try {
+      if (S.authMode === "signup") {
+        if (pw !== String(f.get("pw2") || "")) { S.authErr = "Le due password non coincidono."; render(); return; }
+        const cred = await createUserWithEmailAndPassword(auth, email, pw);
+        await sendEmailVerification(cred.user);
+      } else {
+        await signInWithEmailAndPassword(auth, email, pw);
+      }
+    } catch (e) { S.authErr = authMsg(e); render(); }
+  }
+  async function resetPw() {
+    const el = document.querySelector('#eform [name="email"]');
+    const email = el ? el.value.trim() : "";
+    S.authEmail = email; S.authErr = ""; S.authMsg = "";
+    if (!email) { S.authErr = "Scrivi prima la tua email nel campo qui sopra."; render(); return; }
+    try { await sendPasswordResetEmail(auth, email); S.authMsg = "Se l'email è registrata, ti abbiamo inviato un link per reimpostare la password (controlla anche lo spam)."; }
+    catch (e) { S.authErr = authMsg(e); }
+    render();
+  }
+  async function verifyCheck() {
+    S.authErr = ""; S.authMsg = "";
+    try {
+      await auth.currentUser.reload();
+      if (auth.currentUser.emailVerified) { await auth.currentUser.getIdToken(true); await handleUser(auth.currentUser); return; }
+      S.authErr = "L'email non risulta ancora confermata: apri il link che ti abbiamo inviato e poi riprova.";
+    } catch (e) { S.authErr = authMsg(e); }
+    render();
+  }
+  async function verifyResend() {
+    S.authErr = ""; S.authMsg = "";
+    try { await sendEmailVerification(auth.currentUser); S.authMsg = "Email di conferma inviata di nuovo (controlla anche lo spam)."; }
+    catch (e) { S.authErr = authMsg(e); }
+    render();
+  }
+  async function logout() {
+    try { await flush(); } catch (e) {}
+    S.view = { name: "home" }; S.quiz = null; S.authMode = "login";
+    try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+    await signOut(auth);
+  }
+  function paintAcct() {
+    const el = document.getElementById("acct");
+    if (!user) { el.innerHTML = ""; return; }
+    const st = S.auth !== "in" ? ""
+      : S.store === "retry" ? `<span class="sync" data-s="local"><i></i><span>Salvataggio in attesa…</span></span>`
+      : `<span class="sync" data-s="cloud"><i></i><span>Progressi salvati</span></span>`;
+    el.innerHTML = st + `<button class="out" data-a="logout" type="button" title="${esc(user.email || "")}">Esci</button>`;
+  }
+  document.getElementById("acct").addEventListener("click", ev => { if (ev.target.closest('[data-a="logout"]')) logout(); });
+
+  function record(m, key, ok) {
+    if (m === "demo") return;
+    const p = S.prog[m];
+    const e = p[key] || { s: 0, c: 0, w: 0 };
+    e.s += 1; if (ok) e.c += 1; e.w = ok ? 0 : 1;
+    p[key] = e;
+    scheduleSave(m);
+  }
+
+  // ---------- azioni ----------
+  function go(view) {
+    S.view = view; S.confirmReset = false;
+    try {
+      if (view.name === "subject" || view.name === "lessons") history.replaceState(null, "", "#" + view.materia);
+      if (view.name === "chapter") history.replaceState(null, "", "#" + view.materia + "-" + view.lesson);
+      if (view.name === "home") history.replaceState(null, "", location.pathname + location.search);
+    } catch (e) {}
+    render(); window.scrollTo(0, 0);
+  }
+  function startQuiz(v, items) {
+    const list = shuffle(items).slice(0, v.count === "all" ? items.length : v.count).map(x => ({ ...x, order: shuffle(x.q.o.map((_, i) => i)), pick: null }));
+    if (!list.length) return;
+    S.quiz = { materia: v.materia, mode: v.mode, lesson: v.lesson, items: list, i: 0 };
+    S.view = { name: "quiz" };
+    render(); window.scrollTo(0, 0);
+  }
+  function answer(k) {
+    const it = S.quiz.items[S.quiz.i];
+    if (it.pick !== null) return;
+    it.pick = it.order[k];
+    record(S.quiz.materia, it.key, it.pick === it.q.c);
+    render();
+  }
+  function next() {
+    const Q = S.quiz;
+    if (Q.i < Q.items.length - 1) { Q.i++; render(); window.scrollTo(0, 0); } else finish();
+  }
+  function finish() { flush(); S.view = { name: "results" }; render(); window.scrollTo(0, 0); }
+  const backFromQuiz = () => go(S.quiz.materia === "demo" ? { name: "home" }
+    : S.quiz.lesson != null ? { name: "chapter", materia: S.quiz.materia, lesson: S.quiz.lesson }
+    : { name: "subject", materia: S.quiz.materia });
+
+  document.getElementById("brand").addEventListener("click", () => go({ name: "home" }));
+  app.addEventListener("click", ev => {
+    const b = ev.target.closest("[data-a]");
+    if (!b || b.disabled) return;
+    const a = b.dataset.a, m = b.dataset.m;
+    if (a === "g-login") gLogin();
+    else if (a === "auth-mode") { S.authMode = S.authMode === "signup" ? "login" : "signup"; S.authErr = ""; S.authMsg = ""; const el = document.querySelector('#eform [name="email"]'); if (el) S.authEmail = el.value.trim(); render(); }
+    else if (a === "reset-pw") resetPw();
+    else if (a === "verify-check") verifyCheck();
+    else if (a === "verify-resend") verifyResend();
+    else if (a === "logout") logout();
+    else if (a === "home") go({ name: "home" });
+    else if (a === "subject") go({ name: "subject", materia: m });
+    else if (a === "lessons") go({ name: "lessons", materia: m });
+    else if (a === "chapter") go({ name: "chapter", materia: m, lesson: Number(b.dataset.l) });
+    else if (a === "setup") go({ name: "setup", materia: m, mode: b.dataset.mode, lesson: b.dataset.l != null ? Number(b.dataset.l) : null });
+    else if (a === "count") { S.count = Number(b.dataset.c); render(); }
+    else if (a === "start") { const v = { ...S.view, count: S.count }; startQuiz(v, pool(v)); }
+    else if (a === "demo") startQuiz({ materia: "demo", mode: "demo", count: "all" }, allQuestions("demo"));
+    else if (a === "opt") answer(Number(b.dataset.i));
+    else if (a === "next") next();
+    else if (a === "quit") { if (S.quiz.items.some(x => x.pick !== null)) finish(); else backFromQuiz(); }
+    else if (a === "retry") { const wrong = S.quiz.items.filter(x => x.pick !== null && x.pick !== x.q.c); startQuiz({ materia: S.quiz.materia, mode: "rifai", lesson: S.quiz.lesson, count: "all" }, wrong); }
+    else if (a === "back-subject") backFromQuiz();
+    else if (a === "ask-reset") { S.confirmReset = true; render(); }
+    else if (a === "cancel-reset") { S.confirmReset = false; render(); }
+    else if (a === "do-reset") { S.prog[m] = {}; scheduleSave(m); flush(); S.confirmReset = false; render(); }
+  });
+
+  app.addEventListener("submit", ev => { if (ev.target.id === "eform") { ev.preventDefault(); emailSubmit(ev.target); } });
+
+  // ---------- componenti ----------
+  function pcts(t) {
+    if (!t.tot) return { g: 0, r: 0, n: 100, studiato: 0 };
+    const g = t.corrette / t.tot * 100, r = t.errori / t.tot * 100;
+    return { g, r, n: 100 - g - r, studiato: Math.round(t.fatte / t.tot * 100) };
+  }
+  const fmt = x => Math.round(x) + "%";
+  function sbar(t, big) {
+    const p = pcts(t);
+    return `<div class="sbar${big ? " lg" : ""}" role="img" aria-label="Corrette ${fmt(p.g)}, errori ${fmt(p.r)}, da fare ${fmt(p.n)}">
+      <span class="g" style="width:${p.g}%"></span><span class="r" style="width:${p.r}%"></span></div>`;
+  }
+  function legend(t) {
+    const p = pcts(t);
+    return `<div class="legend">
+      <span><i class="g"></i>Fatte <b>${fmt(p.g)}</b></span>
+      <span><i class="r"></i>Errori <b>${fmt(p.r)}</b></span>
+      <span><i class="n"></i>Da fare <b>${fmt(p.n)}</b></span></div>`;
+  }
+
+  // ---------- viste ----------
+  function vHome() {
+    const rows = SUBJECTS.map(s => {
+      const t = stats(s.id), L = S.data[s.id].lezioni.length, p = pcts(t);
+      const info = L ? plural(L, "capitolo", "capitoli") + " · " + plural(t.tot, "domanda", "domande") : "Nessun capitolo caricato";
+      return `<button class="item" data-a="subject" data-m="${s.id}">
+        <div class="item-top">${icon(s.id)}<div><span class="item-name">${s.nome}</span><span class="muted small">${info}</span></div>
+          <span class="pct">${p.studiato}%<small>studiato</small></span></div>
+        ${sbar(t)}${t.tot ? legend(t) : ""}
+      </button>`;
+    }).join("");
+    return `<div class="hero">${mascot(104)}<div><span class="eyebrow">Giro visite di oggi</span>
+        <span class="ht">Quale materia visitiamo?</span>
+        <p>Verde: domande fatte. Rosso: errori da ripassare. Grigio: domande da fare.</p></div></div>
+      <div class="sec-title"><h1>Le tue materie</h1><span class="muted small">${plural(SUBJECTS.length, "materia", "materie")}</span></div>
+      <div class="list">${rows}</div>
+      <div class="note">Vuoi vedere come funziona un quiz prima di caricare le domande? <button class="link" data-a="demo" style="display:inline">Prova un quiz di esempio</button> (5 domande, non salvate).</div>`;
+  }
+
+  function vSubject(m) {
+    const s = subj(m), t = stats(m), lez = S.data[m].lezioni, p = pcts(t);
+    const head = `<button class="back" data-a="home">‹ Tutte le materie</button>
+      <div class="subj-head">${icon(m, true)}<div class="head"><span class="eyebrow">Materia</span><h1>${s.nome}</h1></div></div>`;
+    if (!lez.length) {
+      return head + `<div class="empty"><h3>Nessun capitolo caricato</h3>
+        <p class="muted small">Manda a Claude la sbobina di un capitolo di ${s.nome} e chiedi di aggiungere le domande al sito. I capitoli compariranno qui con il loro avanzamento.</p></div>
+        <section><div class="sec-title"><h2>Esercitati</h2></div><div class="modes">${modeBtns(m, t, true)}</div></section>`;
+    }
+    const chapters = lez.map(l => {
+      const tl = stats(m, l.n), pl = pcts(tl);
+      return `<button class="item" data-a="chapter" data-m="${m}" data-l="${l.n}">
+        <div class="item-top"><div><span class="eyebrow">Capitolo ${l.n}</span><span class="item-name">${esc(l.titolo || "Capitolo " + l.n)}</span></div>
+          <span class="pct">${pl.studiato}%<small>studiato</small></span></div>
+        ${sbar(tl)}${legend(tl)}
+      </button>`;
+    }).join("");
+    const reset = S.confirmReset
+      ? `<div class="confirm"><strong>Azzerare i progressi di ${s.nome}?</strong><p class="small">Domande fatte ed errori di questa materia tornano a zero. Le domande restano.</p>
+          <div class="row"><button class="secondary" data-a="cancel-reset">Annulla</button><button class="secondary danger" data-a="do-reset" data-m="${m}">Azzera progressi</button></div></div>`
+      : `<button class="link" data-a="ask-reset">Azzera i progressi di ${s.nome}</button>`;
+    return head + `<div class="summary">
+        <div class="summary-top">
+          <div><span class="eyebrow">Studiato</span><div class="big">${p.studiato}%</div></div>
+          <div class="kpis">
+            <div class="kpi"><b>${t.tot}</b><span>domande</span></div>
+            <div class="kpi"><b>${t.fatte}</b><span>fatte</span></div>
+            <div class="kpi"><b style="color:var(--err)">${t.errori}</b><span>errori</span></div>
+            <div class="kpi"><b>${t.nuove}</b><span>da fare</span></div>
+          </div>
+        </div>
+        ${sbar(t, true)}${legend(t)}
+      </div>
+      <section><div class="sec-title"><h2>Esercitati</h2></div><div class="modes">${modeBtns(m, t, false)}</div></section>
+      <section><div class="sec-title"><h2>Avanzamento per capitolo</h2><span class="muted small">Tocca un capitolo per fare il quiz</span></div>
+        <div class="list">${chapters}</div></section>
+      ${reset}`;
+  }
+  function modeBtns(m, t, empty) {
+    const L = S.data[m].lezioni.length;
+    const b = (a, mode, title, desc, c, dis) =>
+      `<button class="mode" data-a="${a}" data-m="${m}"${mode ? ` data-mode="${mode}"` : ""}${dis ? " disabled" : ""}>
+        <span class="mt">${title}</span><span class="md">${desc}</span><span class="mc">${c}</span></button>`;
+    return b("lessons", "", "Quiz per capitolo", "Un capitolo alla volta: tutte le domande, solo le nuove o gli errori.", plural(L, "capitolo", "capitoli"), empty)
+      + b("setup", "generale", "Quiz generale", "Tutto il programma, comprese le domande già fatte.", plural(t.tot, "domanda", "domande"), empty || !t.tot)
+      + b("setup", "nuove", "Quiz generale · solo nuove", "Tutto il programma, solo domande mai fatte.", plural(t.nuove, "domanda nuova", "domande nuove"), empty || !t.nuove)
+      + b("setup", "errori", "Ripasso errori", "Una risposta corretta toglie la domanda dagli errori.", plural(t.errori, "errore", "errori"), empty || !t.errori);
+  }
+
+  function vLessons(m) {
+    const s = subj(m);
+    const rows = S.data[m].lezioni.map(l => {
+      const tl = stats(m, l.n), pl = pcts(tl);
+      return `<button class="item" data-a="chapter" data-m="${m}" data-l="${l.n}">
+        <div class="item-top"><div><span class="eyebrow">Capitolo ${l.n}</span><span class="item-name">${esc(l.titolo || "Capitolo " + l.n)}</span>
+          <span class="muted small">${plural(tl.tot, "domanda", "domande")}</span></div>
+          <span class="pct">${pl.studiato}%<small>studiato</small></span></div>
+        ${sbar(tl)}
+      </button>`;
+    }).join("");
+    return `<button class="back" data-a="subject" data-m="${m}">‹ ${s.nome}</button>
+      <div class="head"><span class="eyebrow">${s.nome}</span><h1>Quiz per capitolo</h1><p class="muted">Scegli il capitolo su cui esercitarti.</p></div>
+      <div class="list">${rows}</div>`;
+  }
+
+  function vChapter(m, n) {
+    const s = subj(m), lez = S.data[m].lezioni, idx = lez.findIndex(l => l.n === n), l = lez[idx];
+    const back = `<button class="back" data-a="subject" data-m="${m}">‹ ${s.nome}</button>`;
+    if (!l) return back + `<div class="empty"><h3>Capitolo non trovato</h3><p class="muted small">Il capitolo ${esc(n)} di ${s.nome} non è ancora stato caricato.</p></div>`;
+    const t = stats(m, n), p = pcts(t);
+    const b = (mode, title, desc, c, dis) =>
+      `<button class="mode" data-a="setup" data-m="${m}" data-mode="${mode}" data-l="${n}"${dis ? " disabled" : ""}>
+        <span class="mt">${title}</span><span class="md">${desc}</span><span class="mc">${c}</span></button>`;
+    const prev = lez[idx - 1], nxt = lez[idx + 1];
+    const nav = (prev || nxt) ? `<div class="chnav">
+        ${prev ? `<button class="secondary" data-a="chapter" data-m="${m}" data-l="${prev.n}">‹ Capitolo ${prev.n}</button>` : `<span></span>`}
+        ${nxt ? `<button class="secondary" data-a="chapter" data-m="${m}" data-l="${nxt.n}">Capitolo ${nxt.n} ›</button>` : `<span></span>`}
+      </div>` : "";
+    return back + `<div class="subj-head">${icon(m, true)}<div class="head"><span class="eyebrow">${s.nome} · Capitolo ${l.n}</span><h1>${esc(l.titolo || "Capitolo " + l.n)}</h1></div></div>
+      <div class="summary">
+        <div class="summary-top">
+          <div><span class="eyebrow">Studiato</span><div class="big">${p.studiato}%</div></div>
+          <div class="kpis">
+            <div class="kpi"><b>${t.tot}</b><span>domande</span></div>
+            <div class="kpi"><b>${t.fatte}</b><span>fatte</span></div>
+            <div class="kpi"><b style="color:var(--err)">${t.errori}</b><span>errori</span></div>
+            <div class="kpi"><b>${t.nuove}</b><span>da fare</span></div>
+          </div>
+        </div>
+        ${sbar(t, true)}${legend(t)}
+      </div>
+      <section><div class="sec-title"><h2>Quiz su questo capitolo</h2></div>
+        <div class="modes three">
+          ${b("lezione", "Tutto il capitolo", "Tutte le domande del capitolo, comprese quelle già fatte.", plural(t.tot, "domanda", "domande"), !t.tot)}
+          ${b("lez-nuove", "Solo domande nuove", "Le domande del capitolo che non hai ancora fatto.", plural(t.nuove, "domanda nuova", "domande nuove"), !t.nuove)}
+          ${b("lez-errori", "Ripasso errori", "Gli errori di questo capitolo ancora da correggere.", plural(t.errori, "errore", "errori"), !t.errori)}
+        </div></section>
+      ${nav}`;
+  }
+
+  function vSetup(v) {
+    const s = subj(v.materia), avail = pool(v).length;
+    const lez = isChapterMode(v.mode) ? S.data[v.materia].lezioni.find(l => l.n === v.lesson) : null;
+    const sub = lez ? `${s.nome} · Capitolo ${v.lesson}${lez.titolo ? " · " + lez.titolo : ""}` : s.nome;
+    if (!COUNTS.includes(S.count)) S.count = 25;
+    const n = Math.min(S.count, avail);
+    const seg = COUNTS.map(c => `<button data-a="count" data-c="${c}" aria-pressed="${S.count === c}">${c}</button>`).join("");
+    const back = isChapterMode(v.mode)
+      ? `<button class="back" data-a="chapter" data-m="${v.materia}" data-l="${v.lesson}">‹ Capitolo ${v.lesson}</button>`
+      : `<button class="back" data-a="subject" data-m="${v.materia}">‹ ${s.nome}</button>`;
+    return back + `<div class="head"><span class="eyebrow">${esc(sub)}</span><h1>${MODES[v.mode]}</h1></div>
+      <div class="card">
+        <h3>Numero di domande</h3>
+        <div class="seg">${seg}</div>
+        <p class="muted small">${avail < S.count
+          ? `Sono disponibili ${plural(avail, "domanda", "domande")}: il quiz le conterrà tutte.`
+          : `Su ${plural(avail, "domanda disponibile", "domande disponibili")}. Ordine di domande e risposte casuale.`}</p>
+      </div>
+      <div><button class="primary" data-a="start" ${avail ? "" : "disabled"}>Inizia il quiz · ${n} ${n === 1 ? "domanda" : "domande"}</button></div>`;
+  }
+
+  function vQuiz() {
+    const Q = S.quiz, it = Q.items[Q.i], s = subj(Q.materia);
+    const answered = it.pick !== null, ok = answered && it.pick === it.q.c;
+    const opts = it.order.map((orig, k) => {
+      let cls = "opt";
+      if (answered) cls += orig === it.q.c ? " right" : orig === it.pick ? " wrong" : " dim";
+      return `<button class="${cls}" data-a="opt" data-i="${k}" ${answered ? "disabled" : ""}><span class="key">${LETTERS[k]}</span><span>${esc(it.q.o[orig])}</span></button>`;
+    }).join("");
+    const pct = Math.round((Q.i + (answered ? 1 : 0)) / Q.items.length * 100);
+    const where = Q.materia === "demo" ? "Esempio" : `Capitolo ${it.n}${it.titolo ? " · " + esc(it.titolo) : ""}`;
+    const fb = answered ? `<div class="feedback ${ok ? "ok" : "ko"}">
+        <strong>${ok ? "Risposta corretta" : "Risposta errata · la risposta corretta è la " + LETTERS[it.order.indexOf(it.q.c)]}</strong>
+        ${it.q.s ? `<span class="small">${esc(it.q.s)}</span>` : ""}</div>` : "";
+    return `<div class="qhead"><span class="eyebrow">${s.nome} · ${MODES[Q.mode]}</span><button class="link" data-a="quit">Termina quiz</button></div>
+      <div class="qprog" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100"><span style="width:${pct}%"></span></div>
+      <div class="qmeta"><span>${where}</span><span class="num">Domanda ${Q.i + 1} di ${Q.items.length}</span></div>
+      ${Q.materia === "demo" ? `<p class="note">Domande di esempio: le risposte non vengono salvate.</p>` : ""}
+      <p class="qtext">${esc(it.q.d)}</p>
+      <div class="opts">${opts}</div>
+      ${fb}
+      ${answered ? `<div class="dock"><div class="wrap"><button class="primary" data-a="next">${Q.i < Q.items.length - 1 ? "Domanda successiva" : "Vedi il risultato"}</button></div></div>` : ""}`;
+  }
+
+  function vResults() {
+    const Q = S.quiz, s = subj(Q.materia);
+    const done = Q.items.filter(x => x.pick !== null);
+    const right = done.filter(x => x.pick === x.q.c).length;
+    const wrong = done.filter(x => x.pick !== x.q.c);
+    const pct = done.length ? Math.round(right / done.length * 100) : 0;
+    const list = wrong.map(x => `<div class="ritem">
+        <span class="eyebrow">${Q.materia === "demo" ? "Esempio" : "Capitolo " + x.n}</span>
+        <strong style="font-weight:500">${esc(x.q.d)}</strong>
+        <span class="yours small">La tua risposta: ${esc(x.q.o[x.pick])}</span>
+        <span class="good small">Risposta corretta: ${esc(x.q.o[x.q.c])}</span>
+        ${x.q.s ? `<span class="muted small">${esc(x.q.s)}</span>` : ""}
+      </div>`).join("");
+    const t = { tot: done.length, corrette: right, errori: wrong.length, fatte: done.length };
+    const note = Q.materia === "demo" ? "" : (wrong.length ? "Le domande sbagliate sono state aggiunte al Ripasso errori." : "Nessun errore in questo quiz.");
+    return `<div class="head"><span class="eyebrow">${s.nome} · ${MODES[Q.mode]}</span><h1>Risultato</h1></div>
+      <div class="summary">
+        <div class="result">
+          <div class="result-hero">${mascot(76, done.length && pct < 60 ? "ko" : "ok")}<div><span class="eyebrow">Risposte corrette</span><div class="big">${right}/${done.length}</div></div></div>
+          <div class="kpis"><div class="kpi"><b>${pct}%</b><span>corrette</span></div><div class="kpi"><b style="color:var(--err)">${wrong.length}</b><span>errori</span></div></div>
+        </div>
+        ${done.length < Q.items.length ? `<p class="muted small">Quiz terminato a ${done.length} domande su ${Q.items.length}.</p>` : ""}
+        ${note ? `<p class="muted small">${note}</p>` : ""}
+      </div>
+      <div class="row">
+        ${wrong.length ? `<button class="primary" data-a="retry">Ripeti le ${wrong.length} sbagliate</button>` : ""}
+        <button class="secondary" data-a="back-subject">${Q.materia === "demo" ? "Torna alle materie" : Q.lesson != null ? "Torna al capitolo " + Q.lesson : "Torna a " + s.nome}</button>
+      </div>
+      ${wrong.length ? `<section><div class="sec-title"><h2>Domande da rivedere</h2></div><div class="review">${list}</div></section>` : ""}`;
+  }
+
+  function vLogin() {
+    const reg = S.authMode === "signup";
+    return `<div class="hero">${mascot(104)}<div><span class="eyebrow">Area riservata</span>
+        <span class="ht">${reg ? "Crea il tuo account" : "Accedi per fare i quiz"}</span>
+        <p>I progressi si salvano sul tuo account e li ritrovi su ogni dispositivo.</p></div></div>
+      <div class="card auth">
+        <button class="primary wide" data-a="g-login" type="button">Continua con Google</button>
+        <div class="or"><span>oppure con email</span></div>
+        <form id="eform" class="eform" novalidate>
+          <label>Email<input type="email" name="email" autocomplete="email" inputmode="email" value="${esc(S.authEmail)}"></label>
+          <label>Password${reg ? " (almeno 6 caratteri)" : ""}<input type="password" name="pw" autocomplete="${reg ? "new-password" : "current-password"}"></label>
+          ${reg ? `<label>Ripeti la password<input type="password" name="pw2" autocomplete="new-password"></label>` : ""}
+          <button class="secondary" type="submit">${reg ? "Crea account" : "Accedi"}</button>
+        </form>
+        ${S.authErr ? `<p class="aerr">${esc(S.authErr)}</p>` : ""}${S.authMsg ? `<p class="amsg">${esc(S.authMsg)}</p>` : ""}
+        <div class="alinks">
+          <button class="link" data-a="auth-mode" type="button">${reg ? "Hai già un account? Accedi" : "Prima volta con l'email? Crea un account"}</button>
+          ${reg ? "" : `<button class="link" data-a="reset-pw" type="button">Password dimenticata?</button>`}
+        </div>
+      </div>
+      <p class="note">Il sito è riservato: possono entrare solo le email autorizzate.</p>`;
+  }
+  function vVerify() {
+    return `<div class="hero">${mascot(104)}<div><span class="eyebrow">Ultimo passo</span>
+        <span class="ht">Conferma la tua email</span>
+        <p>Abbiamo inviato un link di conferma a <b>${esc(user && user.email)}</b>. Aprilo (controlla anche lo spam), poi torna qui.</p></div></div>
+      <div class="card auth">
+        <button class="primary wide" data-a="verify-check" type="button">Ho confermato l'email</button>
+        ${S.authErr ? `<p class="aerr">${esc(S.authErr)}</p>` : ""}${S.authMsg ? `<p class="amsg">${esc(S.authMsg)}</p>` : ""}
+        <div class="alinks"><button class="link" data-a="verify-resend" type="button">Invia di nuovo l'email</button><button class="link" data-a="logout" type="button">Usa un altro account</button></div>
+      </div>`;
+  }
+  function vDenied() {
+    return `<div class="hero">${mascot(104, "ko")}<div><span class="eyebrow">Accesso non autorizzato</span>
+        <span class="ht">Questa email non è abilitata</span>
+        <p>L'account <b>${esc(user && user.email)}</b> non è tra quelli autorizzati. Chiedi a Luca di aggiungerlo, oppure entra con un'altra email.</p></div></div>
+      <div><button class="secondary" data-a="logout" type="button">Esci e cambia account</button></div>`;
+  }
+  const vLoading = () => `<div class="card"><p class="muted">Caricamento…</p></div>`;
+  const vNoConfig = () => `<div class="empty"><h3>Configurazione mancante</h3><p class="muted small">Inserire i dati del progetto Firebase nel file config.js.</p></div>`;
+
+  function render() {
+    if (S.auth !== "in") {
+      app.innerHTML = S.auth === "out" ? vLogin() : S.auth === "verify" ? vVerify() : S.auth === "denied" ? vDenied() : S.auth === "noconfig" ? vNoConfig() : vLoading();
+      return;
+    }
+    const v = S.view;
+    let html;
+    if (v.name === "subject") html = vSubject(v.materia);
+    else if (v.name === "lessons") html = vLessons(v.materia);
+    else if (v.name === "chapter") html = vChapter(v.materia, v.lesson);
+    else if (v.name === "setup") html = vSetup(v);
+    else if (v.name === "quiz" && S.quiz) html = vQuiz();
+    else if (v.name === "results" && S.quiz) html = vResults();
+    else html = vHome();
+    app.innerHTML = html;
+  }
+
+  // ---------- avvio ----------
+  function start() {
+    const hv = viewFromHash(); if (hv) S.view = hv;
+    if (!CONFIG_OK) { S.auth = "noconfig"; render(); return; }
+    render();
+    loadQuestions().then(render);
+    getRedirectResult(auth).catch(e => { S.authErr = authMsg(e); render(); });
+    onAuthStateChanged(auth, handleUser);
+    window.addEventListener("hashchange", () => {
+      const hv = viewFromHash();
+      if (hv && S.view.name !== "quiz") go(hv);
+    });
+  }
+  function viewFromHash() {
+    const h = (location.hash || "").slice(1);
+    const mm = h.match(/^([a-z]+)(?:-(\d+))?$/);
+    if (!mm || !SUBJECTS.some(s => s.id === mm[1])) return null;
+    return mm[2] ? { name: "chapter", materia: mm[1], lesson: Number(mm[2]) } : { name: "subject", materia: mm[1] };
+  }
+  start();
+})();
+</script>
+</body>
+</html>

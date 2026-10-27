@@ -1,0 +1,452 @@
+{
+ "materia": "biologia",
+ "nome": "Biologia",
+ "lezioni": [
+  {
+   "n": 1,
+   "titolo": "La cellula, i legami chimici e le macromolecole biologiche",
+   "domande": [
+    {
+     "d": "Quale affermazione sulla patologia genetica è corretta?",
+     "o": [
+      "È sempre trasmessa dai genitori ai figli",
+      "È causata da un'alterazione del patrimonio genetico e non è necessariamente ereditaria",
+      "È causata esclusivamente da fattori ambientali",
+      "Colpisce soltanto le cellule germinali"
+     ],
+     "c": 1,
+     "s": "La patologia genetica deriva da un'alterazione di una parte del patrimonio genetico, ma non è necessariamente ereditaria."
+    },
+    {
+     "d": "Quale tra le seguenti affermazioni NON rientra tra i principi della teoria cellulare?",
+     "o": [
+      "Tutti gli organismi sono costituiti da una o più cellule",
+      "La cellula è l'unità di base strutturale e funzionale degli organismi",
+      "Tutte le cellule possiedono un nucleo delimitato da membrana",
+      "Tutte le cellule originano da cellule preesistenti"
+     ],
+     "c": 2,
+     "s": "I tre principi riguardano la costituzione cellulare degli organismi, la cellula come unità di base e l'origine da cellule preesistenti."
+    },
+    {
+     "d": "Quale affermazione descrive correttamente i due tipi di microscopio elettronico?",
+     "o": [
+      "Quello a scansione fornisce un'immagine tridimensionale della superficie; quello a trasmissione mostra in dettaglio il contenuto interno della cellula",
+      "Quello a scansione mostra in dettaglio il contenuto interno; quello a trasmissione fornisce un'immagine tridimensionale della superficie",
+      "Entrambi permettono di osservare soltanto la membrana esterna e il nucleo",
+      "Entrambi consentono di osservare cellule vive senza alcuna preparazione del campione"
+     ],
+     "c": 0,
+     "s": "Il microscopio a scansione esplora la superficie in tre dimensioni; quello a trasmissione, attraversando sezioni ultrasottili, mostra il contenuto della cellula."
+    },
+    {
+     "d": "Qual è la differenza fondamentale tra cellule procariotiche ed eucariotiche?",
+     "o": [
+      "La presenza della membrana cellulare",
+      "L'uso del DNA come materiale genetico",
+      "La capacità di riprodursi",
+      "La compartimentalizzazione"
+     ],
+     "c": 3,
+     "s": "Solo la cellula eucariotica possiede compartimenti specializzati, ciascuno con una funzione precisa."
+    },
+    {
+     "d": "Quali caratteristiche sono comuni a tutte le cellule, procariotiche ed eucariotiche?",
+     "o": [
+      "Nucleo delimitato da membrana e mitocondri",
+      "Membrana cellulare, DNA come materiale genetico e capacità di riprodursi",
+      "Reticolo endoplasmatico liscio e rugoso",
+      "Un citoplasma con numerosi organelli specializzati"
+     ],
+     "c": 1,
+     "s": "L'organizzazione di base è simile in tutte le cellule: membrana, DNA, RNA e proteine come effettori, capacità di riprodursi."
+    },
+    {
+     "d": "Che cosa possiedono le cellule epatiche, intestinali e pancreatiche di uno stesso individuo?",
+     "o": [
+      "Geni diversi a seconda del tessuto",
+      "Soltanto i geni necessari alla propria funzione",
+      "Lo stesso DNA, cioè la stessa informazione genetica e gli stessi geni",
+      "Lo stesso numero di geni ma con sequenze diverse"
+     ],
+     "c": 2,
+     "s": "Le cellule dell'organismo possiedono lo stesso DNA: il gene dell'insulina, ad esempio, è presente in tutte e tre."
+    },
+    {
+     "d": "Perché cellule con lo stesso DNA, come la cellula pancreatica e quella intestinale, svolgono funzioni diverse?",
+     "o": [
+      "Perché la regolazione genica fa esprimere a ciascuna cellula soltanto i geni rilevanti per la sua funzione",
+      "Perché durante il differenziamento ogni cellula perde i geni che non le servono",
+      "Perché ogni tessuto possiede un DNA con una sequenza propria",
+      "Perché solo alcune cellule possiedono il nucleo"
+     ],
+     "c": 0,
+     "s": "Ciò che varia è l'espressione genica: ogni cellula seleziona solo le istruzioni rilevanti del medesimo «manuale»."
+    },
+    {
+     "d": "Che cosa distingue la regolazione genica temporale da quella locale?",
+     "o": [
+      "La temporale accende o spegne un gene in una cellula rispetto a un'altra; la locale lo esprime solo in determinati momenti",
+      "La temporale riguarda solo i procarioti; la locale solo gli eucarioti",
+      "La temporale esprime un gene solo in determinati momenti; la locale lo accende o spegne in una cellula rispetto a un'altra",
+      "La temporale modifica la sequenza del DNA; la locale ne modifica il numero di geni"
+     ],
+     "c": 2,
+     "s": "Esempio di regolazione temporale: la cellula pancreatica regola nel tempo la produzione di insulina."
+    },
+    {
+     "d": "Che cosa accade a una mutazione che colpisce un gene sempre silente in una determinata cellula?",
+     "o": [
+      "Altera necessariamente la funzione della cellula",
+      "Viene eliminata durante la trascrizione",
+      "Determina sempre un fenotipo alterato",
+      "È presente nel DNA ma non si manifesta"
+     ],
+     "c": 3,
+     "s": "Se il gene non viene trascritto e tradotto in quella cellula, la mutazione è rilevabile nel DNA ma non ha effetti."
+    },
+    {
+     "d": "Perché un'alterazione del DNA si manifesta attraverso le proteine?",
+     "o": [
+      "Perché le proteine conservano l'informazione genetica al posto del DNA",
+      "Perché le proteine sono gli effettori molecolari della cellula e derivano dalla trascrizione e traduzione dei geni",
+      "Perché le proteine si formano direttamente dal DNA senza passare per l'RNA",
+      "Perché le proteine modificano direttamente la sequenza del DNA"
+     ],
+     "c": 1,
+     "s": "Un'alterazione del DNA si ripercuote sulla proteina; se questa non funziona, si ha un fenotipo alterato."
+    },
+    {
+     "d": "Quale classificazione dei legami chimici è corretta?",
+     "o": [
+      "Forti: covalente e ionico; deboli: idrogeno e Van der Waals",
+      "Forti: idrogeno e ionico; deboli: covalente e Van der Waals",
+      "Forti: covalente e idrogeno; deboli: ionico e Van der Waals",
+      "Forti: Van der Waals e ionico; deboli: covalente e idrogeno"
+     ],
+     "c": 0,
+     "s": "I legami deboli richiedono meno energia per formarsi e rompersi: quelli di interesse biologico sono il legame idrogeno e le forze di Van der Waals."
+    },
+    {
+     "d": "Perché il legame idrogeno è importante nella doppia elica del DNA?",
+     "o": [
+      "Perché è il legame più forte presente nelle macromolecole",
+      "Perché unisce i nucleotidi con eliminazione di una molecola d'acqua",
+      "Perché non può mai essere rotto, garantendo la stabilità del DNA",
+      "Perché è un legame debole che può essere rotto rapidamente"
+     ],
+     "c": 3,
+     "s": "Il legame idrogeno è debole e si rompe rapidamente, caratteristica cruciale per la dinamica delle macromolecole come il DNA."
+    },
+    {
+     "d": "Come si forma il legame ionico?",
+     "o": [
+      "Per condivisione di una coppia di elettroni tra due atomi",
+      "Per trasferimento completo di elettroni e attrazione tra un catione e un anione",
+      "Per attrazione tra molecole apolari molto vicine",
+      "Per interazione tra un idrogeno legato a un atomo elettronegativo e un accettore"
+     ],
+     "c": 1,
+     "s": "Il legame ionico deriva dal trasferimento completo di elettroni e dall'attrazione tra cariche opposte."
+    },
+    {
+     "d": "Su quale tipo di interazione si basa l'associazione tra DNA e istoni nella cromatina?",
+     "o": [
+      "Legami covalenti tra i gruppi fosfato e gli amminoacidi",
+      "Interazioni idrofobiche tra le basi azotate e gli istoni",
+      "Interazioni elettrostatiche tra le cariche negative del DNA e quelle positive degli istoni",
+      "Ponti disolfuro tra il DNA e i residui di cisteina"
+     ],
+     "c": 2,
+     "s": "Il DNA, acido e carico negativamente, interagisce con gli istoni, carichi positivamente, tramite interazioni di tipo ionico."
+    },
+    {
+     "d": "Quale affermazione sul legame covalente è corretta?",
+     "o": [
+      "Si forma per condivisione di una coppia di elettroni e unisce i monomeri nelle macromolecole",
+      "Si forma per trasferimento completo di elettroni ed è un legame debole",
+      "Si stabilisce tra molecole apolari ed è alla base dell'unione dei lipidi di membrana",
+      "È un legame debole che si rompe rapidamente"
+     ],
+     "c": 0,
+     "s": "Il legame covalente è forte, si basa sulla condivisione di elettroni e regola l'unione dei monomeri, come nel legame peptidico."
+    },
+    {
+     "d": "Che cosa sono le interazioni di Van der Waals e perché sono importanti?",
+     "o": [
+      "Legami forti tra ioni di carica opposta, alla base della cromatina",
+      "Legami covalenti tra amminoacidi, alla base della struttura proteica",
+      "Legami tra zuccheri e proteine, alla base delle glicoproteine",
+      "Interazioni deboli tra molecole molto vicine, che contribuiscono a tenere uniti i lipidi delle membrane"
+     ],
+     "c": 3,
+     "s": "Sono attrazioni deboli tra molecole vicine e contribuiscono a stabilizzare il contatto tra le code lipidiche nelle membrane."
+    },
+    {
+     "d": "Come è composta, approssimativamente, la materia vivente?",
+     "o": [
+      "Circa 30% acqua e 70% composti organici",
+      "Circa 70% acqua; il resto soprattutto composti organici",
+      "Circa 50% acqua e 50% ioni inorganici",
+      "Quasi esclusivamente proteine e lipidi"
+     ],
+     "c": 1,
+     "s": "L'acqua costituisce circa il 70% del peso; la parte restante è formata soprattutto da composti organici."
+    },
+    {
+     "d": "Quale abbinamento tra macromolecola e unità costitutiva è corretto?",
+     "o": [
+      "Acidi nucleici – monosaccaridi",
+      "Carboidrati – acidi grassi",
+      "Proteine – amminoacidi",
+      "Lipidi – nucleotidi"
+     ],
+     "c": 2,
+     "s": "Gli amminoacidi sono i monomeri delle proteine; i monosaccaridi dei carboidrati, i nucleotidi degli acidi nucleici."
+    },
+    {
+     "d": "Che differenza c'è tra reazione di condensazione e idrolisi?",
+     "o": [
+      "La condensazione forma un legame eliminando una molecola d'acqua; l'idrolisi rompe un legame aggiungendo una molecola d'acqua",
+      "La condensazione rompe un legame aggiungendo acqua; l'idrolisi forma un legame eliminando acqua",
+      "Entrambe formano legami, ma solo l'idrolisi richiede ATP",
+      "La condensazione avviene solo nei lipidi; l'idrolisi solo nelle proteine"
+     ],
+     "c": 0,
+     "s": "Condensazione e idrolisi sono le reazioni che consentono rispettivamente l'aggregazione e la scissione dei monomeri."
+    },
+    {
+     "d": "Quale abbinamento tra macromolecola e legame che ne unisce i monomeri è corretto?",
+     "o": [
+      "Proteine – legame O-glicosidico",
+      "Carboidrati – legame peptidico",
+      "Acidi nucleici – legame peptidico",
+      "Acidi nucleici – legame fosfodiesterico"
+     ],
+     "c": 3,
+     "s": "I monomeri si uniscono sempre per condensazione, ma il legame prende nomi diversi: O-glicosidico, peptidico, fosfodiesterico."
+    },
+    {
+     "d": "Da che cosa è costituito un amminoacido?",
+     "o": [
+      "Da una base azotata, uno zucchero pentoso e un gruppo fosfato",
+      "Da un carbonio centrale legato a un gruppo amminico, un gruppo carbossilico, un idrogeno e un gruppo R",
+      "Da una molecola di glicerolo legata a tre acidi grassi",
+      "Da quattro anelli di carbonio con una catena laterale"
+     ],
+     "c": 1,
+     "s": "Il carbonio alfa centrale forma quattro legami: gruppo amminico, gruppo carbossilico, idrogeno e catena laterale R."
+    },
+    {
+     "d": "Qual è il ruolo del gruppo R negli amminoacidi?",
+     "o": [
+      "Forma il legame peptidico con l'amminoacido successivo",
+      "È identico in tutti gli amminoacidi e ne garantisce la stabilità",
+      "Distingue gli amminoacidi tra loro e ne determina le proprietà, influenzando struttura e funzione della proteina",
+      "Lega il gruppo fosfato durante la sintesi degli acidi nucleici"
+     ],
+     "c": 2,
+     "s": "La catena laterale R conferisce diversità biologica e strutturale all'amminoacido e alla proteina di cui fa parte."
+    },
+    {
+     "d": "Come sono classificati lisina, arginina e istidina in base al gruppo R?",
+     "o": [
+      "Amminoacidi basici, polari carichi positivamente",
+      "Amminoacidi acidi, polari carichi negativamente",
+      "Amminoacidi apolari",
+      "Amminoacidi polari privi di carica"
+     ],
+     "c": 0,
+     "s": "Lisina, arginina e istidina sono basici; acido aspartico e acido glutammico sono acidi."
+    },
+    {
+     "d": "Quale affermazione sui nucleotidi è corretta?",
+     "o": [
+      "Sono formati da base azotata, zucchero esoso e gruppo fosfato",
+      "Sono formati da un amminoacido, uno zucchero pentoso e un gruppo fosfato",
+      "Contengono ribosio o desossiribosio, che differiscono per il numero di atomi di carbonio",
+      "Sono formati da base azotata, zucchero pentoso e gruppo fosfato; ribosio e desossiribosio differiscono per il gruppo legato al carbonio 2′"
+     ],
+     "c": 3,
+     "s": "Il ribosio ha un gruppo OH al carbonio 2′, il desossiribosio un atomo di idrogeno."
+    },
+    {
+     "d": "Qual è il ruolo principale del glucosio negli organismi?",
+     "o": [
+      "È il principale componente strutturale delle membrane",
+      "È la fonte di energia utilizzata dalla maggior parte degli organismi",
+      "È il monomero delle proteine",
+      "Trasporta l'ossigeno ai tessuti"
+     ],
+     "c": 1,
+     "s": "Reagendo con l'ossigeno, il glucosio libera acqua, anidride carbonica e grandi quantità di energia chimica."
+    },
+    {
+     "d": "Quale coppia comprende due polisaccaridi con funzione di riserva energetica?",
+     "o": [
+      "Cellulosa e chitina",
+      "Amido e cellulosa",
+      "Amido e glicogeno",
+      "Glicogeno e chitina"
+     ],
+     "c": 2,
+     "s": "Amido (vegetale) e glicogeno (animale) sono di riserva; cellulosa e chitina hanno funzione strutturale."
+    },
+    {
+     "d": "Quale funzione svolgono le glicoproteine della membrana cellulare?",
+     "o": [
+      "Mettono in comunicazione la cellula con l'esterno e riconoscono virus, batteri o tossine",
+      "Costituiscono la principale riserva energetica della cellula",
+      "Trasportano l'ossigeno ai tessuti",
+      "Formano il doppio strato lipidico della membrana"
+     ],
+     "c": 0,
+     "s": "Le glicoproteine di superficie legano, ad esempio, gli ormoni e partecipano alla difesa cellulare dagli agenti esterni."
+    },
+    {
+     "d": "Quali sono le principali funzioni dei lipidi?",
+     "o": [
+      "Catalisi enzimatica e trasporto dell'ossigeno",
+      "Conservazione e trasmissione dell'informazione genetica",
+      "Difesa immunitaria e riconoscimento degli agenti estranei",
+      "Riserva energetica, componente strutturale delle membrane e messaggeri cellulari"
+     ],
+     "c": 3,
+     "s": "I lipidi sono riserva di energia, costituenti delle membrane e, come gli ormoni steroidei, messaggeri."
+    },
+    {
+     "d": "Com'è costituito un trigliceride?",
+     "o": [
+      "Da una molecola di glicerolo esterificata a due acidi grassi e a un gruppo fosfato",
+      "Da una molecola di glicerolo esterificata a tre catene di acidi grassi",
+      "Da quattro anelli di carbonio fusi",
+      "Da una catena di monosaccaridi legata a un lipide"
+     ],
+     "c": 1,
+     "s": "Tre reazioni di condensazione legano tre acidi grassi agli ossidrili del glicerolo mediante legami estere."
+    },
+    {
+     "d": "Come si dispongono i fosfolipidi nella membrana biologica?",
+     "o": [
+      "In doppio strato, con le code idrofobiche rivolte verso l'acqua e le teste polari verso l'interno",
+      "In un unico strato, con le code rivolte verso l'esterno della cellula",
+      "In doppio strato, con le teste polari rivolte verso l'ambiente acquoso e le code idrofobiche verso l'interno",
+      "In catene lineari unite da legami peptidici"
+     ],
+     "c": 2,
+     "s": "Le teste polari guardano il citosol e il fluido extracellulare, mentre le code idrofobiche si rivolgono l'una verso l'altra."
+    },
+    {
+     "d": "Quale tra le seguenti NON è una funzione del colesterolo?",
+     "o": [
+      "Costituire la principale riserva energetica dell'organismo",
+      "Inserirsi tra le catene idrofobiche dei fosfolipidi di membrana",
+      "Fungere da precursore della vitamina D e degli ormoni steroidei",
+      "Fornire il materiale di partenza per la sintesi degli acidi biliari"
+     ],
+     "c": 0,
+     "s": "Il colesterolo è componente delle membrane e precursore di ormoni steroidei, vitamina D e acidi biliari."
+    },
+    {
+     "d": "Quale dei seguenti è un esempio corretto di funzione svolta da una proteina?",
+     "o": [
+      "La riserva energetica principale svolta dalla cellulosa",
+      "La catalisi delle reazioni cellulari svolta dal colesterolo",
+      "La conservazione dell'informazione genetica svolta dagli anticorpi",
+      "Il trasporto dell'ossigeno svolto dall'emoglobina"
+     ],
+     "c": 3,
+     "s": "Tra le funzioni proteiche figurano catalisi (enzimi), segnalazione, difesa (anticorpi), trasporto (emoglobina), sostegno e movimento."
+    },
+    {
+     "d": "Che cosa distingue una proteina coniugata da una proteina semplice?",
+     "o": [
+      "La presenza di più catene polipeptidiche",
+      "La presenza di un gruppo prostetico non amminoacidico legato alla catena polipeptidica",
+      "L'assenza della struttura terziaria",
+      "La presenza esclusiva di amminoacidi apolari"
+     ],
+     "c": 1,
+     "s": "Le proteine semplici contengono solo amminoacidi; quelle coniugate un gruppo prostetico, come uno zucchero nelle glicoproteine."
+    },
+    {
+     "d": "Che cosa sono le modifiche post-traduzionali?",
+     "o": [
+      "Errori nella sequenza del DNA che alterano la proteina",
+      "La rottura dei legami peptidici durante la digestione",
+      "Modifiche apportate a una proteina dopo la sintesi, come l'aggiunta di un gruppo fosfato o di un gruppo prostetico",
+      "Il passaggio dell'informazione dal DNA all'RNA"
+     ],
+     "c": 2,
+     "s": "Dopo la sintesi la proteina può essere modificata (fosforilazione, acetilazione, metilazione, idrossilazione) su amminoacidi specifici."
+    },
+    {
+     "d": "Come si forma il legame peptidico?",
+     "o": [
+      "Per condensazione tra il carbonio del gruppo carbossilico di un amminoacido e l'azoto del gruppo amminico del successivo",
+      "Per idrolisi tra i gruppi R di due amminoacidi",
+      "Per attrazione tra le cariche opposte di due amminoacidi",
+      "Per formazione di un ponte tra due atomi di zolfo"
+     ],
+     "c": 0,
+     "s": "La condensazione elimina una molecola d'acqua e unisce con un legame covalente il carbonio carbossilico all'azoto amminico."
+    },
+    {
+     "d": "Che cos'è la struttura primaria di una proteina?",
+     "o": [
+      "Il ripiegamento tridimensionale dell'intera catena",
+      "L'avvolgimento di alcune porzioni della catena ad alfa-elica",
+      "L'associazione di più catene polipeptidiche",
+      "La sequenza lineare degli amminoacidi, stabilita dall'informazione contenuta nel DNA"
+     ],
+     "c": 3,
+     "s": "La struttura primaria è data da qualità, numero e posizione degli amminoacidi e determina le strutture successive."
+    },
+    {
+     "d": "A che cosa è dovuta la struttura secondaria di una proteina?",
+     "o": [
+      "Ai ponti disolfuro tra residui di cisteina",
+      "Ai legami a idrogeno tra parti diverse della catena, che formano alfa-eliche e foglietti beta",
+      "All'associazione di più catene polipeptidiche",
+      "Ai legami peptidici tra amminoacidi adiacenti"
+     ],
+     "c": 1,
+     "s": "I legami a idrogeno tra porzioni della catena producono l'alfa-elica e il foglietto beta, organizzazioni locali della catena."
+    },
+    {
+     "d": "Perché la struttura terziaria è fondamentale per una proteina?",
+     "o": [
+      "Perché corrisponde alla sequenza lineare degli amminoacidi",
+      "Perché è presente soltanto nelle proteine formate da più catene",
+      "Perché solo raggiungendo il ripiegamento tridimensionale la proteina diventa biologicamente attiva",
+      "Perché determina la sequenza del DNA che codifica la proteina"
+     ],
+     "c": 2,
+     "s": "Dopo la sintesi la proteina deve ripiegarsi, grazie alle interazioni tra i gruppi R, fino alla struttura terziaria attiva."
+    },
+    {
+     "d": "Che cosa caratterizza la struttura quaternaria di una proteina?",
+     "o": [
+      "L'associazione di più catene polipeptidiche, ciascuna con la propria struttura terziaria, come nell'emoglobina",
+      "La presenza in tutte le proteine dopo la sintesi",
+      "L'avvolgimento della catena ad alfa-elica",
+      "La sequenza lineare dei residui amminoacidici"
+     ],
+     "c": 0,
+     "s": "Solo le proteine formate da più catene la possiedono: l'emoglobina dell'adulto è un tetramero di due catene alfa e due beta."
+    },
+    {
+     "d": "Che cosa accade durante la denaturazione di una proteina?",
+     "o": [
+      "Si rompono i legami peptidici e la struttura primaria viene distrutta",
+      "Si formano nuovi ponti disolfuro che ne aumentano l'attività",
+      "La proteina passa dalla struttura secondaria a quella quaternaria",
+      "Si rompono i legami delle strutture superiori, con perdita di funzione, mentre la struttura primaria resta intatta"
+     ],
+     "c": 3,
+     "s": "La denaturazione rompe soprattutto i legami deboli che mantengono la forma della proteina; i legami peptidici restano integri."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Email autorizzate: scriverle in minuscolo. Per aggiungere qualcuno basta aggiungere qui la sua email e premere "Pubblica".
+    function ammesso() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email.lower() in [
+          "EMAIL1@esempio.it",
+          "EMAIL2@esempio.it",
+          "EMAIL3@esempio.it",
+          "EMAIL4@esempio.it"
+        ];
+    }
+    // Ognuno legge e scrive solo i propri progressi.
+    match /utenti/{uid}/{document=**} {
+      allow read, write: if ammesso() && request.auth.uid == uid;
+    }
+  }
+}
