@@ -251,39 +251,28 @@ button.item:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--shado
   .sync { padding: 8px; }
   .hero svg { width: 86px; height: 80px; }
 }
-/* telefono: durante il quiz domanda, risposte, spiegazione e tasti entrano in uno schermo al 100% */
+/* telefono: durante il quiz i testi si ingrandiscono finché domanda, risposte, spiegazione e tasti riempiono lo schermo al 100% (--qs calcolato da fitQuiz) */
 @media (max-width: 520px) {
   body.inquiz .topbar .wrap { padding-block: 8px 4px; }
   body.inquiz .brand-mark { width: 30px; height: 30px; border-radius: 10px; font-size: 0.88rem; box-shadow: 0 2px 0 var(--accent-dark); }
   body.inquiz .brand-name { font-size: 0.98rem; }
-  body.inquiz #app { gap: 9px; padding-block: 4px 80px; }
-  .qhead .eyebrow { font-size: 0.7rem; }
+  body.inquiz #app { gap: calc(9px * var(--qs, 1)); padding-block: 4px 80px; }
+  .qhead .eyebrow { font-size: 0.72rem; }
   .qm-mode, .qmeta { display: none; }
   .qm-cap, .qm-count { display: inline; }
   .qhead .link { font-size: 0.8rem; }
   .qprog { height: 7px; }
-  .qmeta { font-size: 0.76rem; margin-top: -3px; }
-  .qtext { font-size: 1.06rem; line-height: 1.35; }
-  .opts { gap: 7px; }
-  .opt { grid-template-columns: 26px 1fr; gap: 10px; padding: 7px 11px; border-radius: 15px; font-size: 0.91rem; line-height: 1.3; }
-  .opt > span:last-child { padding-top: 2px; }
-  .key { width: 26px; height: 26px; border-radius: 8px; font-size: 0.86rem; }
-  .feedback { padding: 9px 12px; border-radius: 15px; gap: 2px; margin-top: -2px; scroll-margin-bottom: 72px; }
-  .feedback strong { font-size: 0.95rem; }
-  .feedback .small { font-size: 0.82rem; line-height: 1.38; }
+  .qtext { font-size: calc(1.06rem * var(--qs, 1)); line-height: 1.33; }
+  .opts { gap: calc(7px * var(--qs, 1)); position: relative; }
+  .opt { grid-template-columns: calc(26px * var(--qs, 1)) 1fr; gap: 10px; padding: calc(7px * var(--qs, 1)) 12px; border-radius: 15px; font-size: calc(0.91rem * var(--qs, 1)); line-height: 1.3; }
+  .opt > span:last-child { padding-top: calc(2px * var(--qs, 1)); }
+  .key { width: calc(26px * var(--qs, 1)); height: calc(26px * var(--qs, 1)); border-radius: 8px; font-size: calc(0.86rem * var(--qs, 1)); }
+  .feedback { padding: calc(9px * var(--qs, 1)) 13px; border-radius: 15px; gap: 2px; margin-top: -2px; scroll-margin-bottom: 72px; }
+  .feedback strong { font-size: calc(0.95rem * var(--qs, 1)); }
+  .feedback .small { font-size: calc(0.82rem * var(--qs, 1)); line-height: 1.36; }
+  .fb-ghost { position: absolute; left: 0; right: 0; top: 0; visibility: hidden; pointer-events: none; }
   .dock { padding-top: 8px; padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px)); }
-  .dock .primary, .dock .secondary { min-height: 44px; padding-block: 8px; font-size: 1rem; border-radius: 15px; }
-}
-@media (max-width: 520px) and (max-height: 620px) {
-  body.inquiz #app { gap: 7px; }
-  .qtext { font-size: 0.98rem; line-height: 1.3; }
-  .opts { gap: 6px; }
-  .opt { padding-block: 5px; font-size: 0.87rem; line-height: 1.27; }
-  .feedback { padding-block: 7px; }
-  .feedback strong { font-size: 0.9rem; }
-  .feedback .small { font-size: 0.78rem; line-height: 1.32; }
-  .dock { padding-top: 6px; }
-  .dock .primary, .dock .secondary { min-height: 40px; }
+  .dock .primary, .dock .secondary { min-height: 46px; padding-block: 8px; font-size: 1.05rem; border-radius: 15px; }
 }
 @media (prefers-reduced-motion: reduce) { .qprog span, .item, .mode, .primary, .opt { transition: none; } }
 
@@ -950,7 +939,47 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     else html = vHome();
     document.body.classList.toggle("inquiz", v.name === "quiz");
     app.innerHTML = html;
+    if (v.name === "quiz") fitQuiz();
+    else document.body.style.removeProperty("--qs");
   }
+  // telefono: sceglie la dimensione più grande dei testi con cui la domanda, le risposte e la spiegazione
+  // (anche prima di rispondere, misurata con un fantasma) stanno sopra i tasti in basso; fissata per domanda
+  const QS_MAX = 1.4, QS_MIN = 0.82, QS_STEP = 0.04;
+  const phoneMQ = window.matchMedia("(max-width: 520px)");
+  function fitQuiz() {
+    const b = document.body, Q = S.quiz;
+    if (!phoneMQ.matches || !Q) { b.style.removeProperty("--qs"); return; }
+    const it = Q.items[Q.i];
+    if (it.qs) { b.style.setProperty("--qs", it.qs); return; }
+    const opts = app.querySelector(".opts"), dock = app.querySelector(".dock");
+    if (!opts || !dock) return;
+    let ghost = null;
+    if (it.pick === null) {
+      ghost = document.createElement("div");
+      ghost.className = "feedback ko fb-ghost";
+      ghost.innerHTML = `<strong>Risposta errata · la risposta corretta è la A</strong>${it.q.s ? `<span class="small">${esc(it.q.s)}</span>` : ""}`;
+      opts.appendChild(ghost);
+    }
+    const y = window.scrollY;
+    const fits = () => {
+      const last = [...app.querySelectorAll(".opt, .feedback:not(.fb-ghost)")].reduce((m, e) => Math.max(m, e.getBoundingClientRect().bottom), 0);
+      const need = last + y + (ghost ? ghost.getBoundingClientRect().height + 8 : 0);
+      return need <= dock.getBoundingClientRect().top + y - 6;
+    };
+    let qs = QS_MAX;
+    b.style.setProperty("--qs", qs.toFixed(2));
+    while (qs > QS_MIN && !fits()) { qs -= QS_STEP; b.style.setProperty("--qs", qs.toFixed(2)); }
+    if (ghost) ghost.remove();
+    it.qs = qs.toFixed(2);
+  }
+  let fitTimer = 0, lastW = window.innerWidth, lastH = window.innerHeight;
+  window.addEventListener("resize", () => {
+    // le barre di Safari che compaiono/scompaiono cambiano poco l'altezza: si ricalcola solo per cambi veri
+    if (Math.abs(window.innerWidth - lastW) < 2 && Math.abs(window.innerHeight - lastH) < 90) return;
+    lastW = window.innerWidth; lastH = window.innerHeight;
+    clearTimeout(fitTimer);
+    fitTimer = setTimeout(() => { if (S.quiz) S.quiz.items.forEach(x => { delete x.qs; }); if (S.view.name === "quiz") fitQuiz(); }, 150);
+  });
 
   // ---------- avvio ----------
   function start() {
