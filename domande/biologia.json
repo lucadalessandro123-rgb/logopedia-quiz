@@ -891,6 +891,28 @@
      ],
      "c": 2,
      "s": "Le due forcelle avanzano in direzioni opposte: il filamento guida di una forcella corrisponde al filamento lento dell'altra."
+    },
+    {
+     "d": "Quanto DNA lineare contiene, approssimativamente, ogni cellula umana?",
+     "o": [
+      "Circa 17-20 metri",
+      "Circa 1,7-2 millimetri",
+      "Circa 1,7-2 metri",
+      "Circa 5 micrometri"
+     ],
+     "c": 2,
+     "s": "Ogni cellula umana contiene circa 1,7-2 metri di DNA lineare, che deve essere fortemente compattato per essere contenuto in un nucleo di circa 5 μm di diametro."
+    },
+    {
+     "d": "Perché è vantaggioso che le origini di replicazione siano ricche di adenina e timina?",
+     "o": [
+      "Perché le coppie A-T, unite da tre legami a idrogeno, rendono più stabile la bolla",
+      "Perché le coppie A-T, unite da legami covalenti, resistono alla tensione torsionale",
+      "Perché le coppie A-T, unite da due legami a idrogeno, legano meglio le proteine SSB",
+      "Perché le coppie A-T, unite da due legami a idrogeno, si separano più facilmente"
+     ],
+     "c": 3,
+     "s": "Le coppie A-T sono unite da due legami a idrogeno, le G-C da tre: le regioni ricche di A-T sono più deboli e quindi più facili da aprire per l'elicasi."
     }
    ]
   }
