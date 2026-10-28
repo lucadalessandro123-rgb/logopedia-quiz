@@ -915,6 +915,463 @@
      "s": "Le coppie A-T sono unite da due legami a idrogeno, le G-C da tre: le regioni ricche di A-T sono più deboli e quindi più facili da aprire per l'elicasi."
     }
    ]
+  },
+  {
+   "n": 3,
+   "titolo": "Replicazione del DNA, trascrizione, maturazione dell'mRNA e traduzione",
+   "domande": [
+    {
+     "d": "Quale enzima interviene per primo nella replicazione del DNA, e con quale funzione?",
+     "o": [
+      "L'elicasi, che rompe i legami idrogeno tra le basi azotate complementari",
+      "La topoisomerasi, che taglia e ricompone la doppia elica superavvolta",
+      "La DNA polimerasi, che aggiunge nucleotidi a partire da un 3'-OH libero",
+      "La trascrittasi inversa, che sintetizza DNA utilizzando l'RNA come stampo"
+     ],
+     "c": 0,
+     "s": "Il primo enzima a intervenire è l'elicasi, che svolge la doppia elica rompendo i legami idrogeno tra le basi complementari."
+    },
+    {
+     "d": "Perché il filamento discontinuo viene detto anche «ritardato»?",
+     "o": [
+      "Perché la DNA polimerasi lo sintetizza più lentamente, in direzione 3'→5'",
+      "Perché la sintesi attende che la forcella si apra abbastanza per un primer",
+      "Perché la sua sintesi inizia solo quando il filamento guida è completato",
+      "Perché ogni frammento attende che il primer precedente venga rimosso"
+     ],
+     "c": 1,
+     "s": "Si attende che la forcella si apra quanto basta perché un primer possa inserirsi: da qui il termine «ritardo», anche se non è un vero ritardo."
+    },
+    {
+     "d": "Perché, in assenza di telomerasi, i cromosomi si accorciano a ogni replicazione?",
+     "o": [
+      "Perché la topoisomerasi taglia le estremità per eliminare i superavvolgimenti",
+      "Perché le proteine SSB impediscono la copia dell'ultimo tratto del filamento",
+      "Perché la rimozione dell'ultimo primer all'estremità 3' lascia un tratto non copiato",
+      "Perché la DNA polimerasi non riesce a sintetizzare in direzione 5'→3' alle estremità"
+     ],
+     "c": 2,
+     "s": "All'estremità 3' l'ultimo innesco viene rimosso e resta un gap non copiato: a ogni ciclo il filamento si accorcerebbe."
+    },
+    {
+     "d": "Da che cosa è formato il complesso della telomerasi?",
+     "o": [
+      "Dalla DNA polimerasi e da un piccolo primer di RNA",
+      "Dall'elicasi e da un breve tratto di DNA telomerico",
+      "Dalla topoisomerasi e da un piccolo frammento di DNA",
+      "Dalla trascrittasi inversa e da un piccolo frammento di RNA"
+     ],
+     "c": 3,
+     "s": "La telomerasi è un complesso formato da una componente proteica, la trascrittasi inversa, e da un piccolo frammento di RNA."
+    },
+    {
+     "d": "Quale attività enzimatica possiede la trascrittasi inversa?",
+     "o": [
+      "Sintetizza DNA utilizzando l'RNA come stampo",
+      "Sintetizza RNA utilizzando il DNA come stampo",
+      "Rimuove i primer di RNA dalle estremità 3'",
+      "Lega l'amminoacido all'estremità 3' del tRNA"
+     ],
+     "c": 0,
+     "s": "Come indica il nome, la trascrittasi inversa è in grado di sintetizzare DNA usando l'RNA come stampo."
+    },
+    {
+     "d": "Perché la telomerasi allunga l'estremità 3' del filamento da copiare?",
+     "o": [
+      "Per fornire nuove sequenze codificanti che sostituiscano quelle perse",
+      "Per permettere l'appaiamento di un nuovo primer e la copia del tratto mancante",
+      "Per legare le proteine SSB e impedire che il filamento si richiuda su sé stesso",
+      "Per formare il cappuccio che protegge l'estremità del cromosoma dalla degradazione"
+     ],
+     "c": 1,
+     "s": "Sulla porzione aggiunta si appaia un nuovo primer che fornisce il 3'-OH alla DNA polimerasi, la quale colma il vuoto lasciato dall'innesco precedente."
+    },
+    {
+     "d": "Che cosa si intende per limite di Hayflick?",
+     "o": [
+      "Il numero di nucleotidi che la telomerasi aggiunge a ogni ciclo replicativo",
+      "La lunghezza massima raggiunta dai telomeri nelle cellule staminali adulte",
+      "Il punto oltre il quale l'accorciamento dei telomeri impedisce nuove divisioni",
+      "Il punto in cui l'ultimo primer viene rimosso dall'estremità 3' del cromosoma"
+     ],
+     "c": 2,
+     "s": "Il limite di Hayflick è la soglia oltre la quale la cellula riconosce che i telomeri sono troppo corti e smette di dividersi."
+    },
+    {
+     "d": "In quali cellule il complesso della telomerasi è fisiologicamente attivo?",
+     "o": [
+      "Cellule pancreatiche, cellule della pelle e linfociti",
+      "Cellule staminali, cellule del pancreas e cellule tumorali",
+      "Cellule della pelle, cellule embrionali e cellule staminali",
+      "Cellule embrionali, cellule staminali e linfociti"
+     ],
+     "c": 3,
+     "s": "Fisiologicamente la telomerasi è attiva solo nelle cellule embrionali, nelle staminali e nei linfociti, che devono replicarsi di continuo."
+    },
+    {
+     "d": "Quale caratteristica delle cellule tumorali riguarda i telomeri?",
+     "o": [
+      "Possiedono, a causa di mutazioni, un complesso della telomerasi attivo",
+      "Possiedono, a causa di mutazioni, telomeri privi di sequenze ripetute",
+      "Raggiungono il limite di Hayflick prima delle cellule normali dell'organismo",
+      "Perdono la trascrittasi inversa e per questo smettono di replicarsi"
+     ],
+     "c": 0,
+     "s": "In seguito a mutazioni le cellule tumorali hanno la telomerasi attiva e continuano a duplicarsi pur perdendo informazione genetica."
+    },
+    {
+     "d": "Quale affermazione sulla trascrizione è corretta?",
+     "o": [
+      "Riguarda l'intero genoma, cioè tutti i geni dei 46 cromosomi",
+      "Riguarda solo le porzioni geniche che in quel momento servono alla cellula",
+      "Avviene solo durante la fase S, insieme alla replicazione del DNA",
+      "Produce esclusivamente RNA messaggeri destinati a essere tradotti"
+     ],
+     "c": 1,
+     "s": "Non viene trascritto tutto il genoma, ma solo le porzioni che devono essere espresse in quel momento, in risposta a determinati stimoli."
+    },
+    {
+     "d": "Quale differenza tra procarioti ed eucarioti riguarda trascrizione e traduzione?",
+     "o": [
+      "Negli eucarioti trascrizione e traduzione avvengono nello stesso compartimento",
+      "Nei procarioti il trascritto primario matura nel nucleo prima della traduzione",
+      "Nei procarioti trascrizione e traduzione avvengono contemporaneamente",
+      "Negli eucarioti l'RNA viene tradotto mentre è ancora in corso la trascrizione"
+     ],
+     "c": 2,
+     "s": "Nei procarioti il gene viene trascritto e l'RNA immediatamente tradotto; negli eucarioti l'RNA deve prima maturare ed essere esportato."
+    },
+    {
+     "d": "Che cosa significa che i geni eucariotici sono monocistronici?",
+     "o": [
+      "Che ogni gene contiene un solo esone e un solo introne",
+      "Che ogni RNA messaggero porta l'informazione per più proteine",
+      "Che ogni cromosoma contiene un solo gene codificante",
+      "Che ogni RNA messaggero codifica per una sola catena polipeptidica"
+     ],
+     "c": 3,
+     "s": "Negli eucarioti un mRNA codifica per una sola catena polipeptidica; i geni batterici, invece, sono policistronici."
+    },
+    {
+     "d": "Quale differenza tra RNA polimerasi e DNA polimerasi facilita la trascrizione?",
+     "o": [
+      "L'RNA polimerasi non richiede un primer per avviare la polimerizzazione",
+      "L'RNA polimerasi sintetizza in direzione 3'→5', senza bisogno di un 3'-OH",
+      "L'RNA polimerasi copia contemporaneamente entrambi i filamenti di DNA",
+      "L'RNA polimerasi non richiede che la doppia elica di DNA venga aperta"
+     ],
+     "c": 0,
+     "s": "La direzione di sintesi è la stessa (5'→3'), ma l'RNA polimerasi non ha bisogno di un innesco."
+    },
+    {
+     "d": "Quale filamento di DNA ha la stessa sequenza dell'mRNA, salvo l'uracile al posto della timina?",
+     "o": [
+      "Il filamento stampo, copiato dall'RNA polimerasi",
+      "Il filamento codificante, che non viene copiato",
+      "Il filamento guida, sintetizzato in modo continuo",
+      "Il filamento ritardato, sintetizzato a frammenti"
+     ],
+     "c": 1,
+     "s": "L'mRNA è complementare al filamento stampo e quindi identico al filamento codificante, a parte l'uracile."
+    },
+    {
+     "d": "Per quali RNA codificano i geni di classe I?",
+     "o": [
+      "Per l'RNA ribosomiale 5S e per gli RNA transfer",
+      "Per gli RNA messaggeri e per molti snRNA",
+      "Per gli RNA ribosomiali 28S, 18S e 5,8S",
+      "Per gli RNA transfer e per i rimanenti snRNA"
+     ],
+     "c": 2,
+     "s": "I geni di classe I codificano per gli rRNA 28S, 18S e 5,8S; quelli di classe III per l'rRNA 5S, i tRNA e i rimanenti snRNA."
+    },
+    {
+     "d": "Quale enzima trascrive i geni di classe II?",
+     "o": [
+      "L'RNA polimerasi I, che sintetizza i grandi RNA ribosomiali",
+      "L'RNA polimerasi III, che sintetizza tRNA e piccoli rRNA",
+      "La trascrittasi inversa, che sintetizza DNA a partire da RNA",
+      "L'RNA polimerasi II, che sintetizza il precursore dell'mRNA"
+     ],
+     "c": 3,
+     "s": "I geni di classe II sono trascritti dall'RNA polimerasi II, che sintetizza il trascritto primario dell'RNA messaggero."
+    },
+    {
+     "d": "Quale affermazione sul promotore di un gene di classe II è corretta?",
+     "o": [
+      "È una regione regolatrice che non viene trascritta in RNA",
+      "È la prima porzione trascritta, che forma la regione 5'-UTR",
+      "È una regione codificante che contiene il codone di inizio AUG",
+      "È una regione intronica che viene rimossa durante lo splicing"
+     ],
+     "c": 0,
+     "s": "Il promotore serve a innescare e regolare la trascrizione, indicando dove attaccarsi, ma non viene trascritto."
+    },
+    {
+     "d": "Dove si trova la TATA box rispetto al sito di inizio della trascrizione?",
+     "o": [
+      "25 nucleotidi dopo il sito di inizio (+25)",
+      "25 nucleotidi prima del sito di inizio (-25)",
+      "30 nucleotidi prima del sito di inizio (-30)",
+      "200 nucleotidi prima del sito di inizio (-200)"
+     ],
+     "c": 1,
+     "s": "La TATA box si trova a -25: la porzione trascritta inizia 25 nucleotidi dopo."
+    },
+    {
+     "d": "Quale fattore generale della trascrizione si lega direttamente alla TATA box?",
+     "o": [
+      "TFIIB",
+      "TAP",
+      "TFIID",
+      "Aly"
+     ],
+     "c": 2,
+     "s": "Nella fase di inizio il TFIID si lega alla TATA box; a esso si lega poi il TFIIB e, in seguito, altri complessi e l'RNA polimerasi."
+    },
+    {
+     "d": "Che ruolo hanno i fattori specifici della trascrizione, come quello dell'insulina?",
+     "o": [
+      "Riconoscono la TATA box di tutti i geni di classe II e vi reclutano TFIIB",
+      "Riconoscono la coda di poli-A e guidano l'mRNA attraverso i pori nucleari",
+      "Si legano al cappuccio al 5' e regolano l'inizio della sintesi proteica",
+      "Innescano la trascrizione di determinati geni in risposta a specifici stimoli"
+     ],
+     "c": 3,
+     "s": "Per esempio, con glucosio alto si producono i fattori di trascrizione per l'insulina, che innescano la trascrizione del suo gene."
+    },
+    {
+     "d": "Come sono definite sequenze del promotore come la GC box e la CAAT box?",
+     "o": [
+      "Elementi di controllo prossimale",
+      "Cuore del promotore (core promoter)",
+      "Fattori generali della trascrizione",
+      "Siti di terminazione della trascrizione"
+     ],
+     "c": 0,
+     "s": "GC box e CAAT box sono elementi di controllo prossimale; il core promoter è la TATA box."
+    },
+    {
+     "d": "Quando viene aggiunto il cappuccio di 7-metilguanosina all'RNA nascente?",
+     "o": [
+      "Al termine della trascrizione, all'estremità 3' del trascritto",
+      "Dopo la sintesi di circa 30 nucleotidi, all'estremità 5'",
+      "Dopo lo splicing, quando l'mRNA ha raggiunto il citoplasma",
+      "Dopo la sintesi di circa 200 nucleotidi, all'estremità 3'"
+     ],
+     "c": 1,
+     "s": "Dopo la sintesi di circa 30 nucleotidi, all'estremità 5' dell'RNA nascente viene aggiunto il cappuccio di 7-metilguanosina."
+    },
+    {
+     "d": "Quali funzioni svolge il cappuccio di 7-metilguanosina?",
+     "o": [
+      "Permette l'esportazione nel citoplasma e la rimozione degli introni",
+      "Fornisce il 3'-OH alla RNA polimerasi e lega il fattore TFIID",
+      "Protegge l'RNA dalla degradazione e regola l'inizio della traduzione",
+      "Segnala la fine della traduzione e richiama i fattori di rilascio"
+     ],
+     "c": 2,
+     "s": "Il cappuccio protegge l'RNA dalle RNasi e funge da sito di riconoscimento per l'inizio della sintesi proteica."
+    },
+    {
+     "d": "Da che cosa è costituita la coda di poli-A?",
+     "o": [
+      "Da circa 30 nucleotidi di adenina, all'estremità 5'",
+      "Da circa 200 nucleotidi di uracile, all'estremità 3'",
+      "Da una 7-metilguanosina legata all'estremità 3'",
+      "Da circa 200 nucleotidi di adenina, all'estremità 3'"
+     ],
+     "c": 3,
+     "s": "All'estremità 3' del trascritto primario si lega una coda di circa 200 nucleotidi di adenina."
+    },
+    {
+     "d": "In che cosa consiste lo splicing?",
+     "o": [
+      "Nella rimozione degli introni, così che l'RNA maturo contenga solo gli esoni",
+      "Nell'aggiunta della coda di poli-A all'estremità 3' del trascritto primario",
+      "Nella rimozione dell'ultimo primer di RNA all'estremità 3' del cromosoma",
+      "Nella rimozione delle regioni 5'-UTR e 3'-UTR, che non vengono tradotte"
+     ],
+     "c": 0,
+     "s": "Lo splicing elimina le sequenze introniche: l'RNA maturo contiene solo gli esoni, che portano l'informazione per la proteina."
+    },
+    {
+     "d": "Perché i geni eucariotici sono definiti «geni interrotti»?",
+     "o": [
+      "Perché la loro trascrizione si arresta a ogni codone di stop",
+      "Perché alternano esoni piccoli a introni molto più grandi",
+      "Perché il promotore li separa dalla regione codificante",
+      "Perché sono separati tra loro da sequenze spaziatrici"
+     ],
+     "c": 1,
+     "s": "A livello del DNA i geni eucariotici alternano esoni di piccole dimensioni e introni molto più grandi (circa 1.000 nucleotidi)."
+    },
+    {
+     "d": "Quale struttura si forma durante lo splicing, quando inizio e fine dell'introne vengono avvicinati?",
+     "o": [
+      "Una forcella, che procede in modo bidirezionale",
+      "Un trifoglio, che espone l'anticodone",
+      "Un cappio, che viene poi tagliato e rimosso",
+      "Un frammento di Okazaki, poi unito agli esoni"
+     ],
+     "c": 2,
+     "s": "Le proteine legate all'inizio e alla fine dell'introne si avvicinano e l'introne forma un cappio, che viene rimosso."
+    },
+    {
+     "d": "Quali proteine accompagnano l'mRNA maturo attraverso i pori nucleari?",
+     "o": [
+      "I fattori generali TFIID e TFIIB",
+      "Gli chaperoni molecolari",
+      "Le proteine SSB e la topoisomerasi",
+      "Le proteine Aly e TAP"
+     ],
+     "c": 3,
+     "s": "Le proteine Aly riconoscono l'mRNA maturo e si legano alle TAP, che lo accompagnano attraverso i pori nucleari."
+    },
+    {
+     "d": "Dove vengono sintetizzate le proteine destinate alla membrana plasmatica o a uscire dalla cellula?",
+     "o": [
+      "Sui ribosomi legati al reticolo endoplasmatico rugoso",
+      "Sui ribosomi liberi presenti nel citoplasma della cellula",
+      "Sui ribosomi presenti all'interno dei perossisomi",
+      "Sui ribosomi liberi associati all'involucro nucleare"
+     ],
+     "c": 0,
+     "s": "Il RER è collegato all'apparato di Golgi, che impacchetta le proteine in vescicole dirette alla membrana o all'esterno; le proteine che restano nella cellula si formano sui ribosomi liberi."
+    },
+    {
+     "d": "Da quali subunità è formato il ribosoma eucariotico?",
+     "o": [
+      "Una subunità maggiore di 40S e una minore di 18S",
+      "Una subunità maggiore di 60S e una minore di 40S",
+      "Una subunità maggiore di 28S e una minore di 5,8S",
+      "Una subunità maggiore di 60S e una minore di 28S"
+     ],
+     "c": 1,
+     "s": "Negli eucarioti il ribosoma ha una subunità maggiore di 60S e una minore di 40S."
+    },
+    {
+     "d": "Che cosa misura l'unità S (Svedberg) usata per le subunità ribosomiali?",
+     "o": [
+      "Il peso molecolare medio di ciascuna subunità ribosomiale",
+      "Le dimensioni medie della particella osservata al microscopio",
+      "La velocità media di sedimentazione in un campo centrifugo",
+      "Il numero di nucleotidi dell'RNA ribosomiale della subunità"
+     ],
+     "c": 2,
+     "s": "La S indica la velocità media di sedimentazione in un campo centrifugo: non è una misura né del peso né delle dimensioni."
+    },
+    {
+     "d": "Che cosa significa che il codice genetico è degenerato?",
+     "o": [
+      "Che una tripletta può specificare più amminoacidi diversi",
+      "Che il codice varia leggermente tra organismi diversi",
+      "Che alcune triplette non vengono lette dal ribosoma",
+      "Che un amminoacido può essere specificato da più triplette"
+     ],
+     "c": 3,
+     "s": "Una tripletta specifica sempre un solo amminoacido, ma un amminoacido può essere specificato da più triplette."
+    },
+    {
+     "d": "Quanti sono i codoni possibili e quanti di essi codificano per amminoacidi?",
+     "o": [
+      "64 possibili, di cui 61 codificanti",
+      "64 possibili, di cui 20 codificanti",
+      "61 possibili, di cui 58 codificanti",
+      "20 possibili, di cui 17 codificanti"
+     ],
+     "c": 0,
+     "s": "Quattro basi a triplette danno 4³ = 64 codoni; tolti i 3 codoni di stop, 61 codificano per i 20 amminoacidi."
+    },
+    {
+     "d": "Quali sono i tre codoni di stop?",
+     "o": [
+      "UUA, UAG e UGA",
+      "UAA, UAG e UGA",
+      "AUG, UAA e UAG",
+      "UAA, UUG e UGA"
+     ],
+     "c": 1,
+     "s": "I codoni di stop sono UAA, UAG e UGA; la presenza di UUA nella slide era un errore segnalato dal docente."
+    },
+    {
+     "d": "Per quale amminoacido codifica il codone di inizio AUG?",
+     "o": [
+      "La glicina",
+      "La leucina",
+      "La metionina",
+      "La tirosina"
+     ],
+     "c": 2,
+     "s": "AUG è la tripletta di inizio della sintesi proteica e codifica per la metionina."
+    },
+    {
+     "d": "In quale punto del tRNA si lega l'amminoacido?",
+     "o": [
+      "All'anticodone, che si trova nel braccio opposto all'estremità 3'",
+      "All'estremità 5', nel braccio accettore che termina con la sequenza CCA",
+      "Al braccio D, che si trova nella posizione opposta all'anticodone",
+      "All'estremità 3', nel braccio accettore che termina con la sequenza CCA"
+     ],
+     "c": 3,
+     "s": "L'amminoacido si lega al 3'-OH del braccio accettore, che termina sempre con la sequenza CCA."
+    },
+    {
+     "d": "Quale enzima catalizza il legame tra un amminoacido e il suo tRNA?",
+     "o": [
+      "L'amminoacil-tRNA sintetasi",
+      "La peptidil-transferasi",
+      "La trascrittasi inversa",
+      "L'RNA polimerasi III"
+     ],
+     "c": 0,
+     "s": "L'amminoacil-tRNA sintetasi è specifica per un amminoacido e il suo tRNA e catalizza il legame covalente tra i due."
+    },
+    {
+     "d": "Quale funzione ha il sito E del ribosoma?",
+     "o": [
+      "Accoglie l'amminoacil-tRNA corrispondente al codone appena letto",
+      "È il sito da cui esce il tRNA scarico dopo aver ceduto l'amminoacido",
+      "Ospita il peptidil-tRNA che porta la catena polipeptidica nascente",
+      "Lega i fattori di rilascio quando viene incontrato un codone di stop"
+     ],
+     "c": 1,
+     "s": "E sta per exit: il tRNA che ha ceduto il proprio amminoacido alla catena nascente è scarico ed esce dal ribosoma."
+    },
+    {
+     "d": "Come avviene la fase di inizio della traduzione negli eucarioti?",
+     "o": [
+      "Il ribosoma già assemblato si lega direttamente al codone AUG, all'inizio del trascritto",
+      "La subunità maggiore con il tRNA iniziatore si lega alla coda di poli-A e scorre fino ad AUG",
+      "La subunità minore con il tRNA iniziatore si lega al cappuccio al 5' e scorre fino ad AUG",
+      "La subunità minore si lega alla TATA box e scorre per 25 nucleotidi fino al codone AUG"
+     ],
+     "c": 2,
+     "s": "Il complesso subunità minore-tRNA iniziatore si lega al 5' dell'mRNA e scorre fino ad AUG; solo allora si lega la subunità maggiore."
+    },
+    {
+     "d": "Che cos'è la regione 5'-UTR?",
+     "o": [
+      "Il tratto di DNA tra la TATA box e il sito di inizio, che non viene trascritto",
+      "Il tratto di mRNA che segue il codone di stop, trascritto ma non tradotto",
+      "Il primo esone del gene, che codifica per la metionina iniziale della proteina",
+      "Il tratto di mRNA tra il cappuccio e il codone AUG, trascritto ma non tradotto"
+     ],
+     "c": 3,
+     "s": "La 5'-UTR è il tratto compreso tra il cappuccio e AUG: viene trascritta ma non tradotta."
+    },
+    {
+     "d": "Che cosa accade quando il sito A del ribosoma incontra un codone di stop?",
+     "o": [
+      "I fattori di rilascio provocano la dissociazione di tutti i componenti",
+      "Un tRNA scarico entra nel sito A e blocca lo scorrimento del ribosoma",
+      "La peptidil-transferasi lega l'ultimo amminoacido alla coda di poli-A",
+      "La subunità maggiore si stacca e la minore torna indietro fino al cappuccio"
+     ],
+     "c": 0,
+     "s": "I fattori di rilascio provocano la dissociazione delle subunità ribosomiali; l'mRNA viene degradato e la catena polipeptidica si ripiega."
+    }
+   ]
   }
  ]
 }
