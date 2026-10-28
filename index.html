@@ -663,7 +663,11 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     else if (a === "back-subject") backFromQuiz();
     else if (a === "ask-reset") { S.confirmReset = true; render(); }
     else if (a === "cancel-reset") { S.confirmReset = false; render(); }
-    else if (a === "do-reset") { S.prog[m] = {}; scheduleSave(m); flush(); S.confirmReset = false; render(); }
+    else if (a === "do-reset") {
+      if (b.dataset.l != null) { const n = Number(b.dataset.l); allQuestions(m).forEach(x => { if (x.n === n) delete S.prog[m][x.key]; }); }
+      else S.prog[m] = {};
+      scheduleSave(m); flush(); S.confirmReset = false; render();
+    }
   });
 
   app.addEventListener("submit", ev => { if (ev.target.id === "eform") { ev.preventDefault(); emailSubmit(ev.target); } });
@@ -803,7 +807,11 @@ gProvider.setCustomParameters({ prompt: "select_account" });
           ${b("lez-nuove", "Solo domande nuove", "Le domande del capitolo che non hai ancora fatto.", plural(t.nuove, "domanda nuova", "domande nuove"), !t.nuove)}
           ${b("lez-errori", "Ripasso errori", "Gli errori di questo capitolo ancora da correggere.", plural(t.errori, "errore", "errori"), !t.errori)}
         </div></section>
-      ${nav}`;
+      ${nav}
+      ${S.confirmReset
+        ? `<div class="confirm"><strong>Azzerare i progressi del capitolo ${l.n}?</strong><p class="small">Domande fatte ed errori di questo capitolo tornano a zero. Gli altri capitoli e le domande restano.</p>
+            <div class="row"><button class="secondary" data-a="cancel-reset">Annulla</button><button class="secondary danger" data-a="do-reset" data-m="${m}" data-l="${l.n}">Azzera progressi</button></div></div>`
+        : `<button class="link" data-a="ask-reset">Azzera i progressi del capitolo ${l.n}</button>`}`;
   }
 
   function vSetup(v) {
