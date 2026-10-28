@@ -480,6 +480,496 @@
      "s": "Il termine corretto è antimeri; «enantiomeri» è un termine della chimica."
     }
    ]
+  },
+  {
+   "n": 2,
+   "titolo": "Termini di posizione, movimenti e generalità sui tessuti",
+   "domande": [
+    {
+     "d": "Nella posizione anatomica di riferimento, quale osso dell'avambraccio è laterale?",
+     "o": [
+      "Il radio, che in pronazione della mano diventa mediale",
+      "L'ulna, che in pronazione della mano diventa laterale",
+      "L'omero, che resta laterale anche in pronazione",
+      "Lo sterno, che resta mediale in ogni posizione"
+     ],
+     "c": 0,
+     "s": "In posizione anatomica il radio è laterale e l'ulna mediale; in pronazione il rapporto si inverte."
+    },
+    {
+     "d": "Quali sinonimi del termine «anteriore» sono indicati come i più usati con riferimento al piano frontale?",
+     "o": [
+      "Dorsale e neurale",
+      "Craniale e prossimale",
+      "Ventrale e splancnico",
+      "Caudale e distale"
+     ],
+     "c": 2,
+     "s": "Rispetto al piano frontale si usano soprattutto anteriore (ventrale, splancnico) e posteriore (dorsale)."
+    },
+    {
+     "d": "Per quali strutture si utilizzano più facilmente i termini prossimale e distale come sinonimi di craniale e caudale?",
+     "o": [
+      "Per gli organi pari situati ai lati del piano sagittale",
+      "Per gli organi pieni dotati di un'unità morfofunzionale",
+      "Per le ossa piatte della regione della testa",
+      "Per le strutture che attraversano diverse regioni del corpo"
+     ],
+     "c": 3,
+     "s": "Prossimale e distale si usano per strutture che attraversano più regioni, come l'aorta o il canale alimentare."
+    },
+    {
+     "d": "Quali sono i quattro elementi necessari per descrivere un qualsiasi organo?",
+     "o": [
+      "Sede, forma, rapporti e struttura",
+      "Sede, funzione, vascolarizzazione e innervazione",
+      "Forma, numero, sviluppo e struttura",
+      "Rapporti, funzione, tessuti e dimensioni"
+     ],
+     "c": 0,
+     "s": "Sede, forma, rapporti e struttura sono i quattro pilastri della descrizione di un organo."
+    },
+    {
+     "d": "Quali punti di repere indicano la sede della laringe nella regione del collo?",
+     "o": [
+      "Le vertebre da C5 a C7",
+      "Le vertebre da C2 a C4",
+      "Le vertebre da C1 a C3",
+      "Le vertebre da C4 a C6"
+     ],
+     "c": 1,
+     "s": "La sede della laringe è individuata dai punti di repere da C2 a C4."
+    },
+    {
+     "d": "Quale forma viene attribuita alla laringe nella descrizione della sua morfologia?",
+     "o": [
+      "Una piramide tronca con la base maggiore rivolta verso il basso",
+      "Un cilindro con un'estremità craniale e una caudale",
+      "Una piramide tronca con la base maggiore rivolta verso l'alto",
+      "Una forma triangolare con diverse facce, poli e margini"
+     ],
+     "c": 2,
+     "s": "La laringe ha forma di piramide tronca con base maggiore in alto e base minore in basso."
+    },
+    {
+     "d": "Con quali strutture è in rapporto la laringe, rispettivamente cranialmente e caudalmente?",
+     "o": [
+      "Con la trachea e con l'esofago",
+      "Con la cavità orale e con i bronchi",
+      "Con l'esofago e con la trachea",
+      "Con l'orofaringe e con la trachea"
+     ],
+     "c": 3,
+     "s": "La laringe è in rapporto cranialmente con l'orofaringe e caudalmente con la trachea."
+    },
+    {
+     "d": "Perché il polmone è considerato un organo parenchimatoso nonostante contenga numerose strutture cave?",
+     "o": [
+      "Perché a livello macroscopico, come organo, non presenta una parete",
+      "Perché i bronchi e gli alveoli sono privi di epitelio di rivestimento",
+      "Perché la sua unità morfofunzionale è il nefrone, formato da tubuli",
+      "Perché è un organo impari situato nel mediastino"
+     ],
+     "c": 0,
+     "s": "Nel polmone come organo non si osserva una parete: se ne studia l'unità morfofunzionale."
+    },
+    {
+     "d": "Nella parete di un organo cavo, quale tessuto guarda verso il lume dell'organo?",
+     "o": [
+      "Il tessuto muscolare, che modifica l'ampiezza della cavità",
+      "L'epitelio di rivestimento, più o meno permeabile",
+      "Il connettivo, che sostiene la parete meccanicamente",
+      "Il tessuto cartilagineo, che mantiene l'organo pervio"
+     ],
+     "c": 1,
+     "s": "L'epitelio di rivestimento crea una parete permeabile ed è la parte che guarda il lume."
+    },
+    {
+     "d": "Quali componenti della parete sono assenti negli alveoli?",
+     "o": [
+      "L'epitelio di rivestimento e la lamina basale",
+      "La mucosa e il capillare che la circonda",
+      "La sottomucosa e il tessuto muscolare",
+      "La sierosa e le strutture cartilaginee"
+     ],
+     "c": 2,
+     "s": "Gli alveoli hanno una mucosa sottilissima e mancano di sottomucosa e muscolatura, per favorire gli scambi."
+    },
+    {
+     "d": "Quale struttura è l'unità morfofunzionale del rene?",
+     "o": [
+      "Il lobulo epatico",
+      "Il lobulo polmonare",
+      "L'osteone",
+      "Il nefrone"
+     ],
+     "c": 3,
+     "s": "Nel rene, organo pieno, l'unità morfofunzionale è il nefrone."
+    },
+    {
+     "d": "Quale tra le seguenti ossa del cranio è un osso impari?",
+     "o": [
+      "L'osso occipitale",
+      "L'osso temporale",
+      "L'osso parietale",
+      "L'osso palatino"
+     ],
+     "c": 0,
+     "s": "Frontale e occipitale sono impari; temporali, parietali e palatine sono pari."
+    },
+    {
+     "d": "Di che tipo è il movimento con cui si elevano e si deprimono la scapola e la spalla?",
+     "o": [
+      "Movimento angolare che avviene sul piano sagittale",
+      "Movimento di scivolamento sul piano frontale",
+      "Movimento assiale sul piano trasversale",
+      "Movimento angolare sul piano frontale"
+     ],
+     "c": 1,
+     "s": "Elevando e deprimendo la spalla, la scapola scivola sul piano frontale."
+    },
+    {
+     "d": "Su quale piano avvengono i movimenti di protrazione e retrazione della scapola?",
+     "o": [
+      "Sul piano sagittale, intorno all'asse trasverso",
+      "Sul piano frontale, intorno all'asse sagittale",
+      "Sul piano trasversale, come movimenti di scivolamento",
+      "Sul piano frontale, come movimenti angolari"
+     ],
+     "c": 2,
+     "s": "Osservando la scapola dall'alto si notano protrazione e retrazione, scivolamenti sul piano trasversale."
+    },
+    {
+     "d": "Intorno a quale asse avvengono i movimenti di flessione ed estensione?",
+     "o": [
+      "Intorno all'asse sagittale, sul piano frontale",
+      "Intorno all'asse longitudinale, sul piano trasversale",
+      "Intorno all'asse verticale, sul piano frontale",
+      "Intorno all'asse trasversale, sul piano sagittale"
+     ],
+     "c": 3,
+     "s": "Flessione ed estensione avvengono sul piano sagittale intorno all'asse trasverso."
+    },
+    {
+     "d": "Come si chiama il movimento di allontanamento dell'arto rispetto al tronco sul piano frontale?",
+     "o": [
+      "Abduzione",
+      "Adduzione",
+      "Estensione",
+      "Protrazione"
+     ],
+     "c": 0,
+     "s": "Abduzione indica l'allontanamento dell'arto dal tronco, adduzione l'avvicinamento."
+    },
+    {
+     "d": "Quali termini si utilizzano per i movimenti della mandibola sul piano sagittale intorno all'asse trasverso?",
+     "o": [
+      "Flessione ed estensione",
+      "Elevazione e depressione",
+      "Protrusione e retrazione",
+      "Abduzione e adduzione"
+     ],
+     "c": 1,
+     "s": "Per la mandibola si parla di elevazione e depressione (o abbassamento) sul piano sagittale."
+    },
+    {
+     "d": "Perché la stabilità della mandibola ha implicazioni anche sulle strutture connesse all'udito?",
+     "o": [
+      "Per la vicinanza tra l'epiglottide e il padiglione auricolare",
+      "Per la presenza di un muscolo auricolare in alcuni individui",
+      "Per la vicinanza tra condilo e cavità glenoidea del temporale",
+      "Per il rapporto diretto tra la laringe e l'organo del Corti"
+     ],
+     "c": 2,
+     "s": "Il condilo della mandibola è vicino alla cavità glenoidea dell'osso temporale, con implicazioni sull'orecchio."
+    },
+    {
+     "d": "Tra quali strutture avviene la rotazione della testa compiuta per fare «no»?",
+     "o": [
+      "Tra il condilo della mandibola e l'osso temporale",
+      "Tra lo sterno e l'estremità sternale della clavicola",
+      "Tra l'osso occipitale e il corpo della seconda vertebra cervicale",
+      "Tra l'arco anteriore dell'atlante e il dente dell'epistrofeo"
+     ],
+     "c": 3,
+     "s": "Il «no» avviene tra arco anteriore dell'atlante e dente dell'epistrofeo, sul piano trasversale."
+    },
+    {
+     "d": "Quali articolazioni dell'arto superiore e inferiore possono compiere movimenti di intrarotazione ed extrarotazione?",
+     "o": [
+      "La spalla e l'anca",
+      "Il gomito e il ginocchio",
+      "La sternoclavicolare e l'anca",
+      "La spalla e il ginocchio"
+     ],
+     "c": 0,
+     "s": "Spalla (cavità glenoidea-testa dell'omero) e anca (cavità acetabolare-testa del femore)."
+    },
+    {
+     "d": "Quanti assi di movimento possiede l'articolazione sternoclavicolare?",
+     "o": [
+      "Tre, come l'articolazione della spalla",
+      "Due, con elevazione-depressione e protrazione-retrazione",
+      "Uno, con la sola rotazione intorno all'asse longitudinale",
+      "Tre, grazie alla presenza di superfici pianeggianti"
+     ],
+     "c": 1,
+     "s": "La sternoclavicolare è a due assi: elevazione e depressione, protrazione e retrazione della clavicola."
+    },
+    {
+     "d": "Da quali movimenti è composta la circonduzione?",
+     "o": [
+      "Intrarotazione, extrarotazione, flessione ed estensione",
+      "Elevazione, depressione, protrazione e retrazione",
+      "Flessione, abduzione, estensione e adduzione",
+      "Flessione laterale del collo verso destra e verso sinistra"
+     ],
+     "c": 2,
+     "s": "La circonduzione è l'insieme di flessione, abduzione, estensione e adduzione."
+    },
+    {
+     "d": "Perché i tessuti connettivi sono detti anche trofomeccanici?",
+     "o": [
+      "Perché si contraggono e si rilasciano sostenendo meccanicamente gli organi",
+      "Perché ricevono impulsi e li trasmettono agli altri tessuti",
+      "Perché formano barriere che rivestono le superfici e assorbono nutrienti",
+      "Perché forniscono nutrienti ad altri tessuti e li supportano meccanicamente"
+     ],
+     "c": 3,
+     "s": "Trofos significa nutrire: i connettivi nutrono gli altri tessuti e li sostengono meccanicamente."
+    },
+    {
+     "d": "Che cosa accade nel corpuscolo del Pacini quando si esercita una pressione?",
+     "o": [
+      "Le sue cellule si deformano e si genera un potenziale d'azione",
+      "Le sue cellule secernono un prodotto sulla superficie dell'epidermide",
+      "Le sue cellule si contraggono e modificano l'ampiezza della cavità",
+      "Le sue cellule si dividono e rinnovano la barriera epiteliale"
+     ],
+     "c": 0,
+     "s": "La pressione deforma le cellule del corpuscolo e genera un potenziale d'azione nel neurone sensitivo."
+    },
+    {
+     "d": "Perché un taglietto superficiale o un'abrasione non provocano sanguinamento?",
+     "o": [
+      "Perché i capillari dell'epidermide si chiudono rapidamente da soli",
+      "Perché gli epiteli sono privi di vasi, presenti nel derma",
+      "Perché l'epidermide è un connettivo lasso povero di vasi",
+      "Perché le cellule staminali dell'epitelio riparano i capillari"
+     ],
+     "c": 1,
+     "s": "Gli epiteli sono privi di vasi: si sanguina solo raggiungendo il derma, ricco di capillari."
+    },
+    {
+     "d": "Da che cosa dipende il numero di strati di un epitelio?",
+     "o": [
+      "Dalla quantità di matrice presente tra le cellule epiteliali",
+      "Dalla distanza dell'epitelio dal piano sagittale mediano",
+      "Dallo stress a cui è sottoposto e dagli scambi che deve permettere",
+      "Dalla presenza di microvilli sulla porzione apicale della membrana"
+     ],
+     "c": 2,
+     "s": "Più stress comporta più strati; dove servono scambi gli strati si riducono."
+    },
+    {
+     "d": "Quale tipo di epitelio di rivestimento è definito praticamente inesistente, pur comparendo nella classificazione?",
+     "o": [
+      "L'epitelio cubico pluristratificato",
+      "L'epitelio pavimentoso pluristratificato",
+      "L'epitelio cilindrico semplice",
+      "L'epitelio cilindrico pluristratificato"
+     ],
+     "c": 3,
+     "s": "Il cilindrico pluristratificato è praticamente inesistente; il cubico pluristratificato è più raro."
+    },
+    {
+     "d": "Su quale struttura poggiano gli pneumociti dell'epitelio pavimentoso semplice degli alveoli?",
+     "o": [
+      "Su un sottilissimo strato di connettivo, la lamina basale",
+      "Su uno strato di cartilagine elastica che li mantiene pervi",
+      "Su un epitelio cubico semplice che regola gli scambi di ioni",
+      "Su una tonaca muscolare che ne modifica l'ampiezza"
+     ],
+     "c": 0,
+     "s": "Gli pneumociti, cellule molto piatte, poggiano sulla lamina basale, un sottile strato di connettivo."
+    },
+    {
+     "d": "Dove si trova, ad esempio, l'epitelio cubico semplice?",
+     "o": [
+      "Nella mucosa masticatoria della cavità orale",
+      "Nei tubuli del nefrone",
+      "Nella parete degli alveoli polmonari",
+      "Nell'epidermide della cute"
+     ],
+     "c": 1,
+     "s": "L'epitelio cubico semplice si trova nei tubuli del nefrone, dove avvengono scambi continui."
+    },
+    {
+     "d": "Qual è la funzione dei microvilli dell'epitelio cilindrico semplice intestinale?",
+     "o": [
+      "Spostare il chilo alimentare lungo il canale",
+      "Secernere ormoni nei capillari circostanti",
+      "Aumentare la superficie di assorbimento",
+      "Proteggere la mucosa dall'acidità del contenuto"
+     ],
+     "c": 2,
+     "s": "I microvilli moltiplicano la membrana plasmatica capace di assorbire per unità di superficie."
+    },
+    {
+     "d": "Perché l'epitelio della mucosa masticatoria è pluristratificato?",
+     "o": [
+      "Perché deve favorire lo scambio dei gas con i capillari",
+      "Perché deve assorbire le sostanze presenti nel chilo",
+      "Perché deve secernere la saliva nella cavità orale",
+      "Perché è sottoposto a stress e le cellule si ricambiano"
+     ],
+     "c": 3,
+     "s": "Nella bocca giungono sostanze anche abrasive: l'epitelio è stressato e deve ricambiarsi continuamente."
+    },
+    {
+     "d": "Dove si apre il dotto di Stenone, che riversa nella cavità orale la saliva prodotta dalla parotide?",
+     "o": [
+      "In corrispondenza del terzo molare",
+      "In corrispondenza del primo molare",
+      "Al di sotto della lingua",
+      "In corrispondenza degli incisivi"
+     ],
+     "c": 0,
+     "s": "Il dotto di Stenone della parotide si apre in corrispondenza del terzo molare."
+    },
+    {
+     "d": "Che cosa caratterizza le ghiandole endocrine rispetto alle ghiandole esocrine?",
+     "o": [
+      "Restano nell'epitelio di rivestimento come ghiandole unicellulari",
+      "Non hanno tubulo escretore e secernono ormoni nei capillari",
+      "Hanno un tubulo che riversa il secreto sulla superficie epiteliale",
+      "Secernono la saliva, la bile e i succhi pancreatici"
+     ],
+     "c": 1,
+     "s": "Le endocrine perdono il rapporto con l'epitelio e secernono ormoni in una rete mirabile di capillari."
+    },
+    {
+     "d": "Come si chiamano, nel tessuto cartilagineo, la cellula che depone la matrice e la cellula matura?",
+     "o": [
+      "Fibroblasto e fibrocita",
+      "Osteoblasto e osteocita",
+      "Condroblasto e condrocita",
+      "Tenocito e adipocita"
+     ],
+     "c": 2,
+     "s": "Nel tessuto cartilagineo la cellula che depone la matrice è il condroblasto, quella matura il condrocita."
+    },
+    {
+     "d": "Di che tipo è il tessuto connettivo del tendine?",
+     "o": [
+      "Connettivo lasso, con fibre disposte in maniera casuale",
+      "Connettivo denso elastico, come alcuni legamenti vertebrali",
+      "Connettivo lasso, con più cellule e meno matrice",
+      "Connettivo denso regolare, con fibre in un'unica direzione"
+     ],
+     "c": 3,
+     "s": "Nel tendine i tenociti producono fibre di collagene orientate lungo l'asse maggiore del muscolo."
+    },
+    {
+     "d": "Dove si ritrova la cartilagine ialina?",
+     "o": [
+      "Nella testa dell'omero, nella testa del femore e in alcune coste",
+      "Nel padiglione auricolare, nell'epiglottide e in alcune cartilagini nasali",
+      "Nelle cartilagini laringee, nelle fontanelle e tra le ossa della pelvi",
+      "Nelle ossa suturali, nell'osso dell'anca e nella diafisi delle ossa lunghe"
+     ],
+     "c": 0,
+     "s": "La cartilagine ialina, traslucida, si trova nelle articolazioni: testa dell'omero e del femore, alcune coste."
+    },
+    {
+     "d": "Perché l'epiglottide è costituita da cartilagine elastica?",
+     "o": [
+      "Perché deve mantenere sempre pervie le vie aeree",
+      "Perché deve piegarsi per chiudere l'aditus laringeo",
+      "Perché deve resistere alle forze da più direzioni",
+      "Perché deve sostenere il legamento vocale"
+     ],
+     "c": 1,
+     "s": "Con l'elevazione e la depressione della laringe, l'epiglottide si piega per chiudere l'aditus laringeo."
+    },
+    {
+     "d": "Quale tipo di cartilagine costituisce le cartilagini laringee, importanti per i movimenti delle corde vocali?",
+     "o": [
+      "La cartilagine elastica",
+      "La cartilagine ialina",
+      "La cartilagine fibrosa",
+      "Il tessuto osseo spugnoso"
+     ],
+     "c": 2,
+     "s": "La laringe si sviluppa con molta cartilagine fibrosa; solo l'epiglottide è elastica."
+    },
+    {
+     "d": "Perché il numero di ossa dello scheletro viene indicato come «circa 206»?",
+     "o": [
+      "Perché alcune ossa del bacino si saldano in età adulta",
+      "Perché le coste variano da individuo a individuo",
+      "Perché le ossa piatte del cranio non sono separabili",
+      "Perché possono esistere ossa soprannumerarie suturali"
+     ],
+     "c": 3,
+     "s": "Possono essere presenti ossa soprannumerarie, soprattutto nella testa, come le ossa suturali."
+    },
+    {
+     "d": "Da che cosa deriva la resistenza dell'osso alla trazione?",
+     "o": [
+      "Dalle fibre di collagene interposte nella matrice",
+      "Dai sali di idrossiapatite di calcio e fosfato",
+      "Dagli osteociti collegati tra loro da prolungamenti",
+      "Dagli osteoclasti presenti nella parte interna dell'osso"
+     ],
+     "c": 0,
+     "s": "L'idrossiapatite resiste alla compressione; le fibre di collagene consentono di resistere alla trazione."
+    },
+    {
+     "d": "Quale caratteristica distingue gli osteoclasti dagli osteoblasti?",
+     "o": [
+      "Derivano dalla cellula osteoprogenitrice e depongono la matrice ossea",
+      "Hanno caratteri macrofagici e non derivano dalla cellula osteoprogenitrice",
+      "Restano murati nella matrice deposta, all'interno di una lacuna",
+      "Si trovano sul versante esterno dell'osso, nel contesto del periostio"
+     ],
+     "c": 1,
+     "s": "Gli osteoclasti hanno caratteristiche macrofagiche, molti lisosomi e non derivano dalla cellula osteoprogenitrice."
+    },
+    {
+     "d": "In che modo la carenza di vitamina D è collegata all'osteoporosi?",
+     "o": [
+      "Riduce l'attività degli osteoclasti e la degradazione della matrice",
+      "Aumenta la quota di acqua nella sostanza amorfa dell'osso",
+      "Fa prevalere l'azione degli osteoclasti su quella degli osteoblasti",
+      "Impedisce la formazione degli osteoni nel tessuto osseo spugnoso"
+     ],
+     "c": 2,
+     "s": "La vitamina D favorisce la deposizione del calcio: la sua carenza sbilancia l'osso verso gli osteoclasti."
+    },
+    {
+     "d": "Quale struttura può essere considerata l'unità morfofunzionale del tessuto osseo compatto?",
+     "o": [
+      "La lacuna",
+      "La trabecola",
+      "La cavità midollare",
+      "L'osteone"
+     ],
+     "c": 3,
+     "s": "L'osteone, formato da lamelle concentriche intorno a un canale centrale, è l'unità morfofunzionale."
+    },
+    {
+     "d": "Perché nelle epifisi delle ossa lunghe prevale il tessuto osseo spugnoso?",
+     "o": [
+      "Perché vi giungono forze da tutte le direzioni",
+      "Perché vi giungono forze da un'unica direzione",
+      "Perché vi si trovano gli osteoni più numerosi",
+      "Perché vi si inseriscono i tendini dei muscoli"
+     ],
+     "c": 0,
+     "s": "La rete trabecolare risponde meglio a forze da più direzioni e alleggerisce l'osso."
+    }
+   ]
   }
  ]
 }
