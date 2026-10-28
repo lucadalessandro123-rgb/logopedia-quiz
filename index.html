@@ -171,6 +171,9 @@ button.item:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--shado
 .mode .md { font-size: 0.85rem; color: var(--muted); }
 .mode .mc { margin-top: 6px; align-self: flex-start; padding: 3px 10px; border-radius: 999px; background: var(--accent-soft); font-size: 0.78rem; font-weight: 800; color: var(--accent); }
 .mode:disabled .mc { background: var(--todo); color: var(--muted); }
+.card .mode.pick { background: var(--soft); box-shadow: inset 0 0 0 2px var(--line); }
+.card .mode.pick[aria-pressed="true"] { background: var(--accent-soft); box-shadow: inset 0 0 0 3px var(--accent), 0 3px 0 var(--accent-dark); }
+.card .mode.pick[aria-pressed="true"] .mt::before { content: "✓ "; color: var(--accent); }
 
 .empty { border: 2px dashed var(--line-strong); border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 6px; background: var(--soft); }
 .chnav { display: flex; justify-content: space-between; gap: 12px; }
@@ -648,6 +651,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     else if (a === "lessons") go({ name: "lessons", materia: m });
     else if (a === "chapter") go({ name: "chapter", materia: m, lesson: Number(b.dataset.l) });
     else if (a === "setup") go({ name: "setup", materia: m, mode: b.dataset.mode, lesson: b.dataset.l != null ? Number(b.dataset.l) : null });
+    else if (a === "gmode") { S.view = { ...S.view, mode: b.dataset.mode }; render(); }
     else if (a === "count") { S.count = Number(b.dataset.c); render(); }
     else if (a === "start") { const v = { ...S.view, count: S.count }; startQuiz(v, pool(v)); }
     else if (a === "demo") startQuiz({ materia: "demo", mode: "demo", count: "all" }, allQuestions("demo"));
@@ -710,7 +714,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     if (!lez.length) {
       return head + `<div class="empty"><h3>Nessun capitolo caricato</h3>
         <p class="muted small">Manda a Claude la sbobina di un capitolo di ${s.nome} e chiedi di aggiungere le domande al sito. I capitoli compariranno qui con il loro avanzamento.</p></div>
-        <section><div class="sec-title"><h2>Esercitati</h2></div><div class="modes">${modeBtns(m, t, true)}</div></section>`;
+        <section><div class="sec-title"><h2>Esercitati</h2></div><div class="modes three">${modeBtns(m, t, true)}</div></section>`;
     }
     const chapters = lez.map(l => {
       const tl = stats(m, l.n), pl = pcts(tl);
@@ -736,7 +740,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
         </div>
         ${sbar(t, true)}${legend(t)}
       </div>
-      <section><div class="sec-title"><h2>Esercitati</h2></div><div class="modes">${modeBtns(m, t, false)}</div></section>
+      <section><div class="sec-title"><h2>Esercitati</h2></div><div class="modes three">${modeBtns(m, t, false)}</div></section>
       <section><div class="sec-title"><h2>Avanzamento per capitolo</h2><span class="muted small">Tocca un capitolo per fare il quiz</span></div>
         <div class="list">${chapters}</div></section>
       ${reset}`;
@@ -747,8 +751,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
       `<button class="mode" data-a="${a}" data-m="${m}"${mode ? ` data-mode="${mode}"` : ""}${dis ? " disabled" : ""}>
         <span class="mt">${title}</span><span class="md">${desc}</span><span class="mc">${c}</span></button>`;
     return b("lessons", "", "Quiz per capitolo", "Un capitolo alla volta: tutte le domande, solo le nuove o gli errori.", plural(L, "capitolo", "capitoli"), empty)
-      + b("setup", "generale", "Quiz generale", "Tutto il programma, comprese le domande già fatte.", plural(t.tot, "domanda", "domande"), empty || !t.tot)
-      + b("setup", "nuove", "Quiz generale · solo nuove", "Tutto il programma, solo domande mai fatte.", plural(t.nuove, "domanda nuova", "domande nuove"), empty || !t.nuove)
+      + b("setup", "generale", "Quiz generale", "Tutto il programma: tutte le domande oppure solo quelle nuove.", plural(t.tot, "domanda", "domande") + " · " + plural(t.nuove, "nuova", "nuove"), empty || !t.tot)
       + b("setup", "errori", "Ripasso errori", "Una risposta corretta toglie la domanda dagli errori.", plural(t.errori, "errore", "errori"), empty || !t.errori);
   }
 
@@ -813,7 +816,20 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     const back = isChapterMode(v.mode)
       ? `<button class="back" data-a="chapter" data-m="${v.materia}" data-l="${v.lesson}">‹ Capitolo ${v.lesson}</button>`
       : `<button class="back" data-a="subject" data-m="${v.materia}">‹ ${s.nome}</button>`;
-    return back + `<div class="head"><span class="eyebrow">${esc(sub)}</span><h1>${MODES[v.mode]}</h1></div>
+    const isGen = v.mode === "generale" || v.mode === "nuove";
+    let pick = "";
+    if (isGen) {
+      const t = stats(v.materia);
+      const g = (mode, title, desc, c, dis) =>
+        `<button class="mode pick" data-a="gmode" data-mode="${mode}" aria-pressed="${v.mode === mode}"${dis ? " disabled" : ""}>
+          <span class="mt">${title}</span><span class="md">${desc}</span><span class="mc">${c}</span></button>`;
+      pick = `<div class="card"><h3>Quali domande</h3><div class="modes">
+          ${g("generale", "Tutte le domande", "Tutto il programma, comprese le domande già fatte.", plural(t.tot, "domanda", "domande"), !t.tot)}
+          ${g("nuove", "Solo domande nuove", "Tutto il programma, solo domande mai fatte.", plural(t.nuove, "domanda nuova", "domande nuove"), !t.nuove)}
+        </div></div>`;
+    }
+    return back + `<div class="head"><span class="eyebrow">${esc(sub)}</span><h1>${isGen ? "Quiz generale" : MODES[v.mode]}</h1></div>
+      ${pick}
       <div class="card">
         <h3>Numero di domande</h3>
         <div class="seg">${seg}</div>
