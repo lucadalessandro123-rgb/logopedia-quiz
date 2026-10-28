@@ -1,5 +1,507 @@
 {
-  "materia": "statistica",
-  "nome": "Statistica",
-  "lezioni": []
+ "materia": "statistica",
+ "nome": "Statistica",
+ "lezioni": [
+  {
+   "n": 1,
+   "titolo": "Introduzione alla statistica e classificazione dei dati",
+   "domande": [
+    {
+     "d": "Per quale motivo si ricorre frequentemente al campione anziché all'intera popolazione?",
+     "o": [
+      "Perché i dati di popolazione non sono tutti disponibili o la loro raccolta ha costi troppo elevati",
+      "Perché sulla popolazione non si possono calcolare le misure di tendenza centrale, di variabilità e di associazione",
+      "Perché il campione fornisce stime prive di errore, a differenza dei dati dell'intera popolazione",
+      "Perché il campione riproduce in modo esatto la struttura della popolazione da cui viene estratto"
+     ],
+     "c": 0,
+     "s": "Lavorare sui dati di popolazione spesso non è possibile: i dati non sono tutti disponibili o la raccolta è troppo costosa."
+    },
+    {
+     "d": "Come è definita l'unità statistica?",
+     "o": [
+      "L'insieme di tutte le unità oggetto di studio in una ricerca",
+      "L'elemento portatore dell'informazione, non necessariamente una persona",
+      "Il singolo paziente sul quale vengono osservati e misurati i parametri clinici",
+      "La caratteristica osservata e misurata su ciascun soggetto studiato"
+     ],
+     "c": 1,
+     "s": "L'unità statistica è l'elemento portatore dell'informazione; può essere anche un ospedale, una regione o un Paese."
+    },
+    {
+     "d": "In che cosa i metodi quantitativi differiscono dai metodi qualitativi?",
+     "o": [
+      "Impiegano misure di sintesi, indici, tabelle e grafici anziché la forma narrativa",
+      "Escludono la presenza di errore, come accade nei modelli puramente matematici",
+      "Descrivono il fenomeno in forma narrativa anziché mediante misure di sintesi e indici",
+      "Sono propri della matematica e della fisica, ma non trovano impiego in medicina"
+     ],
+     "c": 0,
+     "s": "I metodi qualitativi descrivono un fenomeno in forma narrativa; quelli quantitativi usano misure di sintesi, indici, tabelle e grafici."
+    },
+    {
+     "d": "Che cosa distingue la statistica da un modello matematico?",
+     "o": [
+      "La statistica fornisce risultati privi di errore, come avviene per l'operazione 2 + 2",
+      "La statistica introduce l'errore, dovuto all'eterogeneità delle unità del collettivo",
+      "La statistica rinuncia ai metodi matematici e si basa su tabelle e grafici descrittivi",
+      "La statistica studia i fenomeni individuali, la matematica i fenomeni collettivi"
+     ],
+     "c": 1,
+     "s": "Un modello matematico non prevede errore; la statistica lo introduce perché le unità del collettivo non sono tutte uguali."
+    },
+    {
+     "d": "Che cosa si intende per variabilità biologica?",
+     "o": [
+      "Il fatto che lo stesso paziente differisce da sé stesso se misurato a distanza di tempo",
+      "Il fatto che i risultati cambiano ripetendo l'indagine su un campione differente",
+      "Il fatto che le unità del campione differiscono da quelle della popolazione obiettivo",
+      "Il fatto che due pazienti con le stesse caratteristiche presentano valori clinici identici"
+     ],
+     "c": 0,
+     "s": "Per variabilità biologica lo stesso paziente varia nel tempo: ad esempio la pressione misurata oggi e tra un mese."
+    },
+    {
+     "d": "Come sono composti i due bracci di uno studio clinico sperimentale?",
+     "o": [
+      "Sperimentale con il nuovo farmaco; di controllo senza alcun tipo di somministrazione",
+      "Sperimentale con il nuovo farmaco; di controllo con placebo o trattamento standard",
+      "Sperimentale con placebo o trattamento standard; di controllo con il nuovo farmaco",
+      "Sperimentale con volontari sani; di controllo con pazienti affetti dalla malattia"
+     ],
+     "c": 1,
+     "s": "Il gruppo sperimentale riceve il nuovo farmaco; il gruppo di controllo riceve il placebo o il trattamento standard in uso."
+    },
+    {
+     "d": "Che cos'è il placebo, secondo il testo verificato?",
+     "o": [
+      "Una dose ridotta del nuovo farmaco, impiegata per valutarne la tossicità nella fase iniziale",
+      "Una preparazione a base di sola acqua, distinguibile dal farmaco per l'aspetto",
+      "Una preparazione inerte, priva di principio attivo, identica al farmaco per aspetto",
+      "Il trattamento standard già in uso per la malattia, dato al gruppo di controllo"
+     ],
+     "c": 2,
+     "s": "Il placebo è una preparazione inerte, priva di principio attivo, identica al farmaco in studio per aspetto e modalità di somministrazione."
+    },
+    {
+     "d": "Qual è l'obiettivo della fase 1 della sperimentazione di un farmaco, secondo il testo verificato?",
+     "o": [
+      "Farmacocinetica, sicurezza e tollerabilità, su pochi soggetti, in genere volontari sani",
+      "Sorveglianza della sicurezza dopo l'immissione in commercio, su larga scala",
+      "Quantificazione più accurata dell'efficacia, su un campione di volontari decisamente più ampio",
+      "Attività terapeutica e dose ottimale, su pazienti affetti dalla malattia in esame"
+     ],
+     "c": 0,
+     "s": "La fase 1 studia farmacocinetica, sicurezza e tollerabilità su pochi soggetti; la fase 2 valuta attività e dose ottimale."
+    },
+    {
+     "d": "Il gruppo trattato con il farmaco tradizionale sopravvive 10 mesi, quello trattato con il nuovo farmaco 11 mesi. Che cosa si può concludere prima dell'analisi statistica?",
+     "o": [
+      "Nulla, perché la differenza potrebbe essere dovuta alla casualità del campionamento",
+      "Che il nuovo farmaco è superiore, poiché 11 mesi di sopravvivenza superano i 10 mesi",
+      "Che i due farmaci sono equivalenti, poiché la differenza osservata è di un solo mese",
+      "Che il nuovo farmaco è superiore, dato che ciascun gruppo comprende 100 soggetti"
+     ],
+     "c": 0,
+     "s": "Non si può ancora concludere nulla: una quota del risultato può essere dovuta al caso introdotto dal campionamento."
+    },
+    {
+     "d": "Che cosa rappresenta il p-value, secondo il testo verificato?",
+     "o": [
+      "Il margine di errore della stima, calcolato in base alla dimensione dei due campioni dello studio",
+      "La probabilità di osservare una differenza uguale o maggiore di quella ottenuta, se vale l'ipotesi nulla",
+      "La quota del risultato attribuibile all'efficacia del farmaco, al netto della variabilità campionaria",
+      "La probabilità che il nuovo farmaco sia davvero più efficace del tradizionale, dati i risultati ottenuti"
+     ],
+     "c": 1,
+     "s": "Assumendo l'ipotesi nulla di nessuna differenza, il p-value è la probabilità di osservare una differenza uguale o maggiore di quella ottenuta."
+    },
+    {
+     "d": "Che cosa sono la sensibilità e la specificità?",
+     "o": [
+      "Due indicatori compositi della qualità dei servizi",
+      "Due misure dell'accuratezza di un test diagnostico",
+      "Due misure della tendenza centrale di una variabile",
+      "Due fasi della sperimentazione clinica di un farmaco"
+     ],
+     "c": 1,
+     "s": "Specificità e sensibilità sono due misure dell'accuratezza, con cui si può valutare qualunque test diagnostico."
+    },
+    {
+     "d": "Che cosa afferma il paradigma dell'Evidence-Based Medicine, introdotto negli anni Novanta?",
+     "o": [
+      "Che il medico può curare i pazienti basandosi sulle conoscenze apprese durante gli studi",
+      "Che il medico deve basare le proprie decisioni sui dati riportati da giornali e social",
+      "Che il medico deve aggiornarsi principalmente tramite l'informatore scientifico che lo visita in studio",
+      "Che il medico deve affiancare la formazione continua alle competenze acquisite con lo studio"
+     ],
+     "c": 3,
+     "s": "Secondo l'EBM il medico non può curare basandosi solo su quanto appreso negli studi: deve aggiornarsi continuamente."
+    },
+    {
+     "d": "Che cosa afferma il paradosso di Simpson, come descritto nel testo?",
+     "o": [
+      "Che non si deve presentare il dato aggregato come assoluto se una variabile sottostante lo spiega",
+      "Che il dato aggregato va preferito a quello stratificato, perché riassume tutta l'informazione",
+      "Che il tasso di letalità e il tasso di mortalità coincidono quando non si effettua la stratificazione",
+      "Che un campione più numeroso elimina le distorsioni dovute alla diversa struttura per età"
+     ],
+     "c": 0,
+     "s": "Il dato aggregato non va presentato come informazione generale quando esiste una variabile sottostante (qui l'età) che lo spiega."
+    },
+    {
+     "d": "Nell'interpretazione proposta dal testo, perché l'Italia presentava una letalità complessiva da COVID-19 più elevata della Cina?",
+     "o": [
+      "Perché i dati italiani provenivano dai giornali anziché da fonti ufficiali come l'ISS",
+      "Perché la popolazione italiana è più anziana e il COVID-19 colpisce di più gli anziani",
+      "Perché in Italia gli infetti erano più numerosi in rapporto alla popolazione residente",
+      "Perché il sistema sanitario italiano ha dato una risposta meno efficiente di quello cinese"
+     ],
+     "c": 1,
+     "s": "L'Italia ha una quota maggiore di anziani, più colpiti dal COVID-19: per questo la letalità complessiva risultava più alta."
+    },
+    {
+     "d": "Nel confronto della letalità da COVID-19 tra Italia e Cina, quale ruolo ha l'età secondo il testo verificato?",
+     "o": [
+      "È un indicatore composito del benessere socio-economico dei due Paesi",
+      "È la variabile di interesse che viene confrontata tra i due Paesi",
+      "È la variabile di confondimento rispetto a cui si stratifica la letalità",
+      "È il denominatore del tasso di letalità, al posto del totale degli infetti"
+     ],
+     "c": 2,
+     "s": "La variabile di interesse è la letalità; l'età è la variabile di confondimento rispetto alla quale si stratifica."
+    },
+    {
+     "d": "Che cosa distingue un indicatore da un semplice indice?",
+     "o": [
+      "L'indicatore è un dato elaborato relativo a una grandezza che può essere contata direttamente",
+      "L'indicatore riguarda il singolo paziente, mentre l'indice riguarda un Paese",
+      "L'indicatore proviene dai giornali, mentre l'indice proviene da fonti ufficiali",
+      "L'indicatore serve a misurare un concetto sottostante non direttamente misurabile"
+     ],
+     "c": 3,
+     "s": "Gli indici riguardano grandezze direttamente misurabili; gli indicatori servono quando il concetto sottostante non è misurabile direttamente."
+    },
+    {
+     "d": "Perché la qualità della vita è definita un concetto latente multifattoriale?",
+     "o": [
+      "Perché non è misurabile direttamente e possiede più dimensioni",
+      "Perché dipende da un unico fattore, l'inquinamento, non osservabile",
+      "Perché è misurabile direttamente, come la temperatura, ma varia",
+      "Perché coincide con un solo indice, il tasso di mortalità infantile"
+     ],
+     "c": 0,
+     "s": "Non esiste uno strumento che la misuri direttamente (latente) e comprende più dimensioni (multifattoriale)."
+    },
+    {
+     "d": "Perché il tasso di mortalità infantile è al tempo stesso un indice e un indicatore?",
+     "o": [
+      "Perché si ottiene combinando numerosi sotto-indicatori mediante l'analisi delle componenti",
+      "Perché è riconosciuto come indicatore del benessere socio-economico, sanitario e ambientale",
+      "Perché misura direttamente la qualità della vita, come un termometro misura la temperatura",
+      "Perché viene calcolato sulla popolazione residente anziché sul numero dei nati vivi"
+     ],
+     "c": 1,
+     "s": "Dietro il tasso di mortalità infantile vi è un concetto latente: è riconosciuto come indicatore del benessere di un Paese."
+    },
+    {
+     "d": "Che cosa si trova nei metadati degli indicatori, ad esempio sul sito dell'OMS?",
+     "o": [
+      "I questionari del censimento, con le domande su salute, economia e nucleo familiare",
+      "I dati individuali dei pazienti, accessibili su richiesta compilando un apposito modulo",
+      "Il razionale dell'indice: perché è stato scelto, che cosa rappresenta e che cosa misura",
+      "Le classifiche annuali delle province italiane stilate in base alla qualità della vita"
+     ],
+     "c": 2,
+     "s": "Nei metadati è riportato il razionale degli indici: perché sono stati scelti, che cosa rappresentano e che cosa misurano."
+    },
+    {
+     "d": "Che cos'è il censimento?",
+     "o": [
+      "L'indagine svolta su un campione stratificato per fasce d'età della popolazione",
+      "L'indagine svolta online ogni volta che serve, su un numero ridotto di famiglie",
+      "L'indagine completa e totale che riguarda tutta la popolazione oggetto di studio",
+      "L'indagine parziale condotta su una sottopopolazione, come le piccole e medie imprese"
+     ],
+     "c": 2,
+     "s": "Il censimento è la rilevazione completa (censuaria) che riguarda tutta la popolazione oggetto di studio."
+    },
+    {
+     "d": "In che cosa consiste il censimento permanente effettuato dall'ISTAT dal 2018?",
+     "o": [
+      "In una rilevazione decennale su tutte le famiglie, con il questionario consegnato da un rilevatore",
+      "In una semplice indagine campionaria svolta online, senza alcuna integrazione con altre fonti",
+      "In una rilevazione annuale sulle piccole e medie imprese, condotta tramite un questionario postale",
+      "In una rilevazione annuale su circa 1,4 milioni di famiglie, integrata con i registri amministrativi"
+     ],
+     "c": 3,
+     "s": "Dal 2018 il censimento è permanente: ogni anno su un campione di circa 1,4 milioni di famiglie, integrato con i registri amministrativi."
+    },
+    {
+     "d": "Che cosa si intende per effetto intervistatore nel censimento?",
+     "o": [
+      "La perdita di dettaglio territoriale dovuta all'impiego di strumenti di rilevazione online",
+      "La distorsione dovuta all'intervistatore che suggerisce le risposte o compila il questionario",
+      "La distorsione dovuta al campione che non include nessuna unità di un intero quartiere",
+      "La variabilità dei risultati che si osserva ripetendo l'indagine su un campione diverso"
+     ],
+     "c": 1,
+     "s": "Gli intervistatori, pagati per intero solo per questionari completi, potevano suggerire le risposte o compilarli da sé, distorcendo i dati."
+    },
+    {
+     "d": "Quale tra i seguenti è un difetto dell'indagine campionaria?",
+     "o": [
+      "La bassa frequenza: l'indagine viene ripetuta una volta ogni dieci anni",
+      "Il costo elevato: occorre retribuire migliaia di intervistatori sul territorio",
+      "La variabilità campionaria: su un altro campione i risultati possono essere diversi",
+      "La lentezza: l'analisi dei dati richiede tempi molto più lunghi rispetto al censimento"
+     ],
+     "c": 2,
+     "s": "Tra i difetti vi sono la variabilità campionaria e l'impossibilità di raggiungere livelli territoriali dettagliati."
+    },
+    {
+     "d": "Come si comporta l'errore di una stima al crescere della dimensione del campione?",
+     "o": [
+      "Si annulla: oltre le 1000 unità la stima coincide con il valore vero",
+      "Resta invariato: l'errore dipende dal criterio con cui si estrae il campione",
+      "Aumenta: con più unità cresce anche la variabilità che viene osservata",
+      "Si riduce: una stima su 1000 unità è più precisa di una stima su 100"
+     ],
+     "c": 3,
+     "s": "Più grande è il campione, minore è l'errore che si commette: 1000 unità danno una stima più precisa di 100."
+    },
+    {
+     "d": "Che cosa si intende per campionamento stratificato?",
+     "o": [
+      "Un campionamento che rispetta gli strati della popolazione, ad esempio la proporzione tra maschi e femmine",
+      "Un campionamento che seleziona i soggetti più gravi, ad esempio i pazienti ricoverati in ospedale",
+      "Un campionamento limitato a una sottopopolazione, ad esempio alle piccole e medie imprese del territorio",
+      "Un campionamento che suddivide la variabile in classi, ad esempio in classi di età equispaziate"
+     ],
+     "c": 0,
+     "s": "Nel campionamento stratificato il campione rispetta gli strati della popolazione, ad esempio la proporzione tra i sessi."
+    },
+    {
+     "d": "Perché i risultati di uno studio sull'artrite reumatoide condotto sui pazienti del Day Hospital non sono generalizzabili a tutti i malati?",
+     "o": [
+      "Perché il campione è troppo piccolo e l'errore della stima risulta di conseguenza grandissimo",
+      "Perché in ospedale si recano i soggetti più gravi: il campione non rappresenta la popolazione target",
+      "Perché i DRG codificano le singole diagnosi in modo diverso dall'ICD-9-CM nella scheda SDO",
+      "Perché l'artrite reumatoide è un concetto latente che non può essere misurato in modo diretto"
+     ],
+     "c": 1,
+     "s": "In ospedale arrivano i casi più gravi: c'è difformità tra popolazione target e popolazione campionaria."
+    },
+    {
+     "d": "Che rapporto esiste tra carattere statistico e variabile statistica?",
+     "o": [
+      "Il carattere è una delle modalità in cui si articola la variabile",
+      "Il carattere è qualitativo, la variabile è invece di tipo numerico",
+      "Sono due termini sinonimi che indicano la stessa caratteristica",
+      "La variabile è l'unità statistica su cui si osserva il carattere"
+     ],
+     "c": 2,
+     "s": "Caratteristica (o carattere statistico) e variabile statistica sono sinonimi; ciascuna si articola in modalità."
+    },
+    {
+     "d": "Una variabile qualitativa le cui modalità sono codificate con i numeri 0, 1, 2 usati come etichette è:",
+     "o": [
+      "Quantitativa discreta, perché i codici sono numeri naturali interi",
+      "Su scala di rapporti, perché tra i codici compare lo zero",
+      "Quantitativa continua, perché i codici sono numeri reali",
+      "Ancora qualitativa, perché i codici non rappresentano quantità"
+     ],
+     "c": 3,
+     "s": "I codici numerici usati come etichette non rendono quantitativa una variabile qualitativa."
+    },
+    {
+     "d": "Il gruppo sanguigno è una variabile:",
+     "o": [
+      "Qualitativa sconnessa dicotomica",
+      "Qualitativa sconnessa politomica",
+      "Qualitativa ordinale rettilinea",
+      "Quantitativa discreta di conteggio"
+     ],
+     "c": 1,
+     "s": "Il gruppo sanguigno ha più di due modalità prive di ordine: è qualitativo sconnesso politomico."
+    },
+    {
+     "d": "Quale tra le seguenti è una variabile ordinale ciclica?",
+     "o": [
+      "Il grado di dolore",
+      "I giorni della settimana",
+      "Il colore dei capelli",
+      "Il titolo di studio"
+     ],
+     "c": 1,
+     "s": "Nel carattere ordinale ciclico l'ordine si ripete nel tempo, come per i giorni della settimana, le ore o le stagioni."
+    },
+    {
+     "d": "Quale caratteristica identifica una variabile quantitativa discreta?",
+     "o": [
+      "Le modalità sono etichette numeriche che non rappresentano vere e proprie quantità",
+      "Le modalità corrispondono ai numeri reali, con la virgola, come avviene per il peso",
+      "Le modalità corrispondono ai numeri naturali, incluso lo zero, come nei conteggi",
+      "Le modalità hanno un ordine che si ripete nel tempo, come avviene per le ore del giorno"
+     ],
+     "c": 2,
+     "s": "Le variabili discrete hanno modalità in corrispondenza con i numeri naturali, zero incluso: sono le variabili di conteggio."
+    },
+    {
+     "d": "Perché l'età espressa in anni interi non è una variabile discreta?",
+     "o": [
+      "Perché è una variabile qualitativa con modalità numeriche",
+      "Perché è una variabile di conteggio con uno zero arbitrario",
+      "Perché è una variabile ordinale che si ripete ciclicamente",
+      "Perché è una variabile continua che è stata discretizzata"
+     ],
+     "c": 3,
+     "s": "L'età non passa bruscamente da 10 a 11 anni: è una variabile continua che è stata discretizzata."
+    },
+    {
+     "d": "Suddividendo in classi una variabile continua, che tipo di variabile si ottiene?",
+     "o": [
+      "Una variabile continua, con gli stessi valori di quella originaria",
+      "Una variabile ordinale, con tante modalità quante sono le classi",
+      "Una variabile sconnessa, con modalità prive di ordine tra loro",
+      "Una variabile discreta, con tante modalità quanti sono i valori"
+     ],
+     "c": 1,
+     "s": "Le classi sono ordinate tra loro: la nuova variabile non è più numerica e può essere considerata ordinale."
+    },
+    {
+     "d": "Date le classi con limiti 156–160 e 161–165, quale confine separa le due classi?",
+     "o": [
+      "161",
+      "160,5",
+      "160,8",
+      "160"
+     ],
+     "c": 1,
+     "s": "Il confine si colloca tra i due limiti: tra 160 e 161 il confine è 160,5."
+    },
+    {
+     "d": "Nella notazione 155 –| 160, usata in alcune tabelle ISTAT, quale estremo appartiene alla classe?",
+     "o": [
+      "Il 160, mentre il 155 appartiene alla classe precedente",
+      "Entrambi, perché la barra indica gli estremi inclusi",
+      "Nessuno, perché la barra indica gli estremi esclusi",
+      "Il 155, mentre il 160 appartiene alla classe successiva"
+     ],
+     "c": 0,
+     "s": "La barra verticale indica che il valore accanto a essa è incluso: il 160 sì, il 155 appartiene alla classe precedente."
+    },
+    {
+     "d": "Che cosa si ottiene codificando con i valori 0 e 1 una variabile dicotomica come il sesso?",
+     "o": [
+      "Una variabile ordinale con un ordine tra le due modalità",
+      "Una variabile quantitativa discreta su scala di rapporti",
+      "Una variabile continua che assume valori tra 0 e 1",
+      "Una variabile binaria con lo stesso contenuto informativo"
+     ],
+     "c": 3,
+     "s": "La codifica 0–1 produce una variabile binaria: il contenuto informativo non cambia, ma il calcolo è più agevole."
+    },
+    {
+     "d": "Come si classifica l'anno di nascita secondo le due classificazioni presentate?",
+     "o": [
+      "Quantitativa discreta per tipo di carattere; di rapporti per scala di misura",
+      "Quantitativa continua per tipo di carattere; a intervalli per scala di misura",
+      "Ordinale ciclica per tipo di carattere; ordinale per scala di misura",
+      "Ordinale rettilinea per tipo di carattere; a intervalli per scala di misura"
+     ],
+     "c": 3,
+     "s": "Per tipo di carattere l'anno di nascita è ordinale rettilineo; per scala di misura è a intervalli (zero convenzionale)."
+    },
+    {
+     "d": "Nella scala nominale, quali sono la relazione e l'operazione ammesse?",
+     "o": [
+      "L'identità e le differenze",
+      "L'identità e il conteggio",
+      "L'ordinamento e i ranghi",
+      "L'ordinamento e i rapporti"
+     ],
+     "c": 1,
+     "s": "Nella scala nominale esiste solo la relazione di identità (uguale/diverso) e l'unica operazione ammessa è il conteggio."
+    },
+    {
+     "d": "Quali proprietà possiede la relazione d'ordine della scala ordinale?",
+     "o": [
+      "È simmetrica e transitiva",
+      "È asimmetrica e ciclica",
+      "È asimmetrica e transitiva",
+      "È simmetrica e ciclica"
+     ],
+     "c": 2,
+     "s": "Se A precede B non vale il contrario (asimmetrica); se A precede B e B precede C, A precede C (transitiva)."
+    },
+    {
+     "d": "Qual è il limite della scala ordinale?",
+     "o": [
+      "Non consente di stabilire se due osservazioni sono uguali o diverse",
+      "Non consente di stabilire un ordinamento tra le modalità osservate",
+      "Non consente di contare quante osservazioni ricadono in ciascuna delle modalità",
+      "Non consente di quantificare le differenze di intensità tra le osservazioni"
+     ],
+     "c": 3,
+     "s": "Si può ordinare, ma non quantificare quanto un'osservazione sia più o meno benigna di un'altra."
+    },
+    {
+     "d": "Che cosa caratterizza la scala a intervalli?",
+     "o": [
+      "Caratteri numerici con zero arbitrario: le differenze sono ammesse, i rapporti no",
+      "Caratteri qualitativi ordinati: sono ammessi il conteggio e il calcolo dei ranghi",
+      "Caratteri qualitativi sconnessi: è ammessa la sola relazione di identità tra le unità",
+      "Caratteri numerici con zero assoluto: sono ammessi le differenze e anche i rapporti"
+     ],
+     "c": 0,
+     "s": "La scala a intervalli riguarda caratteri numerici senza zero assoluto: si calcolano le differenze, non i rapporti."
+    },
+    {
+     "d": "Due soggetti ottengono 25 e 50 punti in un test del quoziente intellettivo. Che cosa si può affermare?",
+     "o": [
+      "Che B ha il doppio dell'intelligenza di A, perché nella scala del QI il valore 50 è il doppio di 25",
+      "Che tra i due vi sono 25 punti di differenza, ma non che B abbia il doppio dell'intelligenza di A",
+      "Che non si può calcolare alcuna differenza, perché il QI è misurato su una scala ordinale",
+      "Che tra i due vi sono 25 punti di differenza e che B ha il doppio dell'intelligenza di A"
+     ],
+     "c": 1,
+     "s": "Il QI è su scala a intervalli: la differenza (25 punti) si può calcolare, il rapporto no, perché manca lo zero assoluto."
+    },
+    {
+     "d": "Perché non si può affermare che 30 °C corrispondano al doppio del caldo di 15 °C?",
+     "o": [
+      "Perché una differenza di 15 gradi è troppo piccola per un rapporto",
+      "Perché la scala Celsius è ordinale e non ammette le differenze",
+      "Perché lo zero della scala Celsius è convenzionale e non assoluto",
+      "Perché la temperatura è una variabile discreta e non continua"
+     ],
+     "c": 2,
+     "s": "Lo zero della scala Celsius è arbitrario: i rapporti sono possibili solo su scala Kelvin, che ha uno zero assoluto."
+    },
+    {
+     "d": "Quale tra le seguenti variabili è misurata su scala di rapporti?",
+     "o": [
+      "La temperatura in °C",
+      "Il quoziente intellettivo",
+      "L'anno di nascita",
+      "L'altezza in metri"
+     ],
+     "c": 3,
+     "s": "L'altezza ha uno zero assoluto (non si scende sotto 0 m): 30 metri sono il doppio di 15 metri."
+    },
+    {
+     "d": "Nel database di 20 studenti, come si classifica la variabile numero di esami?",
+     "o": [
+      "Quantitativa discreta, su scala a intervalli",
+      "Quantitativa continua, su scala di rapporti",
+      "Qualitativa ordinale, su scala ordinale",
+      "Quantitativa discreta, su scala di rapporti"
+     ],
+     "c": 3,
+     "s": "È un conteggio (discreta) con zero assoluto, per cui ha senso il rapporto: è su scala di rapporti."
+    }
+   ]
+  }
+ ]
 }
