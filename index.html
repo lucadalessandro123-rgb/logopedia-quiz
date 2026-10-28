@@ -225,8 +225,10 @@ button.item:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--shado
 .feedback.ok strong { color: var(--ok-ink); }
 .feedback.ko strong { color: var(--ko-ink); }
 .dock { position: fixed; left: 0; right: 0; bottom: 0; background: var(--bg); padding-top: 12px; padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px)); box-shadow: 0 -1px 0 var(--line); }
-.dock .wrap { display: flex; justify-content: flex-end; }
-.dock .primary { width: 100%; max-width: 320px; }
+.dock .wrap { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.dock .fwd { flex: 1 1 auto; max-width: 320px; margin-left: auto; }
+.dock .prev { flex: none; padding-inline: 16px; }
+.dock .secondary:disabled { opacity: 0.45; cursor: default; transform: none; box-shadow: 0 3px 0 var(--shadow); }
 
 /* risultati */
 .result { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
@@ -588,6 +590,16 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     const Q = S.quiz;
     if (Q.i < Q.items.length - 1) { Q.i++; render(); window.scrollTo(0, 0); } else finish();
   }
+  function prev() {
+    const Q = S.quiz;
+    if (Q.i > 0) { Q.i--; render(); window.scrollTo(0, 0); }
+  }
+  document.addEventListener("keydown", ev => {
+    if (S.view.name !== "quiz" || !S.quiz || ev.altKey || ev.ctrlKey || ev.metaKey) return;
+    if (ev.target.closest && ev.target.closest("input, textarea")) return;
+    if (ev.key === "ArrowLeft") prev();
+    else if (ev.key === "ArrowRight" && S.quiz.i < S.quiz.items.length - 1) next();
+  });
   function finish() { flush(); S.view = { name: "results" }; render(); window.scrollTo(0, 0); }
   const backFromQuiz = () => go(S.quiz.materia === "demo" ? { name: "home" }
     : S.quiz.lesson != null ? { name: "chapter", materia: S.quiz.materia, lesson: S.quiz.lesson }
@@ -614,6 +626,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     else if (a === "demo") startQuiz({ materia: "demo", mode: "demo", count: "all" }, allQuestions("demo"));
     else if (a === "opt") answer(Number(b.dataset.i));
     else if (a === "next") next();
+    else if (a === "prev") prev();
     else if (a === "quit") { if (S.quiz.items.some(x => x.pick !== null)) finish(); else backFromQuiz(); }
     else if (a === "retry") { const wrong = S.quiz.items.filter(x => x.pick !== null && x.pick !== x.q.c); startQuiz({ materia: S.quiz.materia, mode: "rifai", lesson: S.quiz.lesson, count: "all" }, wrong); }
     else if (a === "back-subject") backFromQuiz();
@@ -803,7 +816,12 @@ gProvider.setCustomParameters({ prompt: "select_account" });
       ${Q.materia === "demo" ? `<p class="note">Domande di esempio: le risposte non vengono salvate.</p>` : ""}
       <p class="qtext">${esc(it.q.d)}</p>
       <div class="opts">${opts}</div>
-      ${answered ? `<div class="dock"><div class="wrap"><button class="primary" data-a="next">${Q.i < Q.items.length - 1 ? "Domanda successiva" : "Vedi il risultato"}</button></div></div>` : ""}`;
+      <div class="dock"><div class="wrap">
+        <button class="secondary prev" data-a="prev" ${Q.i === 0 ? "disabled" : ""} aria-label="Domanda precedente">‹ Precedente</button>
+        ${Q.i < Q.items.length - 1
+          ? `<button class="${answered ? "primary" : "secondary"} fwd" data-a="next">${answered ? "Successiva ›" : "Salta ›"}</button>`
+          : `<button class="${answered ? "primary" : "secondary"} fwd" data-a="quit">Vedi il risultato</button>`}
+      </div></div>`;
   }
 
   function vResults() {
@@ -827,7 +845,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
           <div class="result-hero">${mascot(76, done.length && pct < 60 ? "ko" : "ok")}<div><span class="eyebrow">Risposte corrette</span><div class="big">${right}/${done.length}</div></div></div>
           <div class="kpis"><div class="kpi"><b>${pct}%</b><span>corrette</span></div><div class="kpi"><b style="color:var(--err)">${wrong.length}</b><span>errori</span></div></div>
         </div>
-        ${done.length < Q.items.length ? `<p class="muted small">Quiz terminato a ${done.length} domande su ${Q.items.length}.</p>` : ""}
+        ${done.length < Q.items.length ? `<p class="muted small">Hai risposto a ${plural(done.length, "domanda", "domande")} su ${Q.items.length}.</p>` : ""}
         ${note ? `<p class="muted small">${note}</p>` : ""}
       </div>
       <div class="row">
