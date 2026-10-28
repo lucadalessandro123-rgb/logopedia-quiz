@@ -447,6 +447,452 @@
      "s": "La denaturazione rompe soprattutto i legami deboli che mantengono la forma della proteina; i legami peptidici restano integri."
     }
    ]
+  },
+  {
+   "n": 2,
+   "titolo": "Acidi nucleici, organizzazione del genoma e duplicazione del DNA",
+   "domande": [
+    {
+     "d": "Quale affermazione sul folding delle proteine in vivo è corretta?",
+     "o": [
+      "Ogni proteina richiede gli chaperoni, poiché il folding non dipende dalla struttura primaria",
+      "Gli chaperoni sono indispensabili soprattutto per le proteine piccole e a singolo dominio",
+      "Gli chaperoni intervengono dopo la denaturazione, per consentire la rinaturazione proteica",
+      "Molte proteine piccole e a singolo dominio si ripiegano spontaneamente, senza chaperoni"
+     ],
+     "c": 3,
+     "s": "Molte proteine piccole e a singolo dominio si ripiegano da sole, perché l'informazione per il folding è nella struttura primaria; gli chaperoni servono soprattutto alle proteine grandi e complesse."
+    },
+    {
+     "d": "Perché alcune proteine denaturate possono andare incontro a rinaturazione?",
+     "o": [
+      "Perché gli chaperoni ricostruiscono la sequenza degli amminoacidi persa con la denaturazione",
+      "Perché la struttura quaternaria resta intatta e guida il nuovo ripiegamento delle subunità",
+      "Perché la struttura primaria resta in genere intatta e conserva l'informazione per il folding",
+      "Perché il calore rompe i legami peptidici ma lascia intatti i legami a idrogeno della proteina"
+     ],
+     "c": 2,
+     "s": "Durante la denaturazione la struttura primaria rimane in genere intatta e conserva le informazioni necessarie al ripiegamento."
+    },
+    {
+     "d": "Quale caratteristica distingue il ribosio dal desossiribosio?",
+     "o": [
+      "Sul carbonio 3' il ribosio porta un gruppo –OH, il desossiribosio un atomo di H",
+      "Sul carbonio 2' il ribosio porta un gruppo –OH, il desossiribosio un atomo di H",
+      "Sul carbonio 1' il ribosio lega una purina, il desossiribosio una pirimidina",
+      "Sul carbonio 5' il ribosio lega un fosfato, il desossiribosio un gruppo –OH"
+     ],
+     "c": 1,
+     "s": "I due zuccheri differiscono per il carbonio 2': gruppo ossidrile nel ribosio, atomo di idrogeno nel desossiribosio."
+    },
+    {
+     "d": "Che cosa distingue un nucleoside da un nucleotide?",
+     "o": [
+      "Il nucleoside è formato da zucchero e fosfato; il nucleotide contiene anche la base azotata",
+      "Il nucleoside contiene il ribosio; il nucleotide contiene invece il desossiribosio",
+      "Il nucleoside è formato da base e fosfato; il nucleotide contiene anche lo zucchero pentoso",
+      "Il nucleoside è formato da zucchero e base; il nucleotide contiene anche uno o più fosfati"
+     ],
+     "c": 3,
+     "s": "Il nucleoside è costituito da zucchero e base azotata; il nucleotide comprende anche uno o più gruppi fosfato."
+    },
+    {
+     "d": "Quali basi azotate appartengono alla classe delle purine?",
+     "o": [
+      "Adenina e guanina",
+      "Citosina e timina",
+      "Citosina e uracile",
+      "Timina e uracile"
+     ],
+     "c": 0,
+     "s": "Le purine sono l'adenina e la guanina, caratterizzate da una struttura a due anelli; citosina, timina e uracile sono pirimidine."
+    },
+    {
+     "d": "Tra quali gruppi si forma il legame fosfodiesterico tra due nucleotidi adiacenti?",
+     "o": [
+      "Tra il fosfato legato al carbonio 5' e l'–OH sul carbonio 3' del nucleotide adiacente",
+      "Tra il fosfato legato al carbonio 3' e l'–OH sul carbonio 5' del nucleotide adiacente",
+      "Tra la base sul carbonio 1' e il fosfato legato al carbonio 5' del nucleotide adiacente",
+      "Tra l'–OH sul carbonio 2' e il fosfato legato al carbonio 5' del nucleotide adiacente"
+     ],
+     "c": 0,
+     "s": "Il legame fosfodiesterico unisce il gruppo fosfato associato al carbonio 5' di uno zucchero all'–OH sul carbonio 3' dello zucchero adiacente."
+    },
+    {
+     "d": "In una catena di DNA non circolare, che cosa presentano generalmente le due estremità?",
+     "o": [
+      "L'estremità 5' un gruppo OH libero, l'estremità 3' un gruppo fosfato libero",
+      "L'estremità 5' una base azotata libera, l'estremità 3' un gruppo fosfato libero",
+      "L'estremità 5' un gruppo fosfato libero, l'estremità 3' un gruppo OH libero",
+      "Entrambe un gruppo fosfato libero, legato al carbonio 5' dell'ultimo zucchero"
+     ],
+     "c": 2,
+     "s": "L'estremità 5' presenta generalmente un fosfato libero e l'estremità 3' un gruppo OH libero: da ciò deriva la polarità della catena."
+    },
+    {
+     "d": "Secondo quale convenzione si scrivono le sequenze degli acidi nucleici?",
+     "o": [
+      "Dall'estremità 5' all'estremità 3', sia per il DNA sia per l'RNA",
+      "Dall'estremità 3' alla 5' per il DNA, dalla 5' alla 3' per l'RNA",
+      "Dall'estremità 3' all'estremità 5', sia per il DNA sia per l'RNA",
+      "Dall'estremità 5' alla 3' per il DNA, dalla 3' alla 5' per l'RNA"
+     ],
+     "c": 0,
+     "s": "Per convenzione le sequenze di DNA e di RNA vengono scritte a partire dall'estremità 5' fino all'estremità 3'."
+    },
+    {
+     "d": "Chi propose il modello a doppia elica del DNA, e in quale anno?",
+     "o": [
+      "Watson e Crick, nel 1963",
+      "Watson e Crick, nel 1953",
+      "Meselson e Stahl, nel 1953",
+      "Meselson e Stahl, nel 1963"
+     ],
+     "c": 1,
+     "s": "Il modello a doppia elica fu proposto da Watson e Crick nel 1953; Meselson e Stahl dimostrarono in seguito la replicazione semiconservativa."
+    },
+    {
+     "d": "Quale regola segue l'appaiamento tra le basi delle due catene di DNA?",
+     "o": [
+      "Avviene tra basi qualsiasi, purché complementari",
+      "Avviene sempre tra due pirimidine, come C e T",
+      "Avviene sempre tra una purina e una pirimidina",
+      "Avviene sempre tra due purine, unite da tre legami"
+     ],
+     "c": 2,
+     "s": "L'appaiamento delle basi avviene sempre tra una purina e una pirimidina: adenina con timina, guanina con citosina."
+    },
+    {
+     "d": "In quali regioni della doppia elica è generalmente più facile separare le due catene?",
+     "o": [
+      "Nelle regioni ricche di guanina e citosina, unite da tre legami a idrogeno",
+      "Nelle regioni ricche di guanina e citosina, unite da due legami a idrogeno",
+      "Nelle regioni ricche di adenina e timina, unite da tre legami a idrogeno",
+      "Nelle regioni ricche di adenina e timina, unite da due legami a idrogeno"
+     ],
+     "c": 3,
+     "s": "Tra adenina e timina si formano due legami a idrogeno, tra guanina e citosina tre: le regioni ricche di A-T si separano più facilmente."
+    },
+    {
+     "d": "Che cosa significa che i due filamenti della doppia elica sono antiparalleli?",
+     "o": [
+      "Che hanno sequenze di basi identiche, lette però in direzioni tra loro opposte",
+      "Che sono avvolti l'uno attorno all'altro, uniti tra loro da legami fosfodiesterici",
+      "Che hanno orientamento opposto: uno procede in direzione 5'→3', l'altro 3'→5'",
+      "Che hanno lo stesso orientamento: entrambi procedono in direzione 5'→3'"
+     ],
+     "c": 2,
+     "s": "Antiparallelo significa che i due filamenti hanno orientamenti opposti: se uno procede 5'→3', l'altro procede 3'→5'."
+    },
+    {
+     "d": "Quale tipo di RNA è l'unico a essere tradotto in una sequenza amminoacidica?",
+     "o": [
+      "L'RNA messaggero (mRNA)",
+      "L'RNA di trasporto (tRNA)",
+      "Il microRNA (miRNA)",
+      "L'RNA ribosomiale (rRNA)"
+     ],
+     "c": 0,
+     "s": "L'mRNA è l'unico RNA tradotto in sequenza amminoacidica; rRNA, tRNA e piccoli RNA non codificanti non vengono tradotti."
+    },
+    {
+     "d": "Quale affermazione sul nucleo della cellula eucariotica è corretta?",
+     "o": [
+      "È delimitato da un involucro a doppia membrana, interrotto da pori nucleari",
+      "È un organello citoplasmatico, delimitato da una singola membrana continua",
+      "È delimitato da un involucro a doppia membrana, ma privo di pori nucleari",
+      "È delimitato da una membrana semplice, priva di pori e impermeabile all'mRNA"
+     ],
+     "c": 0,
+     "s": "Il nucleo è delimitato da un involucro nucleare a doppia membrana, interrotto da pori che regolano il traffico tra nucleo e citoplasma."
+    },
+    {
+     "d": "In quale fase la cromatina raggiunge il massimo grado di condensazione?",
+     "o": [
+      "Subito dopo la divisione cellulare",
+      "Nella metafase della mitosi",
+      "Nell'interfase, prima della duplicazione",
+      "Durante la duplicazione del DNA"
+     ],
+     "c": 1,
+     "s": "La cromatina si condensa progressivamente dopo la duplicazione e raggiunge il massimo grado di condensazione durante la mitosi, in metafase."
+    },
+    {
+     "d": "Da quali istoni è formato l'ottamero istonico del nucleosoma?",
+     "o": [
+      "Due H2A, due H2B, due H3 e due H4",
+      "Due H1, due H2A, due H2B e due H3",
+      "Due H1, due H2B, due H3 e due H4",
+      "Due H1, due H2A, due H3 e due H4"
+     ],
+     "c": 0,
+     "s": "L'ottamero istonico è formato da otto istoni organizzati in coppie: due H2A, due H2B, due H3 e due H4."
+    },
+    {
+     "d": "Quanto DNA si avvolge attorno all'ottamero istonico in un nucleosoma?",
+     "o": [
+      "Circa un giro e tre quarti, pari a circa 146 coppie di basi",
+      "Circa un giro e tre quarti, pari a circa 130 coppie di basi",
+      "Circa un giro e mezzo, pari a circa 30 coppie di basi",
+      "Circa due giri e mezzo, pari a circa 146 coppie di basi"
+     ],
+     "c": 0,
+     "s": "Il DNA si avvolge attorno all'ottamero per circa un giro e tre quarti, corrispondenti a circa 146 coppie di basi (130 è il numero approssimativo di amminoacidi di un istone)."
+    },
+    {
+     "d": "Quale funzione svolge l'istone H1?",
+     "o": [
+      "Stabilizza il punto di entrata e di uscita del DNA dal nucleosoma",
+      "Forma il nucleo dell'ottamero insieme agli istoni H3 e H4",
+      "Mantiene uniti i cromatidi fratelli fino alla loro separazione",
+      "Separa i filamenti del DNA rompendo i legami a idrogeno"
+     ],
+     "c": 0,
+     "s": "L'istone H1 non fa parte dell'ottamero: contribuisce a stabilizzare il punto di entrata e di uscita del DNA dal nucleosoma."
+    },
+    {
+     "d": "Quale associazione tra livello di compattamento e diametro è corretta?",
+     "o": [
+      "Fibra di nucleosomi: circa 10-11 nm",
+      "Fibra a solenoide: circa 2 nm",
+      "Doppia elica del DNA: circa 10-11 nm",
+      "Fibra di nucleosomi: circa 30 nm"
+     ],
+     "c": 0,
+     "s": "La fibra di nucleosomi («fibra di perle») misura circa 10-11 nm; la doppia elica circa 2 nm e il solenoide circa 30 nm."
+    },
+    {
+     "d": "Che cosa distingue i cromatidi fratelli dai cromosomi omologhi?",
+     "o": [
+      "I cromatidi sono uno materno e uno paterno; gli omologhi sono due cromosomi con geni completamente diversi",
+      "I cromatidi derivano dalla duplicazione di uno stesso cromosoma; gli omologhi sono uno materno e uno paterno",
+      "Gli omologhi derivano dalla duplicazione di uno stesso cromosoma; i cromatidi sono uno materno e uno paterno",
+      "I cromatidi contengono geni diversi tra loro; gli omologhi sono due copie identiche dello stesso cromosoma"
+     ],
+     "c": 1,
+     "s": "I cromatidi fratelli sono le due copie derivate dalla duplicazione dello stesso cromosoma; gli omologhi sono una coppia, uno materno e uno paterno, con gli stessi geni."
+    },
+    {
+     "d": "Come sono composti i 46 cromosomi delle cellule somatiche umane?",
+     "o": [
+      "46 autosomi, in 23 coppie, e 2 cromosomi sessuali",
+      "44 autosomi, in 22 coppie, e 2 cromosomi sessuali",
+      "42 autosomi, in 21 coppie, e 4 cromosomi sessuali",
+      "44 autosomi, in 23 coppie, e 2 cromosomi sessuali"
+     ],
+     "c": 1,
+     "s": "I 46 cromosomi comprendono 44 autosomi, organizzati in 22 coppie, e 2 cromosomi sessuali, che formano la ventitreesima coppia."
+    },
+    {
+     "d": "Che cosa caratterizza i cromosomi acrocentrici, come il 21 e il 22?",
+     "o": [
+      "Il centromero si trova vicino a un'estremità, in prossimità della regione telomerica",
+      "Il centromero manca e le braccia sono tenute unite dalle coesine per tutta la lunghezza",
+      "Il centromero si trova in posizione centrale e le due braccia hanno lunghezza simile",
+      "Il centromero è spostato dal centro, così che braccio corto e lungo sono ben distinti"
+     ],
+     "c": 0,
+     "s": "Nei cromosomi acrocentrici, tra cui il 21 e il 22, il centromero si trova in prossimità di un'estremità, vicino alla regione telomerica."
+    },
+    {
+     "d": "Perché il gene dell'insulina, quando deve essere attivato in una cellula pancreatica, può trovarsi in forma di eucromatina?",
+     "o": [
+      "Perché l'eucromatina, meno condensata, permette ai fattori di trascrizione di raggiungere il DNA",
+      "Perché l'eucromatina, più condensata, protegge il gene durante la trascrizione da parte dell'RNA polimerasi",
+      "Perché l'eucromatina, priva di istoni, è l'unico stato in cui il gene può essere duplicato",
+      "Perché l'eucromatina, stabilmente condensata, è tipica delle regioni attive come quelle centromeriche"
+     ],
+     "c": 0,
+     "s": "L'eucromatina è meno condensata e più accessibile: consente ai fattori di trascrizione e all'RNA polimerasi di raggiungere il gene."
+    },
+    {
+     "d": "Quale esempio di eterocromatina è classificato correttamente?",
+     "o": [
+      "Il corpo di Barr è eterocromatina costitutiva; le regioni centromeriche sono facoltative",
+      "Il corpo di Barr è eterocromatina facoltativa; le regioni centromeriche sono costitutive",
+      "Il corpo di Barr e le regioni centromeriche sono entrambi eterocromatina costitutiva",
+      "Il corpo di Barr e le regioni centromeriche sono entrambi eterocromatina facoltativa"
+     ],
+     "c": 1,
+     "s": "Il cromosoma X inattivato (corpo di Barr) è eterocromatina facoltativa, poiché in altre condizioni può essere attivo; le regioni centromeriche sono eterocromatina costitutiva."
+    },
+    {
+     "d": "Quale funzione svolgono le coesine?",
+     "o": [
+      "Mantengono uniti i cromatidi fratelli fino al momento della loro separazione",
+      "Proteggono le estremità dei cromosomi con un cappuccio di sequenze ripetute",
+      "Collegano il centromero alle fibre del fuso mitotico tramite il cinetocore",
+      "Stabilizzano i filamenti di DNA separati, impedendo che si riassocino"
+     ],
+     "c": 0,
+     "s": "Le coesine mantengono associati i cromatidi fratelli finché devono separarsi; al momento della separazione vengono rimosse o degradate."
+    },
+    {
+     "d": "Che cosa sono i telomeri?",
+     "o": [
+      "Sequenze codificanti per proteine, situate all'estremità del braccio corto p di ogni cromosoma",
+      "Sequenze spaziatrici che separano due geni localizzati sullo stesso cromosoma",
+      "Sequenze di eterocromatina costitutiva che consentono l'aggancio delle fibre del fuso mitotico",
+      "Sequenze di DNA ripetute che formano un cappuccio protettivo alle estremità dei cromosomi"
+     ],
+     "c": 3,
+     "s": "I telomeri sono sequenze di DNA ripetute, in genere non codificanti, che formano un cappuccio protettivo alle estremità dei cromosomi."
+    },
+    {
+     "d": "Secondo lo schema della composizione del genoma nucleare, quale quota è rappresentata dalle famiglie di sequenze ripetute?",
+     "o": [
+      "Circa l'1,5%",
+      "Circa il 50%",
+      "Circa il 75%",
+      "Circa il 25%"
+     ],
+     "c": 1,
+     "s": "Le sequenze ripetute rappresentano circa il 50% del genoma; il 25% è costituito da sequenze spaziatrici e il 25% da sequenze codificanti."
+    },
+    {
+     "d": "Che cosa significa che una sequenza del genoma è codificante?",
+     "o": [
+      "Che viene trascritta in mRNA, il quale viene in ogni caso tradotto in una proteina",
+      "Che viene replicata prima delle altre regioni, poiché si trova nell'eucromatina",
+      "Che viene tradotta direttamente in proteina, senza passare per un RNA intermedio",
+      "Che viene trascritta in RNA, il quale non viene necessariamente tradotto in proteina"
+     ],
+     "c": 3,
+     "s": "Codificante indica una sequenza trascritta in RNA: alcuni geni producono RNA funzionali, come rRNA e tRNA, che non vengono tradotti."
+    },
+    {
+     "d": "Perché la definizione di «DNA spazzatura» è oggi considerata inappropriata?",
+     "o": [
+      "Perché il DNA non codificante viene tradotto in piccole proteine regolatrici",
+      "Perché parte del DNA non codificante svolge funzioni strutturali e regolatorie",
+      "Perché il DNA non codificante si trova nel genoma mitocondriale, non nel nucleo",
+      "Perché il DNA non codificante rappresenta meno dell'1,5% del genoma umano"
+     ],
+     "c": 1,
+     "s": "Una parte del DNA non codificante, come le sequenze ripetute e spaziatrici, svolge importanti funzioni strutturali e regolatorie."
+    },
+    {
+     "d": "Quali sono le tre proprietà fondamentali del DNA descritte dal dogma centrale?",
+     "o": [
+      "Può essere replicato, tradotto in RNA e, come tRNA, trascritto in proteine",
+      "Può essere replicato, trascritto in rRNA e, come rRNA, tradotto in proteine",
+      "Può essere trascritto in proteine, tradotto in mRNA e replicato in mitosi",
+      "Può essere replicato, trascritto in RNA e, come mRNA, tradotto in proteine"
+     ],
+     "c": 3,
+     "s": "Il DNA può essere replicato, può essere trascritto in RNA e l'RNA messaggero può essere tradotto in proteine."
+    },
+    {
+     "d": "Perché la replicazione del DNA è definita semiconservativa?",
+     "o": [
+      "Perché ogni filamento delle nuove molecole contiene segmenti vecchi e nuovi mescolati",
+      "Perché ogni nuova molecola contiene un filamento continuo e uno a frammenti di Okazaki",
+      "Perché ogni nuova molecola contiene un filamento parentale e uno di nuova sintesi",
+      "Perché la molecola originaria resta intera e se ne forma una seconda del tutto nuova"
+     ],
+     "c": 2,
+     "s": "Ogni nuova molecola conserva metà della molecola iniziale (un filamento parentale), mentre l'altra metà viene sintetizzata ex novo."
+    },
+    {
+     "d": "Che cosa dimostrarono gli esperimenti di Meselson e Stahl?",
+     "o": [
+      "Che il DNA è formato da due filamenti avvolti a doppia elica",
+      "Che il filamento lento è sintetizzato in frammenti discontinui",
+      "Che la replicazione del DNA segue il modello conservativo",
+      "Che la replicazione del DNA segue il modello semiconservativo"
+     ],
+     "c": 3,
+     "s": "Meselson e Stahl dimostrarono sperimentalmente che il modello corretto di duplicazione è quello semiconservativo."
+    },
+    {
+     "d": "Perché negli eucarioti sono presenti numerose origini di replicazione?",
+     "o": [
+      "Perché le origini coincidono con i telomeri, presenti a entrambe le estremità di ciascun cromosoma",
+      "Perché ogni origine è dedicata a un solo filamento, il filamento guida oppure il filamento lento",
+      "Perché il DNA è formato da una molecola circolare e ogni origine copia una diversa regione dell'anello",
+      "Perché il DNA è formato da molecole lineari molto lunghe e un'unica origine richiederebbe troppo tempo"
+     ],
+     "c": 3,
+     "s": "Il DNA eucariotico è costituito da molecole lineari molto lunghe: più origini permettono di duplicare contemporaneamente più regioni."
+    },
+    {
+     "d": "Qual è la funzione delle proteine SSB durante la replicazione?",
+     "o": [
+      "Sintetizzano un breve tratto di RNA che fornisce l'estremità 3'-OH alla DNA polimerasi",
+      "Tagliano e ricongiungono il DNA, riducendo la tensione torsionale davanti alla forcella",
+      "Legano il DNA a singolo filamento e impediscono che i filamenti separati si riassocino",
+      "Rompono i legami a idrogeno tra le basi e permettono la formazione della bolla di replicazione"
+     ],
+     "c": 2,
+     "s": "Le proteine SSB si legano al DNA a singolo filamento e lo stabilizzano, impedendo che si riformi la doppia elica."
+    },
+    {
+     "d": "In che modo la topoisomerasi riduce lo stress torsionale davanti alla forcella di replicazione?",
+     "o": [
+      "Rompe i legami a idrogeno tra le basi complementari dei due filamenti",
+      "Si lega ai filamenti singoli e ne impedisce la riassociazione in doppia elica",
+      "Unisce i frammenti di Okazaki formando nuovi legami fosfodiesterici",
+      "Taglia temporaneamente uno o entrambi i filamenti e poi li ricongiunge"
+     ],
+     "c": 3,
+     "s": "Le topoisomerasi tagliano temporaneamente uno o entrambi i filamenti e li ricongiungono, permettendo al DNA di rilassarsi."
+    },
+    {
+     "d": "Perché la DNA polimerasi necessita di un primer per avviare la sintesi?",
+     "o": [
+      "Perché non può rompere i legami a idrogeno, e il primer separa i due filamenti stampo",
+      "Perché non può legarsi a un 3'-OH, e aggiunge nucleotidi soltanto a un 5'-fosfato libero",
+      "Perché non può formare legami fosfodiesterici, che vengono catalizzati dal primer stesso",
+      "Perché non può iniziare da zero, ma aggiunge nucleotidi soltanto a un 3'-OH già disponibile"
+     ],
+     "c": 3,
+     "s": "La DNA polimerasi non inizia la sintesi da zero: aggiunge nucleotidi soltanto a un'estremità 3'-OH libera, fornita dal primer."
+    },
+    {
+     "d": "Che cosa sintetizza la primasi?",
+     "o": [
+      "Un breve tratto di DNA che salda tra loro i frammenti di Okazaki del filamento lento",
+      "Un breve tratto di RNA complementare allo stampo, con un'estremità 3'-OH libera",
+      "Un breve tratto di DNA complementare allo stampo, con un'estremità 5'-fosfato libera",
+      "Un breve tratto di RNA complementare allo stampo, con un'estremità 5'-OH libera"
+     ],
+     "c": 1,
+     "s": "La primasi produce il primer, un breve tratto di RNA complementare allo stampo che fornisce l'estremità 3'-OH alla DNA polimerasi."
+    },
+    {
+     "d": "Perché il filamento guida può essere sintetizzato in modo continuo?",
+     "o": [
+      "Perché la polimerasi lo allunga a partire da numerosi primer molto ravvicinati",
+      "Perché la polimerasi lo allunga nella stessa direzione in cui si apre la forcella",
+      "Perché la polimerasi lo allunga in direzione 3'→5', senza alcun bisogno di primer",
+      "Perché la polimerasi lo allunga nella direzione opposta a quella della forcella"
+     ],
+     "c": 1,
+     "s": "Sul filamento guida la DNA polimerasi procede nella stessa direzione di apertura della doppia elica, trovando sempre un 3'-OH libero."
+    },
+    {
+     "d": "Da che cosa dipende il carattere semidiscontinuo della replicazione?",
+     "o": [
+      "Dalla struttura antiparallela del DNA e dalla sintesi possibile in entrambe le direzioni",
+      "Dalla presenza di regioni ricche di A-T, che rendono la separazione dei filamenti irregolare",
+      "Dalla presenza di numerose origini e dalla sintesi possibile solo in direzione 3'→5'",
+      "Dalla struttura antiparallela del DNA e dalla sintesi possibile solo in direzione 5'→3'"
+     ],
+     "c": 3,
+     "s": "La differenza tra filamento guida e lento dipende dalla struttura antiparallela del DNA e dal fatto che la polimerasi sintetizza solo in direzione 5'→3'."
+    },
+    {
+     "d": "Considerando i due lati della stessa bolla di replicazione, quale affermazione è corretta?",
+     "o": [
+      "Le due forcelle avanzano nella stessa direzione, l'una dietro all'altra",
+      "Le due forcelle sintetizzano entrambi i nuovi filamenti in modo discontinuo",
+      "Il filamento guida di una forcella corrisponde al filamento lento dell'altra",
+      "Il filamento guida di una forcella corrisponde al filamento guida dell'altra"
+     ],
+     "c": 2,
+     "s": "Le due forcelle avanzano in direzioni opposte: il filamento guida di una forcella corrisponde al filamento lento dell'altra."
+    }
+   ]
   }
  ]
 }
