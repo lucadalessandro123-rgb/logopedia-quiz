@@ -1,5 +1,485 @@
 {
-  "materia": "anatomia",
-  "nome": "Anatomia",
-  "lezioni": []
+ "materia": "anatomia",
+ "nome": "Anatomia",
+ "lezioni": [
+  {
+   "n": 1,
+   "titolo": "Introduzione allo studio dell'anatomia",
+   "domande": [
+    {
+     "d": "Secondo l'etimologia greca, che cosa significa letteralmente il termine «anatomia»?",
+     "o": [
+      "Tagliare attraverso",
+      "Studiare la forma",
+      "Osservare il corpo",
+      "Descrivere le parti"
+     ],
+     "c": 0,
+     "s": "Deriva dal verbo τέμνω («tagliare») e dal prefisso ανά («attraverso»): «tagliare attraverso», cioè dissezione."
+    },
+    {
+     "d": "Come viene definita più precisamente l'anatomia, oltre al generico «studio del corpo umano»?",
+     "o": [
+      "Lo studio del funzionamento chimico degli organi e delle cellule",
+      "Lo studio dei processi di sviluppo dell'embrione umano",
+      "Lo studio delle alterazioni patologiche dei tessuti",
+      "Lo studio della forma del corpo umano e delle sue parti"
+     ],
+     "c": 3,
+     "s": "L'anatomia è lo studio della forma (morfologia) del corpo umano e delle sue parti, non solo del corpo nella sua interezza."
+    },
+    {
+     "d": "Perché, prima dello sviluppo delle moderne tecniche di imaging, l'anatomia non poteva prescindere dalla dissezione?",
+     "o": [
+      "Perché i graffiti del Paleolitico erano l'unica fonte disponibile",
+      "Perché il microscopio ottico non consentiva di osservare i tessuti",
+      "Perché le strutture interne non erano osservabili a occhio nudo",
+      "Perché le tavole anatomiche storiche erano spesso inesatte"
+     ],
+     "c": 2,
+     "s": "Le strutture interne del corpo non erano visibili a occhio nudo senza dissezione fino all'avvento delle tecniche di imaging."
+    },
+    {
+     "d": "Come si chiama lo studio di un tessuto, ad esempio del sangue osservato al microscopio ottico?",
+     "o": [
+      "Citologia",
+      "Istologia",
+      "Anatomia ultrastrutturale",
+      "Anatomia topografica"
+     ],
+     "c": 1,
+     "s": "Lo studio di un tessuto (come il sangue, tessuto liquido, o una fettina di encefalo) si chiama istologia."
+    },
+    {
+     "d": "Quali discipline comprende l'anatomia microscopica, limitatamente al livello indagabile con il solo microscopio ottico?",
+     "o": [
+      "Istologia e citologia",
+      "Istologia e anatomia molecolare",
+      "Citologia e anatomia sistematica",
+      "Citologia e anatomia ultrastrutturale"
+     ],
+     "c": 0,
+     "s": "L'anatomia microscopica indagabile al microscopio ottico comprende l'istologia (tessuti) e la citologia (cellule)."
+    },
+    {
+     "d": "Che cosa caratterizza l'approccio dell'anatomia regionale o topografica?",
+     "o": [
+      "Il corpo viene scomposto in sistemi e apparati studiati uno dopo l'altro",
+      "Il corpo viene studiato solo a livello tessutale e cellulare con il microscopio",
+      "Il corpo viene studiato soltanto attraverso le tecniche di imaging moderne",
+      "Il corpo viene diviso in regioni, ciascuna con strutture di tutti i sistemi"
+     ],
+     "c": 3,
+     "s": "Nell'anatomia regionale ogni regione è studiata nella sua interezza, quindi vi si ritrovano rappresentanti di tutti i sistemi."
+    },
+    {
+     "d": "Perché per la formazione del tecnico è più adatto l'approccio sistematico che quello topografico?",
+     "o": [
+      "Perché il tecnico studia soltanto il sistema nervoso centrale",
+      "Perché il tecnico difficilmente si troverà a utilizzare il bisturi",
+      "Perché il tecnico non deve conoscere la superficie corporea",
+      "Perché il tecnico lavora soprattutto con il microscopio ottico"
+     ],
+     "c": 1,
+     "s": "L'approccio topografico serve soprattutto al chirurgo che opera con il bisturi; il tecnico difficilmente lo userà."
+    },
+    {
+     "d": "Nell'esempio della tracheotomia, quale punto di riferimento deve palpare e contare il chirurgo per individuare il punto di incisione?",
+     "o": [
+      "I processi spinosi delle vertebre",
+      "Gli anelli cartilaginei",
+      "Le coste della gabbia toracica",
+      "La fossetta giugulare"
+     ],
+     "c": 1,
+     "s": "Per la tracheotomia il chirurgo palpa e conta gli anelli cartilaginei, palpabili da chiunque anche su sé stesso."
+    },
+    {
+     "d": "Quale strumento è associato all'anatomia molecolare nella corrispondenza tra strumenti e livelli di studio?",
+     "o": [
+      "Il microscopio elettronico",
+      "Il light scattering",
+      "Il microscopio ottico",
+      "Il bisturi"
+     ],
+     "c": 1,
+     "s": "Bisturi: macroscopica; microscopio ottico: microscopica; microscopio elettronico: ultrastrutturale; light scattering: molecolare."
+    },
+    {
+     "d": "Quale livello di studio consente di raggiungere il microscopio elettronico, ad esempio per osservare le creste del mitocondrio?",
+     "o": [
+      "Il livello topografico",
+      "Il livello ultrastrutturale",
+      "Il livello macroscopico",
+      "Il livello istologico"
+     ],
+     "c": 1,
+     "s": "Il microscopio elettronico consente di giungere al livello ultrastrutturale (anatomia ultrastrutturale)."
+    },
+    {
+     "d": "Nell'immagine di fibroblasti al microscopio a fluorescenza, quale struttura appare colorata in verde?",
+     "o": [
+      "Il nucleo",
+      "La membrana plasmatica",
+      "Il citoscheletro",
+      "Il mitocondrio"
+     ],
+     "c": 2,
+     "s": "I sottili filamenti verdi rappresentano il citoscheletro, mentre il nucleo è colorato in blu."
+    },
+    {
+     "d": "Su quale principio si basa la colorazione delle strutture al microscopio a fluorescenza?",
+     "o": [
+      "Gli elettroni restituiscono un segnale legato alla densità del campione",
+      "La sezione viene colorata in rosa e blu per distinguere citoplasma e nucleo",
+      "La superficie del campione viene osservata con un tubo più corto",
+      "Fluorofori legati ad anticorpi specifici vengono eccitati dalla luce"
+     ],
+     "c": 3,
+     "s": "Le molecole fluorescenti sono legate ad anticorpi che riconoscono specifiche strutture e proteine e vengono eccitate dalla luce."
+    },
+    {
+     "d": "Perché nel microscopio elettronico il fascio di elettroni viene accelerato in un tubo in cui è creato il vuoto?",
+     "o": [
+      "Per aumentare la colorazione del campione biologico",
+      "Per raffreddare il campione durante l'osservazione",
+      "Per permettere agli elettroni di non subire deviazioni",
+      "Per osservare soltanto la superficie delle strutture"
+     ],
+     "c": 2,
+     "s": "Il vuoto consente il passaggio degli elettroni senza deviazioni dall'acceleratore fino al campione."
+    },
+    {
+     "d": "Al microscopio elettronico, da che cosa dipendono le gradazioni di chiaro e di scuro dell'immagine?",
+     "o": [
+      "Dal tipo di fluoroforo legato agli anticorpi",
+      "Dal colorante istologico rosa e blu utilizzato",
+      "Dalla densità del campione contrastato",
+      "Dal tipo di miosina presente nelle fibre"
+     ],
+     "c": 2,
+     "s": "Gli elettroni non producono colore ma un segnale che dipende dalla densità del campione, generando chiari e scuri."
+    },
+    {
+     "d": "Quale struttura rappresenta l'unità morfo-funzionale del tessuto muscolare?",
+     "o": [
+      "Il sarcomero",
+      "Il fibroblasto",
+      "Il microvillo",
+      "L'assonema"
+     ],
+     "c": 0,
+     "s": "Il sarcomero è l'unità morfo-funzionale del tessuto muscolare."
+    },
+    {
+     "d": "Perché nella fibra muscolare actina e miosina sono organizzate in modo molto regolare e secondo un'unica direzione?",
+     "o": [
+      "Per formare la barriera tipica dei tessuti di rivestimento",
+      "Per aumentare la superficie di assorbimento della cellula",
+      "Per poter scorrere gli uni sugli altri durante la contrazione",
+      "Per spostare il muco lungo la superficie delle vie aeree"
+     ],
+     "c": 2,
+     "s": "Per provocare la contrazione i filamenti devono essere ben impacchettati, così da scorrere gli uni sugli altri."
+    },
+    {
+     "d": "Secondo la correzione riportata nella sbobina, da che cosa è costituito l'asse delle ciglia mobili?",
+     "o": [
+      "Da filamenti di actina",
+      "Da microtubuli 9+2",
+      "Da filamenti di miosina",
+      "Da filamenti intermedi"
+     ],
+     "c": 1,
+     "s": "Le ciglia hanno un assonema di microtubuli disposti secondo lo schema 9+2; i microvilli hanno un asse di actina."
+    },
+    {
+     "d": "Quale funzione svolgono le ciglia dell'epitelio respiratorio?",
+     "o": [
+      "Rimuovono il muco con il materiale inalato",
+      "Aumentano la superficie di assorbimento dei nutrienti",
+      "Permettono lo scambio dei gas negli alveoli",
+      "Producono il muco delle vie respiratorie"
+     ],
+     "c": 0,
+     "s": "Le ciglia, muovendosi, rimuovono come una scopa il complesso di muco e materiale inalato, purificando l'aria."
+    },
+    {
+     "d": "Come si chiama lo scambio dei gas che avviene a livello degli alveoli polmonari?",
+     "o": [
+      "Ematopoiesi",
+      "Volemia",
+      "Glicolisi",
+      "Ematosi"
+     ],
+     "c": 3,
+     "s": "L'ematosi è lo scambio dei gas negli alveoli, che verrebbe impedito se l'aria non fosse purificata."
+    },
+    {
+     "d": "Da che cosa dipendono i confini tra anatomia macroscopica, microscopica e ultrastrutturale?",
+     "o": [
+      "Dal sistema o apparato preso in esame",
+      "Dalla regione topografica considerata",
+      "Dalla risoluzione degli strumenti impiegati",
+      "Dal tipo di dissezione praticata"
+     ],
+     "c": 2,
+     "s": "I confini dipendono dalle dimensioni delle strutture e quindi dalla capacità di risoluzione degli strumenti."
+    },
+    {
+     "d": "Qual è il potere risolutivo indicativo del microscopio ottico riportato nella correzione della sbobina?",
+     "o": [
+      "Circa 0,1 mm (100 µm)",
+      "Circa 0,1 nm (100 pm)",
+      "Circa 0,2 mm (200 µm)",
+      "Circa 0,2 µm (200 nm)"
+     ],
+     "c": 3,
+     "s": "Occhio umano circa 0,1 mm; microscopio ottico circa 0,2 µm; microscopi elettronici sotto 0,1 nm."
+    },
+    {
+     "d": "Nell'esempio della carcinogenesi, che cosa trasforma una cellula normale in una cellula tumorale?",
+     "o": [
+      "Una mutazione silente che lascia invariato l'aminoacido",
+      "Un recettore la cui attività è regolata dal ciclo vitale",
+      "Una mucosa intestinale osservabile con la colonscopia",
+      "Un recettore mutato che resta attivo anche senza lo stimolo"
+     ],
+     "c": 3,
+     "s": "Un recettore di sopravvivenza mutato, attivo anche senza stimolo, fa replicare la cellula in continuazione."
+    },
+    {
+     "d": "Secondo la correzione della sbobina, in quale caso una mutazione puntiforme NON modifica la proteina?",
+     "o": [
+      "Quando è silente",
+      "Quando è di senso errato",
+      "Quando è non senso",
+      "Quando colpisce un recettore"
+     ],
+     "c": 0,
+     "s": "Per la degenerazione del codice, la mutazione silente codifica lo stesso aminoacido; solo senso errato e non senso cambiano la proteina."
+    },
+    {
+     "d": "Perché il padiglione auricolare umano ha una forma diversa da quella di cani e gatti?",
+     "o": [
+      "Perché l'uomo non possiede muscoli auricolari",
+      "Perché l'uomo percepisce frequenze diverse",
+      "Perché l'uomo ha il timpano più superficiale",
+      "Perché l'uomo capta onde elettromagnetiche"
+     ],
+     "c": 1,
+     "s": "La forma del padiglione è legata alle frequenze captate; cani e gatti percepiscono altre frequenze e possono orientarlo."
+    },
+    {
+     "d": "In una sezione di muscolo scheletrico con marcatori per la miosina, quale metabolismo prevale nelle fibre lente?",
+     "o": [
+      "Un metabolismo prevalentemente aerobico",
+      "Un metabolismo prevalentemente anaerobico",
+      "Un metabolismo basato sulla glicolisi",
+      "Un metabolismo basato sull'ematopoiesi"
+     ],
+     "c": 0,
+     "s": "Le fibre lente hanno metabolismo prevalentemente aerobico; le veloci prevalentemente anaerobico, basato sulla glicolisi."
+    },
+    {
+     "d": "Procedendo dal lume verso l'esterno, quale tessuto si incontra per primo nella parete dello stomaco?",
+     "o": [
+      "Un tessuto connettivo di supporto",
+      "Un tessuto muscolare contrattile",
+      "Un tessuto epiteliale di rivestimento",
+      "Un tessuto nervoso con nervi motori"
+     ],
+     "c": 2,
+     "s": "Dal lume: epitelio di rivestimento, connettivo di supporto, tessuto muscolare e tessuto nervoso."
+    },
+    {
+     "d": "Perché le cellule del tessuto epiteliale di rivestimento sono strettamente accostate e saldamente legate tra loro?",
+     "o": [
+      "Perché devono contrarsi in risposta a uno stimolo nervoso",
+      "Perché devono filtrare la linfa e trattenere i patogeni",
+      "Perché devono costituire una barriera a protezione dell'organo",
+      "Perché devono secernere il sudore per la termoregolazione"
+     ],
+     "c": 2,
+     "s": "Dovendo rivestire un organo, le cellule epiteliali formano una barriera e sono quindi strettamente accostate."
+    },
+    {
+     "d": "Da quali tessuti è formata la cute?",
+     "o": [
+      "Epidermide (connettivo) e derma (epiteliale)",
+      "Epidermide (epiteliale) e derma (connettivo)",
+      "Epidermide (epiteliale) e derma (muscolare)",
+      "Epidermide (muscolare) e derma (connettivo)"
+     ],
+     "c": 1,
+     "s": "L'epidermide, più esterna, è un epitelio di rivestimento; il derma, più interno, è un tessuto connettivo."
+    },
+    {
+     "d": "Quale funzione dell'apparato scheletrico è legata alla presenza del midollo osseo?",
+     "o": [
+      "La funzione di termoregolazione",
+      "La funzione di protezione",
+      "La funzione ematopoietica",
+      "La funzione di sostegno"
+     ],
+     "c": 2,
+     "s": "Il midollo osseo contenuto nelle ossa produce tutte le cellule del sangue: funzione ematopoietica."
+    },
+    {
+     "d": "In che modo l'apparato muscolare contribuisce alla termoregolazione quando la temperatura si abbassa?",
+     "o": [
+      "Con il sudore, che evaporando abbassa la temperatura",
+      "Con i brividi, contrazioni involontarie che producono calore",
+      "Con l'accumulo di calcio e fosfato nel tessuto osseo",
+      "Con l'attivazione delle pompe muscolari degli arti inferiori"
+     ],
+     "c": 1,
+     "s": "I brividi sono contrazioni involontarie dei muscoli superficiali che producono calore e aumentano la temperatura."
+    },
+    {
+     "d": "In che modo l'apparato cardiovascolare partecipa alla regolazione del ritmo del respiro?",
+     "o": [
+      "Il cuore segnala al rene un aumento della volemia da correggere",
+      "I linfonodi del collo aumentano di volume durante le infezioni",
+      "Recettori carotidei rilevano il calo di ossigeno e informano il SNC",
+      "Il diaframma separa la cavità toracica da quella addominale"
+     ],
+     "c": 2,
+     "s": "Recettori a livello della carotide, se cala la pressione parziale di ossigeno, segnalano al SNC che aumenta la ventilazione."
+    },
+    {
+     "d": "Qual è la funzione principale del sistema linfatico?",
+     "o": [
+      "Trasportare i gas respiratori dagli alveoli fino ai tessuti",
+      "Riassorbire i liquidi interstiziali e ricondurli in circolo",
+      "Produrre l'insulina quando la glicemia è elevata nel sangue",
+      "Filtrare il sangue e produrre l'urina eliminando le scorie"
+     ],
+     "c": 1,
+     "s": "Il sistema linfatico riassorbe i liquidi riversati nella matrice interstiziale e li riconduce nel circolo ematico."
+    },
+    {
+     "d": "Quale organo linfatico completa il differenziamento e la maturazione dei linfociti T?",
+     "o": [
+      "La milza",
+      "Il linfonodo",
+      "Il fegato",
+      "Il timo"
+     ],
+     "c": 3,
+     "s": "Il timo ha il compito di completare il differenziamento e la maturazione dei linfociti T."
+    },
+    {
+     "d": "Secondo la correzione della sbobina, dove giunge di norma un trombo staccatosi dalle vene dell'arto inferiore?",
+     "o": [
+      "All'arteria polmonare, causando embolia",
+      "Al circolo carotideo, causando un ictus",
+      "Ai linfonodi, causando un'infiammazione",
+      "Al rene, causando una glicosuria"
+     ],
+     "c": 0,
+     "s": "Il trombo percorre le vene fino al cuore destro e all'arteria polmonare (embolia polmonare); il cervello solo con uno shunt."
+    },
+    {
+     "d": "Secondo la correzione della sbobina, attraverso quale meccanismo l'apparato respiratorio regola il pH ematico?",
+     "o": [
+      "Attraverso l'assorbimento di ossigeno",
+      "Attraverso il riscaldamento dell'aria",
+      "Attraverso l'eliminazione della CO₂",
+      "Attraverso il riassorbimento di glucosio"
+     ],
+     "c": 2,
+     "s": "Il pH è regolato dall'eliminazione della CO₂: più CO₂ eliminata, pH più alto; l'ossigeno non interviene direttamente."
+    },
+    {
+     "d": "Quale organo produce il glucagone quando i livelli di glucosio nel sangue sono bassi, ad esempio a digiuno?",
+     "o": [
+      "Il pancreas",
+      "Il rene",
+      "Il fegato",
+      "Lo stomaco"
+     ],
+     "c": 0,
+     "s": "Il pancreas produce insulina con glicemia elevata e glucagone con glicemia bassa, ad esempio in starvation."
+    },
+    {
+     "d": "Qual è la sequenza corretta delle porzioni dell'arto superiore, dalla più prossimale alla più distale?",
+     "o": [
+      "Avambraccio, braccio, mano",
+      "Spalla, avambraccio, braccio",
+      "Braccio, polso, avambraccio",
+      "Braccio, avambraccio, mano"
+     ],
+     "c": 3,
+     "s": "Il braccio va dalla spalla al gomito, l'avambraccio dal gomito al polso, la mano dal polso all'estremità distale."
+    },
+    {
+     "d": "Quali punti di repere vengono uniti per tracciare la linea cervico-toracica?",
+     "o": [
+      "Incisura giugulare, clavicola, acromion e settima vertebra cervicale",
+      "Incisura giugulare, sterno, ultima costa e prima vertebra toracica",
+      "Processo acromiale, clavicola, gomito e settima vertebra toracica",
+      "Anelli cartilaginei, clavicola, acromion e prima vertebra cervicale"
+     ],
+     "c": 0,
+     "s": "La linea va dall'incisura giugulare lungo la clavicola al processo acromiale e posteriormente alla settima vertebra cervicale."
+    },
+    {
+     "d": "Perché le cavità ventrali sono dette anche «splancniche»?",
+     "o": [
+      "Perché contengono gli organi del sistema nervoso",
+      "Perché derivano dal tubo neurale dell'embrione",
+      "Perché sono separate tra loro dal diaframma",
+      "Perché il termine greco splánchnon significa «viscere»"
+     ],
+     "c": 3,
+     "s": "Il termine deriva dal greco splánchnon, «viscere»; le cavità dorsali sono dette neurali perché contengono il sistema nervoso."
+    },
+    {
+     "d": "Come si chiama la regione mediana della cavità toracica, compresa tra le due logge pleuro-polmonari?",
+     "o": [
+      "Il peritoneo",
+      "Il mediastino",
+      "Il diaframma",
+      "Il bacino"
+     ],
+     "c": 1,
+     "s": "La cavità toracica è divisa in logge pleuro-polmonari laterali e in una regione mediana, il mediastino."
+    },
+    {
+     "d": "Nella posizione anatomica di riferimento, come sono orientati i palmi delle mani?",
+     "o": [
+      "Rivolti posteriormente",
+      "Rivolti verso il tronco",
+      "Rivolti lateralmente",
+      "Rivolti anteriormente"
+     ],
+     "c": 3,
+     "s": "In posizione anatomica gli arti superiori sono lungo il tronco con il palmo delle mani rivolto anteriormente."
+    },
+    {
+     "d": "Quale piano divide il corpo umano in una metà anteriore e una metà posteriore?",
+     "o": [
+      "Il piano frontale",
+      "Il piano trasversale",
+      "Il piano sagittale",
+      "Il piano parasagittale"
+     ],
+     "c": 0,
+     "s": "Il piano frontale divide il corpo in metà anteriore e posteriore ed è ortogonale al piano trasversale."
+    },
+    {
+     "d": "Come si chiamano, secondo la correzione della sbobina, le due metà speculari destra e sinistra separate dal piano sagittale mediano?",
+     "o": [
+      "Antimeri",
+      "Enantiomeri",
+      "Emisferi",
+      "Segmenti"
+     ],
+     "c": 0,
+     "s": "Il termine corretto è antimeri; «enantiomeri» è un termine della chimica."
+    }
+   ]
+  }
+ ]
 }
