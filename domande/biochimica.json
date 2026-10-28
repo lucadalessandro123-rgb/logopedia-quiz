@@ -453,47 +453,25 @@
    "titolo": "Amminoacidi, legame peptidico e struttura delle proteine",
    "domande": [
     {
-     "d": "Perché il gruppo metile non può formare interazioni polari con l'ambiente acquoso?",
-     "o": [
-      "Per la bassa differenza di elettronegatività tra carbonio e idrogeno",
-      "Per la presenza di una carica netta negativa sull'atomo di carbonio",
-      "Per i legami a idrogeno che forma con altri gruppi metile",
-      "Per l'elevata polarizzabilità del legame tra carbonio e idrogeno"
-     ],
-     "c": 0,
-     "s": "Nel gruppo metile il carbonio ha una bassa differenza di elettronegatività rispetto all'idrogeno, per cui non forma interazioni polari."
-    },
-    {
      "d": "Come si definiscono le molecole che possiedono contemporaneamente una porzione idrofobica e una porzione polare o carica?",
      "o": [
       "Apolari",
       "Idrofobiche",
-      "Idrofiliche",
-      "Anfipatiche"
+      "Anfipatiche",
+      "Idrofiliche"
      ],
-     "c": 3,
+     "c": 2,
      "s": "Le molecole con una catena idrocarburica idrofobica e una testa polare o carica si definiscono anfipatiche."
-    },
-    {
-     "d": "Quale differenza distingue la membrana cellulare dalla micella?",
-     "o": [
-      "La membrana è formata da un doppio strato, la micella da un singolo strato",
-      "La membrana espone all'esterno le catene idrocarburiche, la micella le teste",
-      "La membrana è priva di teste polari, la micella ne possiede una per molecola",
-      "La membrana ospita acqua tra i due foglietti, la micella ne è del tutto priva"
-     ],
-     "c": 0,
-     "s": "Nella cellula la membrana non è costituita da un singolo strato, come la micella, bensì da un doppio strato."
     },
     {
      "d": "Che cosa avviene durante la condensazione tra due monomeri?",
      "o": [
-      "Si forma un legame a idrogeno con liberazione di un gruppo fosfato",
       "Si forma un legame covalente con perdita di una molecola d'acqua",
+      "Si forma un legame a idrogeno con liberazione di un gruppo fosfato",
       "Si scinde un legame covalente con l'intervento di una molecola d'acqua",
       "Si forma un legame ionico con acquisto di una molecola d'acqua"
      ],
-     "c": 1,
+     "c": 0,
      "s": "Nella condensazione due gruppi dei monomeri formano un legame covalente e si perde una molecola d'acqua; il processo opposto è l'idrolisi."
     },
     {
@@ -511,55 +489,33 @@
      "d": "Quale funzione svolge la ferritina?",
      "o": [
       "Trasporto dell'ossigeno nei globuli rossi",
-      "Deposito del ferro nei distretti tissutali",
+      "Deposito dell'ossigeno all'interno dei muscoli",
       "Trasporto delle sostanze idrofobe nel plasma",
-      "Deposito dell'ossigeno all'interno dei muscoli"
+      "Deposito del ferro nei distretti tissutali"
      ],
-     "c": 1,
+     "c": 3,
      "s": "La ferritina è la proteina di deposito del ferro e si trova nei distretti tissutali; una parte è rilasciata in circolo."
-    },
-    {
-     "d": "Quale gruppo comprende soltanto proteine con funzione ormonale?",
-     "o": [
-      "Albumina, ferritina e proteine plasmatiche",
-      "Actina, miosina, dineina e flagellina",
-      "Insulina, glucagone e fattori di crescita",
-      "Emoglobina, mioglobina e immunoglobuline"
-     ],
-     "c": 2,
-     "s": "Insulina, glucagone, ormone della crescita e fattori di crescita sono ormoni di natura proteica."
     },
     {
      "d": "Nella mioglobina, a quale struttura si lega l'ossigeno?",
      "o": [
-      "All'atomo di ferro Fe²⁺ del gruppo eme",
       "Alla porzione glucidica della proteina",
-      "Al gruppo amminico del carbonio alfa",
-      "Al gruppo sulfidrilico di una cisteina"
+      "Al gruppo sulfidrilico di una cisteina",
+      "All'atomo di ferro Fe²⁺ del gruppo eme",
+      "Al gruppo amminico del carbonio alfa"
      ],
-     "c": 0,
+     "c": 2,
      "s": "L'ossigeno non può legarsi agli amminoacidi: si lega al ferro nello stato di ossidazione +2 al centro del gruppo eme."
-    },
-    {
-     "d": "Quale funzione svolge la porzione glucidica nelle glicoproteine?",
-     "o": [
-      "Segnalazione, come una «bandierina» applicata alla proteina",
-      "Trasporto nel sangue di trigliceridi, colesterolo e fosfolipidi",
-      "Legame dell'ossigeno grazie a un atomo di ferro centrale",
-      "Stabilizzazione della struttura tramite ponti disolfuro"
-     ],
-     "c": 0,
-     "s": "Nelle glicoproteine la porzione glucidica ha funzione di segnalazione, come una bandierina applicata alla proteina."
     },
     {
      "d": "Come si definiscono gli amminoacidi che non si trovano nelle proteine ma svolgono altri ruoli, ad esempio nel ciclo dell'urea?",
      "o": [
-      "Glucogenici",
       "Proteinogeni",
-      "Occasionali",
-      "Essenziali"
+      "Glucogenici",
+      "Essenziali",
+      "Occasionali"
      ],
-     "c": 2,
+     "c": 3,
      "s": "Gli amminoacidi che non entrano nelle proteine ma svolgono altri ruoli, come nel ciclo dell'urea, si definiscono occasionali."
     },
     {
@@ -567,8 +523,8 @@
      "o": [
       "La cisteina, perché il suo gruppo R contiene un atomo di zolfo",
       "La glicina, perché il suo gruppo R è un atomo di idrogeno",
-      "L'alanina, perché il suo gruppo R è un gruppo metilico",
-      "La prolina, perché la catena laterale si chiude sull'azoto"
+      "La prolina, perché la catena laterale si chiude sull'azoto",
+      "L'alanina, perché il suo gruppo R è un gruppo metilico"
      ],
      "c": 1,
      "s": "Nella glicina il gruppo R è un idrogeno: i quattro sostituenti del carbonio alfa non sono tutti diversi e manca il centro chirale."
@@ -577,19 +533,19 @@
      "d": "Nella proiezione di Fischer, quale caratteristica identifica un amminoacido della serie L?",
      "o": [
       "Il gruppo amminico si trova a destra del carbonio alfa",
-      "Il gruppo carbossilico si trova a sinistra del carbonio alfa",
       "Il gruppo amminico si trova a sinistra del carbonio alfa",
+      "Il gruppo carbossilico si trova a sinistra del carbonio alfa",
       "Il piano della luce polarizzata ruota in senso antiorario"
      ],
-     "c": 2,
+     "c": 1,
      "s": "Gli amminoacidi con il gruppo amminico a sinistra appartengono alla serie L, indipendentemente dal senso di rotazione della luce polarizzata."
     },
     {
      "d": "Tra quali gruppi si formano i legami a idrogeno che stabilizzano la struttura secondaria?",
      "o": [
+      "Gruppi SH di due cisteine vicine nella sequenza amminoacidica",
       "Gruppi R con carica positiva e gruppi R con carica negativa",
       "Gruppi OH di serina, treonina e tirosina e gruppi fosfato",
-      "Gruppi SH di due cisteine vicine nella sequenza amminoacidica",
       "N–H di un legame peptidico e C=O di un altro legame peptidico"
      ],
      "c": 3,
@@ -599,96 +555,63 @@
      "d": "Tra quali atomi si stabilisce il legame covalente del legame peptidico?",
      "o": [
       "Idrogeno amminico di un legame peptidico e ossigeno carbonilico di un altro",
-      "Azoto amminico di un amminoacido e carbonio carbossilico di un altro",
       "Azoto della catena laterale della lisina e ossigeno dell'aspartato",
-      "Zolfo sulfidrilico di una cisteina e zolfo sulfidrilico di un'altra cisteina"
+      "Zolfo sulfidrilico di una cisteina e zolfo sulfidrilico di un'altra cisteina",
+      "Azoto amminico di un amminoacido e carbonio carbossilico di un altro"
      ],
-     "c": 1,
+     "c": 3,
      "s": "Il legame peptidico si forma tra l'azoto del gruppo amminico di un amminoacido e il carbonio del gruppo carbossilico di un altro."
     },
     {
      "d": "Perché l'alanina rientra tra gli amminoacidi con gruppi R alifatici non polari?",
      "o": [
-      "Perché il suo gruppo R è un gruppo metilico, che non interagisce con l'acqua",
-      "Perché il suo gruppo R è un atomo di idrogeno, che non crea un centro chirale",
       "Perché il suo gruppo R è un anello aromatico, che non forma legami a idrogeno",
+      "Perché il suo gruppo R è un atomo di idrogeno, che non crea un centro chirale",
+      "Perché il suo gruppo R è un gruppo metilico, che non interagisce con l'acqua",
       "Perché il suo gruppo R è un gruppo ammidico, privo di una carica effettiva"
      ],
-     "c": 0,
-     "s": "Il gruppo R dell'alanina è un gruppo metilico, che non interagisce con l'acqua."
-    },
-    {
-     "d": "Quale caratteristica strutturale distingue la prolina?",
-     "o": [
-      "Una catena laterale ciclica che si chiude sull'azoto del gruppo amminico",
-      "Una catena laterale con un gruppo sulfidrilico che forma ponti disolfuro",
-      "Una catena laterale con un anello aromatico e un gruppo ossidrilico",
-      "Una catena laterale con un gruppo ammidico che forma legami a idrogeno"
-     ],
-     "c": 0,
-     "s": "La prolina ha una caratteristica struttura ciclica, in cui la catena laterale si chiude sull'azoto del gruppo amminico."
-    },
-    {
-     "d": "Quali amminoacidi vengono assunti come integratori da chi pratica culturismo per aumentare la massa muscolare?",
-     "o": [
-      "Lisina e arginina",
-      "Serina e treonina",
-      "Leucina e isoleucina",
-      "Aspartato e glutammato"
-     ],
      "c": 2,
-     "s": "Valina, leucina e isoleucina sono usate soprattutto dal muscolo; leucina e isoleucina sono assunte come integratori nel culturismo."
+     "s": "Il gruppo R dell'alanina è un gruppo metilico, che non interagisce con l'acqua."
     },
     {
      "d": "Quale differenza distingue la tirosina dalla fenilalanina?",
      "o": [
-      "Ha un gruppo ammidico e porta una carica netta negativa",
       "Ha un gruppo NH e dà origine al neurotrasmettitore serotonina",
+      "Ha un gruppo ossidrilico e può formare legami a idrogeno",
       "Ha un gruppo sulfidrilico e può formare i ponti disolfuro",
-      "Ha un gruppo ossidrilico e può formare legami a idrogeno"
+      "Ha un gruppo ammidico e porta una carica netta negativa"
      ],
-     "c": 3,
+     "c": 1,
      "s": "La tirosina possiede in più un gruppo ossidrilico, grazie al quale forma legami a idrogeno e può trovarsi all'esterno della proteina."
     },
     {
      "d": "Da quale amminoacido ha origine la serotonina?",
      "o": [
-      "Istidina",
+      "Tirosina",
       "Fenilalanina",
       "Triptofano",
-      "Tirosina"
+      "Istidina"
      ],
      "c": 2,
      "s": "Dal triptofano ha origine il neurotrasmettitore serotonina."
     },
     {
-     "d": "Quali amminoacidi possiedono un gruppo ammidico (–CONH₂)?",
-     "o": [
-      "Asparagina e glutammina",
-      "Isoleucina e leucina",
-      "Serina e treonina",
-      "Aspartato e glutammato"
-     ],
-     "c": 0,
-     "s": "Asparagina e glutammina sono amminoacidi polari non carichi dotati di un gruppo ammidico."
-    },
-    {
      "d": "Quali amminoacidi presentano cariche positive nella catena laterale?",
      "o": [
-      "Valina, leucina e isoleucina",
       "Lisina, arginina e istidina",
       "Aspartato, glutammato e cisteina",
-      "Serina, treonina e tirosina"
+      "Serina, treonina e tirosina",
+      "Valina, leucina e isoleucina"
      ],
-     "c": 1,
+     "c": 0,
      "s": "Lisina, arginina e istidina presentano cariche positive nella catena laterale; l'istidina ha una carica meno marcata."
     },
     {
      "d": "Che cosa diventa l'acido glutammico per eliminazione del gruppo amminico?",
      "o": [
-      "Acido piruvico",
-      "Ossalacetato",
       "Acido γ-amminobutirrico",
+      "Ossalacetato",
+      "Acido piruvico",
       "α-chetoglutarato"
      ],
      "c": 3,
@@ -697,56 +620,45 @@
     {
      "d": "Quali amminoacidi possono essere fosforilati sul proprio gruppo OH?",
      "o": [
-      "Serina, treonina e tirosina",
-      "Lisina, arginina e istidina",
+      "Alanina, glicina e prolina",
       "Cisteina, asparagina e glutammina",
-      "Alanina, glicina e prolina"
+      "Serina, treonina e tirosina",
+      "Lisina, arginina e istidina"
      ],
-     "c": 0,
+     "c": 2,
      "s": "Il gruppo OH di serina, treonina e tirosina può subire fosforilazione, la modificazione post-traduzionale più comune."
-    },
-    {
-     "d": "Come si chiamano gli enzimi che rimuovono il gruppo fosfato, operando la defosforilazione?",
-     "o": [
-      "Idrossilasi",
-      "Fosfatasi",
-      "Chinasi",
-      "Proteasi"
-     ],
-     "c": 1,
-     "s": "Le chinasi aggiungono il gruppo fosfato, mentre le fosfatasi lo rimuovono."
     },
     {
      "d": "Perché nella fenilchetonuria la tirosina diventa un amminoacido essenziale?",
      "o": [
-      "Perché la tirosina viene consumata dagli ormoni tiroidei",
       "Perché la fenilalanina non può essere convertita in tirosina",
-      "Perché la fenilalanina viene eliminata dal fegato come urea",
-      "Perché la tirosina non può essere convertita in L-DOPA"
+      "Perché la tirosina non può essere convertita in L-DOPA",
+      "Perché la tirosina viene consumata dagli ormoni tiroidei",
+      "Perché la fenilalanina viene eliminata dal fegato come urea"
      ],
-     "c": 1,
+     "c": 0,
      "s": "Nella fenilchetonuria la fenilalanina non può essere idrossilata a tirosina, che deve quindi essere assunta con la dieta."
     },
     {
      "d": "Che cosa accade all'alanina prodotta dal muscolo durante un lavoro muscolare intenso?",
      "o": [
-      "Viene decarbossilata nel muscolo con la formazione di istamina",
       "Viene trasformata nel muscolo in acido lattico e corpi chetonici",
       "Viene inviata al fegato, che la utilizza per produrre glucosio",
+      "Viene decarbossilata nel muscolo con la formazione di istamina",
       "Viene accumulata nel muscolo legata alla mioglobina come riserva"
      ],
-     "c": 2,
+     "c": 1,
      "s": "Durante un lavoro intenso il muscolo produce alanina, che viene inviata al fegato e usata per produrre glucosio: l'alanina è glucogenica."
     },
     {
      "d": "Quale neurotrasmettitore inibitorio si forma dall'acido glutammico per decarbossilazione?",
      "o": [
-      "Glicina",
       "GABA",
-      "Dopamina",
-      "Serotonina"
+      "Serotonina",
+      "Glicina",
+      "Dopamina"
      ],
-     "c": 1,
+     "c": 0,
      "s": "Dall'acido glutammico, per decarbossilazione, si forma il GABA (acido γ-amminobutirrico), neurotrasmettitore inibitorio."
     },
     {
@@ -761,23 +673,12 @@
      "s": "Dalla tirosina, attraverso l'L-DOPA, si forma la dopamina, da cui derivano la noradrenalina e poi l'adrenalina."
     },
     {
-     "d": "Quali molecole derivano dalla tirosina?",
-     "o": [
-      "Istamina e acido γ-amminobutirrico",
-      "Catecolamine e ormoni tiroidei T3 e T4",
-      "Acido piruvico e α-chetoglutarato",
-      "Serotonina e 5-idrossitriptofano"
-     ],
-     "c": 1,
-     "s": "Dalla tirosina si formano le catecolamine (dopamina, noradrenalina, adrenalina) e gli ormoni tiroidei T3 e T4."
-    },
-    {
      "d": "Sotto quale forma il fegato elimina il gruppo amminico trasportato dagli amminoacidi?",
      "o": [
-      "Corpi chetonici",
+      "Acido lattico",
       "Ossalacetato",
       "Urea",
-      "Acido lattico"
+      "Corpi chetonici"
      ],
      "c": 2,
      "s": "Gli amminoacidi trasportano il gruppo amminico al fegato, dove viene trasformato ed eliminato sotto forma di urea."
@@ -786,53 +687,53 @@
      "d": "Da quali componenti è costituito l'aspartame?",
      "o": [
       "Acido aspartico e tirosina legata a un gruppo fosfato",
-      "Glicina e fenilalanina legata a un gruppo ossidrilico",
+      "Acido aspartico e fenilalanina legata a un gruppo metilico",
       "Acido glutammico e glicina legata a un gruppo metilico",
-      "Acido aspartico e fenilalanina legata a un gruppo metilico"
+      "Glicina e fenilalanina legata a un gruppo ossidrilico"
      ],
-     "c": 3,
+     "c": 1,
      "s": "L'aspartame è costituito da acido aspartico e fenilalanina, quest'ultima legata a un gruppo metilico (estere metilico)."
     },
     {
      "d": "Quali proprietà derivano dal carattere di ibrido di risonanza del legame peptidico?",
      "o": [
-      "È un legame debole, che si rompe con un aumento di temperatura o di pH",
-      "È rigido e planare, più corto di un legame singolo e più lungo di un doppio",
       "È un legame ionico tra cariche opposte, privo di una lunghezza definita",
-      "È flessibile e ruota liberamente, lungo quanto un normale legame singolo"
+      "È flessibile e ruota liberamente, lungo quanto un normale legame singolo",
+      "È un legame debole, che si rompe con un aumento di temperatura o di pH",
+      "È rigido e planare, più corto di un legame singolo e più lungo di un doppio"
      ],
-     "c": 1,
+     "c": 3,
      "s": "Il legame peptidico è un ibrido di risonanza: è rigido e planare e ha lunghezza intermedia tra un legame singolo e un doppio legame."
     },
     {
      "d": "Attorno a quale legame è definito l'angolo di rotazione psi (ψ)?",
      "o": [
-      "Il legame tra il carbonio alfa e l'azoto amminico (N–Cα)",
-      "Il legame tra il carbonio alfa e il suo atomo di idrogeno (Cα–H)",
       "Il legame tra il carbonio carbossilico e l'azoto del peptide (C–N)",
-      "Il legame tra il carbonio alfa e il carbonio carbossilico (Cα–C)"
+      "Il legame tra il carbonio alfa e il carbonio carbossilico (Cα–C)",
+      "Il legame tra il carbonio alfa e il suo atomo di idrogeno (Cα–H)",
+      "Il legame tra il carbonio alfa e l'azoto amminico (N–Cα)"
      ],
-     "c": 3,
+     "c": 1,
      "s": "ψ è l'angolo di rotazione attorno al legame Cα–C, mentre φ è quello attorno al legame N–Cα; il legame peptidico resta fisso."
     },
     {
      "d": "Da che cosa deriva la sequenza amminoacidica della struttura primaria?",
      "o": [
-      "Dalle interazioni tra i gruppi R degli amminoacidi",
       "Dal codice genetico contenuto nel DNA ereditato",
+      "Dalle interazioni tra i gruppi R degli amminoacidi",
       "Dall'azione delle proteine accompagnatrici (chaperon)",
       "Dalle rotazioni attorno agli angoli phi e psi"
      ],
-     "c": 1,
+     "c": 0,
      "s": "La sequenza della struttura primaria deriva dal codice genetico: il DNA ereditato dai genitori porta l'informazione su come organizzare la catena."
     },
     {
      "d": "Quali sono le caratteristiche dell'alfa-elica tipica delle nostre cellule?",
      "o": [
       "Avvolgimento destrorso, 3,6 residui per giro e passo di 5,4 Å",
-      "Avvolgimento destrorso, 5,4 residui per giro e passo di 3,6 Å",
+      "Avvolgimento sinistrorso, 4 residui per giro e passo di 3,6 Å",
       "Avvolgimento sinistrorso, 3,6 residui per giro e passo di 5,4 Å",
-      "Avvolgimento sinistrorso, 4 residui per giro e passo di 3,6 Å"
+      "Avvolgimento destrorso, 5,4 residui per giro e passo di 3,6 Å"
      ],
      "c": 0,
      "s": "L'alfa-elica tipica è destrorsa, stabilizzata da legami a idrogeno, con 3,6 residui per giro e passo di 5,4 Å."
@@ -849,37 +750,15 @@
      "s": "La prolina ostacola la formazione del passo dell'elica e interrompe l'alfa-elica."
     },
     {
-     "d": "Perché un tratto ad alfa-elica può essere inserito nel doppio strato fosfolipidico?",
-     "o": [
-      "Perché i suoi legami peptidici formano legami a idrogeno con le code",
-      "Perché i suoi gruppi R idrofilici sono rivolti verso l'asse dell'elica",
-      "Perché i suoi gruppi R idrofobici sono rivolti verso l'esterno dell'elica",
-      "Perché i suoi gruppi R carichi formano ponti salini con i fosfolipidi"
-     ],
-     "c": 2,
-     "s": "Nell'alfa-elica i gruppi R sono rivolti verso l'esterno: se sono idrofobici, il tratto può stare nella porzione interna idrofobica della membrana."
-    },
-    {
      "d": "Nel foglietto beta antiparallelo, che cosa si trova di fronte all'estremità N-terminale di un filamento?",
      "o": [
       "L'estremità C-terminale dell'altro filamento",
       "Il gruppo R di una prolina dell'altro filamento",
-      "Un ponte disolfuro con l'altro filamento",
-      "L'estremità N-terminale dell'altro filamento"
+      "L'estremità N-terminale dell'altro filamento",
+      "Un ponte disolfuro con l'altro filamento"
      ],
      "c": 0,
      "s": "Nel foglietto antiparallelo i filamenti decorrono in direzione opposta: di fronte all'N-terminale di uno si trova il C-terminale dell'altro."
-    },
-    {
-     "d": "Perché il foglietto beta si trova di solito in proteine con amminoacidi dotati di gruppi R piccoli?",
-     "o": [
-      "Perché i gruppi R sporgono sopra e sotto il piano e possono respingersi",
-      "Perché i gruppi R piccoli formano più ponti disolfuro tra i filamenti",
-      "Perché i gruppi R grandi impediscono la formazione del legame peptidico",
-      "Perché i gruppi R grandi interrompono il passo dell'elica come la prolina"
-     ],
-     "c": 0,
-     "s": "Nel foglietto beta i gruppi R sporgono alternativamente sopra e sotto il piano e possono dare repulsioni, per cui si preferiscono gruppi R piccoli."
     },
     {
      "d": "Come si chiamano le regioni, dotate di una funzione specifica, che si identificano nella struttura terziaria di proteine di almeno 200 amminoacidi?",
@@ -893,54 +772,21 @@
      "s": "In una proteina di almeno 200 amminoacidi si identificano i domini, regioni dotate di una funzione specifica."
     },
     {
-     "d": "Quale funzione svolge il dominio citoplasmatico di una proteina recettoriale?",
-     "o": [
-      "Legare il primo messaggero proveniente dall'esterno",
-      "Catalizzare la trasformazione del substrato",
-      "Consentire l'inserimento del recettore in membrana",
-      "Trasdurre il segnale all'interno della cellula"
-     ],
-     "c": 3,
-     "s": "Il dominio extracellulare lega il segnale, quello intramembrana inserisce il recettore e quello citoplasmatico trasduce il segnale nella cellula."
-    },
-    {
-     "d": "Quale motivo è caratteristico, ad esempio, dei fattori di trascrizione?",
-     "o": [
-      "Foglietto beta parallelo",
-      "Tripla elica sinistrorsa",
-      "Microfibrilla di cheratina",
-      "Cerniera di leucina"
-     ],
-     "c": 3,
-     "s": "La cerniera di leucina (leucine zipper) è un motivo caratteristico, ad esempio, dei fattori di trascrizione."
-    },
-    {
      "d": "Qual è l'unico legame covalente che stabilizza la struttura terziaria?",
      "o": [
-      "Ponte salino",
+      "Legame a idrogeno",
       "Ponte disolfuro",
       "Interazione idrofobica",
-      "Legame a idrogeno"
+      "Ponte salino"
      ],
      "c": 1,
      "s": "Il ponte disolfuro, che si forma tra due cisteine dando una cistina, è l'unico legame covalente della struttura terziaria."
     },
     {
-     "d": "Che cos'è un ponte salino?",
-     "o": [
-      "Un'associazione tra gruppi R apolari esclusi dall'acqua",
-      "Un legame covalente tra i gruppi sulfidrilici di due cisteine",
-      "Un'interazione elettrostatica tra gruppi R con cariche opposte",
-      "Un legame tra idrogeno amminico e ossigeno carbonilico"
-     ],
-     "c": 2,
-     "s": "I ponti salini sono interazioni elettrostatiche tra gruppi carichi positivamente (es. lisina) e negativamente (es. aspartato o glutammato)."
-    },
-    {
      "d": "Perché un aumento della temperatura o una variazione del pH possono denaturare una proteina?",
      "o": [
-      "Perché il legame peptidico è un legame debole e facilmente idrolizzabile",
       "Perché la struttura primaria perde amminoacidi alle alte temperature",
+      "Perché il legame peptidico è un legame debole e facilmente idrolizzabile",
       "Perché la struttura terziaria è stabilizzata soprattutto da legami deboli",
       "Perché i ponti disolfuro sono gli unici legami della struttura terziaria"
      ],
@@ -950,64 +796,42 @@
     {
      "d": "Con l'aiuto di quali proteine avviene il folding?",
      "o": [
+      "Fosfatasi, che rimuovono i fosfati",
       "Proteasi, o enzimi proteolitici",
       "Chaperon, o heat shock proteins (HSP)",
-      "Chinasi, che aggiungono gruppi fosfato",
-      "Fosfatasi, che rimuovono i fosfati"
-     ],
-     "c": 1,
-     "s": "Il folding avviene in pochi millisecondi con l'aiuto di proteine accompagnatrici (chaperon) o HSP."
-    },
-    {
-     "d": "Che cosa si forma nelle patologie neurodegenerative quando alcune proteine perdono il corretto folding?",
-     "o": [
-      "Alfa-eliche idrofobiche inserite nella membrana",
-      "Ponti disolfuro in eccesso e cheratina più dura",
-      "Siti appiccicosi per altre proteine e placche amiloidi",
-      "Catene di collagene prive di idrossiprolina"
+      "Chinasi, che aggiungono gruppi fosfato"
      ],
      "c": 2,
-     "s": "La proteina con alterato folding si organizza in modo diverso, crea siti appiccicosi per altre proteine e dà origine alle placche amiloidi."
+     "s": "Il folding avviene in pochi millisecondi con l'aiuto di proteine accompagnatrici (chaperon) o HSP."
     },
     {
      "d": "Quale requisito definisce la struttura quaternaria di una proteina?",
      "o": [
-      "L'associazione di almeno due catene polipeptidiche",
       "La formazione di almeno due ponti disolfuro",
-      "La presenza di almeno quattro domini funzionali",
-      "La presenza di esattamente quattro subunità"
+      "L'associazione di almeno due catene polipeptidiche",
+      "La presenza di esattamente quattro subunità",
+      "La presenza di almeno quattro domini funzionali"
      ],
-     "c": 0,
+     "c": 1,
      "s": "La struttura quaternaria è l'associazione di almeno due subunità; il nome indica solo che viene dopo la terziaria, non che le subunità sono quattro."
-    },
-    {
-     "d": "In quali proteine, citate nel testo, le catene della struttura quaternaria sono unite da ponti disolfuro?",
-     "o": [
-      "Emoglobina",
-      "Ferritina",
-      "Citrato sintasi",
-      "Immunoglobuline"
-     ],
-     "c": 3,
-     "s": "Nelle immunoglobuline catene leggere e pesanti sono unite da ponti disolfuro, anche se le interazioni quaternarie restano soprattutto non covalenti."
     },
     {
      "d": "Che cosa avviene all'emoglobina a livello polmonare?",
      "o": [
-      "Passa dallo stato teso a quello rilassato e cede l'ossigeno",
-      "Passa dallo stato rilassato a quello teso e lega l'ossigeno",
       "Passa dallo stato teso a quello rilassato e lega l'ossigeno",
-      "Passa dallo stato rilassato a quello teso e cede l'ossigeno"
+      "Passa dallo stato rilassato a quello teso e cede l'ossigeno",
+      "Passa dallo stato teso a quello rilassato e cede l'ossigeno",
+      "Passa dallo stato rilassato a quello teso e lega l'ossigeno"
      ],
-     "c": 2,
+     "c": 0,
      "s": "Nei polmoni l'emoglobina passa dallo stato T allo stato R e lega l'ossigeno; nei tessuti torna allo stato T e lo rilascia."
     },
     {
      "d": "Quale affermazione descrive le proteine fibrose?",
      "o": [
-      "Sono solubili in acqua, con una superficie idrofila e un interno idrofobico",
       "Sono dotate di struttura terziaria e quaternaria, con catene ripiegate su sé",
       "Sono insolubili in acqua e del tutto prive di una struttura secondaria",
+      "Sono solubili in acqua, con una superficie idrofila e un interno idrofobico",
       "Sono insolubili in acqua e formate in gran parte da un'unica struttura secondaria"
      ],
      "c": 3,
@@ -1016,56 +840,45 @@
     {
      "d": "Da che cosa dipende la consistenza più o meno dura delle cheratine?",
      "o": [
-      "Dal numero di residui di idrossiprolina",
+      "Dal numero di foglietti beta antiparalleli",
       "Dal numero di ponti salini tra lisine e aspartati",
       "Dal numero di ponti disolfuro tra le cisteine",
-      "Dal numero di foglietti beta antiparalleli"
+      "Dal numero di residui di idrossiprolina"
      ],
      "c": 2,
      "s": "Le cheratine sono ricche di cisteine: quanti più ponti disolfuro si formano, tanto più dura e rigida è la struttura."
     },
     {
-     "d": "Quale sequenza descrive l'organizzazione gerarchica della cheratina?",
-     "o": [
-      "Dimero → microfibrilla → protofilamento",
-      "Microfibrilla → dimero → protofilamento",
-      "Protofilamento → dimero → microfibrilla",
-      "Dimero → protofilamento → microfibrilla"
-     ],
-     "c": 3,
-     "s": "Due alfa-eliche superavvolte formano un dimero; più dimeri formano i protofilamenti e più protofilamenti la microfibrilla."
-    },
-    {
      "d": "Quale sequenza di tre residui si ripete nella catena del collagene?",
      "o": [
-      "Glicina – X – prolina o idrossiprolina",
-      "Alanina – X – prolina o idrossiprolina",
+      "Glicina – X – cisteina o cistina",
       "Leucina – X – leucina o isoleucina",
-      "Glicina – X – cisteina o cistina"
+      "Alanina – X – prolina o idrossiprolina",
+      "Glicina – X – prolina o idrossiprolina"
      ],
-     "c": 0,
+     "c": 3,
      "s": "La catena del collagene è formata dalla ripetizione glicina – X – prolina oppure glicina – X – idrossiprolina."
     },
     {
      "d": "Qual è la causa dello scorbuto?",
      "o": [
       "Carenza di vitamina D, con difetto nel deposito osseo di calcio",
+      "Mutazione dei geni KRT1 e KRT10 delle catene di cheratina",
       "Carenza di vitamina C, che rende inattiva la prolil-idrossilasi",
-      "Mutazione dei geni COL1A1 e COL1A2 del collagene di tipo I",
-      "Mutazione dei geni KRT1 e KRT10 delle catene di cheratina"
+      "Mutazione dei geni COL1A1 e COL1A2 del collagene di tipo I"
      ],
-     "c": 1,
+     "c": 2,
      "s": "Lo scorbuto è dovuto alla carenza di vitamina C: la prolil-idrossilasi non funziona e il collagene risulta debole."
     },
     {
      "d": "Quali manifestazioni caratterizzano l'osteogenesi imperfetta?",
      "o": [
       "Pelle secca, ispessita e desquamante per cheratina dura",
-      "Sanguinamenti gengivali ed ematomi per collagene debole",
+      "Fratture facili, sclere bluastre, sordità e bassa statura",
       "Deficit neurocognitivi con formazione di placche amiloidi",
-      "Fratture facili, sclere bluastre, sordità e bassa statura"
+      "Sanguinamenti gengivali ed ematomi per collagene debole"
      ],
-     "c": 3,
+     "c": 1,
      "s": "Nell'osteogenesi imperfetta il connettivo è fragile: fratture, sclere bluastre, sordità e bassa statura, con funzioni neurocognitive integre."
     },
     {
@@ -1073,22 +886,11 @@
      "o": [
       "È formata da tre eliche sinistrorse e forma la matrice extracellulare",
       "È formata da due alfa-eliche superavvolte e dà durezza alle unghie",
-      "È formata solo da foglietti beta e dà alla seta la sua morbidezza",
-      "È formata da alfa-eliche ricche di cisteine e dà elasticità ai capelli"
-     ],
-     "c": 2,
-     "s": "La fibroina, proteina della seta, è costituita soltanto da foglietti beta, che conferiscono morbidezza e flessibilità."
-    },
-    {
-     "d": "Perché le proteine che l'organismo può sintetizzare sono molto meno delle 20ⁿ combinazioni teoriche?",
-     "o": [
-      "Perché il legame peptidico si forma solo tra amminoacidi dello stesso tipo",
-      "Perché il codice genetico codifica soltanto amminoacidi della serie D",
-      "Perché la selenocisteina e la pirrolisina non vengono mai codificate",
-      "Perché l'evoluzione ha conservato solo le strutture risultate vantaggiose"
+      "È formata da alfa-eliche ricche di cisteine e dà elasticità ai capelli",
+      "È formata solo da foglietti beta e dà alla seta la sua morbidezza"
      ],
      "c": 3,
-     "s": "Solo alcune sequenze danno proteine funzionali: l'evoluzione ha conservato i tipi di struttura che si sono dimostrati vantaggiosi."
+     "s": "La fibroina, proteina della seta, è costituita soltanto da foglietti beta, che conferiscono morbidezza e flessibilità."
     }
    ]
   }
