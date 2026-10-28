@@ -218,7 +218,7 @@ button.item:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--shado
 .opt.wrong { background: var(--err-soft); box-shadow: 0 3px 0 var(--wrong-shadow); }
 .opt.wrong .key { background: var(--err); box-shadow: none; color: var(--on-accent); }
 .opt.dim { color: var(--muted); }
-.feedback { padding: 14px 16px; border-radius: 18px; display: flex; flex-direction: column; gap: 4px; }
+.feedback { padding: 14px 16px; border-radius: 18px; display: flex; flex-direction: column; gap: 4px; margin-top: -4px; scroll-margin-top: 80px; scroll-margin-bottom: 110px; }
 .feedback.ok { background: var(--done-soft); }
 .feedback.ko { background: var(--err-soft); }
 .feedback strong { font-family: var(--f-display); font-weight: 600; font-size: 1.05rem; }
@@ -581,6 +581,8 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     it.pick = it.order[k];
     record(S.quiz.materia, it.key, it.pick === it.q.c);
     render();
+    const fbEl = document.getElementById("fb");
+    if (fbEl) fbEl.scrollIntoView({ block: "nearest" });
   }
   function next() {
     const Q = S.quiz;
@@ -785,23 +787,22 @@ gProvider.setCustomParameters({ prompt: "select_account" });
   function vQuiz() {
     const Q = S.quiz, it = Q.items[Q.i], s = subj(Q.materia);
     const answered = it.pick !== null, ok = answered && it.pick === it.q.c;
+    const fb = answered ? `<div class="feedback ${ok ? "ok" : "ko"}" id="fb">
+        <strong>${ok ? "Risposta corretta" : "Risposta errata · la risposta corretta è la " + LETTERS[it.order.indexOf(it.q.c)]}</strong>
+        ${it.q.s ? `<span class="small">${esc(it.q.s)}</span>` : ""}</div>` : "";
     const opts = it.order.map((orig, k) => {
       let cls = "opt";
       if (answered) cls += orig === it.q.c ? " right" : orig === it.pick ? " wrong" : " dim";
-      return `<button class="${cls}" data-a="opt" data-i="${k}" ${answered ? "disabled" : ""}><span class="key">${LETTERS[k]}</span><span>${esc(it.q.o[orig])}</span></button>`;
+      return `<button class="${cls}" data-a="opt" data-i="${k}" ${answered ? "disabled" : ""}><span class="key">${LETTERS[k]}</span><span>${esc(it.q.o[orig])}</span></button>${answered && orig === it.pick ? fb : ""}`;
     }).join("");
     const pct = Math.round((Q.i + (answered ? 1 : 0)) / Q.items.length * 100);
     const where = Q.materia === "demo" ? "Esempio" : `Capitolo ${it.n}${it.titolo ? " · " + esc(it.titolo) : ""}`;
-    const fb = answered ? `<div class="feedback ${ok ? "ok" : "ko"}">
-        <strong>${ok ? "Risposta corretta" : "Risposta errata · la risposta corretta è la " + LETTERS[it.order.indexOf(it.q.c)]}</strong>
-        ${it.q.s ? `<span class="small">${esc(it.q.s)}</span>` : ""}</div>` : "";
     return `<div class="qhead"><span class="eyebrow">${s.nome} · ${MODES[Q.mode]}</span><button class="link" data-a="quit">Termina quiz</button></div>
       <div class="qprog" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100"><span style="width:${pct}%"></span></div>
       <div class="qmeta"><span>${where}</span><span class="num">Domanda ${Q.i + 1} di ${Q.items.length}</span></div>
       ${Q.materia === "demo" ? `<p class="note">Domande di esempio: le risposte non vengono salvate.</p>` : ""}
       <p class="qtext">${esc(it.q.d)}</p>
       <div class="opts">${opts}</div>
-      ${fb}
       ${answered ? `<div class="dock"><div class="wrap"><button class="primary" data-a="next">${Q.i < Q.items.length - 1 ? "Domanda successiva" : "Vedi il risultato"}</button></div></div>` : ""}`;
   }
 
