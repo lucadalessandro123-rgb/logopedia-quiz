@@ -836,6 +836,61 @@
      ],
      "c": 3,
      "s": "Gli amminoacidi trasportano il gruppo amminico al fegato, dove viene eliminato sotto forma di urea."
+    },
+    {
+     "d": "[Da esame] In che cosa si trasforma l'acido glutammico per eliminazione del gruppo amminico?",
+     "o": [
+      "Acido piruvico",
+      "Ossalacetato",
+      "α-chetoglutarato",
+      "GABA"
+     ],
+     "c": 2,
+     "s": "Per eliminazione del gruppo amminico l'acido glutammico diventa α-chetoglutarato, intermedio del ciclo di Krebs."
+    },
+    {
+     "d": "[Da esame] In quale via metabolica entrano gli intermedi ottenuti dall'acido aspartico e dall'acido glutammico?",
+     "o": [
+      "Ciclo dell'urea",
+      "Ciclo di Krebs",
+      "Sintesi delle catecolamine",
+      "Fosforilazione delle proteine"
+     ],
+     "c": 1,
+     "s": "Ossalacetato e α-chetoglutarato, derivati da acido aspartico e acido glutammico, sono intermedi del ciclo di Krebs e servono a produrre energia."
+    },
+    {
+     "d": "[Da esame] A che cosa servono gli amminoacidi nell'organismo?",
+     "o": [
+      "Formano le proteine, depositano il ferro, trasportano l'ossigeno e sono enzimi",
+      "Formano le proteine, trasportano il gruppo amminico, forniscono energia e sono primi messaggeri",
+      "Formano le membrane, trasportano gli acidi grassi, forniscono energia e sono anticorpi",
+      "Formano le proteine, trasportano gli acidi grassi, depositano l'ossigeno e sono enzimi"
+     ],
+     "c": 1,
+     "s": "Gli amminoacidi formano le proteine, trasportano il gruppo amminico al fegato, hanno funzione energetica e sono mediatori chimici e primi messaggeri."
+    },
+    {
+     "d": "[Da esame] Quali delle seguenti molecole derivano dagli amminoacidi e agiscono come ormoni o neurotrasmettitori?",
+     "o": [
+      "Insulina, glucagone e ormone della crescita",
+      "Albumina, ferritina e mioglobina",
+      "Serotonina, ormoni tiroidei e catecolamine",
+      "Chinasi, fosfatasi e anticorpi"
+     ],
+     "c": 2,
+     "s": "Dagli amminoacidi derivano ormoni e neurotrasmettitori come la serotonina, gli ormoni tiroidei e le catecolamine; insulina e glucagone sono invece ormoni di natura proteica."
+    },
+    {
+     "d": "A quale serie appartengono gli amminoacidi inseriti nelle proteine dell'organismo?",
+     "o": [
+      "Alla serie D",
+      "Alla serie L",
+      "Sia alla serie L sia alla serie D",
+      "Alla serie L, solo se levogiri"
+     ],
+     "c": 1,
+     "s": "Gli amminoacidi inseriti nelle proteine dell'organismo appartengono alla serie L."
     }
    ]
   }
