@@ -304,6 +304,24 @@ body { margin: 0; }
 :root[data-theme="dark"] .theme .sun { display: block; }
 :root[data-theme="dark"] .theme .moon { display: none; }
 .alinks { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; }
+
+/* domande da non riproporre */
+.skipq { display: inline-flex; align-items: center; gap: 5px; padding: 6px 11px; border: 0; border-radius: 999px; background: var(--peach); color: var(--peach-ink); font-size: 0.8rem; font-weight: 800; white-space: nowrap; cursor: pointer; box-shadow: 0 2px 0 var(--line-strong); }
+.skipq svg { width: 16px; height: 16px; flex: none; }
+.skipq:hover { filter: brightness(0.97); }
+.skipq:active { transform: translateY(1px); box-shadow: 0 1px 0 var(--line-strong); }
+.toast { position: fixed; z-index: 20; left: 50%; transform: translateX(-50%); top: calc(env(safe-area-inset-top, 0px) + 10px); width: min(560px, calc(100% - 24px)); display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 12px 11px 16px; border-radius: 18px; background: var(--ink); color: var(--bg); font-size: 0.9rem; font-weight: 700; box-shadow: 0 6px 20px rgba(0,0,0,.22); }
+.toast button { flex: none; border: 0; border-radius: 12px; padding: 7px 12px; background: var(--accent); color: var(--on-accent); font-weight: 800; cursor: pointer; }
+.item.xoff { box-shadow: inset 0 0 0 2px var(--line); background: var(--soft); cursor: default; color: var(--muted); }
+.ritem .mini { align-self: flex-start; min-height: 40px; padding: 7px 14px; font-size: 0.95rem; border-radius: 14px; margin-top: 4px; background: var(--accent-soft); color: var(--accent); }
+.summary .link { margin-top: -4px; }
+.confirm.okc { background: var(--accent-soft); }
+@media (max-width: 520px) {
+  .qhead { gap: 8px; }
+  .qhead-r { gap: 8px; }
+  .skipq { padding: 5px 9px; font-size: 0.74rem; gap: 4px; }
+  .skipq svg { width: 14px; height: 14px; }
+}
 </style>
 </head>
 <body>
@@ -400,8 +418,11 @@ gProvider.setCustomParameters({ prompt: "select_account" });
   const LS_KEY = "bancaquiz.progressi.v1";
   const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
-  const S = { auth: "loading", authMode: "login", authErr: "", authMsg: "", authEmail: "", data: {}, prog: {}, store: "cloud", view: { name: "home" }, quiz: null, count: 25, confirmReset: false };
-  SUBJECTS.forEach(s => { S.data[s.id] = { materia: s.id, nome: s.nome, lezioni: [] }; S.prog[s.id] = {}; });
+  const LS_EXCL = "bancaquiz.escluse.v1";
+
+  // excl: domande "da non riproporre" per materia ({ chiave: data }); salvate a parte, l'azzeramento dei progressi non le tocca
+  const S = { auth: "loading", authMode: "login", authErr: "", authMsg: "", authEmail: "", data: {}, prog: {}, excl: {}, store: "cloud", view: { name: "home" }, quiz: null, count: 25, confirmReset: false, confirmRestore: null, toast: null };
+  SUBJECTS.forEach(s => { S.data[s.id] = { materia: s.id, nome: s.nome, lezioni: [] }; S.prog[s.id] = {}; S.excl[s.id] = {}; });
 
   const app = document.getElementById("app");
   const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
@@ -419,8 +440,12 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     }));
     return out;
   }
+  // le domande "da non riproporre" escono dai quiz e dai conteggi
+  const isOut = (m, key) => m !== "demo" && !!(S.excl[m] && S.excl[m][key]);
+  const active = m => allQuestions(m).filter(x => !isOut(m, x.key));
+  const excluded = (m, lessonN) => allQuestions(m).filter(x => isOut(m, x.key) && (lessonN == null || x.n === lessonN));
   function stats(m, lessonN) {
-    let list = allQuestions(m);
+    let list = active(m);
     if (lessonN != null) list = list.filter(x => x.n === lessonN);
     const p = S.prog[m] || {};
     let fatte = 0, errori = 0;
@@ -430,7 +455,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
   const isChapterMode = mode => mode === "lezione" || mode === "lez-nuove" || mode === "lez-errori";
   function pool(v) {
     const p = S.prog[v.materia] || {};
-    let list = allQuestions(v.materia);
+    let list = active(v.materia);
     if (isChapterMode(v.mode)) list = list.filter(x => x.n === v.lesson);
     if (v.mode === "nuove" || v.mode === "lez-nuove") list = list.filter(x => !(p[x.key] && p[x.key].s > 0));
     if (v.mode === "errori" || v.mode === "lez-errori") list = list.filter(x => p[x.key] && p[x.key].w);
@@ -448,29 +473,39 @@ gProvider.setCustomParameters({ prompt: "select_account" });
   // ---------- progressi ----------
   // progressi locali separati per persona: con accesso la chiave include l'id di chi guarda
   const lsKey = () => uid ? LS_KEY + "." + uid : LS_KEY;
+  const lsExcl = () => uid ? LS_EXCL + "." + uid : LS_EXCL;
   function readLocal() {
     try { const raw = localStorage.getItem(lsKey()); if (raw) { const j = JSON.parse(raw); SUBJECTS.forEach(s => { if (j[s.id]) S.prog[s.id] = j[s.id]; }); } } catch (e) {}
+    try { const raw = localStorage.getItem(lsExcl()); if (raw) { const j = JSON.parse(raw); SUBJECTS.forEach(s => { if (j[s.id]) S.excl[s.id] = j[s.id]; }); } } catch (e) {}
   }
-  function writeLocal() { try { localStorage.setItem(lsKey(), JSON.stringify(S.prog)); } catch (e) {} }
+  function writeLocal() {
+    try { localStorage.setItem(lsKey(), JSON.stringify(S.prog)); } catch (e) {}
+    try { localStorage.setItem(lsExcl(), JSON.stringify(S.excl)); } catch (e) {}
+  }
   let uid = null, user = null, saveTimer = null;
+  // in coda: "p:<materia>" = progressi, "x:<materia>" = domande da non riproporre (documenti separati)
   const pending = new Set(), writing = new Set();
   const progDoc = m => doc(fdb, "utenti", uid, "progressi", m);
-  function scheduleSave(m) {
+  const exclDoc = m => doc(fdb, "utenti", uid, "escluse", m);
+  function queue(k) {
     writeLocal();
-    if (!uid || S.auth !== "in" || m === "demo") return;
-    pending.add(m);
+    if (!uid || S.auth !== "in" || k.endsWith(":demo")) return;
+    pending.add(k);
     clearTimeout(saveTimer);
     saveTimer = setTimeout(flush, 1500);
   }
+  const scheduleSave = m => queue("p:" + m);
+  const saveExcl = m => queue("x:" + m);
   async function flush() {
     if (!uid || S.auth !== "in") return;
     const who = uid;
-    for (const m of Array.from(pending)) {
-      if (writing.has(m)) continue;
-      pending.delete(m); writing.add(m);
-      try { await setDoc(progDoc(m), { q: S.prog[m], agg: Date.now() }); if (who === uid) S.store = "cloud"; }
-      catch (e) { if (!(e && e.code === "permission-denied")) pending.add(m); S.store = "retry"; }
-      finally { writing.delete(m); }
+    for (const k of Array.from(pending)) {
+      if (writing.has(k)) continue;
+      pending.delete(k); writing.add(k);
+      const m = k.slice(2), isX = k[0] === "x";
+      try { await setDoc(isX ? exclDoc(m) : progDoc(m), { q: isX ? S.excl[m] : S.prog[m], agg: Date.now() }); if (who === uid) S.store = "cloud"; }
+      catch (e) { if (!(e && e.code === "permission-denied")) pending.add(k); S.store = "retry"; }
+      finally { writing.delete(k); }
     }
     paintAcct();
     if (pending.size) { clearTimeout(saveTimer); saveTimer = setTimeout(flush, 5000); }
@@ -480,23 +515,30 @@ gProvider.setCustomParameters({ prompt: "select_account" });
   // ---------- accesso ----------
   async function handleUser(u) {
     user = u; pending.clear(); clearTimeout(saveTimer);
-    SUBJECTS.forEach(s => { S.prog[s.id] = {}; });
-    S.authErr = ""; S.authMsg = "";
+    SUBJECTS.forEach(s => { S.prog[s.id] = {}; S.excl[s.id] = {}; });
+    S.authErr = ""; S.authMsg = ""; S.toast = null;
     if (!u) { uid = null; S.auth = "out"; paintAcct(); render(); return; }
     const isPassword = u.providerData.some(p => p.providerId === "password");
     if (isPassword && !u.emailVerified) { uid = null; S.auth = "verify"; paintAcct(); render(); return; }
     uid = u.uid; S.auth = "loading"; paintAcct(); render();
     readLocal();
     try {
-      await Promise.all(SUBJECTS.map(async s => {
-        const snap = await getDoc(progDoc(s.id));
-        if (snap.exists()) S.prog[s.id] = (snap.data() || {}).q || {};
-        else if (Object.keys(S.prog[s.id]).length) pending.add(s.id);
-      }));
+      await Promise.all(SUBJECTS.flatMap(s => [
+        (async () => {
+          const snap = await getDoc(progDoc(s.id));
+          if (snap.exists()) S.prog[s.id] = (snap.data() || {}).q || {};
+          else if (Object.keys(S.prog[s.id]).length) pending.add("p:" + s.id);
+        })(),
+        (async () => {
+          const snap = await getDoc(exclDoc(s.id));
+          if (snap.exists()) S.excl[s.id] = (snap.data() || {}).q || {};
+          else if (Object.keys(S.excl[s.id]).length) pending.add("x:" + s.id);
+        })()
+      ]));
       S.auth = "in"; S.store = "cloud"; writeLocal();
       if (pending.size) flush();
     } catch (e) {
-      if (e && e.code === "permission-denied") { S.auth = "denied"; SUBJECTS.forEach(s => { S.prog[s.id] = {}; }); }
+      if (e && e.code === "permission-denied") { S.auth = "denied"; SUBJECTS.forEach(s => { S.prog[s.id] = {}; S.excl[s.id] = {}; }); }
       else { S.auth = "in"; S.store = "retry"; }
     }
     if (u !== user) return;
@@ -591,11 +633,52 @@ gProvider.setCustomParameters({ prompt: "select_account" });
   }
 
   // ---------- azioni ----------
+  // ---------- domande da non riproporre ----------
+  let toastTimer = 0;
+  function showToast(t) {
+    S.toast = t; clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { S.toast = null; const el = document.getElementById("toast"); if (el) el.remove(); }, 5000);
+  }
+  function excludeCurrent() {
+    const Q = S.quiz, it = Q.items[Q.i];
+    if (!it || Q.materia === "demo") return;
+    S.excl[Q.materia][it.key] = Date.now();
+    saveExcl(Q.materia);
+    const idx = Q.i;
+    Q.items.splice(idx, 1);
+    showToast({ msg: "Domanda spostata in «Da non riproporre»", undo: { m: Q.materia, key: it.key, item: it, idx } });
+    if (!Q.items.length) { flush(); backFromQuiz(); return; }
+    if (Q.i >= Q.items.length) {
+      if (Q.items.some(x => x.pick !== null)) { finish(); return; }
+      Q.i = Q.items.length - 1;
+    }
+    render(); window.scrollTo(0, 0);
+  }
+  function undoExclude() {
+    const u = S.toast && S.toast.undo;
+    clearTimeout(toastTimer); S.toast = null;
+    if (!u) { render(); return; }
+    delete S.excl[u.m][u.key];
+    saveExcl(u.m);
+    const Q = S.quiz;
+    if (Q && Q.materia === u.m && !Q.items.includes(u.item)) {
+      Q.items.splice(Math.min(u.idx, Q.items.length), 0, u.item);
+      Q.i = Math.min(u.idx, Q.items.length - 1);
+      S.view = { name: "quiz" };
+      render(); window.scrollTo(0, 0);
+    } else render();
+  }
+  function restore(m, keys) {
+    keys.forEach(k => { delete S.excl[m][k]; });
+    saveExcl(m); S.confirmRestore = null; render();
+  }
+
   function go(view) {
-    S.view = view; S.confirmReset = false;
+    S.view = view; S.confirmReset = false; S.confirmRestore = null;
     try {
       if (view.name === "subject" || view.name === "lessons") history.replaceState(null, "", "#" + view.materia);
       if (view.name === "chapter") history.replaceState(null, "", "#" + view.materia + "-" + view.lesson);
+      if (view.name === "excluded") history.replaceState(null, "", "#non-riproporre" + (view.materia ? "-" + view.materia : ""));
       if (view.name === "home") history.replaceState(null, "", location.pathname + location.search);
     } catch (e) {}
     render(); window.scrollTo(0, 0);
@@ -661,6 +744,13 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     else if (a === "quit") { if (S.quiz.items.some(x => x.pick !== null)) finish(); else backFromQuiz(); }
     else if (a === "retry") { const wrong = S.quiz.items.filter(x => x.pick !== null && x.pick !== x.q.c); startQuiz({ materia: S.quiz.materia, mode: "rifai", lesson: S.quiz.lesson, count: "all" }, wrong); }
     else if (a === "back-subject") backFromQuiz();
+    else if (a === "exclude") excludeCurrent();
+    else if (a === "undo-excl") undoExclude();
+    else if (a === "excluded") go({ name: "excluded", materia: m || null });
+    else if (a === "restore") restore(m, [b.dataset.k]);
+    else if (a === "ask-restore") { S.confirmRestore = Number(b.dataset.l); render(); }
+    else if (a === "cancel-restore") { S.confirmRestore = null; render(); }
+    else if (a === "restore-ch") { const n = Number(b.dataset.l); restore(m, excluded(m, n).map(x => x.key)); }
     else if (a === "ask-reset") { S.confirmReset = true; render(); }
     else if (a === "cancel-reset") { S.confirmReset = false; render(); }
     else if (a === "do-reset") {
@@ -708,6 +798,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
         <p>Verde: domande fatte. Rosso: errori da ripassare. Grigio: domande da fare.</p></div></div>
       <div class="sec-title"><h1>Le tue materie</h1><span class="muted small">${plural(SUBJECTS.length, "materia", "materie")}</span></div>
       <div class="list">${rows}</div>
+      ${exclHomeCard()}
       <div class="note">Vuoi vedere come funziona un quiz prima di caricare le domande? <button class="link" data-a="demo" style="display:inline">Prova un quiz di esempio</button> (5 domande, non salvate).</div>`;
   }
 
@@ -729,7 +820,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
       </button>`;
     }).join("");
     const reset = S.confirmReset
-      ? `<div class="confirm"><strong>Azzerare i progressi di ${s.nome}?</strong><p class="small">Domande fatte ed errori di questa materia tornano a zero. Le domande restano.</p>
+      ? `<div class="confirm"><strong>Azzerare i progressi di ${s.nome}?</strong><p class="small">Domande fatte ed errori di questa materia tornano a zero. Le domande restano, e quelle da non riproporre restano messe da parte.</p>
           <div class="row"><button class="secondary" data-a="cancel-reset">Annulla</button><button class="secondary danger" data-a="do-reset" data-m="${m}">Azzera progressi</button></div></div>`
       : `<button class="link" data-a="ask-reset">Azzera i progressi di ${s.nome}</button>`;
     return head + `<div class="summary">
@@ -742,7 +833,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
             <div class="kpi"><b>${t.nuove}</b><span>da fare</span></div>
           </div>
         </div>
-        ${sbar(t, true)}${legend(t)}
+        ${sbar(t, true)}${legend(t)}${exclNote(m)}
       </div>
       <section><div class="sec-title"><h2>Esercitati</h2></div><div class="modes three">${modeBtns(m, t, false)}</div></section>
       <section><div class="sec-title"><h2>Avanzamento per capitolo</h2><span class="muted small">Tocca un capitolo per fare il quiz</span></div>
@@ -799,7 +890,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
             <div class="kpi"><b>${t.nuove}</b><span>da fare</span></div>
           </div>
         </div>
-        ${sbar(t, true)}${legend(t)}
+        ${sbar(t, true)}${legend(t)}${exclNote(m, n)}
       </div>
       <section><div class="sec-title"><h2>Quiz su questo capitolo</h2></div>
         <div class="modes three">
@@ -809,7 +900,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
         </div></section>
       ${nav}
       ${S.confirmReset
-        ? `<div class="confirm"><strong>Azzerare i progressi del capitolo ${l.n}?</strong><p class="small">Domande fatte ed errori di questo capitolo tornano a zero. Gli altri capitoli e le domande restano.</p>
+        ? `<div class="confirm"><strong>Azzerare i progressi del capitolo ${l.n}?</strong><p class="small">Domande fatte ed errori di questo capitolo tornano a zero. Gli altri capitoli e le domande restano, e quelle da non riproporre restano messe da parte.</p>
             <div class="row"><button class="secondary" data-a="cancel-reset">Annulla</button><button class="secondary danger" data-a="do-reset" data-m="${m}" data-l="${l.n}">Azzera progressi</button></div></div>`
         : `<button class="link" data-a="ask-reset">Azzera i progressi del capitolo ${l.n}</button>`}`;
   }
@@ -861,7 +952,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     }).join("");
     const pct = Math.round((Q.i + (answered ? 1 : 0)) / Q.items.length * 100);
     const where = Q.materia === "demo" ? "Esempio" : `Capitolo ${it.n}${it.titolo ? " · " + esc(it.titolo) : ""}`;
-    return `<div class="qhead"><span class="eyebrow">${s.nome}<span class="qm-mode"> · ${MODES[Q.mode]}</span>${Q.materia === "demo" ? "" : `<span class="qm-cap"> · Cap. ${it.n}</span>`}</span><span class="qhead-r"><span class="qm-count num">${Q.i + 1}/${Q.items.length}</span><button class="link" data-a="quit">Termina quiz</button></span></div>
+    return `<div class="qhead"><span class="eyebrow">${s.nome}<span class="qm-mode"> · ${MODES[Q.mode]}</span>${Q.materia === "demo" ? "" : `<span class="qm-cap"> · Cap. ${it.n}</span>`}</span><span class="qhead-r"><span class="qm-count num">${Q.i + 1}/${Q.items.length}</span>${Q.materia === "demo" ? "" : `<button class="skipq" data-a="exclude" type="button" title="Togli questa domanda da tutti i quiz">${eyeOff}<span>Non riproporre</span></button>`}<button class="link" data-a="quit">Termina quiz</button></span></div>
       <div class="qprog" role="progressbar" aria-valuenow="${pct}" aria-valuemin="0" aria-valuemax="100"><span style="width:${pct}%"></span></div>
       <div class="qmeta"><span>${where}</span><span class="num">Domanda ${Q.i + 1} di ${Q.items.length}</span></div>
       ${Q.materia === "demo" ? `<p class="note">Domande di esempio: le risposte non vengono salvate.</p>` : ""}
@@ -905,6 +996,56 @@ gProvider.setCustomParameters({ prompt: "select_account" });
       </div>
       ${wrong.length ? `<section><div class="sec-title"><h2>Domande da rivedere</h2></div><div class="review">${list}</div></section>` : ""}`;
   }
+
+  // ---------- sezione "Domande da non riproporre" ----------
+  const EXCL_ICO = `<span class="ico" style="background:var(--peach)"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 20 C10 10 30 10 36 20 C30 30 10 30 4 20z" fill="#FFFFFF" stroke="${INK}" stroke-width="2.5" stroke-linejoin="round"/><circle cx="20" cy="20" r="5.5" fill="#8C84E6" stroke="${INK}" stroke-width="2"/><path d="M8 33 L32 7" stroke="#F07A7A" stroke-width="4" stroke-linecap="round"/></svg></span>`;
+  const eyeOff = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="12" cy="12" r="2.6"/><path d="M4 20 20 4"/></svg>`;
+  function exclHomeCard() {
+    const tot = SUBJECTS.reduce((a, s) => a + excluded(s.id).length, 0);
+    return `<section><div class="sec-title"><h2>Domande da non riproporre</h2></div>
+      <button class="item" data-a="excluded"><div class="item-top">${EXCL_ICO}<div>
+        <span class="item-name">Domande da non riproporre</span>
+        <span class="muted small">${tot ? plural(tot, "domanda messa da parte", "domande messe da parte") + " · divise per materia e capitolo" : "Nessuna per ora: durante un quiz tocca «Non riproporre» su una domanda troppo facile"}</span></div>
+        <span class="pct">${tot}<small>›</small></span></div></button></section>`;
+  }
+  function vExcluded(m) {
+    if (!m) {
+      const rows = SUBJECTS.map(s => {
+        const k = excluded(s.id).length;
+        const inner = `<div class="item-top">${icon(s.id)}<div><span class="item-name">${s.nome}</span>
+          <span class="muted small">${k ? plural(k, "domanda", "domande") + " da non riproporre" : "Nessuna domanda messa da parte"}</span></div>
+          <span class="pct">${k}</span></div>`;
+        return k ? `<button class="item" data-a="excluded" data-m="${s.id}">${inner}</button>` : `<div class="item xoff">${inner}</div>`;
+      }).join("");
+      return `<button class="back" data-a="home">‹ Tutte le materie</button>
+        <div class="subj-head">${EXCL_ICO.replace('class="ico"', 'class="ico lg"')}<div class="head"><span class="eyebrow">Messe da parte</span><h1>Domande da non riproporre</h1></div></div>
+        <p class="muted">Queste domande non compaiono più nei quiz e non contano nell'avanzamento. Apri una materia per rivederle e, se vuoi, rimetterle in mezzo alle altre. Restano salvate anche se azzeri i progressi.</p>
+        <div class="list">${rows}</div>`;
+    }
+    const s = subj(m), all = excluded(m);
+    const head = `<button class="back" data-a="excluded">‹ Domande da non riproporre</button>
+      <div class="subj-head">${icon(m, true)}<div class="head"><span class="eyebrow">Da non riproporre</span><h1>${s.nome}</h1></div></div>`;
+    if (!all.length) return head + `<div class="empty"><h3>Nessuna domanda messa da parte</h3><p class="muted small">In ${s.nome} tutte le domande sono nei quiz.</p></div>`;
+    const chapters = [...new Set(all.map(x => x.n))].sort((a, b) => a - b).map(n => {
+      const items = all.filter(x => x.n === n);
+      const cards = items.map(x => `<div class="ritem">
+          <strong style="font-weight:500">${esc(x.q.d)}</strong>
+          <span class="good small">Risposta corretta: ${esc(x.q.o[x.q.c])}</span>
+          <button class="secondary mini" data-a="restore" data-m="${m}" data-k="${esc(x.key)}">Rimetti nei quiz</button>
+        </div>`).join("");
+      const all1 = items.length > 1 ? (S.confirmRestore === n
+        ? `<div class="confirm okc"><strong>Rimettere nei quiz tutte le ${items.length} domande del capitolo ${n}?</strong>
+            <div class="row"><button class="secondary" data-a="cancel-restore">Annulla</button><button class="primary" data-a="restore-ch" data-m="${m}" data-l="${n}">Rimetti tutte</button></div></div>`
+        : `<button class="link" data-a="ask-restore" data-l="${n}">Rimetti nei quiz tutte le ${items.length} domande del capitolo</button>`) : "";
+      return `<section><div class="sec-title"><h2>Capitolo ${n}${items[0].titolo ? " · " + esc(items[0].titolo) : ""}</h2><span class="muted small">${plural(items.length, "domanda", "domande")}</span></div>
+        <div class="review">${cards}</div>${all1}</section>`;
+    }).join("");
+    return head + `<p class="muted small">${plural(all.length, "domanda esclusa", "domande escluse")} dai quiz. Se lasci una domanda qui, non verrà più proposta.</p>` + chapters;
+  }
+  const exclNote = (m, n) => {
+    const k = excluded(m, n).length;
+    return k ? `<button class="link" data-a="excluded" data-m="${m}">${plural(k, "domanda", "domande")} da non riproporre (escluse dai conteggi) ›</button>` : "";
+  };
 
   function vLogin() {
     const reg = S.authMode === "signup";
@@ -960,7 +1101,9 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     else if (v.name === "setup") html = vSetup(v);
     else if (v.name === "quiz" && S.quiz) html = vQuiz();
     else if (v.name === "results" && S.quiz) html = vResults();
+    else if (v.name === "excluded") html = vExcluded(v.materia);
     else html = vHome();
+    if (S.toast) html += `<div class="toast" id="toast" role="status"><span>${esc(S.toast.msg)}</span>${S.toast.undo ? `<button data-a="undo-excl" type="button">Annulla</button>` : ""}</div>`;
     document.body.classList.toggle("inquiz", v.name === "quiz");
     app.innerHTML = html;
     if (v.name === "quiz") fitQuiz();
@@ -1020,6 +1163,8 @@ gProvider.setCustomParameters({ prompt: "select_account" });
   }
   function viewFromHash() {
     const h = (location.hash || "").slice(1);
+    const xm = h.match(/^non-riproporre(?:-([a-z]+))?$/);
+    if (xm) return { name: "excluded", materia: xm[1] && SUBJECTS.some(s => s.id === xm[1]) ? xm[1] : null };
     const mm = h.match(/^([a-z]+)(?:-(\d+(?:\.\d+)?))?$/);
     if (!mm || !SUBJECTS.some(s => s.id === mm[1])) return null;
     return mm[2] ? { name: "chapter", materia: mm[1], lesson: Number(mm[2]) } : { name: "subject", materia: mm[1] };
