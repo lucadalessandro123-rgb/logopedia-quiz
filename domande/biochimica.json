@@ -759,6 +759,83 @@
      ],
      "c": 3,
      "s": "Il collagene svolge una funzione di struttura e sostegno; la cheratina ha funzione di difesa meccanica, il glucagone è un ormone, la miosina una proteina contrattile."
+    },
+    {
+     "d": "Quali amminoacidi possiedono un gruppo OH che può subire fosforilazione?",
+     "o": [
+      "Serina, cisteina e asparagina",
+      "Valina, leucina e isoleucina",
+      "Serina, treonina e tirosina",
+      "Fenilalanina, triptofano e glicina"
+     ],
+     "c": 2,
+     "s": "Il gruppo OH di serina, treonina e tirosina può subire modificazioni post-traduzionali, la più comune delle quali è la fosforilazione."
+    },
+    {
+     "d": "Quale amminoacido, per eliminazione del gruppo amminico, diventa acido piruvico?",
+     "o": [
+      "Alanina",
+      "Acido aspartico",
+      "Acido glutammico",
+      "Fenilalanina"
+     ],
+     "c": 0,
+     "s": "L'alanina, amminoacido apolare, per eliminazione del gruppo amminico diventa acido piruvico."
+    },
+    {
+     "d": "Come si definiscono gli amminoacidi essenziali?",
+     "o": [
+      "Amminoacidi che l'organismo sintetizza a partire da altri",
+      "Amminoacidi che possono dare origine a glucosio",
+      "Amminoacidi che devono essere assunti con la dieta",
+      "Amminoacidi che entrano nella composizione delle proteine"
+     ],
+     "c": 2,
+     "s": "Sono essenziali gli amminoacidi che devono essere assunti con la dieta, perché l'organismo non è in grado di sintetizzarli."
+    },
+    {
+     "d": "Che cosa accade all'alanina prodotta dal muscolo durante un lavoro intenso?",
+     "o": [
+      "Viene trasformata nel muscolo in corpi chetonici",
+      "Viene inviata al fegato e utilizzata per produrre glucosio",
+      "Viene inviata al fegato e trasformata in ossalacetato",
+      "Viene accumulata nel muscolo insieme all'acido lattico"
+     ],
+     "c": 1,
+     "s": "Durante un lavoro intenso il muscolo produce alanina, che viene inviata al fegato e utilizzata per produrre glucosio."
+    },
+    {
+     "d": "Quale funzione svolge l'acido glutammico come primo messaggero?",
+     "o": [
+      "Neurotrasmettitore inibitorio",
+      "Ormone di natura proteica",
+      "Mediatore delle reazioni allergiche",
+      "Neurotrasmettitore eccitatorio"
+     ],
+     "c": 3,
+     "s": "L'acido glutammico è il neurotrasmettitore eccitatorio per eccellenza."
+    },
+    {
+     "d": "Quale molecola si forma dall'istidina per decarbossilazione?",
+     "o": [
+      "Il GABA, neurotrasmettitore di tipo inibitorio",
+      "L'istamina, coinvolta nelle reazioni allergiche",
+      "La dopamina, appartenente alle catecolamine",
+      "La glicina, anch'essa un neurotrasmettitore"
+     ],
+     "c": 1,
+     "s": "Dall'istidina, per decarbossilazione, si forma l'istamina, coinvolta nelle reazioni allergiche."
+    },
+    {
+     "d": "Dove viene trasportato dagli amminoacidi il gruppo amminico, e in quale forma viene eliminato?",
+     "o": [
+      "Al muscolo, dove è eliminato sotto forma di urea",
+      "Al fegato, dove è trasformato in acido piruvico",
+      "Al muscolo, dove è trasformato in acido lattico",
+      "Al fegato, dove è eliminato sotto forma di urea"
+     ],
+     "c": 3,
+     "s": "Gli amminoacidi trasportano il gruppo amminico al fegato, dove viene eliminato sotto forma di urea."
     }
    ]
   }
