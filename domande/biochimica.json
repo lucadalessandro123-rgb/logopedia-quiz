@@ -447,6 +447,287 @@
      "s": "Solo la cisteina ha un –SH libero (la metionina contiene zolfo come tioetere); due cisteine possono formare un ponte disolfuro."
     }
    ]
+  },
+  {
+   "n": 2.1,
+   "titolo": "Interazioni idrofobiche, proteine e amminoacidi (prima parte)",
+   "domande": [
+    {
+     "d": "Quale tra i seguenti gruppi funzionali non può formare interazioni polari con l'ambiente acquoso?",
+     "o": [
+      "Gruppo ossidrile",
+      "Gruppo carbonile",
+      "Gruppo metile",
+      "Gruppo sulfidrilico"
+     ],
+     "c": 2,
+     "s": "Nel gruppo metile il carbonio ha una bassa differenza di elettronegatività rispetto all'idrogeno, per cui non forma interazioni polari."
+    },
+    {
+     "d": "Come si definiscono le molecole che possiedono contemporaneamente una porzione idrofobica e una porzione polare o carica?",
+     "o": [
+      "Anfipatiche",
+      "Idrofobiche",
+      "Idrofiliche",
+      "Chirali"
+     ],
+     "c": 0,
+     "s": "Le molecole con una porzione idrofobica (la catena idrocarburica) e una porzione polare o carica si definiscono anfipatiche."
+    },
+    {
+     "d": "Come sono disposte le molecole anfipatiche in una micella?",
+     "o": [
+      "Teste cariche verso l'interno, catene idrocarburiche verso l'esterno",
+      "Catene idrocarburiche e teste cariche organizzate in un doppio strato",
+      "Catene idrocarburiche verso l'acqua, teste cariche a contatto tra loro",
+      "Catene idrocarburiche verso l'interno, teste cariche verso l'esterno"
+     ],
+     "c": 3,
+     "s": "Nella micella le catene idrocarburiche, neutre, sono rivolte verso l'interno privo d'acqua, mentre le teste cariche interagiscono con l'ambiente acquoso esterno."
+    },
+    {
+     "d": "In che cosa la membrana biologica differisce dalla micella?",
+     "o": [
+      "È costituita da un singolo strato anziché da un doppio strato",
+      "È costituita da un doppio strato anziché da un singolo strato",
+      "Ha le catene idrocarburiche rivolte verso l'ambiente acquoso",
+      "Non contiene molecole anfipatiche ma solo molecole idrofiliche"
+     ],
+     "c": 1,
+     "s": "Il concetto di micella è alla base della membrana, che però non è un singolo strato come la micella, bensì un doppio strato."
+    },
+    {
+     "d": "Che cosa si verifica durante la condensazione di due monomeri?",
+     "o": [
+      "Un polimero viene scisso con l'intervento di una molecola d'acqua",
+      "Si forma un legame covalente con perdita di una molecola d'acqua",
+      "Si forma un'interazione idrofobica tra le due catene idrocarburiche",
+      "Si aggiunge un gruppo fosfato al gruppo ossidrilico di un monomero"
+     ],
+     "c": 1,
+     "s": "Nella condensazione due monomeri si uniscono con un legame covalente formando una molecola più complessa, con perdita di una molecola d'acqua."
+    },
+    {
+     "d": "Quale ruolo svolge l'acqua nell'idrolisi?",
+     "o": [
+      "È soltanto l'ambiente in cui avviene la reazione, senza parteciparvi",
+      "È un prodotto che si forma dall'unione di un ossidrile e un idrogeno",
+      "Ostacola la reazione, perché esclude le molecole idrofobiche",
+      "È sia l'ambiente della reazione sia un reagente che vi partecipa"
+     ],
+     "c": 3,
+     "s": "Nell'idrolisi il polimero è scisso con l'intervento di una molecola d'acqua: l'acqua è quindi sia l'ambiente sia un reagente."
+    },
+    {
+     "d": "A quale struttura si lega l'ossigeno nella mioglobina?",
+     "o": [
+      "All'atomo di ferro (Fe²⁺) al centro del gruppo eme",
+      "Alle catene laterali degli amminoacidi della proteina",
+      "Alla porzione glucidica legata stabilmente alla proteina",
+      "All'atomo di selenio contenuto nella selenocisteina"
+     ],
+     "c": 0,
+     "s": "L'ossigeno non può legarsi agli amminoacidi: si lega all'atomo di ferro Fe²⁺ posto al centro del gruppo eme."
+    },
+    {
+     "d": "Quante combinazioni sono teoricamente possibili con 20 amminoacidi per una proteina formata da n amminoacidi?",
+     "o": [
+      "n²⁰",
+      "20 × n",
+      "20ⁿ",
+      "20 + n"
+     ],
+     "c": 2,
+     "s": "Le combinazioni teoriche sono 20ⁿ, dove 20 è il numero degli amminoacidi e n il numero di amminoacidi della proteina."
+    },
+    {
+     "d": "Come si definiscono gli amminoacidi che non si trovano nelle proteine ma svolgono altri ruoli, ad esempio nel ciclo dell'urea?",
+     "o": [
+      "Proteinogeni",
+      "Essenziali",
+      "Glucogenici",
+      "Occasionali"
+     ],
+     "c": 3,
+     "s": "Gli amminoacidi che non entrano nelle proteine ma partecipano ad altri processi, come il ciclo dell'urea, si definiscono occasionali."
+    },
+    {
+     "d": "Perché la glicina non possiede un centro di asimmetria?",
+     "o": [
+      "Perché il suo gruppo R è un gruppo metilico",
+      "Perché il suo gruppo R è un atomo di idrogeno",
+      "Perché il suo gruppo R contiene un anello aromatico",
+      "Perché il suo gruppo R porta una carica negativa"
+     ],
+     "c": 1,
+     "s": "Nella glicina il gruppo R è un atomo di idrogeno: il carbonio alfa non ha quattro sostituenti diversi e non è un centro di asimmetria."
+    },
+    {
+     "d": "Nella proiezione di Fischer, a quale serie appartiene un amminoacido con il gruppo amminico a sinistra?",
+     "o": [
+      "Alla serie D, indipendentemente dalla rotazione della luce",
+      "Alla serie L solo se ruota la luce in senso antiorario",
+      "Alla serie L, indipendentemente dalla rotazione della luce",
+      "Alla serie D solo se ruota la luce in senso orario"
+     ],
+     "c": 2,
+     "s": "Con il gruppo amminico a sinistra l'amminoacido appartiene alla serie L, indipendentemente dal senso di rotazione della luce polarizzata."
+    },
+    {
+     "d": "Tra quali gruppi si forma il legame peptidico?",
+     "o": [
+      "Tra il gruppo carbossilico di un amminoacido e l'amminico di un altro",
+      "Tra i gruppi R di due amminoacidi adiacenti nella catena proteica",
+      "Tra i gruppi sulfidrilici di due cisteine presenti nella proteina",
+      "Tra il carbonio alfa di un amminoacido e l'idrogeno di un altro"
+     ],
+     "c": 0,
+     "s": "Il legame peptidico, legame forte, si forma tra il gruppo carbossilico di un amminoacido e il gruppo amminico di un altro."
+    },
+    {
+     "d": "Quali amminoacidi appartengono alla classe con gruppi R alifatici non polari?",
+     "o": [
+      "Serina, treonina e cisteina",
+      "Lisina, arginina e istidina",
+      "Glutammina, tirosina e serina",
+      "Alanina, valina e isoleucina"
+     ],
+     "c": 3,
+     "s": "Alanina, valina, leucina e isoleucina hanno gruppi R alifatici non polari, privi di carica e idrofobici."
+    },
+    {
+     "d": "Quali amminoacidi appartengono alla classe con gruppi R aromatici?",
+     "o": [
+      "Fenilalanina, serina e treonina",
+      "Fenilalanina, tirosina e triptofano",
+      "Glutammina, asparagina e cisteina",
+      "Alanina, leucina e isoleucina"
+     ],
+     "c": 1,
+     "s": "Fenilalanina, tirosina e triptofano possiedono un anello aromatico nel gruppo R."
+    },
+    {
+     "d": "Quali amminoacidi appartengono alla classe con gruppi R polari non carichi?",
+     "o": [
+      "Serina, treonina e cisteina",
+      "Lisina, arginina e istidina",
+      "Valina, leucina e isoleucina",
+      "Triptofano, alanina e valina"
+     ],
+     "c": 0,
+     "s": "Serina e treonina (gruppo ossidrilico) e cisteina (gruppo SH) hanno gruppi R polari senza carica netta."
+    },
+    {
+     "d": "Quali amminoacidi appartengono alla classe con gruppi R carichi positivamente (basici)?",
+     "o": [
+      "Serina, cisteina e asparagina",
+      "Alanina, leucina e valina",
+      "Lisina, arginina e istidina",
+      "Tirosina, treonina e fenilalanina"
+     ],
+     "c": 2,
+     "s": "Lisina, arginina e istidina presentano cariche positive nella catena laterale e sono basici."
+    },
+    {
+     "d": "Quali amminoacidi appartengono alla classe con gruppi R carichi negativamente (acidi)?",
+     "o": [
+      "Asparagina e glutammina",
+      "Aspartato e glutammato",
+      "Arginina e istidina",
+      "Serina e treonina"
+     ],
+     "c": 1,
+     "s": "L'acido aspartico (aspartato) e l'acido glutammico (glutammato) possiedono una carica negativa nella catena laterale."
+    },
+    {
+     "d": "Dove si trovano, in una proteina ripiegata, gli amminoacidi con gruppi R alifatici non polari?",
+     "o": [
+      "All'esterno, dove formano legami a idrogeno con l'acqua",
+      "All'esterno, dove formano interazioni elettrostatiche con l'acqua",
+      "All'interno, dove formano ponti disolfuro tra le catene laterali",
+      "All'interno, dove la stabilizzano con interazioni idrofobiche"
+     ],
+     "c": 3,
+     "s": "I loro gruppi R, ricchi di carbonio e idrogeno, si dispongono all'interno lontano dall'acqua e stabilizzano la struttura terziaria con interazioni idrofobiche."
+    },
+    {
+     "d": "Che cosa accade alla tirosina in presenza di fenilchetonuria?",
+     "o": [
+      "Diventa essenziale, perché non si forma più dalla fenilalanina",
+      "Diventa idrofobica, perché perde la capacità di formare legami a idrogeno",
+      "Diventa chetogenica, perché perde il gruppo ossidrilico dell'anello",
+      "Diventa occasionale, perché non viene più inserita nelle proteine"
+     ],
+     "c": 0,
+     "s": "Nella fenilchetonuria la fenilalanina non può essere idrossilata a tirosina, che deve quindi essere assunta con la dieta: diventa essenziale."
+    },
+    {
+     "d": "In che cosa si trasforma l'acido aspartico per eliminazione del gruppo amminico?",
+     "o": [
+      "α-chetoglutarato",
+      "Acido piruvico",
+      "Ossalacetato",
+      "Acido lattico"
+     ],
+     "c": 2,
+     "s": "Per eliminazione del gruppo amminico l'acido aspartico diventa ossalacetato, intermedio del ciclo di Krebs."
+    },
+    {
+     "d": "Quale reazione catalizzano le fosfatasi?",
+     "o": [
+      "Aggiungono un gruppo fosfato (fosforilazione)",
+      "Rimuovono il gruppo fosfato (defosforilazione)",
+      "Aggiungono un gruppo ossidrilico (idrossilazione)",
+      "Rimuovono il gruppo carbossilico (decarbossilazione)"
+     ],
+     "c": 1,
+     "s": "Le fosfatasi rimuovono il gruppo fosfato, operando la defosforilazione; le chinasi invece lo aggiungono."
+    },
+    {
+     "d": "Come si definiscono gli amminoacidi che possono formare corpi chetonici, come la leucina?",
+     "o": [
+      "Glucogenici",
+      "Gluconeogenici",
+      "Occasionali",
+      "Chetogenici"
+     ],
+     "c": 3,
+     "s": "Gli amminoacidi chetogenici sono quelli che possono formare corpi chetonici, come la leucina."
+    },
+    {
+     "d": "Come si forma il GABA e quale funzione svolge?",
+     "o": [
+      "Per decarbossilazione dell'acido glutammico; neurotrasmettitore inibitorio",
+      "Per decarbossilazione dell'acido glutammico; neurotrasmettitore eccitatorio",
+      "Per idrossilazione della tirosina; neurotrasmettitore inibitorio",
+      "Per decarbossilazione dell'istidina; mediatore delle reazioni allergiche"
+     ],
+     "c": 0,
+     "s": "Il GABA si forma dall'acido glutammico per decarbossilazione ed è un neurotrasmettitore inibitorio."
+    },
+    {
+     "d": "Qual è la sequenza corretta della via di sintesi delle catecolamine?",
+     "o": [
+      "Tirosina → L-DOPA → noradrenalina → dopamina → adrenalina",
+      "Tirosina → L-DOPA → adrenalina → noradrenalina → dopamina",
+      "Tirosina → L-DOPA → dopamina → noradrenalina → adrenalina",
+      "Triptofano → L-DOPA → dopamina → noradrenalina → adrenalina"
+     ],
+     "c": 2,
+     "s": "Dalla tirosina, attraverso la L-DOPA, si forma la dopamina, da cui derivano la noradrenalina e poi l'adrenalina."
+    },
+    {
+     "d": "Da quali amminoacidi è costituito l'aspartame?",
+     "o": [
+      "Acido glutammico e fenilalanina",
+      "Acido aspartico e fenilalanina",
+      "Acido aspartico e glicina",
+      "Acido glutammico e tirosina"
+     ],
+     "c": 1,
+     "s": "L'aspartame è costituito da acido aspartico e fenilalanina, quest'ultima legata a un gruppo metilico."
+    }
+   ]
   }
  ]
 }
