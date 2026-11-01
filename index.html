@@ -1020,7 +1020,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
   }
   function viewFromHash() {
     const h = (location.hash || "").slice(1);
-    const mm = h.match(/^([a-z]+)(?:-(\d+))?$/);
+    const mm = h.match(/^([a-z]+)(?:-(\d+(?:\.\d+)?))?$/);
     if (!mm || !SUBJECTS.some(s => s.id === mm[1])) return null;
     return mm[2] ? { name: "chapter", materia: mm[1], lesson: Number(mm[2]) } : { name: "subject", materia: mm[1] };
   }
