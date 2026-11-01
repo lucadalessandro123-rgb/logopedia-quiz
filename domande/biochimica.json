@@ -726,6 +726,39 @@
      ],
      "c": 1,
      "s": "L'aspartame è costituito da acido aspartico e fenilalanina, quest'ultima legata a un gruppo metilico."
+    },
+    {
+     "d": "Quale proteina è responsabile del deposito del ferro nei distretti tissutali?",
+     "o": [
+      "Mioglobina",
+      "Albumina",
+      "Ferritina",
+      "Emoglobina"
+     ],
+     "c": 2,
+     "s": "La ferritina è la proteina di deposito del ferro e si trova nei distretti tissutali."
+    },
+    {
+     "d": "Dove si trova l'emoglobina?",
+     "o": [
+      "Libera nel plasma, come l'albumina",
+      "All'interno dei globuli rossi",
+      "Nei muscoli, come la mioglobina",
+      "Nei distretti tissutali, come la ferritina"
+     ],
+     "c": 1,
+     "s": "L'emoglobina non è una proteina plasmatica: si trova all'interno dei globuli rossi; la proteina plasmatica da ricordare è l'albumina."
+    },
+    {
+     "d": "Quale dei seguenti abbinamenti tra proteina e funzione è corretto?",
+     "o": [
+      "Cheratina: funzione enzimatica",
+      "Glucagone: difesa meccanica",
+      "Miosina: deposito dell'ossigeno",
+      "Collagene: struttura e sostegno"
+     ],
+     "c": 3,
+     "s": "Il collagene svolge una funzione di struttura e sostegno; la cheratina ha funzione di difesa meccanica, il glucagone è un ormone, la miosina una proteina contrattile."
     }
    ]
   }
