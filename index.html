@@ -182,10 +182,23 @@ button.item:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--shado
 .back { align-self: flex-start; background: none; border: 0; padding: 4px 0; color: var(--accent); cursor: pointer; font-size: 0.95rem; font-weight: 800; }
 .back:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-/* scelta numero domande */
-.seg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 5px; border-radius: 16px; background: var(--soft); box-shadow: inset 0 0 0 2px var(--line); width: 100%; max-width: 360px; }
-.seg button { padding: 10px 0; background: transparent; border: 0; border-radius: 12px; cursor: pointer; font-family: var(--f-display); font-weight: 600; font-size: 1.05rem; font-variant-numeric: tabular-nums; }
-.seg button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); box-shadow: 0 3px 0 var(--accent-dark); }
+/* scelta numero domande: barra da 0 a tutte */
+.cnt { display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 460px; }
+.cnt-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.cnt-val { font-family: var(--f-display); font-weight: 600; font-size: 2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.cnt-val small { font-size: 0.95rem; color: var(--muted); font-weight: 700; margin-left: 4px; }
+.cnt-row { display: flex; align-items: center; gap: 10px; }
+.cnt-step { flex: none; width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--soft); box-shadow: inset 0 0 0 2px var(--line-strong); font-family: var(--f-display); font-weight: 600; font-size: 1.3rem; line-height: 1; color: var(--ink); cursor: pointer; }
+.cnt-step:active { transform: translateY(1px); }
+.cnt-range { --p: 50%; flex: 1; min-width: 0; height: 40px; margin: 0; background: transparent; -webkit-appearance: none; appearance: none; cursor: pointer; touch-action: pan-y; }
+.cnt-range:focus { outline: none; }
+.cnt-range::-webkit-slider-runnable-track { height: 12px; border-radius: 999px; background: linear-gradient(to right, var(--accent) 0 var(--p), var(--todo) var(--p) 100%); }
+.cnt-range::-moz-range-track { height: 12px; border-radius: 999px; background: var(--todo); }
+.cnt-range::-moz-range-progress { height: 12px; border-radius: 999px; background: var(--accent); }
+.cnt-range::-webkit-slider-thumb { -webkit-appearance: none; width: 30px; height: 30px; margin-top: -9px; border-radius: 50%; background: var(--surface); border: 3px solid var(--accent); box-shadow: 0 2px 0 var(--accent-dark); }
+.cnt-range::-moz-range-thumb { width: 24px; height: 24px; border-radius: 50%; background: var(--surface); border: 3px solid var(--accent); box-shadow: 0 2px 0 var(--accent-dark); }
+.cnt-range:focus-visible::-webkit-slider-thumb { outline: 3px solid var(--accent); outline-offset: 2px; }
+.cnt-ends { display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: var(--muted); padding: 0 50px; }
 .card { background: var(--surface); border-radius: 22px; box-shadow: 0 3px 0 var(--shadow); padding: 18px; display: flex; flex-direction: column; gap: 12px; }
 
 .primary { font-family: var(--f-display); font-weight: 600; font-size: 1.07rem; min-height: 50px; padding: 12px 22px; border-radius: 18px; border: 0; background: var(--accent); color: var(--on-accent); box-shadow: 0 4px 0 var(--accent-dark); cursor: pointer; transition: transform .1s ease, box-shadow .1s ease; }
@@ -414,8 +427,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     rifai: "Ripeti gli errori del quiz",
     demo: "Quiz di esempio"
   };
-  const COUNTS = [10, 25, 50];
-  const LS_KEY = "bancaquiz.progressi.v1";
+    const LS_KEY = "bancaquiz.progressi.v1";
   const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
   const LS_EXCL = "bancaquiz.escluse.v1";
@@ -735,8 +747,8 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     else if (a === "chapter") go({ name: "chapter", materia: m, lesson: Number(b.dataset.l) });
     else if (a === "setup") go({ name: "setup", materia: m, mode: b.dataset.mode, lesson: b.dataset.l != null ? Number(b.dataset.l) : null });
     else if (a === "gmode") { S.view = { ...S.view, mode: b.dataset.mode }; render(); }
-    else if (a === "count") { S.count = Number(b.dataset.c); render(); }
-    else if (a === "start") { const v = { ...S.view, count: S.count }; startQuiz(v, pool(v)); }
+    else if (a === "count-step") { const r = app.querySelector(".cnt-range"); if (r) { r.value = Math.max(0, Math.min(Number(r.max), Number(r.value) + Number(b.dataset.d))); setCount(r); } }
+    else if (a === "start") { const avail = pool(S.view).length, n = curCount(avail); if (n > 0) startQuiz({ ...S.view, count: n }, pool(S.view)); }
     else if (a === "demo") startQuiz({ materia: "demo", mode: "demo", count: "all" }, allQuestions("demo"));
     else if (a === "opt") answer(Number(b.dataset.i));
     else if (a === "next") next();
@@ -760,6 +772,7 @@ gProvider.setCustomParameters({ prompt: "select_account" });
     }
   });
 
+  app.addEventListener("input", ev => { if (ev.target.classList && ev.target.classList.contains("cnt-range")) setCount(ev.target); });
   app.addEventListener("submit", ev => { if (ev.target.id === "eform") { ev.preventDefault(); emailSubmit(ev.target); } });
 
   // ---------- componenti ----------
@@ -905,13 +918,25 @@ gProvider.setCustomParameters({ prompt: "select_account" });
         : `<button class="link" data-a="ask-reset">Azzera i progressi del capitolo ${l.n}</button>`}`;
   }
 
+  // numero di domande: S.count è un numero oppure "all" (= tutte le disponibili, qualunque sia il quiz)
+  function curCount(avail) { return S.count === "all" ? avail : Math.max(0, Math.min(Number(S.count) || 0, avail)); }
+  function countUI(n, avail) {
+    const val = document.getElementById("cnt-val"), go = app.querySelector('[data-a="start"]'), r = app.querySelector(".cnt-range");
+    if (val) val.innerHTML = `${n}<small>${n === avail && avail ? (avail === 1 ? "(l'unica)" : "(tutte)") : "su " + avail}</small>`;
+    if (r) r.style.setProperty("--p", (avail ? (n / avail) * 100 : 0) + "%");
+    if (go) { go.disabled = n === 0; go.textContent = n === 0 ? "Scegli almeno una domanda" : `Inizia il quiz · ${n} ${n === 1 ? "domanda" : "domande"}`; }
+  }
+  function setCount(r) {
+    const avail = Number(r.max), n = Number(r.value);
+    S.count = n === avail && avail > 0 ? "all" : n;
+    countUI(n, avail);
+  }
+
   function vSetup(v) {
     const s = subj(v.materia), avail = pool(v).length;
     const lez = isChapterMode(v.mode) ? S.data[v.materia].lezioni.find(l => l.n === v.lesson) : null;
     const sub = lez ? `${s.nome} · Capitolo ${v.lesson}${lez.titolo ? " · " + lez.titolo : ""}` : s.nome;
-    if (!COUNTS.includes(S.count)) S.count = 25;
-    const n = Math.min(S.count, avail);
-    const seg = COUNTS.map(c => `<button data-a="count" data-c="${c}" aria-pressed="${S.count === c}">${c}</button>`).join("");
+    const n = curCount(avail), pct = avail ? (n / avail) * 100 : 0;
     const back = isChapterMode(v.mode)
       ? `<button class="back" data-a="chapter" data-m="${v.materia}" data-l="${v.lesson}">‹ Capitolo ${v.lesson}</button>`
       : `<button class="back" data-a="subject" data-m="${v.materia}">‹ ${s.nome}</button>`;
@@ -931,12 +956,18 @@ gProvider.setCustomParameters({ prompt: "select_account" });
       ${pick}
       <div class="card">
         <h3>Numero di domande</h3>
-        <div class="seg">${seg}</div>
-        <p class="muted small">${avail < S.count
-          ? `Sono disponibili ${plural(avail, "domanda", "domande")}: il quiz le conterrà tutte.`
-          : `Su ${plural(avail, "domanda disponibile", "domande disponibili")}. Ordine di domande e risposte casuale.`}</p>
+        <div class="cnt">
+          <div class="cnt-top"><span class="cnt-val num" id="cnt-val">${n}<small>${n === avail && avail ? (avail === 1 ? "(l'unica)" : "(tutte)") : "su " + avail}</small></span></div>
+          <div class="cnt-row">
+            <button class="cnt-step" data-a="count-step" data-d="-1" type="button" aria-label="Una domanda in meno"${avail ? "" : " disabled"}>−</button>
+            <input class="cnt-range" type="range" min="0" max="${avail}" step="1" value="${n}" style="--p:${pct}%" aria-label="Numero di domande"${avail ? "" : " disabled"}>
+            <button class="cnt-step" data-a="count-step" data-d="1" type="button" aria-label="Una domanda in più"${avail ? "" : " disabled"}>+</button>
+          </div>
+          <div class="cnt-ends"><span>0</span><span>${avail}</span></div>
+        </div>
+        <p class="muted small">Trascina la barra da 0 a ${avail}: tutta a destra le fai tutte. Ordine di domande e risposte casuale.</p>
       </div>
-      <div><button class="primary" data-a="start" ${avail ? "" : "disabled"}>Inizia il quiz · ${n} ${n === 1 ? "domanda" : "domande"}</button></div>`;
+      <div><button class="primary" data-a="start" ${n ? "" : "disabled"}>${n ? `Inizia il quiz · ${n} ${n === 1 ? "domanda" : "domande"}` : "Scegli almeno una domanda"}</button></div>`;
   }
 
   function vQuiz() {
