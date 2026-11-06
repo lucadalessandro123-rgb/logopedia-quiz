@@ -893,6 +893,859 @@
      "s": "Gli amminoacidi inseriti nelle proteine dell'organismo appartengono alla serie L."
     }
    ]
+  },
+  {
+   "n": 2.2,
+   "titolo": "Interazioni idrofobiche, proteine e amminoacidi (seconda parte)",
+   "domande": [
+    {
+     "d": "Che cosa si forma tra due amminoacidi in seguito alla condensazione, con perdita di una molecola d'acqua?",
+     "o": [
+      "Un legame covalente, detto ponte disolfuro",
+      "Un legame a idrogeno tra due gruppi R",
+      "Un legame ammidico, detto legame peptidico",
+      "Un legame ionico, detto ponte salino"
+     ],
+     "c": 2,
+     "s": "La condensazione tra due amminoacidi, con perdita di acqua, origina un legame ammidico: il legame peptidico."
+    },
+    {
+     "d": "Quali enzimi intervengono nell'organismo per rompere il legame peptidico, ad esempio durante la digestione della carne?",
+     "o": [
+      "Le fosfatasi, che rimuovono i gruppi fosfato",
+      "Le proteine chaperon, dette anche HSP",
+      "La prolil-idrossilasi, attiva con la vitamina C",
+      "Gli enzimi proteolitici, come quelli digestivi"
+     ],
+     "c": 3,
+     "s": "Il legame peptidico è forte: per romperlo devono intervenire enzimi specifici, gli enzimi proteolitici (ad esempio gli enzimi digestivi)."
+    },
+    {
+     "d": "Perché il legame peptidico è definito un ibrido di risonanza?",
+     "o": [
+      "Perché ha caratteristiche intermedie tra un legame covalente e un legame a idrogeno",
+      "Perché ha caratteristiche intermedie tra un legame singolo e un doppio legame C–N",
+      "Perché si forma alternativamente con il gruppo amminico o con il gruppo R",
+      "Perché il doppietto libero dell'ossigeno viene ceduto stabilmente all'azoto"
+     ],
+     "c": 1,
+     "s": "Il doppietto libero dell'azoto può essere condiviso con il carbonio: il legame peptidico è un ibrido tra una struttura con legame singolo e una con doppio legame C–N."
+    },
+    {
+     "d": "Quali proprietà conferisce al legame peptidico il suo carattere di ibrido di risonanza?",
+     "o": [
+      "È flessibile e ruota liberamente attorno all'asse C–N",
+      "È rigido, ma ruota liberamente attorno all'asse C–N",
+      "È rigido e planare, e non può essere piegato né ruotato",
+      "È planare, ma può essere piegato durante il folding"
+     ],
+     "c": 2,
+     "s": "Il carattere di ibrido di risonanza rende il legame peptidico rigido e planare: non può essere piegato né ruotato."
+    },
+    {
+     "d": "Com'è la lunghezza del legame peptidico rispetto a quella di altri legami?",
+     "o": [
+      "Uguale a quella di un normale legame singolo carbonio-azoto",
+      "Uguale a quella di un normale doppio legame carbonio-ossigeno",
+      "Più corta di un legame singolo e più lunga di un doppio legame",
+      "Più corta sia di un legame singolo sia di un doppio legame"
+     ],
+     "c": 2,
+     "s": "Avendo caratteristiche intermedie tra le due strutture di risonanza, il legame peptidico è più corto di un singolo e più lungo di un doppio legame."
+    },
+    {
+     "d": "Da che cosa è sempre caratterizzata ogni proteina, con la formazione della catena polipeptidica?",
+     "o": [
+      "Da due gruppi amminici terminali, uno per ciascuna estremità della catena",
+      "Da un ponte disolfuro che unisce le due estremità della catena",
+      "Da un gruppo amminico terminale e da un gruppo carbossilico terminale",
+      "Da un gruppo R terminale e da un gruppo carbonilico terminale"
+     ],
+     "c": 2,
+     "s": "Ogni proteina ha sempre un'estremità N-terminale (gruppo amminico) e una C-terminale (gruppo carbossilico)."
+    },
+    {
+     "d": "Attorno a quali legami avvengono le rotazioni che permettono alla catena polipeptidica di ripiegarsi?",
+     "o": [
+      "Al legame peptidico tra il carbonio carbossilico e l'azoto dell'amminoacido successivo",
+      "Ai ponti disolfuro che si formano tra le catene laterali di due cisteine vicine",
+      "Ai legami a idrogeno tra il gruppo N–H e il gruppo C=O di due legami peptidici",
+      "Ai legami singoli del carbonio alfa con il proprio azoto e con il proprio carbonio carbossilico"
+     ],
+     "c": 3,
+     "s": "Il legame peptidico è rigido; a ruotare sono i legami singoli del carbonio alfa: con l'azoto del gruppo amminico e con il carbonio del gruppo carbossilico."
+    },
+    {
+     "d": "Quali legami corrispondono, rispettivamente, agli angoli di rotazione φ (phi) e ψ (psi)?",
+     "o": [
+      "N–Cα per φ e Cα–C per ψ",
+      "Cα–C per φ e N–Cα per ψ",
+      "C–N peptidico per φ e Cα–C per ψ",
+      "N–Cα per φ e C–N peptidico per ψ"
+     ],
+     "c": 0,
+     "s": "φ è l'angolo di rotazione attorno al legame tra carbonio alfa e gruppo amminico (N–Cα), ψ quello attorno al legame tra carbonio alfa e gruppo carbossilico (Cα–C)."
+    },
+    {
+     "d": "Perché la possibilità di ruotare attorno ai legami definiti dagli angoli φ e ψ è fondamentale?",
+     "o": [
+      "Perché il legame peptidico deve potersi rompere anche senza enzimi specifici",
+      "Perché consente la formazione di ponti salini tra le due estremità terminali",
+      "Perché la catena appena formata è lineare e deve orientarsi nello spazio",
+      "Perché permette al legame peptidico di passare da legame singolo a doppio"
+     ],
+     "c": 2,
+     "s": "La catena polipeptidica appena formata è lineare: le rotazioni φ e ψ le permettono di orientarsi nello spazio e di ripiegarsi."
+    },
+    {
+     "d": "Che cos'è la struttura primaria di una proteina?",
+     "o": [
+      "La sequenza degli amminoacidi della catena, uniti da legami peptidici",
+      "L'organizzazione locale di alcuni tratti della catena, stabilizzata da legami a idrogeno",
+      "L'organizzazione nello spazio dell'intera catena, stabilizzata dai gruppi R",
+      "L'associazione di almeno due catene polipeptidiche, dette subunità"
+     ],
+     "c": 0,
+     "s": "La struttura primaria è la sequenza degli amminoacidi che formano la catena polipeptidica, legati dal legame peptidico."
+    },
+    {
+     "d": "Da che cosa deriva la sequenza amminoacidica della struttura primaria?",
+     "o": [
+      "Dal codice genetico, cioè dal DNA ereditato dai genitori",
+      "Dalle proteine chaperon, che accompagnano la catena nel citoplasma",
+      "Dai motivi conservati, che si superavvolgono e formano i domini",
+      "Dall'ambiente fisico della proteina, cioè da pH e temperatura"
+     ],
+     "c": 0,
+     "s": "La sequenza deriva dal codice genetico: il DNA ereditato dai genitori porta l'informazione su come organizzare la catena."
+    },
+    {
+     "d": "Perché una proteina che rimane in forma lineare non può svolgere la propria funzione?",
+     "o": [
+      "Perché i suoi legami peptidici vengono subito rotti dagli enzimi proteolitici",
+      "Perché senza ponti disolfuro non può essere sintetizzata dal ribosoma",
+      "Perché deve organizzarsi nello spazio, ad esempio per orientare i propri gruppi R",
+      "Perché in una catena lineare i gruppi R sono tutti idrofobici e insolubili"
+     ],
+     "c": 2,
+     "s": "Una proteina lineare non ha funzione: deve ripiegarsi nello spazio, ad esempio per orientare in modo adeguato i gruppi R se si trova in membrana."
+    },
+    {
+     "d": "Che cosa si intende per struttura secondaria?",
+     "o": [
+      "L'organizzazione nello spazio dell'intera proteina, necessaria per la funzione",
+      "L'organizzazione locale di alcuni tratti della catena, non dell'intera proteina",
+      "La sequenza lineare degli amminoacidi, stabilita dal codice genetico",
+      "L'associazione di due eliche superavvolte tra loro a formare un dimero"
+     ],
+     "c": 1,
+     "s": "La struttura secondaria è l'organizzazione locale di una porzione della catena: interessa soltanto alcuni tratti."
+    },
+    {
+     "d": "In quali forme si organizzano i tratti della catena nella struttura secondaria?",
+     "o": [
+      "Dominio extracellulare, dominio intramembrana e dominio citoplasmatico",
+      "Dimeri di eliche, protofilamenti e microfibrille di cheratina",
+      "Alfa-elica, foglietto beta e tratti apparentemente casuali (random coil)",
+      "Elica-ansa-elica, cerniera di leucina e domini catalitici"
+     ],
+     "c": 2,
+     "s": "I tratti si organizzano in parte ad alfa-elica, in parte a foglietto beta e in parte in modo apparentemente casuale (random coil)."
+    },
+    {
+     "d": "Tra quali gruppi si formano i legami a idrogeno che stabilizzano la struttura secondaria?",
+     "o": [
+      "Tra l'H del gruppo N–H e l'O del gruppo C=O di due legami peptidici",
+      "Tra i gruppi sulfidrilici (SH) delle catene laterali di due cisteine",
+      "Tra il gruppo amminico della lisina e il carbossile dell'aspartato",
+      "Tra i gruppi R idrofobici di valina, leucina e isoleucina"
+     ],
+     "c": 0,
+     "s": "La struttura secondaria è stabilizzata da legami a idrogeno tra l'idrogeno N–H di un legame peptidico e l'ossigeno C=O di un altro."
+    },
+    {
+     "d": "Nell'alfa-elica, a quanti residui di distanza si trovano i due legami peptidici coinvolti nel legame a idrogeno?",
+     "o": [
+      "Quattro residui",
+      "Tre residui",
+      "Cinquanta residui",
+      "Due residui"
+     ],
+     "c": 0,
+     "s": "Nell'alfa-elica i due legami peptidici coinvolti nel legame a idrogeno distano quattro residui; nel foglietto beta possono essere molto più distanti."
+    },
+    {
+     "d": "Quale descrizione dell'alfa-elica tipica delle nostre cellule è corretta?",
+     "o": [
+      "Avvolgimento sinistrorso, 3,6 residui per giro, passo di 5,4 Å",
+      "Avvolgimento destrorso, 5,4 residui per giro, passo di 3,6 Å",
+      "Avvolgimento sinistrorso, 4 residui per giro, passo di 3,6 Å",
+      "Avvolgimento destrorso, 3,6 residui per giro, passo di 5,4 Å"
+     ],
+     "c": 3,
+     "s": "L'alfa-elica è destrorsa, stabilizzata da legami a idrogeno, con 3,6 residui per giro e un passo di 5,4 Å."
+    },
+    {
+     "d": "Quale amminoacido interrompe l'alfa-elica, ostacolando la formazione del passo dell'elica?",
+     "o": [
+      "La leucina",
+      "La glicina",
+      "La cisteina",
+      "La prolina"
+     ],
+     "c": 3,
+     "s": "Alcuni amminoacidi ostacolano la formazione del passo dell'elica: in particolare la prolina interrompe l'alfa-elica."
+    },
+    {
+     "d": "Come sono disposti i gruppi R nell'alfa-elica?",
+     "o": [
+      "Rivolti verso l'esterno, mentre i legami a idrogeno sono lungo la catena",
+      "Rivolti verso l'asse, mentre i legami a idrogeno sono all'esterno",
+      "Alternativamente sopra e sotto il piano, con possibili repulsioni",
+      "Impegnati, insieme ai gruppi N–H, nei legami a idrogeno dell'elica"
+     ],
+     "c": 0,
+     "s": "Nell'alfa-elica i gruppi R sono rivolti verso l'esterno, non verso l'asse, mentre i legami a idrogeno si trovano lungo la catena."
+    },
+    {
+     "d": "Perché un tratto ad alfa-elica può essere inserito nel doppio strato fosfolipidico della membrana?",
+     "o": [
+      "Perché espone all'esterno gruppi R carichi, come lisina, aspartato e glutammato",
+      "Perché espone all'esterno gruppi R apolari, come valina, leucina e isoleucina",
+      "Perché i suoi legami a idrogeno sono compatibili con le code idrofobiche",
+      "Perché la prolina rende il tratto rigido e adatto all'ambiente lipidico"
+     ],
+     "c": 1,
+     "s": "Se i gruppi R esposti all'esterno sono idrofobici (valina, leucina, isoleucina), l'alfa-elica può inserirsi nella porzione idrofobica della membrana."
+    },
+    {
+     "d": "Nel foglietto beta, quanto possono distare nella sequenza gli amminoacidi che interagiscono?",
+     "o": [
+      "Anche 20 o 50 residui",
+      "Circa 4 residui, come nell'alfa-elica",
+      "Circa 3,6 residui, cioè un giro d'elica",
+      "Almeno 200 residui, come in un dominio"
+     ],
+     "c": 0,
+     "s": "Nel foglietto beta la catena si ripiega su sé stessa e interagiscono amminoacidi distanti nella sequenza, anche di 20 o 50 residui."
+    },
+    {
+     "d": "Quando un foglietto beta si definisce antiparallelo?",
+     "o": [
+      "Quando di fronte all'estremità N-terminale di un filamento si trova la N-terminale dell'altro",
+      "Quando di fronte all'estremità N-terminale di un filamento si trova la C-terminale dell'altro",
+      "Quando i due filamenti affiancati appartengono necessariamente a due catene diverse",
+      "Quando i gruppi R dei due filamenti sporgono tutti dallo stesso lato del piano"
+     ],
+     "c": 1,
+     "s": "Nel foglietto antiparallelo i filamenti decorrono in direzione opposta: di fronte all'N-terminale di uno c'è il C-terminale dell'altro."
+    },
+    {
+     "d": "Perché il foglietto beta si trova solitamente in proteine con amminoacidi dotati di gruppi R piccoli?",
+     "o": [
+      "Perché i gruppi R sporgono alternativamente sopra e sotto il piano e possono respingersi",
+      "Perché i gruppi R grandi impediscono la formazione del legame peptidico rigido e planare",
+      "Perché soltanto i gruppi R piccoli sono in grado di formare legami a idrogeno stabili",
+      "Perché i gruppi R sono rivolti verso l'asse e occupano lo spazio centrale"
+     ],
+     "c": 0,
+     "s": "Nel foglietto beta i gruppi R sporgono alternativamente sopra e sotto il piano e possono dare repulsioni: per questo servono gruppi R piccoli."
+    },
+    {
+     "d": "Quale affermazione sul foglietto beta è corretta?",
+     "o": [
+      "È stabilizzato da ponti disolfuro tra cisteine di tratti distanti della catena",
+      "Ha i gruppi R tutti rivolti verso l'esterno, come avviene nell'alfa-elica",
+      "Coinvolge legami peptidici che distano quattro residui, come l'alfa-elica",
+      "Può formarsi all'interno della stessa catena oppure tra due catene diverse"
+     ],
+     "c": 3,
+     "s": "Il foglietto beta può formarsi all'interno della stessa catena, ripiegata su sé stessa, oppure tra due catene diverse."
+    },
+    {
+     "d": "Tra quali strutture avvengono per lo più le interazioni «appiccicose» associate alle principali patologie neurodegenerative?",
+     "o": [
+      "Tra foglietti beta della stessa catena polipeptidica",
+      "Tra foglietti beta di catene polipeptidiche diverse",
+      "Tra foglietti beta e alfa-eliche della stessa catena",
+      "Tra foglietti beta e fosfolipidi della membrana"
+     ],
+     "c": 1,
+     "s": "Nelle patologie neurodegenerative si formano interazioni appiccicose tra gruppi R, nella maggior parte dei casi tra foglietti beta di catene diverse."
+    },
+    {
+     "d": "Che cosa accade a una proteina priva di struttura terziaria?",
+     "o": [
+      "Non ha funzione biologica, qualunque sia il suo ruolo",
+      "Mantiene la sua funzione, ma non può essere regolata",
+      "Perde la struttura primaria e la propria sequenza",
+      "Svolge la funzione di deposito, ma non quella catalitica"
+     ],
+     "c": 0,
+     "s": "Senza struttura terziaria la proteina non ha funzione biologica, qualunque essa sia (trasporto, deposito, catalisi e così via)."
+    },
+    {
+     "d": "Che cosa sono i domini di una proteina, secondo quanto spiegato a lezione?",
+     "o": [
+      "Tratti della catena con un'unica struttura secondaria ripetuta",
+      "Regioni della proteina dotate di una funzione specifica",
+      "Legami deboli tra i gruppi R di due subunità diverse",
+      "Sequenze di tre residui ripetuti, come glicina-X-prolina"
+     ],
+     "c": 1,
+     "s": "I domini sono regioni della proteina dotate di una funzione specifica; una proteina può averne uno o più."
+    },
+    {
+     "d": "In quali proteine si identificano, nell'ambito della struttura terziaria, i domini?",
+     "o": [
+      "In proteine costituite da almeno 20 amminoacidi",
+      "In proteine costituite da almeno quattro subunità",
+      "In proteine costituite da almeno 200 amminoacidi",
+      "In proteine costituite da un'unica alfa-elica"
+     ],
+     "c": 2,
+     "s": "I domini si identificano nella struttura terziaria di proteine costituite da almeno 200 amminoacidi."
+    },
+    {
+     "d": "In un recettore di membrana, quale funzione svolge il dominio extracellulare?",
+     "o": [
+      "Lega il segnale, cioè il primo messaggero",
+      "Trasduce il segnale all'interno della cellula",
+      "Inserisce il recettore nel doppio strato fosfolipidico",
+      "Trasforma il substrato in prodotto"
+     ],
+     "c": 0,
+     "s": "Il dominio extracellulare del recettore serve a legare il segnale, cioè il primo messaggero."
+    },
+    {
+     "d": "Quale funzione svolge il dominio citoplasmatico di un recettore, come quello dell'insulina?",
+     "o": [
+      "Lega l'insulina, cioè il primo messaggero",
+      "Trasduce il segnale all'interno della cellula",
+      "Inserisce il recettore nel doppio strato fosfolipidico",
+      "Regola l'attività del dominio catalitico"
+     ],
+     "c": 1,
+     "s": "Nel recettore dell'insulina una porzione lega l'insulina, una è inserita nella membrana e il dominio citoplasmatico trasduce il segnale nella cellula."
+    },
+    {
+     "d": "Accanto al dominio catalitico, quale altro dominio si trova spesso in un enzima, e perché?",
+     "o": [
+      "Un dominio intramembrana, perché l'enzima deve essere inserito nella membrana",
+      "Un dominio regolatorio, perché l'enzima deve essere regolato",
+      "Un dominio extracellulare, perché l'enzima deve legare il primo messaggero",
+      "Un dominio citoplasmatico, perché l'enzima deve trasdurre il segnale"
+     ],
+     "c": 1,
+     "s": "In un enzima, accanto al dominio catalitico, si trova spesso un dominio regolatorio, perché l'enzima deve essere regolato."
+    },
+    {
+     "d": "Che cosa sono i motivi di una proteina?",
+     "o": [
+      "Regioni di almeno 200 amminoacidi dotate di una specifica funzione catalitica",
+      "Sequenze lineari di amminoacidi stabilite direttamente dal codice genetico",
+      "Associazioni di almeno due subunità unite tra loro da legami deboli",
+      "Organizzazioni regolari di alfa-eliche e foglietti beta che si superavvolgono"
+     ],
+     "c": 3,
+     "s": "I motivi sono organizzazioni regolari di elementi di struttura secondaria che si superavvolgono formando «disegni»; a loro volta formano i domini."
+    },
+    {
+     "d": "Quale dei seguenti è un esempio di motivo, caratteristico ad esempio dei fattori di trascrizione?",
+     "o": [
+      "Il ponte disolfuro tra due residui di cisteina",
+      "Il dominio citoplasmatico di un recettore",
+      "La cerniera di leucina (leucine zipper)",
+      "Il dimero di due alfa-eliche della cheratina"
+     ],
+     "c": 2,
+     "s": "Esempi di motivi sono l'elica-ansa-elica, le combinazioni di foglietti beta e la cerniera di leucina, tipica dei fattori di trascrizione."
+    },
+    {
+     "d": "Perché l'evoluzione ha selezionato soltanto alcune delle miliardi di proteine teoricamente possibili?",
+     "o": [
+      "Perché soltanto determinati amminoacidi possono formare il legame peptidico",
+      "Perché soltanto le proteine con struttura quaternaria possono essere regolate",
+      "Perché soltanto le proteine fibrose sono stabili in ambiente acquoso",
+      "Perché soltanto determinati amminoacidi sono in grado di formare i motivi"
+     ],
+     "c": 3,
+     "s": "Soltanto determinati amminoacidi formano i motivi: queste regioni sono conservate e ripetute nelle diverse proteine, come mattoncini Lego."
+    },
+    {
+     "d": "[Da esame] Quali legami stabilizzano la struttura terziaria?",
+     "o": [
+      "Interazioni idrofobiche, ponti salini, legami a idrogeno, forze di van der Waals e ponti disolfuro",
+      "Soltanto legami peptidici e legami a idrogeno tra i gruppi N–H e C=O dei legami peptidici",
+      "Soltanto ponti disolfuro e altri legami covalenti forti tra i gruppi R delle cisteine vicine",
+      "Legami peptidici, ponti disolfuro e legami a idrogeno tra le estremità N- e C-terminale"
+     ],
+     "c": 0,
+     "s": "La struttura terziaria è stabilizzata da interazioni idrofobiche, ponti salini, legami a idrogeno, forze di van der Waals e ponti disolfuro."
+    },
+    {
+     "d": "[Da esame] Quali gruppi intervengono nei legami della struttura terziaria, a differenza di quanto avviene nella struttura secondaria?",
+     "o": [
+      "I gruppi del legame peptidico",
+      "I gruppi R degli amminoacidi",
+      "I gruppi N- e C-terminale",
+      "I gruppi fosfato dei fosfolipidi"
+     ],
+     "c": 1,
+     "s": "Nella secondaria i legami a idrogeno coinvolgono i gruppi del legame peptidico; nella terziaria intervengono finalmente i gruppi R."
+    },
+    {
+     "d": "[Da esame] A quali amminoacidi sono dovute le interazioni idrofobiche che stabilizzano la struttura terziaria?",
+     "o": [
+      "Alanina, valina, leucina e isoleucina",
+      "Lisina, aspartato e glutammato",
+      "Cisteina, glicina, prolina e idrossiprolina",
+      "Glicina, prolina e lisina"
+     ],
+     "c": 0,
+     "s": "Le interazioni idrofobiche sono dovute ad amminoacidi con catene laterali di carbonio e idrogeno (alanina, valina, leucina, isoleucina), esclusi dall'acqua."
+    },
+    {
+     "d": "[Da esame] Che cosa sono i ponti salini della struttura terziaria?",
+     "o": [
+      "Legami covalenti tra i gruppi sulfidrilici di due residui di cisteina",
+      "Interazioni tra gruppi R apolari che vengono esclusi dall'acqua",
+      "Interazioni elettrostatiche tra gruppi carichi positivamente e negativamente",
+      "Legami tra l'H del gruppo N–H e l'O del gruppo C=O peptidico"
+     ],
+     "c": 2,
+     "s": "I ponti salini sono interazioni elettrostatiche tra gruppi con cariche opposte, che si attraggono."
+    },
+    {
+     "d": "[Da esame] Quale coppia di amminoacidi può formare un ponte salino?",
+     "o": [
+      "Valina e leucina",
+      "Lisina e aspartato",
+      "Cisteina e cisteina",
+      "Prolina e glicina"
+     ],
+     "c": 1,
+     "s": "La lisina, basica, ha un gruppo amminico carico positivamente che interagisce con il carbossile di un amminoacido acido come aspartato o glutammato."
+    },
+    {
+     "d": "[Da esame] Nella struttura terziaria, tra quali atomi si formano i legami a idrogeno?",
+     "o": [
+      "Tra gli atomi di zolfo di due gruppi SH",
+      "Tra gruppi carichi positivamente e negativamente",
+      "Tra atomi di carbonio di catene apolari",
+      "Tra idrogeni disponibili e atomi di ossigeno"
+     ],
+     "c": 3,
+     "s": "Tra i legami della struttura terziaria vi sono legami a idrogeno tra idrogeni disponibili e atomi di ossigeno."
+    },
+    {
+     "d": "[Da esame] Quale legame della struttura terziaria è di natura covalente, e da quali amminoacidi deriva?",
+     "o": [
+      "Il ponte salino, che deriva da lisina e glutammato",
+      "L'interazione idrofobica, che deriva da valina e leucina",
+      "Il legame a idrogeno, che deriva dalla prolina",
+      "Il ponte disolfuro, che deriva dalle cisteine"
+     ],
+     "c": 3,
+     "s": "Nella struttura terziaria è presente anche un legame forte, covalente: il ponte disolfuro, che deriva dalle cisteine."
+    },
+    {
+     "d": "[Da esame] Due cisteine interagiscono tramite il loro gruppo sulfidrilico (SH) formando un ponte disolfuro: come si chiama la molecola risultante?",
+     "o": [
+      "Cisteina",
+      "Cistina",
+      "Idrossiprolina",
+      "Fibroina"
+     ],
+     "c": 1,
+     "s": "Le cisteine possiedono il gruppo SH: due cisteine interagiscono formando una cistina, unita da un ponte disolfuro."
+    },
+    {
+     "d": "Perché un aumento della temperatura o una variazione del pH possono far perdere a una proteina la sua struttura (denaturazione)?",
+     "o": [
+      "Perché la struttura primaria è stabilizzata soprattutto da legami deboli",
+      "Perché il calore rompe i legami peptidici anche senza enzimi specifici",
+      "Perché i ponti disolfuro sono i legami più deboli di tutta la proteina",
+      "Perché la struttura terziaria è stabilizzata soprattutto da legami deboli"
+     ],
+     "c": 3,
+     "s": "Poiché la struttura terziaria è stabilizzata soprattutto da legami deboli, variazioni di pH, temperatura o ambiente fisico causano la denaturazione."
+    },
+    {
+     "d": "Quante conformazioni strutturali funzionanti esistono per una proteina?",
+     "o": [
+      "Una e una sola, che corrisponde allo stato nativo",
+      "Molte, a seconda di come interagiscono i residui idrofobici",
+      "Tante quante sono i domini presenti nella proteina",
+      "Una per ciascun tipo di struttura secondaria presente"
+     ],
+     "c": 0,
+     "s": "Esiste una e una sola conformazione funzionante: la struttura terziaria finale, cioè lo stato nativo della proteina."
+    },
+    {
+     "d": "Che cosa si intende per folding di una proteina?",
+     "o": [
+      "Il processo con cui la proteina perde la struttura per variazioni di pH e temperatura",
+      "Il processo con cui il ribosoma unisce gli amminoacidi tramite legami peptidici",
+      "Il processo con cui la proteina si organizza nello spazio fino allo stato nativo funzionante",
+      "Il processo con cui due alfa-eliche si superavvolgono tra loro formando un dimero"
+     ],
+     "c": 2,
+     "s": "Il folding è il processo con cui la proteina, tramite le interazioni tra i suoi amminoacidi, assume il proprio stato nativo funzionante."
+    },
+    {
+     "d": "In quanto tempo avviene il folding, e con l'aiuto di quali proteine?",
+     "o": [
+      "In millisecondi, con l'aiuto delle chaperon o HSP",
+      "In alcune ore, con l'aiuto degli enzimi proteolitici",
+      "In millisecondi, con l'aiuto della prolil-idrossilasi",
+      "In alcuni giorni, con l'aiuto delle immunoglobuline"
+     ],
+     "c": 0,
+     "s": "Il folding avviene in millisecondi, con l'aiuto di proteine accompagnatrici (chaperon) o HSP (heat shock proteins)."
+    },
+    {
+     "d": "Perché la febbre desta preoccupazione dal punto di vista della struttura delle proteine?",
+     "o": [
+      "Perché l'aumento di temperatura rompe i legami peptidici della struttura primaria",
+      "Perché l'aumento di temperatura blocca la sintesi delle proteine chaperon (HSP)",
+      "Perché l'aumento di temperatura rende solubili in acqua le proteine fibrose",
+      "Perché l'aumento di temperatura può alterare l'organizzazione e la funzione delle proteine"
+     ],
+     "c": 3,
+     "s": "Un aumento della temperatura altera l'ambiente e può alterare l'organizzazione, e quindi la funzione, delle proteine."
+    },
+    {
+     "d": "Quali fattori ambientali possono far perdere il corretto folding alle proteine in patologie come l'Alzheimer e il Parkinson?",
+     "o": [
+      "Carenza di vitamina C, carenza di vitamina D e febbre elevata",
+      "Mutazioni ereditate dei geni del collagene e della cheratina",
+      "Inquinanti atmosferici, stress ossidativo e danno ai mitocondri",
+      "Eccesso di cisteine e di ponti disolfuro nelle proteine"
+     ],
+     "c": 2,
+     "s": "Nelle patologie neurodegenerative alcune proteine perdono il folding per inquinanti atmosferici, stress ossidativo e danno ai mitocondri."
+    },
+    {
+     "d": "Che cosa si forma quando una proteina perde il corretto folding e crea siti appiccicosi per altre proteine?",
+     "o": [
+      "Le microfibrille di cheratina",
+      "Le placche amiloidi",
+      "I proteoglicani della matrice",
+      "I dimeri di eliche superavvolte"
+     ],
+     "c": 1,
+     "s": "La proteina con folding alterato si organizza in modo diverso, crea siti appiccicosi e dà origine alle placche amiloidi."
+    },
+    {
+     "d": "[Da esame] Che cosa indica il termine «quaternaria» nell'espressione struttura quaternaria?",
+     "o": [
+      "Che la proteina è formata obbligatoriamente da quattro subunità",
+      "Che la proteina possiede quattro domini con funzioni diverse",
+      "Che questo livello di organizzazione viene dopo la struttura terziaria",
+      "Che la catena è stabilizzata da quattro tipi diversi di legame"
+     ],
+     "c": 2,
+     "s": "Errore frequente all'esame: quaternaria non significa quattro subunità, ma solo che il livello viene dopo la struttura terziaria."
+    },
+    {
+     "d": "[Da esame] Qual è il requisito per parlare di struttura quaternaria?",
+     "o": [
+      "L'associazione di almeno quattro catene polipeptidiche (subunità)",
+      "La presenza di almeno quattro domini nella stessa catena",
+      "La presenza di almeno due alfa-eliche nella stessa catena",
+      "L'associazione di almeno due catene polipeptidiche (subunità)"
+     ],
+     "c": 3,
+     "s": "La struttura quaternaria è l'associazione di almeno due subunità; l'emoglobina, ad esempio, ne ha quattro, ma il requisito è che siano almeno due."
+    },
+    {
+     "d": "Quando si osserva soprattutto l'organizzazione in struttura quaternaria?",
+     "o": [
+      "Quando la proteina deve risultare insolubile in acqua",
+      "Quando la proteina deve inserirsi nella membrana",
+      "Quando la proteina non ha una struttura terziaria",
+      "Quando la proteina ha maggiore necessità di regolazione"
+     ],
+     "c": 3,
+     "s": "La struttura quaternaria si osserva soprattutto quando la proteina ha maggiore necessità di regolazione, e rappresenta quindi un vantaggio."
+    },
+    {
+     "d": "Quali interazioni stabilizzano la struttura quaternaria?",
+     "o": [
+      "Le stesse della terziaria, soprattutto legami deboli",
+      "I legami peptidici che uniscono tra loro le subunità",
+      "I ponti disolfuro, che sono i legami prevalenti",
+      "I legami a idrogeno tra i gruppi del legame peptidico"
+     ],
+     "c": 0,
+     "s": "Le interazioni sono le stesse della terziaria: soprattutto legami deboli (legami a idrogeno, van der Waals, interazioni idrofobiche ed elettrostatiche)."
+    },
+    {
+     "d": "In quali proteine le catene della struttura quaternaria sono unite anche da ponti disolfuro?",
+     "o": [
+      "Nell'emoglobina, tra le sue quattro subunità",
+      "Nella fibroina, tra i foglietti beta della seta",
+      "Nelle immunoglobuline, tra catene leggere e pesanti",
+      "Nel recettore dell'insulina, tra i suoi diversi domini"
+     ],
+     "c": 2,
+     "s": "Nelle immunoglobuline, costituite da catene leggere e pesanti, le catene sono unite da ponti disolfuro."
+    },
+    {
+     "d": "Che cosa comporta l'associazione tra le subunità nella struttura quaternaria?",
+     "o": [
+      "Un aumento della superficie esposta all'ambiente acquoso",
+      "La perdita della struttura terziaria di ciascuna subunità",
+      "La formazione di legami peptidici tra le diverse subunità",
+      "Una riduzione della superficie esposta all'ambiente acquoso"
+     ],
+     "c": 3,
+     "s": "L'associazione tra le subunità comporta una riduzione della superficie della proteina esposta all'ambiente acquoso."
+    },
+    {
+     "d": "In quali conformazioni esistono le proteine allosteriche?",
+     "o": [
+      "Una conformazione tesa (T) e una rilassata (R)",
+      "Una conformazione nativa e una denaturata",
+      "Una conformazione ad alfa-elica e una a foglietto beta",
+      "Una conformazione parallela e una antiparallela"
+     ],
+     "c": 0,
+     "s": "Le proteine allosteriche esistono in una conformazione tesa (T) e in una conformazione rilassata (R)."
+    },
+    {
+     "d": "Quale caratteristica ha la conformazione rilassata (R) di una proteina allosterica rispetto a quella tesa (T)?",
+     "o": [
+      "È meno attiva e ha più legami, che ostacolano l'ingresso del substrato",
+      "È più attiva e ha meno legami, che facilitano l'ingresso del substrato",
+      "È lo stato in cui la proteina si trova normalmente, in condizioni di base",
+      "È priva di struttura quaternaria e per questo non può essere regolata"
+     ],
+     "c": 1,
+     "s": "Normalmente la proteina è nello stato teso, meno attivo; nello stato rilassato è più attiva, con meno legami, e il substrato entra più facilmente."
+    },
+    {
+     "d": "Che cosa accade all'emoglobina a livello polmonare?",
+     "o": [
+      "Passa dallo stato rilassato a quello teso e lega l'ossigeno",
+      "Passa dallo stato teso a quello rilassato e lega l'ossigeno",
+      "Passa dallo stato teso a quello rilassato e cede l'ossigeno",
+      "Passa dallo stato rilassato a quello teso e cede l'ossigeno"
+     ],
+     "c": 1,
+     "s": "Nei polmoni l'emoglobina passa da T a R e lega l'ossigeno; nei tessuti passa da R a T e lo rilascia."
+    },
+    {
+     "d": "Quali caratteristiche hanno le proteine fibrose?",
+     "o": [
+      "Sono solubili in acqua e hanno una superficie idrofila e un interno idrofobico",
+      "Sono insolubili in acqua e costituite in gran parte da un'unica struttura secondaria",
+      "Sono insolubili in acqua e costituite da più domini con funzione catalitica",
+      "Sono solubili in acqua e formate da subunità soggette a regolazione allosterica"
+     ],
+     "c": 1,
+     "s": "Le proteine fibrose conferiscono resistenza, sono costituite in gran parte da un'unica struttura secondaria, sono insolubili e hanno ruoli strutturali."
+    },
+    {
+     "d": "Perché le proteine globulari sono solubili in acqua?",
+     "o": [
+      "Perché hanno una superficie idrofila e un interno idrofobico",
+      "Perché hanno una superficie idrofobica e un interno idrofilo",
+      "Perché sono costituite da un'unica struttura secondaria",
+      "Perché sono ricche di ponti disolfuro tra le cisteine"
+     ],
+     "c": 0,
+     "s": "Le proteine globulari, ripiegate in struttura terziaria e/o quaternaria, presentano una superficie idrofila e un interno idrofobico."
+    },
+    {
+     "d": "Di quali strutture sono componenti le cheratine?",
+     "o": [
+      "Gengive, denti e vasi sanguigni",
+      "Fibra della seta, morbida e flessibile",
+      "Capelli, lana, piume e corna",
+      "Tessuto connettivo e matrice extracellulare"
+     ],
+     "c": 2,
+     "s": "Le cheratine sono componenti di capelli, lana, piume e corna e sono costituite da catene ad alfa-elica."
+    },
+    {
+     "d": "Perché nella cheratina due alfa-eliche si superavvolgono tra loro?",
+     "o": [
+      "Per aumentare la resistenza, che una sola alfa-elica non garantisce",
+      "Per esporre all'esterno gruppi R idrofobici adatti alla membrana",
+      "Per permettere la regolazione allosterica tra stato teso e rilassato",
+      "Per ridurre il numero di ponti disolfuro e rendere la cheratina morbida"
+     ],
+     "c": 0,
+     "s": "Una singola alfa-elica non garantisce una resistenza elevata; due alfa-eliche superavvolte aumentano la resistenza."
+    },
+    {
+     "d": "Qual è la differenza tra cheratina dura e cheratina morbida?",
+     "o": [
+      "La dura ha pochi ponti disolfuro, la morbida molti",
+      "La dura ha molti ponti disolfuro, la morbida pochi",
+      "La dura è ad alfa-elica, la morbida a foglietto beta",
+      "La dura ha tre eliche superavvolte, la morbida due"
+     ],
+     "c": 1,
+     "s": "La consistenza della cheratina dipende dai ponti disolfuro tra cisteine: più ponti disolfuro, struttura più rigida (cheratina dura)."
+    },
+    {
+     "d": "Qual è l'ordine corretto di organizzazione della cheratina, dalla struttura più semplice alla più complessa?",
+     "o": [
+      "Protofilamento, dimero, microfibrilla",
+      "Microfibrilla, dimero, protofilamento",
+      "Dimero, microfibrilla, protofilamento",
+      "Dimero, protofilamento, microfibrilla"
+     ],
+     "c": 3,
+     "s": "Due filamenti superavvolti formano un dimero; più dimeri formano i protofilamenti e più protofilamenti la microfibrilla."
+    },
+    {
+     "d": "Che cosa accade al capello quando i ponti disolfuro vengono rotti con un agente riducente?",
+     "o": [
+      "Diventa riccio",
+      "Diventa più rigido",
+      "Diventa liscio",
+      "Diventa più resistente"
+     ],
+     "c": 2,
+     "s": "Il riccio dipende dai ponti disolfuro: rompendoli il capello diventa liscio, creandoli diventa riccio."
+    },
+    {
+     "d": "Superavvolgendosi, da quale tipo di struttura a quale passa l'alfa-elica della cheratina?",
+     "o": [
+      "Da una struttura secondaria a una di tipo quaternario",
+      "Da una struttura primaria a una di tipo secondario",
+      "Da una struttura terziaria a una di tipo primario",
+      "Da una struttura quaternaria a una di tipo terziario"
+     ],
+     "c": 0,
+     "s": "La cheratina è formata da alfa-eliche che si superavvolgono, passando da una struttura secondaria a una di tipo quaternario."
+    },
+    {
+     "d": "Come è organizzato il collagene?",
+     "o": [
+      "Due alfa-eliche destrorse superavvolte, che formano dimeri",
+      "Foglietti beta antiparalleli affiancati, che formano fibre",
+      "Tre eliche sinistrorse superavvolte, che formano filamenti",
+      "Quattro subunità globulari, unite da legami deboli"
+     ],
+     "c": 2,
+     "s": "Nel collagene si superavvolgono tre eliche che formano filamenti; la singola catena non è un'alfa-elica, ma un'elica sinistrorsa."
+    },
+    {
+     "d": "Da quale ripetizione di residui è costituita la catena del collagene?",
+     "o": [
+      "Prolina – X – glicina, oppure prolina – X – idrossiprolina",
+      "Cisteina – X – prolina, oppure cisteina – X – idrossiprolina",
+      "Glicina – X – prolina, oppure glicina – X – idrossiprolina",
+      "Leucina – X – glicina, oppure leucina – X – idrossiprolina"
+     ],
+     "c": 2,
+     "s": "La catena del collagene è costituita dalla ripetizione glicina – amminoacido X – prolina (o idrossiprolina)."
+    },
+    {
+     "d": "Qual è il ruolo della vitamina C nella sintesi del collagene?",
+     "o": [
+      "È necessaria per convertire l'idrossiprolina in prolina",
+      "È necessaria per convertire la prolina in idrossiprolina",
+      "È necessaria per formare i ponti disolfuro tra le cisteine",
+      "È necessaria per il deposito del calcio nelle ossa"
+     ],
+     "c": 1,
+     "s": "La vitamina C è necessaria per la reazione (catalizzata dalla prolil-idrossilasi) che converte la prolina in idrossiprolina."
+    },
+    {
+     "d": "Che cosa accade alle catene di collagene in assenza di idrossiprolina?",
+     "o": [
+      "Si avvolgono in un'alfa-elica destrorsa più rigida",
+      "Formano un numero maggiore di ponti disolfuro",
+      "Non interagiscono correttamente e la struttura è debole",
+      "Diventano solubili e assumono forma globulare"
+     ],
+     "c": 2,
+     "s": "In assenza di idrossiprolina le catene di collagene non interagiscono correttamente e la struttura che si forma è debole."
+    },
+    {
+     "d": "Dove si trova il collagene, e con quali altre componenti forma la matrice extracellulare?",
+     "o": [
+      "Nel tessuto connettivo, con i proteoglicani",
+      "Nei capelli e nelle unghie, con le cheratine",
+      "Nella membrana cellulare, con i fosfolipidi",
+      "Nella fibra della seta, con la fibroina"
+     ],
+     "c": 0,
+     "s": "Il collagene è il costituente del tessuto connettivo, dove con altre componenti, come i proteoglicani, forma la matrice extracellulare."
+    },
+    {
+     "d": "A che cosa è dovuto lo scorbuto, e quali segni provoca?",
+     "o": [
+      "A carenza di vitamina D; difetto nel deposito di calcio nelle ossa",
+      "A una mutazione genetica del collagene; fratture e sclere bluastre",
+      "A un alterato folding delle proteine; formazione di placche amiloidi",
+      "A carenza di vitamina C; sanguinamenti e facilità agli ematomi"
+     ],
+     "c": 3,
+     "s": "Lo scorbuto è dovuto a carenza di vitamina C: il collagene di gengive, denti e vasi è debole, con sanguinamenti ed ematomi. Non va confuso con il rachitismo (vitamina D)."
+    },
+    {
+     "d": "Che tipo di malattia è l'osteogenesi imperfetta?",
+     "o": [
+      "Una malattia acquisita, da carenza di vitamina C nella dieta",
+      "Una malattia genetica che altera i ponti disolfuro della cheratina",
+      "Una malattia acquisita, da deficit di vitamina D e di calcio",
+      "Una malattia genetica che altera la sintesi del collagene"
+     ],
+     "c": 3,
+     "s": "L'osteogenesi imperfetta è una malattia genetica che altera la sintesi di una proteina fibrosa, il collagene."
+    },
+    {
+     "d": "Quali segni caratterizzano l'osteogenesi imperfetta?",
+     "o": [
+      "Sanguinamenti gengivali, ematomi e fragilità dei vasi",
+      "Fratture facili, sclere bluastre, sordità e bassa statura",
+      "Pelle desquamata, cheratina dura e dermatosi grave",
+      "Placche amiloidi e alterazione delle funzioni cognitive"
+     ],
+     "c": 1,
+     "s": "Nell'osteogenesi imperfetta il connettivo è fragile: fratture, sclere bluastre, possibile sordità e bassa statura."
+    },
+    {
+     "d": "Che cosa accade alle funzioni neurocognitive nell'osteogenesi imperfetta?",
+     "o": [
+      "Sono gravemente alterate, perché il collagene manca anche nel sistema nervoso",
+      "Sono alterate soltanto nelle forme più gravi, con uso della sedia a rotelle",
+      "Sono alterate dalla sordità, che impedisce lo sviluppo del linguaggio",
+      "Non sono alterate, perché l'alterazione riguarda soltanto la conformazione fisica"
+     ],
+     "c": 3,
+     "s": "Nell'osteogenesi imperfetta le funzioni neurocognitive non sono alterate: l'alterazione riguarda soltanto la conformazione fisica."
+    },
+    {
+     "d": "Quale proteina è costituita soltanto da foglietti beta?",
+     "o": [
+      "La cheratina, proteina dei capelli",
+      "Il collagene, proteina del connettivo",
+      "L'emoglobina, proteina dei globuli rossi",
+      "La fibroina, proteina della seta"
+     ],
+     "c": 3,
+     "s": "La fibroina, la proteina della seta, è costituita soltanto da foglietti beta, che ne determinano la morbidezza."
+    },
+    {
+     "d": "Quali proprietà conferiscono, rispettivamente, l'alfa-elica e il foglietto beta nelle proteine fibrose?",
+     "o": [
+      "Alfa-elica: morbidezza e flessibilità; foglietto beta: elasticità e robustezza",
+      "Alfa-elica: elasticità e robustezza; foglietto beta: morbidezza e flessibilità",
+      "Alfa-elica: solubilità in acqua; foglietto beta: insolubilità in acqua",
+      "Alfa-elica: rigidità e insolubilità; foglietto beta: solubilità e resistenza"
+     ],
+     "c": 1,
+     "s": "L'alfa-elica è come una molla e conferisce elasticità, robustezza e consistenza; il foglietto beta conferisce morbidezza e flessibilità."
+    }
+   ]
   }
  ]
 }
