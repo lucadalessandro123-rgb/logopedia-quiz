@@ -450,7 +450,7 @@
   },
   {
    "n": 2.1,
-   "titolo": "Interazioni idrofobiche, proteine e amminoacidi (prima parte)",
+   "titolo": "Interazioni idrofobiche, proteine e amminoacidi",
    "domande": [
     {
      "d": "Quale tra i seguenti gruppi funzionali non può formare interazioni polari con l'ambiente acquoso?",
@@ -891,13 +891,7 @@
      ],
      "c": 1,
      "s": "Gli amminoacidi inseriti nelle proteine dell'organismo appartengono alla serie L."
-    }
-   ]
-  },
-  {
-   "n": 2.2,
-   "titolo": "Interazioni idrofobiche, proteine e amminoacidi (seconda parte)",
-   "domande": [
+    },
     {
      "d": "Che cosa si forma tra due amminoacidi in seguito alla condensazione, con perdita di una molecola d'acqua?",
      "o": [
