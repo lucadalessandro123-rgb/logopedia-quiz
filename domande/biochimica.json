@@ -2965,6 +2965,83 @@
      ],
      "c": 1,
      "s": "Gli ioni metallici, in modo transitorio, trasferiscono o accettano elettroni oppure mascherano con la loro carica altre cariche."
+    },
+    {
+     "d": "Che cosa indica un valore di ΔG > 0?",
+     "o": [
+      "Una reazione esoergonica, che avviene spontaneamente",
+      "Una reazione all'equilibrio, senza grandi variazioni di energia",
+      "Una reazione endoergonica, che non avviene spontaneamente",
+      "Una reazione che libera energia nell'ambiente"
+     ],
+     "c": 2,
+     "s": "Con ΔG > 0 la trasformazione non avviene spontaneamente perché richiede energia (reazione endoergonica)."
+    },
+    {
+     "d": "Che cosa indica un valore di ΔG = 0?",
+     "o": [
+      "Una reazione endoergonica, che richiede energia",
+      "Una reazione esoergonica, che avviene spontaneamente",
+      "Una reazione accoppiata all'idrolisi dell'ATP",
+      "Una reazione all'equilibrio, senza grandi variazioni"
+     ],
+     "c": 3,
+     "s": "Con ΔG = 0 la reazione è all'equilibrio: non si hanno grandi variazioni di energia libera."
+    },
+    {
+     "d": "Rispetto ai substrati, quale energia libera hanno i prodotti di una reazione esoergonica?",
+     "o": [
+      "Minore, e la reazione è spontanea",
+      "Maggiore, e la reazione è spontanea",
+      "Maggiore, e la reazione richiede ATP",
+      "Uguale, e la reazione è all'equilibrio"
+     ],
+     "c": 0,
+     "s": "Le reazioni esoergoniche portano a prodotti con minore energia libera rispetto ai substrati e sono spontanee."
+    },
+    {
+     "d": "Quali sono i tre tipi di cofattore degli oloenzimi?",
+     "o": [
+      "Apoenzima, coenzima e gruppo prostetico",
+      "Ione metallico, gruppo prostetico e coenzima",
+      "Ione metallico, apoenzima e vitamina",
+      "Gruppo prostetico, oloproteina e coenzima"
+     ],
+     "c": 1,
+     "s": "Il cofattore può essere uno ione metallico, un gruppo prostetico (legato saldamente) o un coenzima (legato debolmente)."
+    },
+    {
+     "d": "In che cosa lo ione metallico differisce dal gruppo prostetico, pur essendo entrambi legati all'enzima?",
+     "o": [
+      "Lo ione metallico è un gruppo chimico grande, il gruppo prostetico un singolo atomo",
+      "Lo ione metallico è legato debolmente, il gruppo prostetico può spostarsi liberamente",
+      "Lo ione metallico deriva dalle vitamine, il gruppo prostetico dagli amminoacidi",
+      "Lo ione metallico è un singolo atomo, il gruppo prostetico un gruppo più grande"
+     ],
+     "c": 3,
+     "s": "Entrambi sono legati all'enzima, ma lo ione metallico è un singolo atomo, mentre il gruppo prostetico è un gruppo chimico più grande."
+    },
+    {
+     "d": "Come è costruito il nome di un enzima?",
+     "o": [
+      "Con il suffisso -asi, preceduto da ciò che l'enzima fa",
+      "Con il suffisso -ina, preceduto dal nome del tessuto in cui si trova",
+      "Con il prefisso apo-, seguito dal nome del cofattore che utilizza",
+      "Con il suffisso -osio, preceduto dal nome del substrato che trasforma"
+     ],
+     "c": 0,
+     "s": "Tutti gli enzimi hanno il suffisso -asi, preceduto dalla descrizione di ciò che fanno (es. catalasi, glucochinasi)."
+    },
+    {
+     "d": "In base a che cosa si distinguono le sottoclassi all'interno di una classe di enzimi, ad esempio nelle liasi?",
+     "o": [
+      "In base alla sede della cellula in cui si trova l'enzima",
+      "In base al tipo di legame scisso, ad esempio C-C o C-O",
+      "In base al numero di subunità che compongono l'enzima",
+      "In base alla vitamina da cui deriva il coenzima utilizzato"
+     ],
+     "c": 1,
+     "s": "Le sottoclassi dipendono dagli atomi coinvolti: nelle liasi, ad esempio, dal legame scisso (C-C, C-O, ecc.)."
     }
    ]
   }
