@@ -1740,6 +1740,1233 @@
      "s": "L'alfa-elica è come una molla e conferisce elasticità, robustezza e consistenza; il foglietto beta conferisce morbidezza e flessibilità."
     }
    ]
+  },
+  {
+   "n": 3,
+   "titolo": "Folding, malattie da prioni ed enzimi",
+   "domande": [
+    {
+     "d": "Come viene definita la conformazione finale e funzionante che una proteina raggiunge grazie al folding?",
+     "o": [
+      "Conformazione quaternaria",
+      "Conformazione nativa",
+      "Conformazione aggregata",
+      "Conformazione primaria"
+     ],
+     "c": 1,
+     "s": "La conformazione finale funzionante della proteina viene detta conformazione nativa."
+    },
+    {
+     "d": "Perché una proteina che non si avvolge correttamente nello spazio tende ad aderire alle proteine circostanti?",
+     "o": [
+      "Perché perde i legami peptidici della propria struttura primaria",
+      "Perché stabilisce nuovi ponti salini con le proteine vicine",
+      "Perché espone all'ambiente acquoso amminoacidi idrofobici",
+      "Perché resta legata in modo stabile agli chaperon"
+     ],
+     "c": 2,
+     "s": "Il misfolding espone all'ambiente acquoso amminoacidi idrofobici, per cui la proteina aderisce alle altre formando aggregati."
+    },
+    {
+     "d": "Nel diabete di tipo 2, quale proteina forma depositi amiloidi associati alla disfunzione del pancreas?",
+     "o": [
+      "L'insulina",
+      "La proteina tau",
+      "L'α-sinucleina",
+      "L'amilina"
+     ],
+     "c": 3,
+     "s": "L'amilina, ormone peptidico secreto con l'insulina dalle cellule β, forma depositi amiloidi nel diabete di tipo 2."
+    },
+    {
+     "d": "Perché le malattie neurodegenerative si manifestano soprattutto nell'anziano?",
+     "o": [
+      "Perché il neurone non si divide e accumula con l'età i danni da stress ossidativo",
+      "Perché il neurone si divide spesso e accumula con l'età errori nella sintesi proteica",
+      "Perché nell'anziano gli chaperon vengono prodotti in eccesso e alterano il folding",
+      "Perché nell'anziano si riduce la produzione di ROS necessaria a proteggere le proteine"
+     ],
+     "c": 0,
+     "s": "Il neurone non si divide e non si rigenera: invecchiando subisce danni, in particolare da stress ossidativo (ROS)."
+    },
+    {
+     "d": "In che modo le placche di proteine danneggiate conducono alla morte del neurone?",
+     "o": [
+      "Bloccano la sintesi delle proteine a livello del ribosoma",
+      "Compromettono il mitocondrio, che non produce più ATP",
+      "Impediscono al neurone di formare nuove sinapsi",
+      "Provocano l'iperfosforilazione della membrana plasmatica"
+     ],
+     "c": 1,
+     "s": "Le placche compromettono organelli come il mitocondrio: non viene più prodotto l'ATP necessario alla vita della cellula."
+    },
+    {
+     "d": "Quali proteine si accumulano nella malattia di Alzheimer?",
+     "o": [
+      "La β-amiloide e l'α-sinucleina iperfosforilata",
+      "L'amilina e la proteina tau iperfosforilata",
+      "La β-amiloide e la proteina tau iperfosforilata",
+      "La proteina prionica e l'α-sinucleina mutata"
+     ],
+     "c": 2,
+     "s": "Nell'Alzheimer si accumulano la β-amiloide e la proteina tau, che diviene iperfosforilata."
+    },
+    {
+     "d": "Quale proteina è coinvolta nella malattia di Parkinson?",
+     "o": [
+      "La proteina tau",
+      "L'amilina",
+      "La β-amiloide",
+      "L'α-sinucleina"
+     ],
+     "c": 3,
+     "s": "Nel Parkinson la proteina coinvolta è l'α-sinucleina."
+    },
+    {
+     "d": "Quale sostituzione amminoacidica si verifica nell'anemia falciforme?",
+     "o": [
+      "L'acido glutammico viene sostituito dalla valina",
+      "La valina viene sostituita dall'acido glutammico",
+      "L'acido aspartico viene sostituito dalla leucina",
+      "L'acido glutammico viene sostituito dall'alanina"
+     ],
+     "c": 0,
+     "s": "Nell'anemia falciforme l'acido glutammico viene sostituito dalla valina, idrofobica."
+    },
+    {
+     "d": "Nell'anemia falciforme, in quale condizione le molecole di emoglobina aderiscono tra loro a livello delle valine?",
+     "o": [
+      "Quando l'emoglobina è legata all'ossigeno",
+      "Quando l'emoglobina è deossigenata",
+      "Quando il pH del plasma si alza",
+      "Quando aumenta il bicarbonato plasmatico"
+     ],
+     "c": 1,
+     "s": "Quando l'emoglobina è deossigenata le molecole aderiscono tra loro a livello delle valine."
+    },
+    {
+     "d": "Che cosa accade quando l'emoglobina falciforme si organizza in filamenti?",
+     "o": [
+      "I filamenti vengono degradati dal proteasoma del globulo rosso",
+      "I filamenti legano più ossigeno e lo cedono con difficoltà ai tessuti",
+      "I filamenti cristallizzano e danneggiano il globulo rosso",
+      "I filamenti si depositano nel neurone formando placche amiloidi"
+     ],
+     "c": 2,
+     "s": "L'emoglobina si organizza in filamenti che cristallizzano e danneggiano il globulo rosso."
+    },
+    {
+     "d": "Quali funzioni sembra svolgere la proteina prionica normale presente sulla membrana delle cellule nervose?",
+     "o": [
+      "Trasporto dell'ossigeno e protezione dallo stress ossidativo",
+      "Sintesi dell'ATP mitocondriale e funzione proapoptotica",
+      "Degradazione delle proteine alterate e omeostasi del calcio",
+      "Omeostasi di vari ioni, come il rame, e funzione antiapoptotica"
+     ],
+     "c": 3,
+     "s": "La proteina prionica sembra mantenere l'omeostasi di vari ioni, tra cui il rame, e proteggere il neurone (funzione antiapoptotica)."
+    },
+    {
+     "d": "Dove si trova il gene che codifica la proteina prionica?",
+     "o": [
+      "Sul braccio corto del cromosoma 20",
+      "Sul braccio lungo del cromosoma 20",
+      "Sul braccio corto del cromosoma 21",
+      "Sul braccio lungo del cromosoma 12"
+     ],
+     "c": 0,
+     "s": "Il gene della proteina prionica si trova sul braccio corto (p) del cromosoma 20."
+    },
+    {
+     "d": "Quale cambiamento strutturale caratterizza la forma alterata della proteina prionica?",
+     "o": [
+      "Passa da una struttura prevalentemente a foglietto β a una prevalentemente ad α-elica",
+      "Passa da una struttura prevalentemente ad α-elica a una prevalentemente a foglietto β",
+      "Perde la struttura terziaria e conserva soltanto la propria struttura primaria lineare",
+      "Acquista una struttura quaternaria associandosi alla proteina prionica di un'altra specie"
+     ],
+     "c": 1,
+     "s": "La proteina prionica normale è prevalentemente ad α-elica; quella alterata assume una conformazione prevalentemente a foglietto β."
+    },
+    {
+     "d": "Che cosa accade quando la PrPSc entra in contatto con la PrPC?",
+     "o": [
+      "La PrPSc viene riconvertita dalla PrPC nella forma normale",
+      "La PrPSc viene riconosciuta come estranea e subito degradata",
+      "La PrPSc induce la modifica della PrPC, rendendola alterata",
+      "Le due proteine formano un dimero stabile e funzionante"
+     ],
+     "c": 2,
+     "s": "La forma alterata (PrPSc) induce la modifica della forma normale (PrPC), rendendola a sua volta alterata."
+    },
+    {
+     "d": "Che cosa indicano, rispettivamente, le sigle PrPSc e PrPC?",
+     "o": [
+      "Proteina prionica cellulare (forma alterata) e proteina prionica scrapie (forma normale)",
+      "Proteina prionica sintetica (forma alterata) e proteina prionica cerebrale (forma normale)",
+      "Proteina prionica scrapie (forma normale) e proteina prionica cellulare (forma alterata)",
+      "Proteina prionica scrapie (forma alterata) e proteina prionica cellulare (forma normale)"
+     ],
+     "c": 3,
+     "s": "PrPSc indica la proteina prionica scrapie (forma alterata), PrPC la proteina prionica cellulare (forma normale)."
+    },
+    {
+     "d": "Perché le malattie prioniche acquisite con l'assunzione di carne infetta rappresentano un problema rilevante?",
+     "o": [
+      "Perché non esistono a oggi farmaci contro la proteina prionica",
+      "Perché la proteina prionica è resistente soltanto agli antivirali",
+      "Perché la carne infetta trasmette insieme virus e batteri",
+      "Perché la proteina prionica è assente nel sistema nervoso umano"
+     ],
+     "c": 0,
+     "s": "Contro batteri e virus esistono antibiotici e antivirali, mentre non esistono farmaci contro la proteina prionica."
+    },
+    {
+     "d": "Attraverso quale via la proteina prionica alterata assunta con la carne infetta raggiunge il sistema nervoso centrale?",
+     "o": [
+      "Attraverso il circolo sanguigno, dopo essere stata digerita in amminoacidi",
+      "Attraverso il sistema nervoso enterico, dopo aver superato stomaco e intestino",
+      "Attraverso il sistema linfatico, dopo essere stata idrolizzata dalle proteasi",
+      "Attraverso le vie respiratorie, dopo essere stata inalata durante il pasto"
+     ],
+     "c": 1,
+     "s": "La proteina, non digerita, attraversa stomaco e intestino e raggiunge il sistema nervoso centrale mediante il sistema nervoso enterico."
+    },
+    {
+     "d": "Che cosa accade al cervello nelle malattie prioniche, e con quali manifestazioni si presenta la patologia?",
+     "o": [
+      "Si formano depositi di cheratina, con difficoltà nel linguaggio e nel ricordare",
+      "Si accumula α-sinucleina nei neuroni, con tremori e iperglicemia",
+      "Diventa una sorta di spugna, con movimenti alterati e insonnia",
+      "Perde i mitocondri dei neuroni, con anemia e calo degli zuccheri"
+     ],
+     "c": 2,
+     "s": "Il cervello diventa una sorta di spugna, si perdono le interconnessioni e compaiono movimenti alterati, insonnia e altri disturbi."
+    },
+    {
+     "d": "Quale tra le seguenti malattie prioniche colpisce gli animali?",
+     "o": [
+      "Il kuru",
+      "L'insonnia fatale familiare",
+      "La malattia di Creutzfeldt-Jakob",
+      "La scrapie"
+     ],
+     "c": 3,
+     "s": "La scrapie è la malattia prionica che colpisce gli animali."
+    },
+    {
+     "d": "Quale tra le seguenti malattie prioniche ha base genetica?",
+     "o": [
+      "L'insonnia fatale familiare",
+      "La malattia di Creutzfeldt-Jakob",
+      "L'encefalopatia spongiforme bovina",
+      "Il kuru delle popolazioni indigene"
+     ],
+     "c": 0,
+     "s": "L'insonnia fatale familiare è la malattia prionica a base genetica."
+    },
+    {
+     "d": "Come si trasmetteva il kuru?",
+     "o": [
+      "Con l'assunzione di carne bovina infetta, non controllata prima della macellazione",
+      "Mangiando il cervello dei defunti, per usanze funerarie di popolazioni indigene",
+      "Per via genetica, mediante una mutazione del gene presente sul cromosoma 20",
+      "Per contatto con animali affetti da scrapie, in alcune popolazioni di allevatori"
+     ],
+     "c": 1,
+     "s": "Il kuru era diffuso in popolazioni indigene che, per usanze funerarie, mangiavano il cervello dei defunti."
+    },
+    {
+     "d": "Perché la BSE può essere trasmessa all'uomo con la carne bovina?",
+     "o": [
+      "Perché la proteina bovina viene digerita in amminoacidi riutilizzati dal neurone",
+      "Perché la carne bovina contiene anche il DNA che codifica la proteina alterata",
+      "Perché l'omologia di sequenza consente l'interazione tra le due proteine",
+      "Perché la proteina bovina è riconosciuta come estranea e attiva gli chaperon"
+     ],
+     "c": 2,
+     "s": "Esiste un'omologia di sequenza che consente l'interazione tra le proteine, e la proteina introdotta non è riconosciuta come estranea."
+    },
+    {
+     "d": "Perché si è verificata l'epidemia di «mucca pazza», originata nel Regno Unito?",
+     "o": [
+      "Perché la proteina bovina aveva perso la propria omologia con quella umana",
+      "Perché gli antibiotici somministrati agli animali alteravano la proteina prionica",
+      "Perché si diffuse una mutazione genetica nella popolazione umana europea",
+      "Perché gli animali venivano macellati senza analisi, in assenza di controlli"
+     ],
+     "c": 3,
+     "s": "In passato non esistevano controlli: l'animale veniva macellato senza analisi, anche se mostrava segni di malattia."
+    },
+    {
+     "d": "Che cosa indica il termine prione?",
+     "o": [
+      "Un'infezione di natura esclusivamente proteica",
+      "Un'infezione dovuta a un virus privo di capside",
+      "Una proteina che degrada le proteine alterate",
+      "Una proteina normale priva di funzione nota"
+     ],
+     "c": 0,
+     "s": "Prione è un acronimo che indica un'infezione dovuta soltanto a proteine."
+    },
+    {
+     "d": "Che cosa hanno dimostrato gli studi sui topi relativi alle malattie prioniche?",
+     "o": [
+      "Che la carne infetta perdeva l'infettività dopo il trattamento con antibiotici",
+      "Che la carne infetta restava infettiva anche dopo la rimozione del DNA",
+      "Che l'agente infettivo era un batterio resistente ai comuni antibatterici",
+      "Che la proteina alterata veniva digerita senza raggiungere il cervello"
+     ],
+     "c": 1,
+     "s": "La carne restava infettiva anche dopo antibiotici, antibatterici e rimozione del DNA: l'agente era una proteina stabile."
+    },
+    {
+     "d": "Il malfunzionamento di quale sistema di degradazione delle proteine alterate può contribuire alle patologie proteiche?",
+     "o": [
+      "Il ribosoma",
+      "Il mitocondrio",
+      "Il proteasoma",
+      "Il sistema degli chaperon"
+     ],
+     "c": 2,
+     "s": "Le alterazioni proteiche possono dipendere anche dal malfunzionamento dei sistemi che degradano le proteine alterate, come il proteasoma."
+    },
+    {
+     "d": "Quale esempio viene citato come principale impiego terapeutico delle proteine sintetiche prodotte in batteri e altri ospiti?",
+     "o": [
+      "L'amilina nel diabete di tipo 2",
+      "Il collagene nell'osteogenesi imperfetta",
+      "L'emoglobina nell'anemia falciforme",
+      "L'insulina nel diabete di tipo 1"
+     ],
+     "c": 3,
+     "s": "L'esempio principale è l'insulina, che consente a un bambino con diabete di tipo 1 una vita piuttosto normale."
+    },
+    {
+     "d": "[Da esame] Che cosa sono gli enzimi?",
+     "o": [
+      "Catalizzatori biologici che velocizzano le reazioni biologiche",
+      "Cofattori biologici che spostano l'equilibrio delle reazioni",
+      "Catalizzatori metallici che vengono consumati dalla reazione",
+      "Substrati biologici che le cellule trasformano in prodotti"
+     ],
+     "c": 0,
+     "s": "Gli enzimi sono catalizzatori biologici che velocizzano le reazioni biologiche."
+    },
+    {
+     "d": "[Da esame] In che cosa gli enzimi differiscono dai catalizzatori chimici?",
+     "o": [
+      "Gli enzimi vengono consumati dalla reazione, i catalizzatori chimici no",
+      "Gli enzimi sono specifici, mentre i catalizzatori chimici non lo sono",
+      "Gli enzimi si usano in grandi quantità, i catalizzatori chimici in piccole",
+      "Gli enzimi sono piccoli atomi metallici, i catalizzatori chimici proteine"
+     ],
+     "c": 1,
+     "s": "Né gli enzimi né i catalizzatori chimici vengono consumati, ma solo gli enzimi sono specifici."
+    },
+    {
+     "d": "[Da esame] Quale effetto hanno gli enzimi su una reazione chimica?",
+     "o": [
+      "Ne modificano l'equilibrio, senza variarne la velocità",
+      "Ne modificano sia la velocità sia l'equilibrio",
+      "Ne aumentano la velocità, senza modificarne l'equilibrio",
+      "Ne rendono spontanea la direzione endoergonica"
+     ],
+     "c": 2,
+     "s": "Gli enzimi influenzano la velocità della reazione, ma non ne modificano l'equilibrio."
+    },
+    {
+     "d": "Che cosa significa il termine enzima, e da quali osservazioni deriva?",
+     "o": [
+      "«Nella cellula»: dall'osservazione della glicolisi all'interno delle cellule",
+      "«Che accelera»: dallo studio dei catalizzatori metallici in laboratorio",
+      "«Nella proteina»: dalla scoperta della struttura terziaria delle proteine",
+      "«Nel lievito»: dallo studio della fermentazione e degli alimenti lievitati"
+     ],
+     "c": 3,
+     "s": "Enzima significa «nel lievito»: gli enzimi sono stati scoperti studiando il lievito e la fermentazione."
+    },
+    {
+     "d": "Quale osservazione ha smentito l'idea che la fermentazione potesse avvenire solo in presenza delle cellule di lievito?",
+     "o": [
+      "Gli enzimi sono in grado di funzionare anche al di fuori delle cellule",
+      "Gli enzimi del lievito funzionano solo in presenza di ossigeno",
+      "La fermentazione avviene anche senza enzimi, ma molto lentamente",
+      "La fermentazione richiede soltanto catalizzatori chimici metallici"
+     ],
+     "c": 0,
+     "s": "Si è visto che gli enzimi sono in grado di funzionare anche al di fuori delle cellule."
+    },
+    {
+     "d": "Quale tra le seguenti associazioni tra molecola ingerita ed enzima che interviene nella sua degradazione è corretta?",
+     "o": [
+      "Trigliceridi e proteasi",
+      "Amido e amilasi",
+      "Proteine e lipasi",
+      "Amido e lipasi"
+     ],
+     "c": 1,
+     "s": "L'amido viene degradato dall'amilasi; le proteine dalle proteasi; i trigliceridi dalle lipasi."
+    },
+    {
+     "d": "Che cosa accade spesso al prodotto di una reazione enzimatica all'interno della cellula?",
+     "o": [
+      "Resta legato all'enzima, che non viene più modulato",
+      "Viene subito eliminato, senza ulteriori trasformazioni",
+      "Può diventare il substrato di un altro enzima",
+      "Viene riconvertito nel substrato iniziale dallo stesso enzima"
+     ],
+     "c": 2,
+     "s": "Il prodotto può diventare substrato di un altro enzima, finché non si forma una sostanza da eliminare o stoccare."
+    },
+    {
+     "d": "Dove si trova la maggior parte degli enzimi dell'organismo?",
+     "o": [
+      "Nel plasma, insieme alle proteine plasmatiche",
+      "Sulla membrana plasmatica delle cellule",
+      "Nel circolo sanguigno, legati agli eritrociti",
+      "All'interno delle cellule"
+     ],
+     "c": 3,
+     "s": "Gli enzimi si trovano all'interno delle cellule; in circolo ve ne sono pochi, come quelli della coagulazione."
+    },
+    {
+     "d": "Perché gli enzimi intracellulari ritrovati nel plasma, come le transaminasi, diventano marcatori diagnostici?",
+     "o": [
+      "Perché indicano un danno tissutale o una loro fuoriuscita dalle cellule",
+      "Perché indicano che il plasma contiene troppi substrati da trasformare",
+      "Perché indicano che gli enzimi della coagulazione sono stati attivati",
+      "Perché indicano che l'enzima è stato consumato dalla reazione"
+     ],
+     "c": 0,
+     "s": "Gli enzimi intracellulari nel plasma indicano un danno tissutale o una loro fuoriuscita dalle cellule."
+    },
+    {
+     "d": "Perché gli enzimi si definiscono stereospecifici?",
+     "o": [
+      "Perché riconoscono sia gli L-amminoacidi sia i D-amminoacidi",
+      "Perché riconoscono il singolo stereoisomero, come gli L-amminoacidi",
+      "Perché formano complessi irreversibili con il proprio substrato",
+      "Perché agiscono soltanto in una specifica sede della cellula"
+     ],
+     "c": 1,
+     "s": "Gli enzimi riconoscono il singolo stereoisomero: ad esempio, solo gli L-amminoacidi vengono inseriti nella catena."
+    },
+    {
+     "d": "Perché un enzima ha un volume molto più grande di un catalizzatore chimico?",
+     "o": [
+      "Perché deve legare contemporaneamente molti substrati diversi",
+      "Perché viene impiegato in grandi quantità dalle cellule",
+      "Perché deve contenere diversi domini che ne regolano l'attività",
+      "Perché è formato da atomi metallici legati tra loro"
+     ],
+     "c": 2,
+     "s": "L'enzima deve contenere diverse regioni, i domini, necessarie a regolarne l'attività."
+    },
+    {
+     "d": "Di quanto, come minimo, gli enzimi accelerano le reazioni?",
+     "o": [
+      "Almeno cento volte",
+      "Almeno mille volte",
+      "Almeno un miliardo di volte",
+      "Almeno un milione di volte"
+     ],
+     "c": 3,
+     "s": "Gli enzimi accelerano le reazioni almeno di un milione di volte."
+    },
+    {
+     "d": "Di circa quante volte l'anidrasi carbonica velocizza la reazione che catalizza?",
+     "o": [
+      "Circa 10^7 volte",
+      "Circa 10^3 volte",
+      "Circa 10^2 volte",
+      "Circa 10^12 volte"
+     ],
+     "c": 0,
+     "s": "L'anidrasi carbonica velocizza la reazione di circa 10^7 volte."
+    },
+    {
+     "d": "Nella reazione catalizzata dall'anidrasi carbonica, quali sono i substrati e quali i prodotti?",
+     "o": [
+      "Substrati: H+ e HCO3−; prodotti: CO2 e H2O",
+      "Substrati: CO2 e H2O; prodotti: H+ e HCO3−",
+      "Substrati: CO2 e H+; prodotti: H2O e HCO3−",
+      "Substrati: H2CO3 e H2O; prodotti: CO2 e H+"
+     ],
+     "c": 1,
+     "s": "CO2 e H2O sono i substrati; H+ e HCO3− sono i prodotti."
+    },
+    {
+     "d": "A che cosa serve la reazione dell'anidrasi carbonica nel globulo rosso?",
+     "o": [
+      "A produrre il bicarbonato eliminato con le urine",
+      "A produrre i protoni necessari alla sintesi dell'HCl",
+      "A modulare il rilascio dell'ossigeno nei tessuti",
+      "A impedire la cristallizzazione dell'emoglobina"
+     ],
+     "c": 2,
+     "s": "Nel globulo rosso la reazione modula il rilascio dell'ossigeno, favorendone la cessione nei tessuti."
+    },
+    {
+     "d": "A che cosa servono i protoni prodotti dall'anidrasi carbonica nelle cellule parietali delle ghiandole ossintiche dello stomaco?",
+     "o": [
+      "A tamponare il pH del plasma",
+      "A favorire la cessione dell'ossigeno",
+      "A rendere acide le urine",
+      "Alla sintesi dell'acido cloridrico"
+     ],
+     "c": 3,
+     "s": "Nelle cellule parietali i protoni servono alla sintesi dell'HCl, che abbassa il pH e favorisce la digestione."
+    },
+    {
+     "d": "Nel rene, quale prodotto della reazione dell'anidrasi carbonica passa nel plasma per tamponare le specie acide?",
+     "o": [
+      "Lo ione bicarbonato",
+      "L'acido carbonico",
+      "L'anidride carbonica",
+      "Lo ione idrogeno"
+     ],
+     "c": 0,
+     "s": "Nel rene i protoni vengono eliminati con le urine, mentre il bicarbonato passa nel plasma come tampone."
+    },
+    {
+     "d": "Perché l'equilibrio della dissociazione dell'acido carbonico si sposta verso la forma dissociata?",
+     "o": [
+      "Perché l'anidrasi carbonica modifica l'equilibrio della reazione",
+      "Perché le specie dissociate vengono continuamente rimosse",
+      "Perché l'acido carbonico è un acido forte che si dissocia subito",
+      "Perché la CO2 viene continuamente prodotta dal globulo rosso"
+     ],
+     "c": 1,
+     "s": "L'equilibrio si sposta verso la forma dissociata perché le specie dissociate vengono continuamente rimosse."
+    },
+    {
+     "d": "Perché il sito attivo dell'enzima deve spesso essere idrofobico?",
+     "o": [
+      "Per legare con forza il substrato e impedirne il rilascio",
+      "Per consentire all'acqua di partecipare a tutte le reazioni",
+      "Per allontanare l'acqua, che ostacola l'interazione del substrato",
+      "Per respingere gli amminoacidi carichi presenti nel substrato"
+     ],
+     "c": 2,
+     "s": "L'acqua interagisce con tutte le molecole e ostacola la reazione: il sito attivo idrofobico la allontana."
+    },
+    {
+     "d": "Da che cosa è costituito un oloenzima?",
+     "o": [
+      "Da un apoenzima privo di cofattori",
+      "Da più catene di soli amminoacidi",
+      "Da un coenzima e da un gruppo prostetico",
+      "Da un apoenzima e da un cofattore"
+     ],
+     "c": 3,
+     "s": "Oloenzima = apoenzima (parte proteica) + cofattore (parte non proteica)."
+    },
+    {
+     "d": "In che cosa il gruppo prostetico differisce dal coenzima?",
+     "o": [
+      "Il gruppo prostetico è legato saldamente all'enzima, il coenzima debolmente",
+      "Il gruppo prostetico è legato debolmente all'enzima, il coenzima saldamente",
+      "Il gruppo prostetico è un singolo atomo metallico, il coenzima una proteina",
+      "Il gruppo prostetico deriva dalle vitamine, il coenzima dai metalli"
+     ],
+     "c": 0,
+     "s": "Il gruppo prostetico (es. FMN, eme) è legato saldamente; il coenzima (es. NAD) è legato debolmente e può spostarsi."
+    },
+    {
+     "d": "Quale tra i seguenti è l'esempio classico di coenzima indicato a lezione?",
+     "o": [
+      "L'FMN",
+      "Il NAD",
+      "Il gruppo eme",
+      "Il centro ferro-zolfo"
+     ],
+     "c": 1,
+     "s": "Il NAD è l'esempio classico di coenzima, legato debolmente all'enzima."
+    },
+    {
+     "d": "Da che cosa derivano solitamente i coenzimi?",
+     "o": [
+      "Dai cofattori metallici",
+      "Dagli amminoacidi della serie L",
+      "Dalle vitamine",
+      "Dai gruppi prostetici"
+     ],
+     "c": 2,
+     "s": "I coenzimi sono composti organici che derivano solitamente dalle vitamine."
+    },
+    {
+     "d": "Da quale vitamina deriva il NAD?",
+     "o": [
+      "Dalla vitamina C, la cui carenza causa lo scorbuto",
+      "Dalla vitamina D, la cui carenza causa il rachitismo",
+      "Dalla vitamina A, la cui carenza causa la pellagra",
+      "Dalla vitamina B3 (PP), la cui carenza causa la pellagra"
+     ],
+     "c": 3,
+     "s": "Il NAD deriva dalla vitamina B3, chiamata anche PP perché la sua carenza causa la pellagra."
+    },
+    {
+     "d": "Quali sono le uniche vitamine che non partecipano alle attività enzimatiche?",
+     "o": [
+      "La vitamina A e la vitamina D",
+      "La vitamina B3 e la vitamina C",
+      "La vitamina A e la vitamina B3",
+      "La vitamina C e la vitamina D"
+     ],
+     "c": 0,
+     "s": "Le uniche vitamine che non partecipano alle attività enzimatiche sono la A e la D; tutte quelle del gruppo B hanno attività coenzimatica."
+    },
+    {
+     "d": "In che cosa gli enzimi oligomerici differiscono dagli enzimi monomerici?",
+     "o": [
+      "Sono privi di struttura terziaria",
+      "Possiedono anche struttura quaternaria",
+      "Sono privi di cofattori metallici",
+      "Possiedono soltanto struttura secondaria"
+     ],
+     "c": 1,
+     "s": "Gli enzimi monomerici hanno solo struttura terziaria; gli oligomerici anche struttura quaternaria."
+    },
+    {
+     "d": "Quale funzione svolgono i gruppi catalitici del sito attivo?",
+     "o": [
+      "Riconoscono il substrato e ne permettono il legame specifico",
+      "Allontanano l'acqua dal substrato formando una tasca polare",
+      "Partecipano direttamente alla rottura e alla formazione dei legami",
+      "Legano stabilmente il cofattore metallico all'apoenzima"
+     ],
+     "c": 2,
+     "s": "I gruppi catalitici fanno avvenire la reazione vera e propria, partecipando alla rottura e alla formazione dei legami."
+    },
+    {
+     "d": "Mediante quale tipo di interazioni il substrato interagisce con l'enzima nel sito attivo?",
+     "o": [
+      "Interazioni covalenti stabili, come i legami peptidici",
+      "Interazioni covalenti transitorie, come i ponti disolfuro",
+      "Soltanto interazioni idrofobiche con residui apolari",
+      "Interazioni deboli: elettrostatiche, a idrogeno e idrofobiche"
+     ],
+     "c": 3,
+     "s": "Substrato ed enzima interagiscono mediante interazioni deboli: legami elettrostatici, a idrogeno e interazioni idrofobiche."
+    },
+    {
+     "d": "Qual è il limite del modello chiave-serratura di Fischer?",
+     "o": [
+      "Una complementarità così elevata non lascerebbe spazio alla modifica del substrato",
+      "Una complementarità così scarsa non spiegherebbe la specificità degli enzimi",
+      "Il modello prevede che l'enzima si modifichi in modo permanente dopo il legame",
+      "Il modello prevede che un enzima possa legare molti substrati diversi"
+     ],
+     "c": 0,
+     "s": "Con una complementarità così alta il substrato resterebbe legato senza essere modificato né rilasciato."
+    },
+    {
+     "d": "Che cosa prevede il modello dell'adattamento indotto?",
+     "o": [
+      "Che l'enzima e il substrato siano già perfettamente complementari",
+      "Che l'enzima si modifichi in modo transitorio per accogliere il substrato",
+      "Che il substrato si modifichi in modo permanente prima di legarsi",
+      "Che l'enzima resti legato al prodotto fino a una nuova attivazione"
+     ],
+     "c": 1,
+     "s": "A contatto con il substrato l'enzima si modifica in modo transitorio, rendendosi più disponibile ad accoglierlo."
+    },
+    {
+     "d": "Quale enzima viene citato come esempio di adattamento indotto?",
+     "o": [
+      "La lattico deidrogenasi",
+      "L'anidrasi carbonica",
+      "L'esochinasi",
+      "La piruvato decarbossilasi"
+     ],
+     "c": 2,
+     "s": "L'esochinasi, quando il glucosio entra nel sito attivo, si modifica e lo accoglie."
+    },
+    {
+     "d": "Perché gli enzimi della digestione e della coagulazione, pur essendo sempre presenti, non agiscono continuamente?",
+     "o": [
+      "Perché vengono consumati e devono essere risintetizzati",
+      "Perché si trovano tutti nel plasma, lontano dal substrato",
+      "Perché sono complementari al substrato come chiave e serratura",
+      "Perché devono essere attivati da una modifica dell'enzima"
+     ],
+     "c": 3,
+     "s": "Anche se complementari al substrato, questi enzimi devono essere attivati da una modifica; altrimenti si avrebbero ad esempio trombi."
+    },
+    {
+     "d": "Sotto quale forma vengono trasferiti gli elettroni nelle reazioni di ossidoriduzione dell'organismo?",
+     "o": [
+      "Sotto forma di idrogeno, cioè protone ed elettrone",
+      "Sotto forma di ossigeno, cioè anione ed elettrone",
+      "Sotto forma di fosfato, cioè fosforo ed elettrone",
+      "Sotto forma di metallo, cioè ione rame o ferro"
+     ],
+     "c": 0,
+     "s": "Nell'organismo gli elettroni vengono trasferiti sotto forma di idrogeno, costituito da un protone e da un elettrone."
+    },
+    {
+     "d": "Quale affermazione sul NAD è corretta?",
+     "o": [
+      "Il NAD+ è la forma ridotta, il NADH + H+ la forma ossidata",
+      "Il NAD+ è la forma ossidata, il NADH + H+ la forma ridotta",
+      "Il NAD+ si riduce cedendo idrogeno a un'altra molecola",
+      "Il NADH + H+ si ossida acquistando idrogeno dal substrato"
+     ],
+     "c": 1,
+     "s": "Il NAD+ è la forma ossidata, mentre NADH + H+ è la forma ridotta."
+    },
+    {
+     "d": "Quale composto rappresenta la forma più ossidata del carbonio presente nell'organismo?",
+     "o": [
+      "Il glucosio",
+      "L'acido carbonico",
+      "La CO2",
+      "L'acido lattico"
+     ],
+     "c": 2,
+     "s": "La forma più ossidata presente nell'organismo è la CO2."
+    },
+    {
+     "d": "Quali gruppi trasferiscono le transferasi da un substrato a un altro?",
+     "o": [
+      "Gruppi contenenti idrogeno, cioè protoni ed elettroni",
+      "Gruppi contenenti acqua, che rompono i legami covalenti",
+      "Gruppi contenenti ossigeno, sotto forma di ossidrili",
+      "Gruppi contenenti carbonio, azoto o fosforo"
+     ],
+     "c": 3,
+     "s": "Le transferasi trasferiscono gruppi contenenti carbonio, azoto o fosforo (es. fosfato, gruppo amminico)."
+    },
+    {
+     "d": "Nelle reazioni delle transferasi, che cosa determina la direzione della reazione?",
+     "o": [
+      "La rimozione del prodotto",
+      "Il consumo di ATP",
+      "L'intervento dell'acqua",
+      "La presenza del THF"
+     ],
+     "c": 0,
+     "s": "Le reazioni delle transferasi sono bidirezionali: a determinarne la direzione è la rimozione del prodotto."
+    },
+    {
+     "d": "Perché le reazioni catalizzate dalle idrolasi sono unidirezionali?",
+     "o": [
+      "Perché l'acqua viene liberata e non può più essere riutilizzata",
+      "Perché la reazione opposta richiede enzimi diversi e consumo di ATP",
+      "Perché il legame idrolizzato è un legame debole che non si riforma",
+      "Perché l'enzima viene consumato durante la rottura del legame"
+     ],
+     "c": 1,
+     "s": "Per la reazione opposta (condensazione) intervengono enzimi diversi e si consuma ATP."
+    },
+    {
+     "d": "In che cosa le liasi differiscono dalle idrolasi?",
+     "o": [
+      "Rompono legami covalenti con l'intervento di una molecola d'acqua",
+      "Formano nuovi legami covalenti con il consumo di ATP",
+      "Rompono legami carbonio-carbonio o carbonio-azoto senza l'acqua",
+      "Spostano molecole da un lato all'altro della membrana"
+     ],
+     "c": 2,
+     "s": "Le liasi rompono legami carbonio-carbonio e carbonio-azoto senza l'intervento dell'acqua."
+    },
+    {
+     "d": "Quali prodotti libera la piruvato decarbossilasi nei lieviti?",
+     "o": [
+      "Acido lattico e NAD+, poi convertiti in etanolo",
+      "Etanolo e acqua, poi convertiti in acetaldeide",
+      "Acido piruvico e ATP, poi convertiti in etanolo",
+      "CO2 e acetaldeide, poi ridotta a etanolo"
+     ],
+     "c": 3,
+     "s": "La piruvato decarbossilasi libera CO2 e acetaldeide, che viene poi ridotta a etanolo."
+    },
+    {
+     "d": "Nella conversione del glucosio 6-fosfato in fruttosio 6-fosfato, catalizzata da un'isomerasi, in che cosa differiscono i due esosi?",
+     "o": [
+      "Il glucosio ha un gruppo aldeidico, il fruttosio un gruppo chetonico",
+      "Il glucosio ha un gruppo chetonico, il fruttosio un gruppo aldeidico",
+      "Il glucosio ha un gruppo fosfato in più rispetto al fruttosio",
+      "Il glucosio ha un atomo di carbonio in meno rispetto al fruttosio"
+     ],
+     "c": 0,
+     "s": "Glucosio e fruttosio sono isomeri: nel glucosio si trova un gruppo aldeidico, nel fruttosio un gruppo chetonico."
+    },
+    {
+     "d": "Perché nelle reazioni catalizzate dalle ligasi compare l'ATP?",
+     "o": [
+      "Perché la rottura del legame libera ATP",
+      "Perché la formazione del legame covalente richiede energia",
+      "Perché l'ATP sostituisce l'acqua come substrato",
+      "Perché l'ATP trasporta gli elettroni sotto forma di idrogeno"
+     ],
+     "c": 1,
+     "s": "Le ligasi creano un nuovo legame covalente (condensazione): occorre fornire energia, per cui compare l'ATP."
+    },
+    {
+     "d": "Che cosa caratterizza le traslocasi, la settima classe di enzimi?",
+     "o": [
+      "Sono enzimi citoplasmatici che trasferiscono gruppi fosfato tra substrati",
+      "Sono enzimi del plasma che spostano elettroni tra molecole diverse",
+      "Sono proteine di membrana che spostano molecole tra i due lati della membrana",
+      "Sono proteine mitocondriali che riorganizzano i legami di una molecola"
+     ],
+     "c": 2,
+     "s": "Le traslocasi sono proteine di membrana che spostano molecole da un lato all'altro e mantengono l'asimmetria della membrana."
+    },
+    {
+     "d": "Che cosa sono gli isoenzimi?",
+     "o": [
+      "Enzimi con sequenza diversa che catalizzano reazioni opposte",
+      "Enzimi che catalizzano reazioni di isomerizzazione dei substrati",
+      "Enzimi costituiti dagli stessi atomi, ma con gruppi funzionali diversi",
+      "Enzimi con sequenza simile che catalizzano la stessa reazione"
+     ],
+     "c": 3,
+     "s": "Gli isoenzimi hanno sequenza simile e svolgono la stessa reazione, modulata in modo diverso a seconda della sede."
+    },
+    {
+     "d": "A quale classe di enzimi appartengono esochinasi e glucochinasi?",
+     "o": [
+      "Alle transferasi, perché spostano un fosfato su un'altra molecola",
+      "Alle ligasi, perché formano un legame covalente consumando ATP",
+      "Alle isomerasi, perché trasformano il glucosio in fruttosio",
+      "Alle ossidoreduttasi, perché ossidano il glucosio per ricavarne energia"
+     ],
+     "c": 0,
+     "s": "Spostando un fosfato da una molecola all'altra, sono chinasi e appartengono alle transferasi."
+    },
+    {
+     "d": "Che cosa rallenta l'attività dell'esochinasi nel neurone?",
+     "o": [
+      "La diminuzione della concentrazione di glucosio",
+      "L'accumulo del suo prodotto, il glucosio 6-fosfato",
+      "L'aumento della concentrazione di glucosio",
+      "L'accumulo di acido lattico prodotto dalla glicolisi"
+     ],
+     "c": 1,
+     "s": "L'esochinasi lavora anche con pochissimo glucosio; la frena solo l'accumulo del glucosio 6-fosfato."
+    },
+    {
+     "d": "Perché nel fegato è presente la glucochinasi anziché l'esochinasi?",
+     "o": [
+      "Perché il fegato usa quasi solo glucosio come fonte di energia",
+      "Perché la glucochinasi lavora bene anche con pochissimo glucosio",
+      "Perché si attiva in iperglicemia e non sottrae glucosio al cervello",
+      "Perché la glucochinasi viene frenata dall'accumulo di glucosio 6-fosfato"
+     ],
+     "c": 2,
+     "s": "La glucochinasi diventa davvero attiva solo quando il glucosio è tanto: così il fegato non «ruba» glucosio al cervello."
+    },
+    {
+     "d": "[Da esame] Quale reazione catalizza la lattico deidrogenasi?",
+     "o": [
+      "Lattato + NADH + H+ → piruvato + NAD+",
+      "Piruvato + NAD+ → lattato + NADH + H+",
+      "Glucosio + NADH + H+ → lattato + NAD+",
+      "Piruvato + NADH + H+ → lattato + NAD+"
+     ],
+     "c": 3,
+     "s": "La LDH catalizza la reazione reversibile piruvato + NADH + H+ ⇌ lattato + NAD+."
+    },
+    {
+     "d": "[Da esame] Nella reazione catalizzata dalla lattico deidrogenasi, che cosa accade al piruvato e al NADH?",
+     "o": [
+      "Il piruvato riceve idrogeno dal NADH e si riduce a lattato; il NADH diventa NAD+",
+      "Il piruvato cede idrogeno al NAD+ e si ossida a lattato; il NAD+ diventa NADH",
+      "Il piruvato riceve un fosfato dall'ATP e si riduce a lattato; il NADH resta invariato",
+      "Il piruvato cede CO2 e si trasforma in lattato; il NADH viene ridotto a NAD+"
+     ],
+     "c": 0,
+     "s": "Il piruvato riceve idrogeno dal NADH e si riduce in lattato; il NADH diventa NAD+."
+    },
+    {
+     "d": "[Da esame] Perché la reazione della lattico deidrogenasi è necessaria quando l'ossigeno non basta o le cellule non hanno mitocondri?",
+     "o": [
+      "Perché produce direttamente l'ATP che manca alla cellula",
+      "Perché rigenera il NAD+ necessario alla glicolisi per proseguire",
+      "Perché elimina il piruvato, che è tossico per la cellula",
+      "Perché trasforma il lattato in glucosio da reimmettere nella glicolisi"
+     ],
+     "c": 1,
+     "s": "La glicolisi ha bisogno di NAD+: la LDH, trasformando il piruvato in lattato, libera NAD+ e la glicolisi continua."
+    },
+    {
+     "d": "Da quante e quali subunità è formata la lattico deidrogenasi?",
+     "o": [
+      "È un dimero di subunità H (cuore) e M (muscolo)",
+      "È un trimero di subunità H (cuore) e M (muscolo)",
+      "È un tetramero di subunità H (cuore) e M (muscolo)",
+      "È un monomero con un dominio H e un dominio M"
+     ],
+     "c": 2,
+     "s": "La LDH è un tetramero formato da subunità H (cuore) e M (muscolo), che danno 5 isoenzimi."
+    },
+    {
+     "d": "Perché la LDH sierica è considerata un marcatore di danno tissutale aspecifico?",
+     "o": [
+      "Perché aumenta solo dopo uno sforzo fisico intenso, senza danno",
+      "Perché si trova esclusivamente nel cuore e nel muscolo scheletrico",
+      "Perché viene prodotta nel plasma e non all'interno delle cellule",
+      "Perché da sola non indica l'organo colpito, che indicano gli isoenzimi"
+     ],
+     "c": 3,
+     "s": "La LDH esce dalle cellule danneggiate; è aspecifica perché da sola non dice quale organo è colpito, a differenza degli isoenzimi."
+    },
+    {
+     "d": "Qual è il destino del lattato prodotto durante lo sforzo?",
+     "o": [
+      "Va al fegato, che lo riconverte in glucosio (ciclo di Cori), o al cuore",
+      "Si accumula nel muscolo, dove causa i dolori del giorno successivo",
+      "Viene eliminato con le urine, perché è un veleno per le cellule",
+      "Va al rene, che lo trasforma in bicarbonato per tamponare il plasma"
+     ],
+     "c": 0,
+     "s": "Il lattato non è un veleno: va al fegato (ciclo di Cori) oppure al cuore, che lo usa come combustibile."
+    },
+    {
+     "d": "A che cosa sono dovuti i dolori muscolari del giorno dopo uno sforzo?",
+     "o": [
+      "All'accumulo di acido lattico nelle fibre",
+      "A microlesioni delle fibre muscolari",
+      "All'acidità prodotta durante lo sforzo",
+      "Alla carenza di LDH nel muscolo"
+     ],
+     "c": 1,
+     "s": "Il bruciore durante lo sforzo dipende dall'acidità; i dolori del giorno dopo sono dovuti a microlesioni delle fibre."
+    },
+    {
+     "d": "Perché un valore elevato di LDH può essere un falso positivo?",
+     "o": [
+      "Perché il prelievo è stato eseguito dopo un pasto ricco di glucosio",
+      "Perché nel campione il lattato si è riconvertito in piruvato e NADH",
+      "Perché il campione si è emolizzato e i globuli rossi rotti liberano l'enzima",
+      "Perché nel campione l'enzima si è attivato per la variazione del pH"
+     ],
+     "c": 2,
+     "s": "Se il campione si emolizza durante il prelievo, i globuli rossi rotti liberano la LDH nella provetta."
+    },
+    {
+     "d": "Dove si trova la lattico deidrogenasi, e di che tipo è la reazione che catalizza?",
+     "o": [
+      "Nel mitocondrio; la reazione è reversibile",
+      "Nel citoplasma; la reazione è unidirezionale",
+      "Nel citoplasma; la reazione è reversibile",
+      "Nel mitocondrio; la reazione è unidirezionale"
+     ],
+     "c": 2,
+     "s": "La LDH è un enzima del citoplasma che catalizza una reazione reversibile."
+    },
+    {
+     "d": "Quando l'ossigeno è sufficiente, quali strutture rigenerano il NAD+ necessario alla glicolisi?",
+     "o": [
+      "La lattico deidrogenasi",
+      "I globuli rossi",
+      "Gli epatociti con il ciclo di Cori",
+      "I mitocondri"
+     ],
+     "c": 3,
+     "s": "Con abbastanza ossigeno il NAD+ viene rigenerato dai mitocondri."
+    },
+    {
+     "d": "Perché nei globuli rossi il NAD+ viene rigenerato dalla lattico deidrogenasi?",
+     "o": [
+      "Perché sono privi di mitocondri",
+      "Perché sono privi di glicolisi",
+      "Perché contengono soltanto LDH5",
+      "Perché producono NAD+ in eccesso"
+     ],
+     "c": 0,
+     "s": "I globuli rossi non hanno mitocondri: la LDH trasforma il piruvato in lattato e libera NAD+."
+    },
+    {
+     "d": "Quale relazione esiste tra la disponibilità di ossigeno e la produzione di lattato?",
+     "o": [
+      "Più ossigeno è disponibile, più lattato si produce",
+      "Più manca ossigeno, più lattato si produce",
+      "Il lattato si produce solo con ossigeno abbondante",
+      "La produzione di lattato non dipende dall'ossigeno"
+     ],
+     "c": 1,
+     "s": "Quanto più manca ossigeno, tanto più lattato si produce."
+    },
+    {
+     "d": "Da che cosa dipende il bruciore muscolare avvertito durante lo sforzo?",
+     "o": [
+      "Da microlesioni delle fibre, e dura giorni",
+      "Dall'accumulo di lattato, che è tossico",
+      "Dall'acidità, e passa presto",
+      "Dalla carenza di LDH5 nel muscolo"
+     ],
+     "c": 2,
+     "s": "Il bruciore durante lo sforzo dipende dall'acidità e passa presto; i dolori del giorno dopo sono dovuti a microlesioni."
+    },
+    {
+     "d": "Quanti isoenzimi della lattico deidrogenasi derivano dalla combinazione delle subunità H e M?",
+     "o": [
+      "Due",
+      "Tre",
+      "Quattro",
+      "Cinque"
+     ],
+     "c": 3,
+     "s": "Le subunità H e M danno 5 isoenzimi della LDH."
+    },
+    {
+     "d": "In quali sedi prevalgono gli isoenzimi LDH1 e LDH2?",
+     "o": [
+      "Nel cuore, nei globuli rossi e nel rene",
+      "Nel fegato e nel muscolo scheletrico",
+      "Nei polmoni e nel rene",
+      "Nel fegato, nei polmoni e nel cuore"
+     ],
+     "c": 0,
+     "s": "LDH1 (H4) e LDH2 prevalgono in cuore, globuli rossi e rene."
+    },
+    {
+     "d": "Quale isoenzima della LDH prevale nel fegato e nel muscolo scheletrico, e aumenta in epatiti, cirrosi, traumi muscolari e rabdomiolisi?",
+     "o": [
+      "LDH1 (H4)",
+      "LDH5 (M4)",
+      "LDH3",
+      "LDH2"
+     ],
+     "c": 1,
+     "s": "LDH4 e LDH5 (M4) prevalgono in fegato e muscolo; la LDH5 aumenta nelle malattie del fegato e nei danni muscolari."
+    },
+    {
+     "d": "Quale isoenzima della LDH prevale nei polmoni e aumenta nell'embolia polmonare?",
+     "o": [
+      "LDH1",
+      "LDH5",
+      "LDH3",
+      "LDH2"
+     ],
+     "c": 2,
+     "s": "La LDH3 prevale nei polmoni e aumenta nell'embolia polmonare."
+    },
+    {
+     "d": "Perché la LDH è considerata un marcatore tardivo dell'infarto del miocardio?",
+     "o": [
+      "Sale dopo 2-4 ore, ha il picco in 12 ore e resta alta per 2 giorni",
+      "Sale dopo 10-14 giorni, ha il picco in un mese e resta alta per 3 mesi",
+      "Sale dopo 3-6 giorni, ha il picco in 10-14 giorni e resta alta per 48 ore",
+      "Sale dopo 24-48 ore, ha il picco in 3-6 giorni e resta alta per 10-14 giorni"
+     ],
+     "c": 3,
+     "s": "Nell'infarto la LDH sale dopo 24-48 ore, raggiunge il picco in 3-6 giorni e resta alta per 10-14 giorni."
+    },
+    {
+     "d": "Quale rapporto tra isoenzimi della LDH è tipico dell'infarto del miocardio?",
+     "o": [
+      "Il rapporto «invertito» LDH1 > LDH2",
+      "Il rapporto «invertito» LDH2 > LDH1",
+      "Il rapporto «invertito» LDH5 > LDH4",
+      "Il rapporto «invertito» LDH3 > LDH1"
+     ],
+     "c": 0,
+     "s": "Nell'infarto è tipico il rapporto invertito LDH1 > LDH2."
+    },
+    {
+     "d": "Quali marcatori si utilizzano oggi soprattutto per la diagnosi di infarto, al posto della LDH?",
+     "o": [
+      "Le transaminasi",
+      "Le troponine",
+      "L'isoenzima LDH5",
+      "L'anidrasi carbonica"
+     ],
+     "c": 1,
+     "s": "Per l'infarto oggi si usano soprattutto le troponine."
+    },
+    {
+     "d": "In quali anemie aumentano LDH1 e LDH2, liberate dai globuli rossi distrutti?",
+     "o": [
+      "Nell'anemia falciforme e nell'anemia da carenza di vitamina C",
+      "Nell'anemia da carenza di vitamina B3 e nella pellagra",
+      "Nelle anemie emolitiche e nell'anemia megaloblastica",
+      "Soltanto nelle anemie dovute a un danno del midollo"
+     ],
+     "c": 2,
+     "s": "LDH1 e LDH2 aumentano nelle anemie emolitiche e nell'anemia megaloblastica."
+    },
+    {
+     "d": "Nei tumori, soprattutto linfomi, leucemie, melanoma e tumori del testicolo, a che cosa serve il dosaggio della LDH?",
+     "o": [
+      "A identificare con certezza il tipo di tumore",
+      "A distinguere i tumori benigni da quelli maligni",
+      "A misurare le dimensioni della massa tumorale",
+      "A valutare la prognosi e la risposta alle terapie"
+     ],
+     "c": 3,
+     "s": "Nei tumori la LDH si usa per valutare la prognosi e seguire la risposta alle terapie."
+    },
+    {
+     "d": "Che cosa indica un valore di ΔG < 0?",
+     "o": [
+      "Una reazione endoergonica, che richiede energia",
+      "Una reazione all'equilibrio, senza variazioni di energia",
+      "Una reazione che non avviene spontaneamente",
+      "Una reazione esoergonica, che avviene spontaneamente"
+     ],
+     "c": 3,
+     "s": "Con ΔG < 0 la trasformazione dei reagenti nei prodotti avviene spontaneamente (reazione esoergonica)."
+    },
+    {
+     "d": "In che modo possono avvenire le reazioni endoergoniche, sulle quali gli enzimi non sono di aiuto?",
+     "o": [
+      "Accoppiandosi all'idrolisi dell'ATP nello stesso enzima",
+      "Abbassando l'energia di attivazione con l'energia di legame",
+      "Spostando l'equilibrio con la rimozione dei substrati",
+      "Aumentando la concentrazione dell'enzima nella cellula"
+     ],
+     "c": 0,
+     "s": "Le reazioni endoergoniche possono avvenire perché accoppiate all'idrolisi dell'ATP."
+    },
+    {
+     "d": "Nella fosforilazione del glucosio catalizzata dall'esochinasi, qual è il ΔG°' della reazione complessiva glucosio + ATP → glucosio 6-fosfato + ADP?",
+     "o": [
+      "+13,8 kJ/mol",
+      "−16,7 kJ/mol",
+      "−30,5 kJ/mol",
+      "+44,3 kJ/mol"
+     ],
+     "c": 1,
+     "s": "+13,8 kJ/mol (fosforilazione) sommato a −30,5 kJ/mol (idrolisi dell'ATP) dà −16,7 kJ/mol."
+    },
+    {
+     "d": "Perché l'ATP libera energia con la sua idrolisi?",
+     "o": [
+      "Perché i fosfati legati allo ione magnesio vengono rilasciati",
+      "Perché il legame con il glucosio è più stabile del legame fosfoanidridico",
+      "Perché i fosfati terminali hanno cariche negative che si respingono",
+      "Perché l'ADP prodotto ha un'energia libera maggiore dell'ATP"
+     ],
+     "c": 2,
+     "s": "Le cariche negative dei fosfati si respingono: l'ATP è instabile e la sua idrolisi porta a molecole più stabili."
+    },
+    {
+     "d": "Che cosa lega l'ATP nella cellula per essere stabilizzato?",
+     "o": [
+      "Un gruppo eme",
+      "Il NAD+",
+      "Il pirofosfato inorganico",
+      "Uno ione magnesio (Mg2+)"
+     ],
+     "c": 3,
+     "s": "Per stabilizzare l'ATP, nella cellula vi si lega uno ione magnesio (Mg2+)."
+    },
+    {
+     "d": "Quando la cellula ricava energia dall'ATP rilasciando pirofosfato inorganico (PPi) anziché un solo fosfato?",
+     "o": [
+      "Quando ha bisogno di moltissima energia",
+      "Quando la reazione è già esoergonica",
+      "Quando manca lo ione magnesio",
+      "Quando la reazione è all'equilibrio"
+     ],
+     "c": 0,
+     "s": "Quando serve moltissima energia la cellula rilascia pirofosfato, e anche l'idrolisi del pirofosfato libera energia."
+    },
+    {
+     "d": "In che modo gli enzimi accelerano le reazioni?",
+     "o": [
+      "Aumentando l'energia libera dei prodotti",
+      "Abbassando l'energia di attivazione",
+      "Rendendo negativo il ΔG della reazione",
+      "Aumentando l'energia di attivazione"
+     ],
+     "c": 1,
+     "s": "Gli enzimi accelerano le reazioni abbassando l'energia che il substrato deve raggiungere, l'energia di attivazione."
+    },
+    {
+     "d": "Che cosa resta invariato in presenza dell'enzima rispetto alla reazione non catalizzata?",
+     "o": [
+      "L'energia di attivazione della reazione",
+      "La velocità con cui si formano i prodotti",
+      "L'energia libera dei reagenti e dei prodotti",
+      "Il tempo necessario a raggiungere l'equilibrio"
+     ],
+     "c": 2,
+     "s": "In presenza o in assenza dell'enzima l'energia libera di reagenti e prodotti non varia; varia l'energia di attivazione."
+    },
+    {
+     "d": "Qual è la principale fonte di energia libera utilizzata dall'enzima per abbassare l'energia di attivazione?",
+     "o": [
+      "L'idrolisi dell'ATP",
+      "L'energia dei prodotti",
+      "Il calore della cellula",
+      "L'energia di legame"
+     ],
+     "c": 3,
+     "s": "L'energia di legame, liberata dalle interazioni enzima-substrato, è la principale fonte usata per abbassare l'energia di attivazione."
+    },
+    {
+     "d": "Perché è importante che l'enzima rimuova il guscio di solvatazione del substrato?",
+     "o": [
+      "Perché un gruppo che interagisce con l'acqua si orienta più difficilmente",
+      "Perché l'acqua deve sempre partecipare come substrato della reazione",
+      "Perché il guscio di solvatazione impedisce il rilascio del prodotto",
+      "Perché il guscio di solvatazione aumenta l'energia libera dei prodotti"
+     ],
+     "c": 0,
+     "s": "Se un gruppo interagisce con l'acqua è più difficile che si orienti correttamente: il sito attivo idrofobico rimuove il guscio di solvatazione."
+    },
+    {
+     "d": "Quale condizione viene citata come esempio di carenza dell'attività di un enzima?",
+     "o": [
+      "L'anemia falciforme",
+      "Il favismo",
+      "La pellagra",
+      "Lo scorbuto"
+     ],
+     "c": 1,
+     "s": "Il soggetto fabico (favismo) presenta una carenza dell'attività di un enzima."
+    },
+    {
+     "d": "Che cosa avviene nella catalisi acido-base?",
+     "o": [
+      "Uno ione metallico trasferisce o accetta elettroni dal substrato",
+      "Un gruppo nucleofilo forma un legame covalente stabile",
+      "Un amminoacido acido o basico protona o deprotona un gruppo",
+      "L'acqua rompe un legame covalente del substrato"
+     ],
+     "c": 2,
+     "s": "Nella catalisi acido-base un amminoacido acido o basico del sito attivo protona o deprotona un gruppo del substrato."
+    },
+    {
+     "d": "Quali sono buoni gruppi nucleofili presenti negli enzimi, utili nella catalisi covalente?",
+     "o": [
+      "Il gruppo ossidrilico della serina e lo ione magnesio",
+      "Il gruppo amminico della valina e il gruppo fosfato",
+      "L'anello aromatico della fenilalanina e il gruppo eme",
+      "L'azoto imidazolico dell'istidina e il gruppo carbossilico"
+     ],
+     "c": 3,
+     "s": "Buoni gruppi nucleofili sono l'azoto imidazolico dell'istidina e il gruppo carbossilico."
+    },
+    {
+     "d": "Perché nella catalisi covalente l'interazione tra enzima e substrato deve essere transitoria?",
+     "o": [
+      "Perché un legame stabile bloccherebbe il substrato nel complesso enzima-substrato",
+      "Perché un legame stabile modificherebbe l'equilibrio della reazione catalizzata",
+      "Perché un legame stabile consumerebbe l'enzima al termine della reazione",
+      "Perché un legame stabile renderebbe endoergonica la reazione catalizzata"
+     ],
+     "c": 0,
+     "s": "Se il substrato si legasse saldamente resterebbe nel complesso ES: su questo principio agiscono molti farmaci che bloccano l'enzima."
+    },
+    {
+     "d": "In che modo gli ioni metallici partecipano alla catalisi enzimatica?",
+     "o": [
+      "Formano legami covalenti stabili con il substrato, bloccando l'enzima",
+      "Trasferiscono o accettano elettroni, oppure mascherano altre cariche",
+      "Protonano o deprotonano i gruppi del substrato come gli amminoacidi",
+      "Rompono i legami del substrato con l'intervento di una molecola d'acqua"
+     ],
+     "c": 1,
+     "s": "Gli ioni metallici, in modo transitorio, trasferiscono o accettano elettroni oppure mascherano con la loro carica altre cariche."
+    }
+   ]
   }
  ]
 }
