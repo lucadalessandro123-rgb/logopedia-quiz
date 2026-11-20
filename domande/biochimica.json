@@ -3044,6 +3044,584 @@
      "s": "Le sottoclassi dipendono dagli atomi coinvolti: nelle liasi, ad esempio, dal legame scisso (C-C, C-O, ecc.)."
     }
    ]
+  },
+  {
+   "n": 4,
+   "titolo": "Catalisi e cinetica enzimatica, reazioni con più substrati",
+   "domande": [
+    {
+     "d": "Attraverso quale meccanismo un enzima aumenta la velocità di una reazione?",
+     "o": [
+      "Stabilisce con il substrato legami che forniscono energia chimica e abbassano l'energia di attivazione",
+      "Si lega al prodotto e lo allontana subito dal sito attivo, impedendo così la reazione opposta",
+      "Mantiene costanti temperatura, pressione e pH del sito attivo per tutta la durata della reazione",
+      "Modifica lo stato di ionizzazione del substrato, aumentandone la concentrazione nel sito attivo"
+     ],
+     "c": 0,
+     "s": "Le interazioni enzima-substrato forniscono energia chimica e abbassano l'energia di attivazione."
+    },
+    {
+     "d": "Che cosa avviene nella catalisi acido-base?",
+     "o": [
+      "Uno ione metallico cede o acquista elettroni",
+      "Il gruppo R di un amminoacido dona o accetta protoni",
+      "Il gruppo R di un amminoacido cede doppietti elettronici",
+      "Uno ione metallico stabilizza le cariche del substrato"
+     ],
+     "c": 1,
+     "s": "Nella catalisi acido-base il gruppo R di un amminoacido dona o accetta protoni."
+    },
+    {
+     "d": "Nella catalisi covalente, quale ruolo svolgono il residuo R dell'amminoacido e il substrato?",
+     "o": [
+      "Il residuo R è l'elettrofilo, mentre il nucleofilo (l'azoto) si trova nel substrato",
+      "Il residuo R dona protoni, mentre il substrato li accetta sul proprio carbonio alfa",
+      "Il residuo R è il nucleofilo, mentre l'elettrofilo (il carbonio) si trova nel substrato",
+      "Il residuo R lega uno ione metallico, che orienta il substrato all'interno del sito attivo"
+     ],
+     "c": 2,
+     "s": "Il residuo R è un buon nucleofilo che cede doppietti elettronici; l'elettrofilo, il carbonio, è nel substrato."
+    },
+    {
+     "d": "Quali sono solitamente i gruppi nucleofili nella catalisi covalente?",
+     "o": [
+      "Il carbonio e l'idrogeno",
+      "L'idrogeno e l'ossigeno",
+      "Il carbonio e l'azoto",
+      "L'azoto e l'ossigeno"
+     ],
+     "c": 3,
+     "s": "I gruppi nucleofili sono solitamente l'azoto e l'ossigeno."
+    },
+    {
+     "d": "In che modo può intervenire uno ione metallico nella catalisi enzimatica?",
+     "o": [
+      "Partecipando a ossidoriduzioni, stabilizzando le cariche oppure orientando il substrato",
+      "Donando o accettando protoni tramite il gruppo R di un amminoacido del sito attivo",
+      "Cedendo doppietti elettronici al carbonio elettrofilo che si trova nel substrato",
+      "Allontanando il prodotto dal sito attivo e impedendo la riformazione del complesso ES"
+     ],
+     "c": 0,
+     "s": "Lo ione metallico può partecipare a ossidoriduzioni, stabilizzare le cariche o orientare il substrato legandosi a esso."
+    },
+    {
+     "d": "Perché il passaggio ES → EP (formazione del complesso enzima-prodotto) viene considerato trascurabile?",
+     "o": [
+      "Perché il prodotto viene subito allontanato, ad esempio immesso in circolo, e smaltito",
+      "Perché, non appena il prodotto si forma nel sito attivo, si arriva subito alla fase decisiva",
+      "Perché è guidato dalla costante k⁻¹, che riporta l'enzima e il substrato allo stato libero",
+      "Perché avviene soltanto a concentrazioni di substrato che risultano saturanti per l'enzima"
+     ],
+     "c": 1,
+     "s": "Appena il prodotto si forma nel sito attivo si passa alla fase decisiva E + P."
+    },
+    {
+     "d": "Perché la reazione opposta alla formazione di E + P, che riporterebbe al complesso enzima-substrato, è trascurabile?",
+     "o": [
+      "Perché l'enzima si satura e non è più in grado di legare il prodotto appena formato",
+      "Perché il pH costante impedisce la ionizzazione dei gruppi R del prodotto formato",
+      "Perché il prodotto viene subito allontanato, ad esempio immesso in circolo, e smaltito",
+      "Perché la costante k₁ è molto più elevata delle costanti k₂ e k⁻² della fase finale"
+     ],
+     "c": 2,
+     "s": "Il prodotto viene subito allontanato (ad esempio immesso in circolo) e smaltito."
+    },
+    {
+     "d": "Quale costante guida la formazione del complesso enzima-substrato a partire da E + S?",
+     "o": [
+      "k⁻¹",
+      "k₂",
+      "k⁻²",
+      "k₁"
+     ],
+     "c": 3,
+     "s": "La tappa E + S → ES è guidata da k₁; la reazione opposta da k⁻¹."
+    },
+    {
+     "d": "Quali costanti governano la fase decisiva di formazione di enzima più prodotto (E + P)?",
+     "o": [
+      "k₂ e k⁻²",
+      "k₁ e k⁻¹",
+      "k₁ e k₂",
+      "k⁻¹ e k⁻²"
+     ],
+     "c": 0,
+     "s": "La fase decisiva E + P è governata dalle costanti k₂ e k⁻²."
+    },
+    {
+     "d": "Quale parametro veniva fatto variare negli esperimenti di Michaelis e Menten?",
+     "o": [
+      "La quantità di enzima, aumentata nell'unità di tempo",
+      "La concentrazione del substrato, aumentata nell'unità di tempo",
+      "Il pH, variato per modificare la ionizzazione dei gruppi R",
+      "La temperatura, aumentata per favorire la formazione di ES"
+     ],
+     "c": 1,
+     "s": "L'unico parametro fatto variare (aumentandolo) era la concentrazione del substrato; enzima, temperatura, pressione e pH restavano costanti."
+    },
+    {
+     "d": "Perché negli esperimenti di Michaelis e Menten il pH veniva mantenuto costante?",
+     "o": [
+      "Perché determina la quantità di enzima presente nel sistema",
+      "Perché modifica la concentrazione del substrato nell'unità di tempo",
+      "Perché influenza lo stato di ionizzazione dei gruppi R degli amminoacidi",
+      "Perché stabilisce la velocità con cui il prodotto viene smaltito"
+     ],
+     "c": 2,
+     "s": "Il pH influenza lo stato di ionizzazione dei gruppi R e modificherebbe la formazione del complesso ES."
+    },
+    {
+     "d": "Come veniva misurata la velocità della reazione enzimatica negli esperimenti di Michaelis e Menten?",
+     "o": [
+      "Come scomparsa dell'enzima libero nel tempo",
+      "Come variazione del pH della soluzione nel tempo",
+      "Come quantità di enzima complessato al secondo",
+      "Come comparsa del prodotto nel tempo"
+     ],
+     "c": 3,
+     "s": "La velocità è stata misurata come comparsa del prodotto nel tempo."
+    },
+    {
+     "d": "Che cosa caratterizza lo stato stazionario considerato da Michaelis e Menten?",
+     "o": [
+      "Una parte dell'enzima è sicuramente complessata con il substrato e la reazione procede",
+      "Tutto l'enzima è presente sotto forma di complesso ES e la velocità raggiunge il valore massimo",
+      "Il substrato è stato tutto convertito in prodotto e l'enzima è tornato allo stato originale",
+      "La concentrazione del substrato resta costante e si fa variare solo quella dell'enzima"
+     ],
+     "c": 0,
+     "s": "Nello stato stazionario si ha la certezza che il complesso ES si formi: una parte dell'enzima è complessata con il substrato."
+    },
+    {
+     "d": "[Da esame] Nel grafico della cinetica di Michaelis-Menten, che cosa si riporta sugli assi?",
+     "o": [
+      "[S] sulle ordinate e V₀ sulle ascisse",
+      "V₀ sulle ordinate e [S] sulle ascisse",
+      "V_max sulle ordinate e K_m sulle ascisse",
+      "V₀ sulle ordinate e [E] sulle ascisse"
+     ],
+     "c": 1,
+     "s": "Sulle ordinate la velocità iniziale V₀, sulle ascisse la concentrazione del substrato [S]."
+    },
+    {
+     "d": "[Da esame] Che forma ha la curva della velocità iniziale in funzione della concentrazione del substrato?",
+     "o": [
+      "Una retta passante per l'origine",
+      "Una parabola rivolta verso il basso",
+      "Un'iperbole equilatera",
+      "Una curva sigmoide"
+     ],
+     "c": 2,
+     "s": "Unendo le velocità calcolate a vari intervalli si ottiene un'iperbole equilatera."
+    },
+    {
+     "d": "[Da esame] Che cosa rappresenta V₀ nel grafico della cinetica di Michaelis-Menten?",
+     "o": [
+      "La velocità raggiunta quando tutto l'enzima è presente sotto forma di complesso ES",
+      "La velocità con cui il substrato viene consumato fino a dimezzarne la concentrazione",
+      "La velocità di formazione del complesso ES, guidata dalle costanti k₁ e k⁻¹",
+      "La velocità di comparsa del prodotto subito dopo aver aumentato la concentrazione del substrato"
+     ],
+     "c": 3,
+     "s": "V₀ è la velocità iniziale, cioè di comparsa del prodotto nell'unità di tempo subito dopo aver aumentato [S]."
+    },
+    {
+     "d": "[Da esame] Come si comporta la velocità iniziale a basse concentrazioni di substrato?",
+     "o": [
+      "È direttamente proporzionale alla concentrazione del substrato",
+      "Coincide con la velocità semimassimale dell'enzima",
+      "È costante, perché l'enzima è già saturo di substrato",
+      "È inversamente proporzionale alla concentrazione del substrato"
+     ],
+     "c": 0,
+     "s": "Nel primo tratto della curva la velocità è direttamente proporzionale a [S]."
+    },
+    {
+     "d": "[Da esame] Perché, ad alte concentrazioni di substrato, la curva si appiattisce?",
+     "o": [
+      "Perché il substrato in eccesso abbassa l'affinità dell'enzima",
+      "Perché l'enzima, mantenuto a concentrazione costante, si satura",
+      "Perché il prodotto non viene allontanato e riforma il complesso ES",
+      "Perché la K_m aumenta all'aumentare della concentrazione del substrato"
+     ],
+     "c": 1,
+     "s": "L'enzima, a concentrazione costante, si satura e si raggiunge la V_max."
+    },
+    {
+     "d": "Da quale espressione è data la velocità V₀?",
+     "o": [
+      "V₀ = k₁ [ES]",
+      "V₀ = k₂ [S]",
+      "V₀ = k₂ [ES]",
+      "V₀ = k⁻¹ [E]"
+     ],
+     "c": 2,
+     "s": "La velocità è la costante di formazione del prodotto (k₂) moltiplicata per la concentrazione del complesso ES."
+    },
+    {
+     "d": "[Da esame] Quando si osserva la velocità iniziale massima?",
+     "o": [
+      "Quando metà dell'enzima è complessata con il substrato, a [S] pari alla K_m",
+      "Quando la concentrazione dell'enzima è elevata rispetto a quella del substrato",
+      "Quando il prodotto si accumula nel sito attivo e riforma il complesso enzima-substrato",
+      "Quando tutto l'enzima è presente come complesso ES, a [S] elevata rispetto all'enzima"
+     ],
+     "c": 3,
+     "s": "La V_max si osserva quando tutto l'enzima è complessato, cioè quando [S] è elevata rispetto all'enzima."
+    },
+    {
+     "d": "Come è definita la velocità di catalisi?",
+     "o": [
+      "Moli di prodotto formate al secondo",
+      "Moli di substrato legate al secondo",
+      "Molecole di enzima saturate al secondo",
+      "Moli di complesso ES formate al minuto"
+     ],
+     "c": 0,
+     "s": "La velocità di catalisi è definita come moli di prodotto formate al secondo."
+    },
+    {
+     "d": "[Da esame] Qual è l'equazione di Michaelis-Menten?",
+     "o": [
+      "V₀ = K_m · [S] / (V_max + [S])",
+      "V₀ = V_max · [S] / (K_m + [S])",
+      "V₀ = V_max · K_m / (K_m + [S])",
+      "V₀ = V_max · [S] / (K_m − [S])"
+     ],
+     "c": 1,
+     "s": "La velocità iniziale è uguale a V_max per [S], diviso la somma di K_m e [S]."
+    },
+    {
+     "d": "[Da esame] Quale delle seguenti affermazioni sulla K_m è corretta?",
+     "o": [
+      "È una velocità, che dipende dalla concentrazione dell'enzima",
+      "È una costante di dissociazione, uguale per tutti gli enzimi",
+      "È una concentrazione costante, che dipende dal tipo di enzima",
+      "È il numero di molecole convertite per molecola di enzima"
+     ],
+     "c": 2,
+     "s": "La K_m è una concentrazione; è una costante che dipende dal tipo di enzima (rapporto tra le costanti della reazione)."
+    },
+    {
+     "d": "[Da esame] Che cosa rappresenta la K_m?",
+     "o": [
+      "La velocità raggiunta a una concentrazione saturante di substrato",
+      "La concentrazione di enzima necessaria per raggiungere la V_max",
+      "Il numero di molecole di substrato convertite per molecola di enzima",
+      "La concentrazione di substrato alla quale la velocità è semimassimale"
+     ],
+     "c": 3,
+     "s": "Risolvendo l'equazione per ½ V_max si ottiene K_m = [S]: la K_m è la concentrazione di substrato a velocità semimassimale."
+    },
+    {
+     "d": "Per comprendere il significato della K_m, quale velocità si sostituisce a V₀ nell'equazione di Michaelis-Menten?",
+     "o": [
+      "La metà della velocità massima (½ V_max)",
+      "Il doppio della velocità massima (2 V_max)",
+      "La velocità massima stessa (V_max)",
+      "Una velocità iniziale qualsiasi (V₀)"
+     ],
+     "c": 0,
+     "s": "Si considera la velocità semimassimale, cioè ½ V_max."
+    },
+    {
+     "d": "[Da esame] Che relazione esiste tra la K_m e l'affinità dell'enzima per il substrato?",
+     "o": [
+      "Sono direttamente proporzionali: più alta è la K_m, più alta è l'affinità",
+      "Sono inversamente proporzionali: più bassa è la K_m, più alta è l'affinità",
+      "Sono indipendenti: l'affinità dipende solo dalla concentrazione dell'enzima",
+      "Coincidono: la K_m è numericamente uguale alla velocità semimassimale"
+     ],
+     "c": 1,
+     "s": "Quanto più bassa è la K_m, tanto più alta è l'affinità: le due grandezze sono inversamente proporzionali."
+    },
+    {
+     "d": "Che cosa sono gli isoenzimi?",
+     "o": [
+      "Enzimi che svolgono reazioni diverse ma hanno la stessa organizzazione",
+      "Enzimi che utilizzano più substrati con un meccanismo a ping-pong",
+      "Enzimi che svolgono la stessa reazione ma sono organizzati in maniera diversa",
+      "Enzimi che hanno la stessa K_m ma una diversa velocità massima"
+     ],
+     "c": 2,
+     "s": "Gli isoenzimi svolgono la stessa reazione, ma sono organizzati in maniera diversa."
+    },
+    {
+     "d": "[Da esame] Due isoenzimi catalizzano la stessa reazione e l'enzima 1 raggiunge la velocità semimassimale a una concentrazione di substrato minore dell'enzima 2. Che cosa se ne deduce?",
+     "o": [
+      "L'enzima 1 ha una K_m maggiore ed è più affine",
+      "L'enzima 1 ha una K_m minore ed è meno affine",
+      "L'enzima 1 ha una V_max maggiore ed è meno affine",
+      "L'enzima 1 ha una K_m minore ed è più affine"
+     ],
+     "c": 3,
+     "s": "L'enzima 1 inizia a lavorare a concentrazioni di substrato più basse: ha K_m minore ed è più affine."
+    },
+    {
+     "d": "[Da esame] Quale caratteristica ha l'esochinasi rispetto alla glucochinasi?",
+     "o": [
+      "Ha maggiore affinità per il glucosio e lo elabora anche a basse concentrazioni",
+      "Ha minore affinità per il glucosio e lo elabora solo a concentrazioni più alte",
+      "Ha maggiore affinità per il glucosio, ma lo elabora solo a concentrazioni alte",
+      "Ha la stessa affinità per il glucosio, ma una velocità massima più elevata"
+     ],
+     "c": 0,
+     "s": "L'esochinasi (ad esempio nel tessuto nervoso) elabora il glucosio anche a bassa concentrazione: affinità maggiore."
+    },
+    {
+     "d": "[Da esame] Dove si trova la glucochinasi e quando elabora il glucosio?",
+     "o": [
+      "Nel tessuto nervoso, anche quando la concentrazione di glucosio è bassa",
+      "Nel fegato, quando la concentrazione di glucosio è più alta",
+      "Nel fegato, anche quando la concentrazione di glucosio è bassa",
+      "Nel tessuto nervoso, quando la concentrazione di glucosio è più alta"
+     ],
+     "c": 1,
+     "s": "La glucochinasi è nel fegato ed elabora il glucosio a concentrazioni più alte: ha affinità minore."
+    },
+    {
+     "d": "[Da esame] Da che cosa dipende la velocità massima di un enzima?",
+     "o": [
+      "Dalla concentrazione del substrato",
+      "Dall'affinità per il substrato",
+      "Dalla concentrazione dell'enzima",
+      "Dal valore della costante K_m"
+     ],
+     "c": 2,
+     "s": "La V_max non è funzione della concentrazione del substrato, bensì della concentrazione dell'enzima."
+    },
+    {
+     "d": "[Da esame] Che cosa accade alla velocità massima se, oltre al substrato, si aumenta anche la concentrazione dell'enzima?",
+     "o": [
+      "Resta invariata, perché dipende soltanto dalla concentrazione del substrato",
+      "Diminuisce, perché la K_m aumenta e l'affinità per il substrato si riduce",
+      "Si dimezza, perché l'enzima in eccesso compete per lo stesso substrato",
+      "Si sposta, perché c'è più enzima disponibile, che si satura più tardi"
+     ],
+     "c": 3,
+     "s": "Con più enzima disponibile la saturazione arriva più tardi e la V_max si sposta."
+    },
+    {
+     "d": "[Da esame] La K_m dipende dalla concentrazione dell'enzima?",
+     "o": [
+      "No, ne è indipendente ed esprime l'affinità per il substrato",
+      "Sì, come la velocità massima, che si sposta con più enzima",
+      "No, perché è uguale per tutti gli enzimi della stessa reazione",
+      "Sì, aumenta all'aumentare della concentrazione dell'enzima"
+     ],
+     "c": 0,
+     "s": "La K_m indica l'affinità per il substrato ed è indipendente dalla concentrazione dell'enzima, a differenza della V_max."
+    },
+    {
+     "d": "Che cos'è il numero di turnover?",
+     "o": [
+      "Il numero di molecole di enzima necessarie per convertire una molecola di substrato",
+      "Il numero di molecole di substrato convertite in prodotto per molecola di enzima",
+      "La concentrazione di substrato alla quale l'enzima raggiunge la velocità semimassimale",
+      "La quantità di enzima che si sta utilizzando, indicata anche come unità di enzima"
+     ],
+     "c": 1,
+     "s": "Il numero di turnover è il numero di molecole di substrato convertite in prodotto per molecola di enzima."
+    },
+    {
+     "d": "Poiché la concentrazione dell'enzima si mantiene solitamente costante, che cosa è necessario specificare più che la velocità massima?",
+     "o": [
+      "La K_m, cioè la concentrazione di substrato semimassimale",
+      "Il pH, cioè lo stato di ionizzazione dei gruppi R",
+      "L'unità di enzima, cioè la quantità di enzima utilizzata",
+      "La costante k₂, cioè la costante di formazione del prodotto"
+     ],
+     "c": 2,
+     "s": "Più che la V_max è necessario specificare l'unità di enzima, cioè la quantità di enzima utilizzata."
+    },
+    {
+     "d": "Quali substrati utilizza l'anidrasi carbonica, citata come esempio di enzima che lavora con più substrati?",
+     "o": [
+      "Glucosio e acqua",
+      "Amminoacido e chetoacido",
+      "Glucosio e CO₂",
+      "Acqua e CO₂"
+     ],
+     "c": 3,
+     "s": "L'anidrasi carbonica utilizza acqua e CO₂."
+    },
+    {
+     "d": "Che cosa caratterizza una reazione sequenziale ordinata con due substrati A e B?",
+     "o": [
+      "Entra sempre prima A e poi B, e anche i prodotti escono in ordine",
+      "Entra A, esce il primo prodotto e solo dopo entra il substrato B",
+      "Può entrare per primo A o B, e i prodotti escono in qualsiasi ordine",
+      "Entrano insieme A e B, ed escono insieme anche i due prodotti"
+     ],
+     "c": 0,
+     "s": "Nella reazione ordinata entra sempre prima A (EA) e poi B (EAB); anche l'uscita dei prodotti è ordinata."
+    },
+    {
+     "d": "In una reazione sequenziale random, quale affermazione è corretta?",
+     "o": [
+      "Il primo substrato deve legarsi per modificare il sito attivo",
+      "È indifferente quale substrato entri per primo nel sito attivo",
+      "Il secondo substrato entra solo dopo l'uscita del primo prodotto",
+      "I prodotti escono sempre nello stesso ordine dei substrati"
+     ],
+     "c": 1,
+     "s": "Nella reazione random può entrare per primo l'uno o l'altro substrato ed è indifferente quale entri prima."
+    },
+    {
+     "d": "Quale obiettivo hanno le reazioni catalizzate dalle transaminasi?",
+     "o": [
+      "Spostare un gruppo carbossilico",
+      "Spostare un doppietto elettronico",
+      "Spostare un gruppo amminico",
+      "Spostare un gruppo carbonilico"
+     ],
+     "c": 2,
+     "s": "Le transaminasi catalizzano reazioni che spostano un gruppo amminico."
+    },
+    {
+     "d": "Per quale scopo vengono dosate ALT e AST nelle analisi di biochimica clinica?",
+     "o": [
+      "Per valutare la funzionalità del tessuto nervoso",
+      "Per stimare l'attività dell'anidrasi carbonica",
+      "Per stimare la concentrazione di glucosio nel sangue",
+      "Per valutare la funzionalità del fegato"
+     ],
+     "c": 3,
+     "s": "Le attività transaminasiche ALT e AST vengono dosate per valutare la funzionalità del fegato."
+    },
+    {
+     "d": "Nelle transaminasi, dove si trova il gruppo amminico subito dopo l'uscita del primo prodotto?",
+     "o": [
+      "Nel coenzima dell'enzima, che risulta modificato",
+      "Nel secondo substrato, il chetoacido Y",
+      "Nel primo prodotto, il chetoacido X",
+      "Nel gruppo R di un amminoacido del sito attivo"
+     ],
+     "c": 0,
+     "s": "Dopo l'uscita del primo prodotto l'enzima risulta modificato: il gruppo amminico si trova nel suo coenzima."
+    },
+    {
+     "d": "In una reazione a ping-pong, quando entra il secondo substrato?",
+     "o": [
+      "Insieme al primo substrato, in modo random",
+      "Solo dopo che è uscito il primo prodotto",
+      "Prima che il primo substrato ceda il gruppo",
+      "Subito dopo il primo, prima di ogni prodotto"
+     ],
+     "c": 1,
+     "s": "Il secondo substrato entra solo dopo che è uscito il primo prodotto."
+    },
+    {
+     "d": "Nel meccanismo delle transaminasi, quale molecola costituisce il primo prodotto che esce?",
+     "o": [
+      "Un amminoacido, che ha acquisito il gruppo amminico",
+      "Il coenzima, che ha acquisito il gruppo amminico",
+      "Un chetoacido, che non possiede più il gruppo amminico",
+      "Un amminoacido, che ha perso il gruppo carbossilico"
+     ],
+     "c": 2,
+     "s": "Il primo prodotto è un chetoacido (X), che non possiede più il gruppo amminico."
+    },
+    {
+     "d": "Al termine di una reazione a ping-pong catalizzata da una transaminasi, in che stato si trova l'enzima?",
+     "o": [
+      "Resta modificato, con il gruppo amminico nel coenzima",
+      "Perde il coenzima, che esce insieme al primo chetoacido",
+      "Resta legato al secondo prodotto, cioè all'amminoacido",
+      "Ritorna allo stato originale insieme al suo coenzima"
+     ],
+     "c": 3,
+     "s": "Uscito il secondo prodotto, l'enzima con il suo coenzima ritorna allo stato originale."
+    },
+    {
+     "d": "Se in una transaminazione il primo substrato è l'acido glutammico e il secondo è l'acido ossalacetico, quali sono, nell'ordine, il primo e il secondo prodotto?",
+     "o": [
+      "α-chetoglutarato, poi acido aspartico",
+      "Acido piruvico, poi alanina",
+      "α-chetoglutarato, poi alanina",
+      "Acido aspartico, poi α-chetoglutarato"
+     ],
+     "c": 0,
+     "s": "L'acido glutammico cede il gruppo amminico e diventa α-chetoglutarato; l'acido ossalacetico lo acquisisce e diventa acido aspartico."
+    },
+    {
+     "d": "Perché il secondo substrato di una transaminazione deve essere un chetoacido e non un amminoacido?",
+     "o": [
+      "Perché deve cedere il gruppo amminico",
+      "Perché deve acquisire il gruppo amminico",
+      "Perché deve cedere il gruppo carbossilico",
+      "Perché deve acquisire un gruppo aldeidico"
+     ],
+     "c": 1,
+     "s": "Il secondo substrato deve acquisire il gruppo amminico, quindi è un chetoacido."
+    },
+    {
+     "d": "Che cosa accadrebbe se, in una transaminazione, rientrasse l'α-chetoglutarato appena uscito per ridiventare acido glutammico?",
+     "o": [
+      "Si formerebbe acido aspartico",
+      "Si saturerebbe l'enzima",
+      "Si realizzerebbe un ciclo futile",
+      "Si otterrebbe acido piruvico"
+     ],
+     "c": 2,
+     "s": "Le due coppie devono essere diverse: altrimenti si realizzerebbe un ciclo futile."
+    },
+    {
+     "d": "Da che cosa deriva la parte \"cheto\" del termine chetoacido?",
+     "o": [
+      "Dal gruppo carbossilico che la molecola conserva perché deriva da un amminoacido",
+      "Dal gruppo amminico che il carbonio alfa riceve dal coenzima della transaminasi",
+      "Dal carbonio alfa che, perso il gruppo amminico, acquista un idrogeno e diventa un'aldeide",
+      "Dal carbonio alfa che, perso il gruppo amminico e l'idrogeno, diventa un carbonile chetonico"
+     ],
+     "c": 3,
+     "s": "Perdendo il gruppo amminico e l'idrogeno, il carbonio alfa diventa un gruppo carbonilico di tipo chetonico."
+    },
+    {
+     "d": "Che cosa distingue il gruppo chetonico dal gruppo aldeidico?",
+     "o": [
+      "Il carbonio chetonico è legato a due gruppi R, quello aldeidico possiede un idrogeno",
+      "Il carbonio chetonico ha un legame singolo con l'ossigeno, quello aldeidico un doppio legame",
+      "Il carbonio chetonico è legato all'azoto, quello aldeidico è legato all'ossigeno",
+      "Il carbonio chetonico possiede un idrogeno, quello aldeidico è legato a due gruppi R"
+     ],
+     "c": 0,
+     "s": "Il gruppo chetonico ha il carbonio legato con doppio legame all'ossigeno e a due gruppi R; l'aldeidico possiede un idrogeno."
+    },
+    {
+     "d": "Quale chetoacido corrisponde all'alanina?",
+     "o": [
+      "Acido ossalacetico, con 4 atomi di carbonio",
+      "Acido piruvico, con 3 atomi di carbonio",
+      "α-chetoglutarato, con 5 atomi di carbonio",
+      "Acido aspartico, con 4 atomi di carbonio"
+     ],
+     "c": 1,
+     "s": "Alanina → acido piruvico (3 atomi di carbonio)."
+    },
+    {
+     "d": "Quale amminoacido corrisponde all'acido ossalacetico, e quanti atomi di carbonio possiede quest'ultimo?",
+     "o": [
+      "Acido glutammico, 5 atomi di carbonio",
+      "Alanina, 3 atomi di carbonio",
+      "Acido aspartico, 4 atomi di carbonio",
+      "Acido aspartico, 5 atomi di carbonio"
+     ],
+     "c": 2,
+     "s": "Acido aspartico → acido ossalacetico (4 atomi di carbonio)."
+    },
+    {
+     "d": "Quanti atomi di carbonio possiede l'α-chetoglutarato, il chetoacido corrispondente all'acido glutammico?",
+     "o": [
+      "3",
+      "4",
+      "6",
+      "5"
+     ],
+     "c": 3,
+     "s": "Acido glutammico → α-chetoglutarato (5 atomi di carbonio)."
+    }
+   ]
   }
  ]
 }
