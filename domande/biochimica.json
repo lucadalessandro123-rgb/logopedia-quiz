@@ -3047,7 +3047,7 @@
   },
   {
    "n": 4,
-   "titolo": "Catalisi e cinetica enzimatica, reazioni con più substrati",
+   "titolo": "Catalisi, cinetica, inibizione e regolazione enzimatica",
    "domande": [
     {
      "d": "Attraverso quale meccanismo un enzima aumenta la velocità di una reazione?",
@@ -3620,6 +3620,567 @@
      ],
      "c": 3,
      "s": "Acido glutammico → α-chetoglutarato (5 atomi di carbonio)."
+    },
+    {
+     "d": "Che cosa caratterizza l'inibizione enzimatica irreversibile?",
+     "o": [
+      "Allontanando l'inibitore, l'enzima torna a funzionare normalmente",
+      "L'inibitore si lega solo al complesso enzima-substrato già formato",
+      "L'inibitore si lega covalentemente e l'enzima va risintetizzato",
+      "L'inibitore compete con il substrato per il sito attivo dell'enzima"
+     ],
+     "c": 2,
+     "s": "Nell'inibizione irreversibile l'inibitore si lega all'enzima con una modifica covalente: per avere di nuovo un enzima funzionante occorre sintetizzarlo ex novo."
+    },
+    {
+     "d": "Quale effetto ha un inibitore competitivo sui parametri cinetici dell'enzima?",
+     "o": [
+      "Diminuisce la V_max, mentre la K_m resta invariata",
+      "Aumenta la K_m apparente, riducendo l'affinità",
+      "Diminuisce sia la V_max sia la K_m",
+      "Aumenta la V_max, mentre la K_m non varia"
+     ],
+     "c": 1,
+     "s": "L'inibitore competitivo compete con il substrato per il sito attivo: aumenta la K_m apparente, cioè diminuisce l'affinità per il substrato."
+    },
+    {
+     "d": "In che modo si supera l'effetto di un inibitore competitivo?",
+     "o": [
+      "Riducendo la concentrazione del substrato",
+      "Abbassando la temperatura della reazione",
+      "Aumentando la concentrazione del substrato",
+      "Aggiungendo un inibitore di tipo incompetitivo"
+     ],
+     "c": 2,
+     "s": "Poiché c'è competizione per il sito attivo, aumentando il substrato si «supera» l'inibitore."
+    },
+    {
+     "d": "Dove si lega un inibitore non competitivo e quale effetto produce?",
+     "o": [
+      "Nel sito attivo: aumenta la K_m apparente, la V_max non varia",
+      "Al complesso ES: diminuiscono sia la V_max sia la K_m",
+      "In un sito diverso dal sito attivo: la K_m diminuisce, la V_max no",
+      "In un sito diverso dal sito attivo: la V_max diminuisce, la K_m no"
+     ],
+     "c": 3,
+     "s": "L'inibitore non competitivo si lega in un sito diverso dal sito attivo: si abbassa la velocità massima, mentre la K_m non varia."
+    },
+    {
+     "d": "Perché nell'inibizione incompetitiva la K_m si abbassa?",
+     "o": [
+      "Perché l'inibitore compete con il substrato e ne aumenta l'affinità apparente",
+      "Perché il legame al complesso ES si stabilizza, come se l'affinità aumentasse",
+      "Perché l'inibitore si lega all'enzima libero prima che arrivi il substrato",
+      "Perché in presenza dell'inibitore aumenta la quantità di enzima funzionante"
+     ],
+     "c": 1,
+     "s": "L'inibitore incompetitivo si lega al complesso enzima-substrato: il legame diventa stabile ed è come se enzima e substrato diventassero più affini."
+    },
+    {
+     "d": "Nell'inibizione mista, in quale caso la K_m si abbassa?",
+     "o": [
+      "Quando l'inibitore si lega al complesso enzima-substrato",
+      "Quando l'inibitore si lega all'enzima libero, prima del substrato",
+      "Quando l'inibitore compete con il substrato per il sito attivo",
+      "Quando il substrato viene aumentato fino alla saturazione"
+     ],
+     "c": 0,
+     "s": "Nell'inibizione mista la K_m non varia se l'inibitore si lega all'enzima libero, mentre si abbassa se si lega al complesso ES, come un inibitore incompetitivo."
+    },
+    {
+     "d": "In che cosa viene trasformato il metanolo nell'organismo?",
+     "o": [
+      "In acetaldeide",
+      "In formaldeide",
+      "In etanolo",
+      "In acido piruvico"
+     ],
+     "c": 1,
+     "s": "Il metanolo viene trasformato in formaldeide, molto reattiva e tossica, che raggiunge rapidamente il sistema nervoso centrale."
+    },
+    {
+     "d": "Perché nell'avvelenamento da metanolo si somministra etanolo per via endovenosa?",
+     "o": [
+      "Perché inibisce irreversibilmente l'alcol deidrogenasi, bloccando il metanolo",
+      "Perché trasforma la formaldeide già prodotta in acetaldeide, meno tossica",
+      "Perché si lega al metanolo in circolo e ne favorisce l'eliminazione",
+      "Perché compete con il metanolo per il sito attivo dell'alcol deidrogenasi"
+     ],
+     "c": 3,
+     "s": "Metanolo ed etanolo sono smaltiti dall'alcol deidrogenasi: l'etanolo compete con il metanolo per il sito attivo e si produce meno formaldeide."
+    },
+    {
+     "d": "Quale enzima viene inibito in modo competitivo dalle statine?",
+     "o": [
+      "L'alcol deidrogenasi",
+      "La fosfolipasi A₂",
+      "L'HMG-CoA reduttasi",
+      "La glicopeptide transpeptidasi"
+     ],
+     "c": 2,
+     "s": "Le statine sono inibitori competitivi dell'HMG-CoA reduttasi, l'enzima chiave della sintesi del colesterolo."
+    },
+    {
+     "d": "Che cosa distingue il colesterolo «buono» da quello «cattivo»?",
+     "o": [
+      "La struttura: il buono è a bassa densità, il cattivo ad alta densità",
+      "L'origine: il buono è sintetizzato, il cattivo deriva dalla dieta",
+      "Il trasporto: nelle HDL va al fegato, nelle LDL resta in circolo",
+      "La sede: il buono si forma nel fegato, il cattivo nei vasi"
+     ],
+     "c": 2,
+     "s": "Il colesterolo è sempre lo stesso: varia il trasporto. Nelle HDL viene portato al fegato e smaltito; nelle LDL permane nei vasi e può formare la placca ateromasica."
+    },
+    {
+     "d": "Oltre quale concentrazione ematica di colesterolo si parla di ipercolesterolemia?",
+     "o": [
+      "100 mg/dL",
+      "150 mg/dL",
+      "400 mg/dL",
+      "200 mg/dL"
+     ],
+     "c": 3,
+     "s": "Si parla di ipercolesterolemia quando la concentrazione ematica di colesterolo supera i 200 mg/dL."
+    },
+    {
+     "d": "Perché gli inibitori suicidi sono chiamati in questo modo?",
+     "o": [
+      "Perché interagendo con l'enzima viene «sacrificato» anche l'inibitore",
+      "Perché l'enzima inibito viene poi degradato dal proteasoma cellulare",
+      "Perché si legano all'enzima solo in assenza del substrato naturale",
+      "Perché inducono la morte dell'intera cellula che contiene l'enzima"
+     ],
+     "c": 0,
+     "s": "Come un kamikaze, quando l'inibitore suicida interagisce con l'enzima viene «sacrificato» anche l'inibitore stesso."
+    },
+    {
+     "d": "Perché alcuni autori considerano gli ioni metallici inquinanti, come piombo e mercurio, inibitori reversibili non competitivi?",
+     "o": [
+      "Perché competono con il substrato per il sito attivo",
+      "Perché si legano a siti diversi dal sito attivo",
+      "Perché si legano solo al complesso enzima-substrato",
+      "Perché vengono rimossi aumentando il substrato"
+     ],
+     "c": 1,
+     "s": "Gli ioni metallici si legano a siti diversi dal sito attivo; per questo alcuni autori li considerano non competitivi, altri irreversibili."
+    },
+    {
+     "d": "Che cosa avviene quando la N,N-dimetilpropargilammina si lega alle MAO?",
+     "o": [
+      "Acetila un amminoacido strategico del sito attivo, impedendo l'ingresso del substrato",
+      "Compete in modo reversibile con la dopamina per il sito attivo",
+      "Rompe l'anello β-lattamico, rendendo inattivo l'enzima",
+      "Alchila il sito attivo con un legame covalente, bloccando l'ossidoriduzione"
+     ],
+     "c": 3,
+     "s": "Il composto determina un'alchilazione, cioè forma un legame covalente nel sito attivo delle MAO, che non possono più catalizzare l'ossidoriduzione."
+    },
+    {
+     "d": "Quali neurotrasmettitori vengono degradati dalle monoammina ossidasi (MAO)?",
+     "o": [
+      "Dopamina e serotonina",
+      "Serotonina e triptofano",
+      "Dopamina e L-DOPA",
+      "Trombossani e prostaglandine"
+     ],
+     "c": 0,
+     "s": "Le MAO degradano i neurotrasmettitori dopamina e serotonina: riducendone l'attività se ne aumentano i livelli."
+    },
+    {
+     "d": "Perché nel soggetto parkinsoniano può essere utile ridurre l'attività delle MAO?",
+     "o": [
+      "Per ridurre la dopamina, responsabile dei passi veloci e a scatti",
+      "Per aumentare la dopamina e migliorare il controllo del movimento",
+      "Per aumentare la ricaptazione della dopamina, come fa la cocaina",
+      "Per ridurre la conversione del triptofano in serotonina"
+     ],
+     "c": 1,
+     "s": "Nel Parkinson i livelli di dopamina sono bassi: rallentando le MAO si aumentano i livelli di dopamina, migliorando il controllo del movimento."
+    },
+    {
+     "d": "Perché gli amminoacidi a catena ramificata possono ridurre i livelli di serotonina?",
+     "o": [
+      "Perché stimolano l'attività delle MAO che degradano la serotonina cerebrale",
+      "Perché vengono utilizzati dai batteri intestinali al posto del triptofano",
+      "Perché competono con il triptofano nel superare la barriera ematoencefalica",
+      "Perché inibiscono l'enzima che decarbossila il triptofano"
+     ],
+     "c": 2,
+     "s": "Il triptofano deve superare la barriera ematoencefalica: gli amminoacidi a catena ramificata spesso competono con esso e il triptofano non entra."
+    },
+    {
+     "d": "Quale enzima batterico viene inibito in modo irreversibile dalla penicillina?",
+     "o": [
+      "La penicillinasi (β-lattamasi)",
+      "La monoammina ossidasi (MAO)",
+      "La fosfolipasi A₂ di membrana",
+      "La glicopeptide transpeptidasi"
+     ],
+     "c": 3,
+     "s": "La penicillina si lega alla glicopeptide transpeptidasi, che non può più creare i legami crociati della parete batterica."
+    },
+    {
+     "d": "Perché il batterio trattato con penicillina va incontro a lisi?",
+     "o": [
+      "Perché, privo di parete, non è più protetto dall'osmosi",
+      "Perché la penicillina rompe i legami crociati già formati",
+      "Perché la penicillinasi degrada la sua parete batterica",
+      "Perché la penicillina blocca la sintesi dei suoi nucleotidi"
+     ],
+     "c": 0,
+     "s": "La costruzione della parete si interrompe e il batterio privo di parete va incontro a lisi, perché non è più protetto dall'osmosi."
+    },
+    {
+     "d": "Perché alla penicillina si associa spesso un inibitore della β-lattamasi?",
+     "o": [
+      "Perché la β-lattamasi serve al batterio per formare i legami crociati della parete",
+      "Perché molti batteri esprimono la penicillinasi, che rompe l'anello β-lattamico",
+      "Perché da sola la penicillina agirebbe anche sulle nostre cellule",
+      "Perché la β-lattamasi attiva la penicillina solo all'interno del batterio"
+     ],
+     "c": 1,
+     "s": "La penicillinasi, una β-lattamasi, rompe l'anello β-lattamico e inattiva la penicillina: l'inibitore associato impedisce al batterio di difendersi."
+    },
+    {
+     "d": "Quale enzima stacca l'acido arachidonico da un fosfolipide di membrana?",
+     "o": [
+      "La cicloossigenasi",
+      "L'HMG-CoA reduttasi",
+      "La fosfolipasi A₂",
+      "La glicopeptide transpeptidasi"
+     ],
+     "c": 2,
+     "s": "Il segnale pro-infiammatorio attiva la fosfolipasi A₂, che stacca dal fosfolipide di membrana l'acido arachidonico."
+    },
+    {
+     "d": "Che cosa distingue le COX-1 dalle COX-2?",
+     "o": [
+      "Le COX-1 sono inducibili e potenziano l'infiammazione; le COX-2 sono costitutive e proteggono lo stomaco",
+      "Le COX-1 agiscono nell'ipotalamo e regolano la temperatura; le COX-2 proteggono la parete dello stomaco",
+      "Le COX-1 producono l'acido arachidonico dai fosfolipidi; le COX-2 lo trasformano in trombossani",
+      "Le COX-1 sono costitutive e proteggono lo stomaco; le COX-2 sono inducibili e potenziano l'infiammazione"
+     ],
+     "c": 3,
+     "s": "Le COX-1 sono costitutive e producono un film protettivo della parete gastrica; le COX-2 sono inducibili e producono prostaglandine che potenziano l'infiammazione."
+    },
+    {
+     "d": "Come agisce l'aspirina sulle cicloossigenasi?",
+     "o": [
+      "Acetila un amminoacido strategico della COX, inibendola in modo irreversibile",
+      "Compete con l'acido arachidonico per il sito attivo della COX in modo reversibile",
+      "Agisce sulla COX-3 ipotalamica, riducendo soltanto la temperatura corporea",
+      "Aumenta la sintesi di un inibitore che blocca la fosfolipasi A₂ della membrana"
+     ],
+     "c": 0,
+     "s": "L'aspirina è un inibitore irreversibile: acetila un amminoacido strategico della COX, così che l'acido arachidonico non può più entrare."
+    },
+    {
+     "d": "Che tipo di inibitore è l'ibuprofene?",
+     "o": [
+      "Un inibitore irreversibile che acetila la cicloossigenasi",
+      "Un inibitore competitivo dell'acido arachidonico",
+      "Un inibitore della pompa protonica gastrica",
+      "Un inibitore della fosfolipasi A₂ di membrana"
+     ],
+     "c": 1,
+     "s": "L'ibuprofene è un inibitore competitivo dell'acido arachidonico: in sua presenza l'acido arachidonico non entra nel sito attivo."
+    },
+    {
+     "d": "Su quale bersaglio agisce la tachipirina?",
+     "o": [
+      "Sulla COX-1 dello stomaco",
+      "Sulla COX-2 inducibile",
+      "Sulla COX-3 ipotalamica",
+      "Sulla fosfolipasi A₂"
+     ],
+     "c": 2,
+     "s": "La tachipirina non è un antinfiammatorio ma un antipiretico: agisce sulla COX-3 ipotalamica, implicata nella regolazione della temperatura."
+    },
+    {
+     "d": "In che modo i cortisonici bloccano la via dell'infiammazione?",
+     "o": [
+      "Inibiscono in modo competitivo le cicloossigenasi inducibili COX-2",
+      "Acetilano un amminoacido strategico delle COX",
+      "Bloccano la pompa protonica a livello dello stomaco",
+      "Aumentano la sintesi di un inibitore della fosfolipasi A₂"
+     ],
+     "c": 3,
+     "s": "I cortisonici non sono inibitori, ma modulano la sintesi proteica: il cortisolo aumenta la sintesi di un inibitore della fosfolipasi A₂."
+    },
+    {
+     "d": "Perché insieme a un antinfiammatorio si assume anche un gastroprotettore?",
+     "o": [
+      "Perché si riduce la protezione della parete gastrica data dalle COX-1",
+      "Perché le prostaglandine prodotte dalle COX-2 danneggiano la parete gastrica",
+      "Perché l'antinfiammatorio inibisce la pompa protonica dello stomaco",
+      "Perché l'antinfiammatorio blocca la produzione di bicarbonato"
+     ],
+     "c": 0,
+     "s": "Le prostaglandine prodotte di default dalle COX-1 proteggono la parete dello stomaco: inibendole si riduce la protezione gastrica."
+    },
+    {
+     "d": "Come agisce l'omeprazolo?",
+     "o": [
+      "Forma con la mucina un film protettivo sulla parete dello stomaco",
+      "Inibisce la pompa protonica, bloccando la produzione di acido cloridrico",
+      "Inibisce le COX-1 dello stomaco, riducendo la produzione di prostaglandine",
+      "Tampona l'acidità gastrica come il bicarbonato del pancreas"
+     ],
+     "c": 1,
+     "s": "L'omeprazolo è un inibitore della pompa protonica: blocca la produzione di acido cloridrico a livello dello stomaco."
+    },
+    {
+     "d": "[Da esame] Come viene regolato un enzima?",
+     "o": [
+      "Catalisi covalente, catalisi acido-base, allosterismo, proteolisi e induzione genica",
+      "Modifiche covalenti, catalisi da ioni metallici, transaminazione, proteolisi e induzione genica",
+      "Modifiche covalenti, associazione e dissociazione di subunità, allosterismo, proteolisi e induzione genica",
+      "Associazione di subunità, cinetica di Michaelis e Menten, numero di turnover, proteolisi e induzione genica"
+     ],
+     "c": 2,
+     "s": "Un enzima è regolato mediante modifiche covalenti, associazione e dissociazione di subunità, allosterismo, meccanismi proteolitici e induzione genica."
+    },
+    {
+     "d": "[Da esame] In che cosa consistono le modifiche covalenti che regolano un enzima?",
+     "o": [
+      "Nel taglio di una sequenza peptidica che attiva l'enzima sintetizzato come zimogeno",
+      "Nel legame di un modulatore che induce la forma rilassata",
+      "Nell'aumento dell'espressione del gene che codifica l'enzima",
+      "Nel legame covalente di un gruppo, soprattutto fosfato, all'enzima"
+     ],
+     "c": 3,
+     "s": "Le modifiche covalenti consistono nel legame covalente di un gruppo (fosfato, acetile o metile) all'enzima; il più utilizzato è il gruppo fosfato."
+    },
+    {
+     "d": "[Da esame] In che cosa consiste la regolazione di un enzima per induzione genica?",
+     "o": [
+      "Nell'aumento dell'espressione del gene, e quindi della quantità di enzima",
+      "Nell'aggiunta di un gruppo fosfato che modifica la conformazione dell'enzima",
+      "Nel passaggio delle subunità dalla forma tesa alla forma rilassata",
+      "Nella degradazione dell'enzima mediata dal proteasoma della cellula"
+     ],
+     "c": 0,
+     "s": "Induzione genica significa che aumenta l'espressione del gene: dal DNA all'RNA alla proteina, e la quantità di enzima aumenta (es. l'insulina in iperglicemia)."
+    },
+    {
+     "d": "[Da esame] Quale meccanismo proteolitico può attivare un enzima?",
+     "o": [
+      "Il legame di un gruppo fosfato da parte di una chinasi, come nella glicolisi",
+      "Il taglio di una sequenza peptidica di uno zimogeno, come negli enzimi digestivi",
+      "Lo spostamento in un altro compartimento, come negli enzimi della coagulazione",
+      "Il legame del substrato come modulatore omotropico, come negli enzimi allosterici"
+     ],
+     "c": 1,
+     "s": "Gli enzimi della digestione (e della coagulazione) sono sintetizzati come zimogeni e vengono attivati dall'eliminazione di una sequenza peptidica."
+    },
+    {
+     "d": "[Da esame] Che tipo di cinetica presentano gli enzimi allosterici?",
+     "o": [
+      "Iperbolica, come gli enzimi michaeliani",
+      "Lineare, sempre proporzionale al substrato",
+      "Sigmoidale, cioè a S italica",
+      "Costante, indipendente dal substrato"
+     ],
+     "c": 2,
+     "s": "Gli enzimi allosterici hanno una cinetica detta a S italica o sigmoidale: la curva è una sigmoide."
+    },
+    {
+     "d": "[Da esame] Che cosa caratterizza la forma T (tesa) di un enzima allosterico?",
+     "o": [
+      "Legami deboli rotti dal modulatore allosterico: alta affinità, forma più attiva",
+      "Assenza di struttura quaternaria: enzima del tutto inattivo",
+      "K_m costante: segue la cinetica di Michaelis e Menten",
+      "Più legami deboli e interazioni elettrostatiche: bassa affinità, meno attiva"
+     ],
+     "c": 3,
+     "s": "Nella forma tesa la struttura terziaria presenta più interazioni elettrostatiche e legami deboli: il substrato fatica a entrare e l'enzima funziona più lentamente."
+    },
+    {
+     "d": "[Da esame] Che cosa si intende per regolazione eterotropica di un enzima allosterico?",
+     "o": [
+      "Che il modulatore è una molecola diversa dal substrato",
+      "Che il modulatore è il substrato stesso dell'enzima",
+      "Che il modulatore si lega direttamente nel sito attivo",
+      "Che il modulatore aggiunge un gruppo fosfato all'enzima"
+     ],
+     "c": 0,
+     "s": "Nella regolazione eterotropica l'attivatore o l'inibitore è diverso dal substrato; in quella omotropica il modulatore è il substrato stesso."
+    },
+    {
+     "d": "[Da esame] Secondo il modello sequenziale, come avviene il passaggio dalla forma tesa alla forma rilassata?",
+     "o": [
+      "Tutte le subunità passano contemporaneamente dallo stato teso a quello rilassato",
+      "Una subunità si modifica e induce la modifica nelle subunità adiacenti",
+      "Le subunità si dissociano e si riassociano già nella forma rilassata",
+      "Il substrato rompe in un solo passaggio i legami di tutte le subunità"
+     ],
+     "c": 1,
+     "s": "Nel modello sequenziale una prima subunità diventa rilassata e induce la modifica conformazionale nelle adiacenti, finché tutto l'enzima è rilassato."
+    },
+    {
+     "d": "[Da esame] Come si chiama la transizione delle subunità di un enzima allosterico influenzata da una prima subunità?",
+     "o": [
+      "Retroinibizione",
+      "Compartimentalizzazione",
+      "Cooperatività",
+      "Attivazione proteolitica"
+     ],
+     "c": 2,
+     "s": "La transizione delle subunità influenzata da una prima subunità prende il nome di cooperatività."
+    },
+    {
+     "d": "[Da esame] Perché gli enzimi allosterici non hanno una K_m costante?",
+     "o": [
+      "Perché la loro velocità non dipende dalla concentrazione del loro substrato",
+      "Perché sono privi di sito attivo e legano il substrato altrove",
+      "Perché la loro K_m dipende solo dalla concentrazione dell'enzima",
+      "Perché l'affinità cambia nel passaggio tra la forma tesa e la rilassata"
+     ],
+     "c": 3,
+     "s": "Negli enzimi allosterici l'affinità per il substrato dipende dal passaggio tra la forma tesa, poco affine, e la forma rilassata."
+    },
+    {
+     "d": "[Da esame] Che effetto hanno gli attivatori allosterici sulla curva di un enzima allosterico?",
+     "o": [
+      "La spostano verso un'affinità maggiore: basta meno substrato",
+      "La spostano verso un'affinità minore: serve più substrato",
+      "La trasformano in un'iperbole equilatera, come negli enzimi michaeliani",
+      "Ne abbassano la velocità massima senza modificare l'affinità"
+     ],
+     "c": 0,
+     "s": "Gli attivatori spostano la curva verso un'affinità maggiore, cioè fanno sì che basti meno substrato perché esso si leghi."
+    },
+    {
+     "d": "[Da esame] Di quale processo la fosfofruttochinasi è l'enzima chiave?",
+     "o": [
+      "Della sintesi del colesterolo",
+      "Della glicolisi",
+      "Della sintesi del glicogeno",
+      "Della sintesi proteica"
+     ],
+     "c": 1,
+     "s": "La fosfofruttochinasi è l'enzima chiave della glicolisi, che da una molecola di glucosio produce due molecole di piruvato nel citoplasma di tutte le cellule."
+    },
+    {
+     "d": "[Da esame] Qual è l'effetto dell'ATP sulla fosfofruttochinasi, e perché?",
+     "o": [
+      "Attivatore, perché l'ATP serve all'enzima per funzionare",
+      "Inibitorio, perché l'ATP compete con il glucosio nel sito attivo",
+      "Inibitorio, perché con molto ATP è inutile produrne altro",
+      "Nessuno, perché l'enzima è regolato soltanto dal citrato"
+     ],
+     "c": 2,
+     "s": "L'ATP è un regolatore negativo della fosfofruttochinasi: se è disponibile molto ATP non c'è richiesta di produrne altro e la glicolisi viene rallentata."
+    },
+    {
+     "d": "[Da esame] Quali regolatori allosterici attivano la fosfofruttochinasi?",
+     "o": [
+      "ATP, citrato e fruttosio 2,6-bisfosfato",
+      "ADP, AMP e citrato",
+      "ATP, ADP e AMP",
+      "ADP, AMP e fruttosio 2,6-bisfosfato"
+     ],
+     "c": 3,
+     "s": "ADP, AMP e fruttosio 2,6-bisfosfato sono regolatori positivi della fosfofruttochinasi; ATP e citrato sono negativi."
+    },
+    {
+     "d": "[Da esame] Perché ADP e AMP attivano la fosfofruttochinasi?",
+     "o": [
+      "Perché indicano che l'ATP è stato usato e la cellula ha bisogno di energia",
+      "Perché sono substrati della glicolisi e vengono trasformati in piruvato",
+      "Perché segnalano un eccesso di energia da conservare come glicogeno",
+      "Perché si legano all'enzima in modo covalente tramite una chinasi"
+     ],
+     "c": 0,
+     "s": "ADP e AMP indicano che l'ATP è stato utilizzato e ha perso un fosfato: la cellula ha bisogno di energia."
+    },
+    {
+     "d": "[Da esame] Che cosa succede al glucosio non consumato quando l'ATP rallenta la glicolisi?",
+     "o": [
+      "Viene trasformato in colesterolo",
+      "Viene conservato come glicogeno",
+      "Viene convertito in piruvato",
+      "Viene eliminato dal fegato"
+     ],
+     "c": 1,
+     "s": "Non potendo conservare l'ATP, la glicolisi viene rallentata e il glucosio non consumato viene conservato come glicogeno."
+    },
+    {
+     "d": "In quale caso l'ATP agisce da regolatore allosterico positivo?",
+     "o": [
+      "Negli enzimi catabolici, come la fosfofruttochinasi",
+      "Negli enzimi della glicolisi, come le chinasi",
+      "Negli enzimi anabolici, come l'aspartato transcarbamilasi",
+      "Negli enzimi digestivi, attivati come zimogeni"
+     ],
+     "c": 2,
+     "s": "L'ATP inibisce gli enzimi catabolici, ma attiva quelli delle vie anaboliche, come l'aspartato transcarbamilasi."
+    },
+    {
+     "d": "Che cos'è la retroinibizione (inibizione a feedback negativo)?",
+     "o": [
+      "L'inibizione diretta dell'enzima da parte del prodotto della sua reazione",
+      "L'inibizione dell'enzima da parte di un eccesso del proprio substrato",
+      "L'inibizione dell'enzima da parte del citrato a livello del fegato",
+      "L'inibizione di uno dei primi enzimi di una via da parte del prodotto finale"
+     ],
+     "c": 3,
+     "s": "Nella retroinibizione l'ultimo prodotto di una lunga via metabolica inibisce uno dei primi enzimi, per non creare intermedi inutili."
+    },
+    {
+     "d": "Quale enzima catalizza la rimozione di un gruppo fosfato da un enzima?",
+     "o": [
+      "La fosfatasi",
+      "La chinasi",
+      "La fosfolipasi",
+      "La transaminasi"
+     ],
+     "c": 0,
+     "s": "La defosforilazione, cioè la rimozione del gruppo fosfato, è catalizzata dalle fosfatasi; la fosforilazione dalle chinasi."
+    },
+    {
+     "d": "Qual è l'effetto della fosforilazione sull'attività di un enzima?",
+     "o": [
+      "È sempre attivante, perché induce la forma rilassata",
+      "Dipende dall'enzima: alcuni si attivano, altri si inattivano",
+      "È sempre inattivante, perché blocca il sito attivo",
+      "È nulla, perché non modifica la conformazione"
+     ],
+     "c": 1,
+     "s": "La fosforilazione non è di per sé attivante o inattivante: aumenta l'attività di alcuni enzimi e diminuisce quella di altri."
+    },
+    {
+     "d": "Perché un aumento eccessivo della temperatura fa smettere di funzionare un enzima?",
+     "o": [
+      "Perché aumenta la K_m e si riduce il substrato disponibile",
+      "Perché il pH scende fino a valori intorno a 2",
+      "Perché cambiano lo stato di ionizzazione e i legami deboli",
+      "Perché l'enzima viene degradato dal proteasoma"
+     ],
+     "c": 2,
+     "s": "Aumentando la temperatura l'enzima smette di funzionare, perché cambiano lo stato di ionizzazione e i legami deboli."
+    },
+    {
+     "d": "A quale pH funziona la fosfatasi alcalina, che aumenta in gravidanza e nel tumore osseo?",
+     "o": [
+      "Intorno a 2",
+      "Intorno a 7,4",
+      "Intorno a 5",
+      "Intorno a 9-10"
+     ],
+     "c": 3,
+     "s": "La fosfatasi alcalina funziona a pH alcalino, intorno a 9-10; si occupa del metabolismo dell'osso."
+    },
+    {
+     "d": "Che cosa si intende per compartimentalizzazione come meccanismo di regolazione enzimatica?",
+     "o": [
+      "Che l'enzima è attivo in un compartimento e smette di funzionare se spostato",
+      "Che l'enzima viene sintetizzato come zimogeno e attivato da un taglio",
+      "Che l'enzima viene degradato dal proteasoma quando non serve più",
+      "Che l'enzima aumenta di quantità per induzione del gene che lo codifica"
+     ],
+     "c": 0,
+     "s": "Un enzima può essere attivo perché si trova in un determinato compartimento; se viene spostato da quel compartimento smette di funzionare."
     }
    ]
   }
